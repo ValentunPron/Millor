@@ -1,0 +1,60 @@
+.slider {
+	padding: 70px 0 0px 0;
+	&__body {
+		position: relative;
+		z-index: 10;
+	}
+	&__title {
+		padding-top: 50px;
+		font-weight: 900;
+		font-size: 3.2rem;
+		line-height: 1.25;
+		margin-bottom: 60px;
+	}
+	&__info {
+		font-weight: 500;
+		max-width: 650px;
+		font-size: 1rem;
+		line-height: 1.3;
+		padding: 15px 0;
+		span {
+			font-weight: 700;
+		}
+	}
+	&__button {
+		margin-top: 75px;
+	}
+	&__item {
+		display: flex;
+	}
+}
+
+.bulletsBody {
+	width: 100%;
+	height: 20px;
+}
+
+.bulletsBody {
+	top: 0;
+	right: 0;
+	position: absolute;
+	justify-content: right;
+	display: inline-flex;
+	gap: 20px;
+}
+
+.bullets {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%; 
+	background: #FFFFFF;
+	opacity: 100;
+	gap: 15px;
+	cursor: pointer;
+}
+
+.bulletsActive {
+	background: #40241D;
+	opacity: 100;
+}

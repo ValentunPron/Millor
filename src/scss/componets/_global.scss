@@ -3,9 +3,13 @@ body {
 	font-family: 'Inter', 'Times', serif;
 	font-weight: 400;
 	font-size: 1rem;
-	color: #000;
+	font-family: 'Gilroy', Roboto, system-ui, Tahoma, sans-serif; 
+	color: #000; font-weight: 500;
 	background-color: $white;
 	overflow-x: hidden;
+	a {
+		color: #000;
+	}
 }
 
 .wrapper {
@@ -28,7 +32,7 @@ body {
 	&::before  {
 		position: absolute;
 		content: '';
-		top: 1660px;
+		top: 1700px;
 		left: -300px;
 		width: 660px;
 		height: 600px;
