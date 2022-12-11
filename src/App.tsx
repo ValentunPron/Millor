@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from './component/Header/Header';
+import { MainSlider } from './component/MainSlider/MainSlider';
 import './scss/app.scss'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 			<div className="wrapper">
 				<Header />
 				<main className="main">
+					<MainSlider />
 				</main>
 			</div>
 		</>
