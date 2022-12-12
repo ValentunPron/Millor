@@ -41,7 +41,7 @@ body {
 		right: -57%;
 		background-repeat: no-repeat;
 
-		background: url('./../../assets/image/MainSlider/01.png') no-repeat center left , url('./../../assets/image/MainSlider/bg.svg') no-repeat 210px -120px;
+		background: url('./../../assets/image/coffe.png') no-repeat center left , url('./../../assets/image/MainSlider/bg.svg') no-repeat 210px -120px;
 		background-size: 700px, auto;
 		z-index: -1;
 	}
@@ -137,10 +137,6 @@ body {
 @media (max-width: 770px) {
 	html {
 		font-size: 25px;
-	}
-
-	.header {
-		min-height: calc(80px + (140 - 80)*((100vw - 380px)/(770 - 380)));
 	}
 	.wrapper {
 		&::after {
