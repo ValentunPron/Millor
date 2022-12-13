@@ -1,6 +1,6 @@
 import React from 'react';
-import { Header } from './component/Header/Header';
-import { MainSlider } from './component/MainSlider/MainSlider';
+
+import { Header, MainSlider } from './component'
 
 import './scss/app.scss'
 
