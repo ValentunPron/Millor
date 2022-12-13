@@ -6,7 +6,6 @@ import { LoginWindowProps } from './LoginWindow.props';
 
 export const LoginWindow = ({ status, setStatus }: LoginWindowProps): JSX.Element => {
 
-	const loginRef = React.createRef<any>();
 	const [loginWindow, setLoginWindow] = React.useState(true);
 	const [regWindow, setRegWindow] = React.useState(false);
 	const [passwordWindow, setPasswordWindow] = React.useState(false);
