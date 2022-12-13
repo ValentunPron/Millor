@@ -9,7 +9,6 @@ body {
 	a {
 		color: #000;
 	}
-	overflow-x: hidden;
 }
 
 .header {
@@ -28,6 +27,7 @@ body {
 }
 
 .wrapper {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
@@ -35,7 +35,7 @@ body {
 	&::after {
 		position: absolute;
 		content: '';
-		width: 100vw;
+		width: 100%;
 		height: 1760px;
 		top: -360px;
 		right: -57%;
@@ -43,6 +43,7 @@ body {
 
 		background: url('./../../assets/image/coffe.png') no-repeat center left , url('./../../assets/image/MainSlider/bg.svg') no-repeat 210px -120px;
 		background-size: 700px, auto;
+		overflow: hidden;
 		z-index: -1;
 	}
 }
@@ -84,20 +85,30 @@ body {
 	&:hover {
 		background-color: $yellowHover;
 	}
+	&:active {
+		transform: translateY(-2px);
+	}
 	&.big {
 		min-width: 400px;
 		padding: 15px 20px;
 	}
 	&.middle {
-		min-width: 233px;
 		font-size: 1rem;
-		padding: 10px 20px;
+		padding: 15px 20px;
 	}
 	&.small {
 		min-width: 125px;
 		font-size: 0.7rem;
 		padding: 9px 10px;
 	}
+}
+
+.title {
+	font-weight: 900;
+	font-size: 2rem;
+	line-height: 1.25;
+
+	color: #000000;
 }
 
 @media (max-width: 1600px) {
@@ -130,6 +141,9 @@ body {
 		&.big {
 			padding: 15px 10px;
 			min-width: 283px;	
+		}
+		.middle {
+			padding: 10px;
 		}
 	}
 }

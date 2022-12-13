@@ -11,7 +11,6 @@ export const Header = (): JSX.Element => {
 	const [visibleLinks, setVisibleLinks] = React.useState(false);
 	const [loginActive, setLoginActive] = React.useState(false);
 
-	loginActive ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto';
 	visibleLinks ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto';
 
 	const onClickBurger = () => {

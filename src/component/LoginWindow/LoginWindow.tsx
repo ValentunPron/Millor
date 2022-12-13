@@ -6,10 +6,23 @@ import { LoginWindowProps } from './LoginWindow.props';
 
 export const LoginWindow = ({ status, setStatus }: LoginWindowProps): JSX.Element => {
 
+	status ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto';
+
+	const windowRef = React.useRef(null);
 	const [loginWindow, setLoginWindow] = React.useState(true);
 	const [regWindow, setRegWindow] = React.useState(false);
 	const [passwordWindow, setPasswordWindow] = React.useState(false);
 	const [newPasswordWindow, setNewPasswordWindow] = React.useState(false);
+
+	React.useEffect(() => {
+		document.body.addEventListener('click', clickOutSearch);
+	}, []);
+
+	const clickOutSearch = (e: any) => {
+		if (windowRef.current === e.target) {
+			closeWindow();
+		}
+	}
 
 	const controlWindow = (setWindow: Function): any => {
 		setStatus(false)
@@ -20,8 +33,8 @@ export const LoginWindow = ({ status, setStatus }: LoginWindowProps): JSX.Elemen
 			setNewPasswordWindow(false)
 
 			setWindow(true);
-		}, 500);
-		setTimeout(() => { setStatus(true) }, 550)
+		}, 700);
+		setTimeout(() => { setStatus(true) }, 800)
 	}
 
 	const closeWindow = () => {
@@ -33,7 +46,7 @@ export const LoginWindow = ({ status, setStatus }: LoginWindowProps): JSX.Elemen
 		<div>
 			{regWindow
 				?
-				<div className={`${styles.login} ${status ? styles.active : ''}`}>
+				<div ref={windowRef} className={`${styles.login} ${status ? styles.active : ''}`}>
 					<div className={styles.loginBody}>
 						<div className={styles.loginLeft}>
 							<h4 className={styles.loginLeftTitle}>Добро пожаловать!</h4>
@@ -62,7 +75,7 @@ export const LoginWindow = ({ status, setStatus }: LoginWindowProps): JSX.Elemen
 			{
 				loginWindow
 					?
-					<div className={`${styles.login} ${status ? styles.active : ''}`}>
+					<div ref={windowRef} className={`${styles.login} ${status ? styles.active : ''}`}>
 						<div className={`${styles.loginBody} ${styles.loginWindow}`}>
 							<div className={styles.loginLeft}>
 								<h4 className={styles.loginLeftTitle}>Регистрация</h4>
@@ -78,7 +91,7 @@ export const LoginWindow = ({ status, setStatus }: LoginWindowProps): JSX.Elemen
 										<input className={styles.loginInput} type="password" placeholder='Введите пароль' required />
 										<button className={`${styles.loginButton} button`}>Войти</button>
 										<div className={`${styles.loginButtons} ${styles.register}`}>
-											<button className={styles.loginSmallButton}>Регистрация</button>
+											<button className={styles.loginSmallButton} onClick={() => controlWindow(setRegWindow)}>Регистрация</button>
 											<button className={styles.loginSmallButton} onClick={() => controlWindow(setPasswordWindow)}>Забыл пароль?</button>
 										</div>
 									</form>
@@ -92,7 +105,7 @@ export const LoginWindow = ({ status, setStatus }: LoginWindowProps): JSX.Elemen
 			{
 				passwordWindow
 					?
-					<div className={`${styles.login} ${status ? styles.active : ''}`}>
+					<div ref={windowRef} className={`${styles.login} ${status ? styles.active : ''}`}>
 						<div className={`${styles.loginBody} ${styles.loginWindow}`}>
 							<div className={styles.loginLeft}>
 								<h4 className={styles.loginLeftTitle}>Регистрация</h4>
@@ -121,7 +134,7 @@ export const LoginWindow = ({ status, setStatus }: LoginWindowProps): JSX.Elemen
 			{
 				newPasswordWindow
 					?
-					<div className={`${styles.login} ${status ? styles.active : ''}`}>
+					<div ref={windowRef} className={`${styles.login} ${status ? styles.active : ''}`}>
 						<div className={`${styles.loginBody} ${styles.loginWindow}`}>
 							<div className={styles.loginLeft}>
 								<h4 className={styles.loginLeftTitle}>Регистрация</h4>

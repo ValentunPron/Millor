@@ -10,13 +10,13 @@
 	align-items: center;
 	flex-wrap: wrap;
 	z-index: 100;
-	overflow-y: scroll;
+	overflow-y: auto;
 	
 	
-	transform: translateY(-200%) scale(0);
-	transition: all 0.5s ease-in;
+	transform: translateY(-200%);
+	transition: transform 0.8s ease-in, background 0.8s;
 	&.active {
-		transform: translateY(0) scale(100%);
+		transform: translateY(0);
 		background-color: rgba(0, 0, 0, 0.5);
 	}
 }
@@ -306,8 +306,10 @@
 	}
 	.loginBody {
 		min-width: 100%;
+		min-height: 100%;
 		flex-direction: column-reverse;
 		align-items: center;
+		justify-content: start;
 		border-radius: 0;
 		padding: 0 34px;
 		padding-bottom: 100px;
@@ -384,7 +386,7 @@
 					display: inline-block;
 				}
 			}
-			padding-bottom: 100px;
+			padding-bottom: 50px;
 		}
 	}
 }

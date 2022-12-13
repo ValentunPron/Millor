@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header, MainSlider } from './component'
+import { Header, MainCatolog, MainSlider } from './component'
 
 import './scss/app.scss'
 
@@ -12,6 +12,7 @@ function App() {
 			<Header />
 			<main className="main">
 				<MainSlider />
+				<MainCatolog />
 			</main>
 		</div>
 	);
