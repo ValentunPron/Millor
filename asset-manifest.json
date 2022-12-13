@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/pizza-react/static/css/main.7cad3350.css",
+    "main.js": "/pizza-react/static/js/main.9bd10185.js",
+    "static/media/coffe.png": "/pizza-react/static/media/coffe.e2a349de75b48ce2e955.png",
+    "static/media/logoSvg.svg": "/pizza-react/static/media/logoSvg.ca553547674bcda8da38eae66d01ec10.svg",
+    "static/media/Gilroy-Medium.eot": "/pizza-react/static/media/Gilroy-Medium.b84941b7bdcce7cbba6d.eot",
+    "static/media/Gilroy-Medium.ttf": "/pizza-react/static/media/Gilroy-Medium.f9f832b0ed3f1ab138c9.ttf",
+    "static/media/Gilroy-SemiBold.eot": "/pizza-react/static/media/Gilroy-SemiBold.8134b9ab378c54626928.eot",
+    "static/media/Gilroy-Bold.eot": "/pizza-react/static/media/Gilroy-Bold.a732fed1bc6140852a0b.eot",
+    "static/media/Gilroy-SemiBold.ttf": "/pizza-react/static/media/Gilroy-SemiBold.6780292641f883b3dad3.ttf",
+    "static/media/Gilroy-Bold.ttf": "/pizza-react/static/media/Gilroy-Bold.b900325e44ec0c673e88.ttf",
+    "static/media/Gilroy-Black.eot": "/pizza-react/static/media/Gilroy-Black.724ac9b214f34923b443.eot",
+    "static/media/Gilroy-Black.ttf": "/pizza-react/static/media/Gilroy-Black.bf3a5f799e6799d48062.ttf",
+    "static/media/Gilroy-Medium.woff": "/pizza-react/static/media/Gilroy-Medium.2bc7f5d7ea77ee1bddb3.woff",
+    "static/media/Gilroy-Bold.woff": "/pizza-react/static/media/Gilroy-Bold.5fb38b9fa452b5814397.woff",
+    "static/media/Gilroy-Black.woff": "/pizza-react/static/media/Gilroy-Black.1f5dc7482c1aec4cc827.woff",
+    "static/media/Gilroy-SemiBold.woff": "/pizza-react/static/media/Gilroy-SemiBold.e38937dbf8202c144802.woff",
+    "static/media/bg.svg": "/pizza-react/static/media/bg.ccc234156fc53892a4e7.svg",
+    "index.html": "/pizza-react/index.html",
+    "main.7cad3350.css.map": "/pizza-react/static/css/main.7cad3350.css.map",
+    "main.9bd10185.js.map": "/pizza-react/static/js/main.9bd10185.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cad3350.css",
+    "static/js/main.9bd10185.js"
+  ]
+}
