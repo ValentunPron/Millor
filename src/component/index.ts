@@ -1,6 +1,6 @@
 import { LoginWindow } from "./LoginWindow/LoginWindow";
 import { MainSlider } from "./MainSlider/MainSlider";
-import { MainCatolog } from "./MainCatolog/MainCatalog";
+import { CatalogMain } from "./CatalogMain/CatalogMain";
 import { Header } from "./Header/Header";
 
-export { LoginWindow, MainSlider, MainCatolog, Header }
+export { LoginWindow, MainSlider, Header, CatalogMain }
