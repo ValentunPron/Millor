@@ -10,6 +10,32 @@ import image01 from '../../assets/image/MainCatalog/01.png';
 import image02 from '../../assets/image/MainCatalog/02.png';
 import image03 from '../../assets/image/MainCatalog/03.png';
 import image04 from '../../assets/image/MainCatalog/04.png';
+import { SliderItemProps } from './SliderItem/SliderItem.props';
+import { SliderItem } from './SliderItem/SliderItem';
+
+
+const CatalogData: SliderItemProps[] = [
+	{
+		id: 0,
+		imageUrl: image01,
+		title: 'Свежеобжаренный кофe',
+	},
+	{
+		id: 1,
+		imageUrl: image02,
+		title: 'Чай и кофейные напитки',
+	},
+	{
+		id: 2,
+		imageUrl: image03,
+		title: 'Продукция для вендинга',
+	},
+	{
+		id: 3,
+		imageUrl: image04,
+		title: 'Здоровое питание',
+	},
+]
 
 export const CatalogMain = (): JSX.Element => {
 	return (
@@ -47,42 +73,11 @@ export const CatalogMain = (): JSX.Element => {
 						}}
 						className={styles.slider}
 					>
-						<SwiperSlide>
-							<div className={styles.sliderItem}>
-								<div className={styles.image}>
-									<img src={image01} alt="Свежеобжаренный кофe" />
-								</div>
-								<h3 className={styles.title}>Свежеобжаренный кофе</h3>
-								<button className={`${styles.button} button midle`}>Купить</button>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide>
-							<div className={styles.sliderItem}>
-								<div className={styles.image}>
-									<img src={image02} alt="Свежеобжаренный кофe" />
-								</div>
-								<h3 className={styles.title}>Чай и кофейные напитки</h3>
-								<button className={`${styles.button} button midle`}>Купить</button>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide>
-							<div className={styles.sliderItem}>
-								<div className={styles.image}>
-									<img src={image03} alt="Свежеобжаренный кофe" />
-								</div>
-								<h3 className={styles.title}>Продукция для вендинга</h3>
-								<button className={`${styles.button} button midle`}>Купить</button>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide>
-							<div className={styles.sliderItem}>
-								<div className={styles.image}>
-									<img src={image04} alt="Свежеобжаренный кофe" />
-								</div>
-								<h3 className={styles.title}>Здоровое питание</h3>
-								<button className={`${styles.button} button midle`}>Купить</button>
-							</div>
-						</SwiperSlide>
+						{CatalogData.map((obj) =>
+							<SwiperSlide key={obj.id} >
+								<SliderItem {...obj} />
+							</SwiperSlide>
+						)}
 					</Swiper>
 				</div>
 			</div>

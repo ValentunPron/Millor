@@ -1,0 +1,42 @@
+.poput {
+
+}
+
+.poputStart {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	background: #FFF7E1;
+	border: 1px solid #F9B300;
+	border-radius: 5px;
+	min-width: 132px;
+	text-align: left;
+
+	font-size: 0.72rem;
+	padding: 6px 12px 6px 30px;
+	button {
+		font-size: 0.72rem;
+
+		background-color: transparent;
+		text-align: left;
+	}
+}
+
+.poputMenu {
+	position: absolute;
+	margin-top: 8px;
+	border: 1px solid red;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 10px;
+	button {
+		padding-right: 30px;
+		width: 100%;
+	}
+	.active {
+		color: #F9B300;
+	}
+}
