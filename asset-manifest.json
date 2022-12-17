@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Millor/static/css/main.be2b5693.css",
-    "main.js": "/Millor/static/js/main.77274b5b.js",
+    "main.css": "/Millor/static/css/main.f8fdd07f.css",
+    "main.js": "/Millor/static/js/main.269bd633.js",
     "static/media/coffe.png": "/Millor/static/media/coffe.e2a349de75b48ce2e955.png",
     "static/media/bg-coffe.png": "/Millor/static/media/bg-coffe.f4f293ef75f5a06ee228.png",
     "static/media/logoSvg.svg": "/Millor/static/media/logoSvg.ca553547674bcda8da38eae66d01ec10.svg",
@@ -13,7 +13,7 @@
     "static/media/Gilroy-Bold.ttf": "/Millor/static/media/Gilroy-Bold.b900325e44ec0c673e88.ttf",
     "static/media/Gilroy-Black.eot": "/Millor/static/media/Gilroy-Black.724ac9b214f34923b443.eot",
     "static/media/Gilroy-Black.ttf": "/Millor/static/media/Gilroy-Black.bf3a5f799e6799d48062.ttf",
-    "static/media/01.png": "/Millor/static/media/01.41ccb834e89e731480b2.png",
+    "static/media/01.png": "/Millor/static/media/01.d5841470a9ad5670f61b.png",
     "static/media/04.png": "/Millor/static/media/04.2cf30b1cb4f6b359a860.png",
     "static/media/02.png": "/Millor/static/media/02.ed2947090e163ad593f8.png",
     "static/media/03.png": "/Millor/static/media/03.ff340050b2f5d64ddbe8.png",
@@ -23,11 +23,11 @@
     "static/media/Gilroy-SemiBold.woff": "/Millor/static/media/Gilroy-SemiBold.e38937dbf8202c144802.woff",
     "static/media/bg.svg": "/Millor/static/media/bg.ccc234156fc53892a4e7.svg",
     "index.html": "/Millor/index.html",
-    "main.be2b5693.css.map": "/Millor/static/css/main.be2b5693.css.map",
-    "main.77274b5b.js.map": "/Millor/static/js/main.77274b5b.js.map"
+    "main.f8fdd07f.css.map": "/Millor/static/css/main.f8fdd07f.css.map",
+    "main.269bd633.js.map": "/Millor/static/js/main.269bd633.js.map"
   },
   "entrypoints": [
-    "static/css/main.be2b5693.css",
-    "static/js/main.77274b5b.js"
+    "static/css/main.f8fdd07f.css",
+    "static/js/main.269bd633.js"
   ]
 }
