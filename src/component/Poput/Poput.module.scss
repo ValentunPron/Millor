@@ -26,17 +26,61 @@
 .poputMenu {
 	position: absolute;
 	margin-top: 8px;
-	border: 1px solid red;
 
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	row-gap: 10px;
-	button {
-		padding-right: 30px;
-		width: 100%;
-	}
 	.active {
 		color: #F9B300;
+	}
+}
+
+@media (max-width: 1400px) {
+	.poputStart {
+		min-width: 95px;
+		margin: 0 auto;
+		text-align: left;
+	
+		font-size: 0.666rem;
+		padding:4px 18px 4px 18px;
+		svg {
+			width: 8px;
+		}
+	}
+	.poputMenu {
+		margin-top: 8px;
+	}
+}
+
+@media (max-width: 770px) {
+	.poputStart {
+		min-width: 110px;
+
+		font-size: 0.666rem;
+		padding: 6px 20px 6px 20px;
+		svg {
+			width: 9px;
+		}
+	}
+	.poputMenu {
+		margin-top: 8px;
+	}
+}
+
+@media (max-width: 380px) {
+	.poputStart {
+		min-width: 82px;
+
+		font-size: 0.78rem;
+		padding: 3px 15px 3px 15px;
+		svg {
+			width: 7px;
+		}
+	}
+	.poputMenu {
+		max-width: 82px;
+		padding: 3px 15px 3px 15px;
+		margin-top: 8px;
 	}
 }

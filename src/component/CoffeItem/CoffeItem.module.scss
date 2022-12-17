@@ -156,3 +156,426 @@
 		}
 	}
 }
+
+@media (max-width: 1600px) {
+	.sliderItem {
+		margin-top: 20px;
+		padding: 0px 30px 30px 30px;
+		background: #FFFFFF;
+		box-shadow: 0px 0px 20px rgba(146, 146, 146, 0.25);
+		border-radius: 20px;
+		min-width: 0;
+		max-width: calc(330px + (380 - 330)*((100vw - 1400px)/(1600 - 1400)));
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.sliderTop {
+		.discountTopinfo {
+			span {
+				padding-top: 45px;
+				&::after {
+					content: '%';
+					position: absolute;
+					width: 60px; height: 60px;
+					top: -30px;
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+	.description {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin-top: 12.5px;
+		gap: 0px;
+		img {
+			width: calc(146px + (170 - 146)*((100vw - 1400px)/(1600 - 1400)));
+			height: calc(220px + (400 - 220)*((100vw - 1400px)/(1600 - 1400)));
+		}
+		.descriptionInfo {	
+			margin-top: 20px;
+			text-align: left;
+		}
+		.rating {
+			div {
+				svg {
+					width: calc(18px + (25 - 18)*((100vw - 1400px)/(1600 - 1400)));
+				}
+			}
+			p {
+				margin-top: 5px;
+				font-size: 0.7rem;
+				span {
+					margin-left: 5px;
+					vertical-align: middle;
+					font-size: 0.5rem;
+				}
+			}
+		}
+		.roasting {
+			margin-top: 15px;
+	
+			display: flex;
+			justify-content: space-between;
+			svg {
+				width: 18px;
+			}
+		}
+		.gusto {
+			margin-top: 15px;
+			row-gap: 5px;
+			.gustoItem {
+				row-gap: 10px;
+				p {
+					font-size: 0.72rem;
+				}
+				div {
+					span {
+						width: 8.8px; height: 8.8px;
+					}
+				}
+			}
+		}
+	}
+	.sliderBottom {
+		margin-top: 20px;
+		color: #222222;
+		.coffeInfo {
+			margin-top: 8px;
+			font-size: 0.72rem;
+			line-height: 1.1;
+			max-width: 200px;
+		}
+		.coffeAction {
+			margin-top: 8px;
+			button {
+				min-height: 36px;
+				min-width: 140px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.sliderItem {
+		margin-top: 20px;
+		padding: 0px 20px 30px 20px;
+		box-shadow: 0px 0px 15px rgba(146, 146, 146, 0.25);
+		min-width: calc(200px + (280 - 200)*((100vw - 1400px)/(1600 - 1400)));
+	}
+	.sliderTop {
+		.discountTopinfo {
+			span {
+				padding-top: 40px;
+				&::after {
+					content: '%';
+					right: 0; left: 0;
+					margin: auto;
+					position: absolute;
+					width: 50px; height: 50px;
+					top: -20px;
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+	.description {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin-top: 12.5px;
+		gap: 0px;
+		img {
+			width: calc(106px + (130 - 106)*((100vw - 1000px)/(1600 - 1000)));
+			height: 218px;
+		}
+		.descriptionInfo {	
+			margin-top: 10px;
+		}
+		.rating {
+			div {
+				svg {
+					width: 18px;
+				}
+			}
+			p {
+				margin-top: 6px;
+				font-size: 0.8rem;
+				span {
+					margin-left: 4px;
+					vertical-align: middle;
+					font-size: 0.52rem;
+				}
+			}
+		}
+		.roasting {
+			margin-top: 18px;
+			svg {
+				width: 13px;
+			}
+		}
+		.gusto {
+			margin-top: 25px;
+			row-gap: 10px;
+			.gustoItem {
+				row-gap: 6px;
+				p {
+					font-size: 0.72rem;
+				}
+				div {
+					span {
+						width: 7px; height: 7px;
+					}
+				}
+			}
+		}
+	}
+	.sliderBottom {
+		margin-top: 20px;
+		.coffeInfo {
+			margin-top: 8px;
+			font-size: 0.66rem;
+			line-height: 1.1;
+			max-width: 180px;
+		}
+
+		.coffeAction {
+			margin-top: 8px;
+			.coffePrice {
+				.discountPrice {
+					font-size: 1rem;
+					line-height: 1.1;
+					text-decoration-line: line-through;
+					color: #C6C6C6;
+				}
+				.price {
+					font-weight: 900;
+					font-size: 1.3rem;
+					line-height: 1.1;
+				}
+				span {
+					display: block;
+				}
+			}
+			button {
+				padding: 5px;
+				min-height: 33px;
+				min-width: calc(105px + (125 - 105)*((100vw - 1000px)/(1400 - 1000)));
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.sliderItem {
+		min-width: 300px;
+	}
+}
+
+@media (max-width: 770px) {
+	.sliderItem {
+		margin-top: 60px;
+		padding: 0px 30px 40px 30px;
+		min-width: calc(280px + (340 - 280)*((100vw - 400px)/(770 - 400)));
+	}
+	.sliderTop {
+		.discountTopinfo {
+			span {
+				padding-top: 48px;
+				&::after {
+					width: 60px; height: 60px;
+					top: -25px;
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+	.description {
+		width: 100%;
+		margin-top: 15px;
+		align-items: center;
+		img {
+			width: calc(120px + (144 - 120)*((100vw - 400px)/(770 - 400)));
+			height: calc(240px + (260 - 240)*((100vw - 400px)/(770 - 400)));
+		}
+		.descriptionInfo {	
+			max-width: 90px;
+		}
+		.rating {
+			div {
+				justify-content: flex-start;
+				column-gap: 6px;
+				svg {
+					width: 20px;
+				}
+			}
+			p {
+				margin-top: 6px;
+				font-size: 0.65rem;
+				span {
+					margin-left: 4px;
+					vertical-align: middle;
+					font-size: 0.36rem;
+				}
+			}
+		}
+		.roasting {
+			margin-top: 15px;
+			justify-content: flex-start;
+			column-gap: 6px;
+			svg {
+				width: 16px;
+			}
+		}
+		.gusto {
+			margin-top: 20px;
+			row-gap: 6px;
+			.gustoItem {
+				row-gap: 6px;
+				p {
+					font-size: 0.5rem;
+				}
+				div {
+					span {
+						width: 7px; height: 7px;
+					}
+				}
+			}
+		}
+	}
+	.sliderBottom {
+		margin-top: 30px;
+		.coffeTitle {
+			font-size: 0.85rem;
+		}
+		.coffeInfo {
+			margin-top: 8px;
+			font-size: 0.59rem;
+			line-height: 1.1;
+			max-width: 250px;
+		}
+
+		.coffeAction {
+			margin-top: 8px;
+			.coffePrice {
+				.discountPrice {
+					font-size: 0.85rem;
+					line-height: 1.1;
+					text-decoration-line: line-through;
+					color: #C6C6C6;
+				}
+				.price {
+					font-weight: 900;
+					font-size: 1.05rem;
+					line-height: 1.1;
+				}
+				span {
+					display: block;
+				}
+			}
+			button {
+				padding: 10px;
+				min-height: 40px;
+				min-width: calc(125px + (149 - 125)*((100vw - 400px)/(770 - 400)));
+			}
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	.sliderItem {
+		margin-top: 60px;
+		padding: 0px 25px 30px 25px;
+		min-width: 250px;
+	}
+	.sliderTop {
+		.discountTopinfo {
+			span {
+				padding-top: 35px;
+				font-size: 0.4em;
+				&::after {
+					width: 44px; height: 44px;
+					top: -20px;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+	.description {
+		margin-top: 10px;
+		align-items: center;
+		img {
+			width: 110px;
+			height: 195px;
+		}
+		.descriptionInfo {	
+			max-width: 80px;
+		}
+		.rating {
+			div {
+				column-gap: 2px;
+				svg {
+					width: 50px;
+				}
+			}
+			p {
+				margin-top: 4px;
+				font-size: 0.7rem;
+				span {
+					margin-left: 3px;
+					vertical-align: middle;
+					font-size: 0.4rem;
+				}
+			}
+		}
+		.roasting {
+			margin-top: 10px;
+			justify-content: flex-start;
+			column-gap: 3px;
+			svg {
+				width: 16px;
+			}
+		}
+		.gusto {
+			margin-top: 10px;
+			row-gap: 4px;
+			.gustoItem {
+				row-gap: 4px;
+				p {
+					font-size: 0.6rem;
+				}
+				div {
+					span {
+						width: 6px; height: 6px;
+					}
+				}
+			}
+		}
+	}
+	.sliderBottom {
+		margin-top: 20px;
+		.coffeTitle {
+			font-size: 0.85rem;
+		}
+		.coffeInfo {
+			margin-top: 5px;
+			font-size: 0.59rem;
+			line-height: 1.1;
+			max-width: 250px;
+		}
+
+		.coffeAction {
+			margin-top: 6px;
+			button {
+				padding: 7px;
+				min-height: 30px;
+				min-width: 110px;
+			}
+		}
+	}
+}

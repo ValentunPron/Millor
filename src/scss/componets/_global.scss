@@ -188,9 +188,9 @@ body {
 		}
 		.catalogMain {
 			&::before {
-				height: 1760px;
+				height: 1400px;
 				margin-left: 20%;
-				top: 20px;
+				top: -90px;
 				left: -70%;
 		
 				background:  url('./../../assets/image/MainCatalog/bg.svg') no-repeat;
@@ -282,7 +282,7 @@ body {
 				width: 500px;
 				height: 500px;
 				bottom: -420px;
-				left: -220px;
+				left: -300px;
 				background-size: cover;
 				pointer-events:none;
 				z-index: 1;

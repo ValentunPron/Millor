@@ -204,3 +204,134 @@
 		transform: translateY(3px);
 	}
 }
+
+
+.viewAll {
+	margin-right: 140px;
+	margin-top: 22px;
+	font-weight: 500;
+	font-size: 0.8rem;
+	line-height: 1.2;
+	text-decoration-line: underline;
+}
+
+@media (max-width: 1600px) {
+	.sliderBody {
+		margin: 0;
+		max-width: 1180px;
+		padding: 20px 12px;
+	}
+	.navigationButton {
+		width: 60px;
+		height: 60px;
+
+		&.buttonNext {
+			margin-left: 25px;
+		}
+		&.buttonPrev {
+			margin-right: 25px;
+		}
+	}
+}
+
+@media (max-width: 1600px) {
+	.sliderBody {
+		margin: 0;
+		max-width: 1100px;
+		padding: 20px 12px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.sliderBody {
+		max-width: calc(820px + (1000 - 820)*((100vw - 1000px)/(1600 - 1000)));
+	}
+	.navigationButton {
+		width: 50px;
+		height: 50px;
+
+		&.buttonNext {
+			margin-left: 25px;
+		}
+		&.buttonPrev {
+			margin-right: 25px;
+		}
+	}
+	.viewAll {
+		margin-right: 110px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.discount {
+		.text {
+			margin-top: 50px;
+			display: inline-block;
+			font-size: 1rem;
+			text-align: right;
+			max-width: 500px;
+		}
+	}
+	.sliderBody {
+		margin-right: -200px;
+		max-width: 1000px;
+		
+	}
+	.navigationButton {
+		display: none;
+	}
+	.viewAll {
+		display: none;
+	}
+}
+
+@media (max-width: 770px) {
+	.discount {
+		position: relative;
+		z-index: 5;
+		h2 {
+			font-size: calc(1.5rem + (2.2 - 1.5)*((100vw - 400px)/(770 - 440)));
+		}
+		.text {
+			margin-top: 50px;
+			display: inline-block;
+			font-size: calc(0.5rem + (0.8 - 0.5)*((100vw - 400px)/(770 - 440)));
+			text-align: right;
+			max-width: calc(290px + (450 - 290)*((100vw - 400px)/(770 - 440)));
+			br {
+				display: none;
+			}
+		}
+	}
+	.sliderItem {
+		padding: 0px;
+	}
+	.sliderBody {
+		max-width: calc(600px + (710 - 600)*((100vw - 400px)/(770 - 440)));
+		margin-right: -260px;
+		padding: 9px;
+	}
+}
+
+@media (max-width: 380px) {
+	.discount {
+		margin-top: 50px;
+		h2 {
+			font-size: 1.1rem;
+		}
+		.text {
+			margin-top: 27px;
+			font-size: 0.8rem;
+			max-width: 270px;
+		}
+	}
+	.sliderItem {
+		padding: 0px;
+	}
+	.sliderBody {
+		margin-top: -20px;
+		max-width: 400px;
+		margin-right: -100px;
+		padding: 10px;
+	}
+}
