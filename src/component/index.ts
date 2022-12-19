@@ -3,5 +3,6 @@ import { MainSlider } from "./MainSlider/MainSlider";
 import { CatalogMain } from "./CatalogMain/CatalogMain";
 import { Discount } from "./Discount/Discount";
 import { Header } from "./Header/Header";
+import { NewsMain } from "./NewsMain/NewsMain";
 
-export { LoginWindow, MainSlider, Header, CatalogMain, Discount }
+export { LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsMain }

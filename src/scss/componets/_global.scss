@@ -53,10 +53,10 @@ body {
 			position: absolute;
 			content: '';
 			width: 100%;
-			height: calc(1900px + (5000 - 1900)*((100vw - 2200px)/(4000 - 2200)));
-			margin-left: 20%;
-			top: -80%;
-			left: -85%;
+			height: calc(1200px + (1900 - 1200)*((100vw - 2200px)/(4000 - 2200)));
+			margin-left: 0;
+			top: -50%;
+			left: -25%;
 			background-repeat: no-repeat;
 	
 			background:  url('./../../assets/image/MainCatalog/bg.svg') no-repeat;
@@ -65,11 +65,12 @@ body {
 			z-index: -1;
 		}
 		&::after {
+			display: none;
 			position: absolute;
 			content: '';
 			width: 600px;
 			height: 600px;
-			bottom: -450px;
+			bottom: -425px;
 			right: 75%;
 			background-image: url('./../../assets/image/MainCatalog/bg-coffe.png');
 			background-repeat: no-repeat;
@@ -96,6 +97,14 @@ body {
 	padding: 0 15px;
 }
 
+
+.linkNext {
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 130%;
+	text-decoration-line: underline;
+	color: #000000;
+}
 
 .link {
 	font-size: 1rem;
@@ -161,6 +170,7 @@ body {
 				z-index: -1;
 			}
 			&::after {
+				display: block;
 				position: absolute;
 				content: '';
 				width: 600px;

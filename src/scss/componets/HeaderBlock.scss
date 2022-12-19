@@ -1,0 +1,402 @@
+.aboutUs {
+	position: relative;
+	&__whyWe {
+		position: relative;
+		width: 100%;
+		min-height: 630px;
+
+		background-image: url('../../assets//image/whyWe/bgTop.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 5;
+	}
+	&__company {
+		position: relative;
+		content: '';
+		bottom: 0;
+		width: 100%;
+		min-height: 1625px;
+
+		background-image: url('../../assets/image/whyWe/bg.jpg');
+		background-color: #FFF7E1;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left bottom;
+		z-index: 3;
+		&::after {
+			position: absolute;
+			content: '';
+			top: -2px; left: 0;
+			width: 100%;
+			min-height: 350px;
+	
+			background-image: url('../../assets/image/whyWe/text.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: 3;
+		}
+		&::before {
+			position: absolute;
+			content: '';
+			bottom: 0; left: 0;
+			width: 100%;
+			height: 270px;
+	
+			background-image: url('../../assets/image/whyWe/bgBottom.svg');
+			background-size: cover;
+			z-index: 3;
+		}
+	}
+}
+
+.whyWe {
+	&__body {
+		padding-top: 110px;
+		display: flex;
+		align-items: flex-end;
+		gap: 85px;
+	}
+	&__info {
+		max-width: 590px;
+	}
+	&__title {
+		margin-top: 40px;
+	}
+	&__list {
+		margin-top: 80px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 60px;
+	}
+	&__item {
+		position: relative;
+		padding-left: 134px;
+		h4 {
+			font-weight: 700;
+			font-size: 1.2rem;
+			line-height: 1.2;
+		}
+		p {
+			margin-top: 20px;
+		}
+		.whyWe__dots {
+			position: absolute;
+			content: '';
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 84px; height: 84px;
+			left: 0; top: 0;
+
+			background-color: #F9B300;
+			border-radius: 100%;
+			img {
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+}
+
+.company {
+	&__body {
+		position: absolute;
+		bottom: 0;
+		padding-bottom: 200px;
+		z-index: 4;
+	}
+	*{
+		color: #fff;
+	}
+	&__title {
+		margin-bottom: 100px;
+	}
+	&__info {
+		span {
+			display: block;
+			padding: 20px 0;
+		}
+		margin-bottom: 100px;
+		max-width: 1240px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.aboutUs {
+		&__whyWe {
+			min-height: 330px;
+
+			background-size: cover;
+		}
+		&__company {
+			min-height: 1125px;
+			&::after {
+				top: -1px; left: 0;
+				width: 100%;
+				min-height: 200px;
+		
+				background-size: cover;
+				z-index: 3;
+			}
+			&::before {
+				content: '';
+				bottom: 0; left: 0;
+				width: 100%;
+
+				background-repeat: no-repeat;
+				background-position: center bottom;
+				background-size: contain;
+				z-index: 3;
+			}
+		}
+	}
+	.whyWe {
+		&__body {
+			padding-top: 0px;
+			display: flex;
+			align-items: flex-end;
+			gap: 60px;
+		}
+		&__image {
+			width: 50%;
+			height: 50%;
+		}
+		&__info {
+			max-width: 420px;
+		}
+		&__title {
+			margin-top: 100px;
+		}
+		&__list {
+			margin-top: 60px;
+			row-gap: 30px;
+		}
+		&__item {
+			padding-left: 90px;
+			h4 {
+				font-weight: 700;
+				font-size: 1.16rem;
+				line-height: 1.2;
+			}
+			p {
+				font-size: 1rem;
+				margin-top: 15px;
+			}
+			.whyWe__dots {
+				width: 60px; height: 60px;
+				img {
+					width: 22px;
+					height: 22px;
+				}
+			}
+		}
+	}
+	.company {
+		&__body {
+			padding-bottom: 50px;
+			z-index: 4;
+		}
+		&__title {
+			margin-bottom: 50px;
+		}
+		&__info {
+			span {
+				display: block;
+				padding: 10px 0;
+			}
+			margin-bottom: 50px;
+			max-width: 880px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.aboutUs {
+		&__whyWe {
+			min-height: 0px;
+
+			background-position: left;
+			background-size: cover;
+		}
+	}
+	.whyWe {
+		&__body {
+			padding-top: 0px;
+			display: flex;
+			align-items: flex-end;
+			gap: 60px;
+		}
+		&__image {
+			display: none;
+		}
+		&__info {
+			max-width: 420px;
+		}
+		&__title {
+			margin-top: 150px;
+		}
+		&__list {
+			margin-top: 60px;
+			row-gap: 30px;
+		}
+		&__item {
+			padding-left: 90px;
+			h4 {
+				font-weight: 700;
+				font-size: 1.16rem;
+				line-height: 1.2;
+			}
+			p {
+				font-size: 1rem;
+				margin-top: 15px;
+			}
+			.whyWe__dots {
+				width: 60px; height: 60px;
+				img {
+					width: 22px;
+					height: 22px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	.aboutUs {
+		&__company {
+			min-height: 885px;
+			&::after {
+				background-size: contain;
+			}
+		}
+	}
+	.whyWe {
+		&__body {
+			gap: 60px;
+		}
+		&__info {
+			max-width: 570px;
+		}
+		&__title {
+			font-size: 1.6rem;
+			margin-top: 160px;
+		}
+		&__list {
+			margin-top: 60px;
+			row-gap: 30px;
+		}
+		&__item {
+			padding-left: 90px;
+			h4 {
+				font-weight: 700;
+				font-size: 1.1rem;
+				line-height: 1.2;
+			}
+			p {
+				font-size: 1rem;
+				margin-top: 15px;
+			}
+			.whyWe__dots {
+				width: 60px; height: 60px;
+				img {
+					width: 22px;
+					height: 22px;
+				}
+			}
+		}
+	}
+	.company {
+		display: flex;
+		align-items: flex-end;
+		&__body {
+			position: relative;
+			padding-bottom: 0px;
+			z-index: 4;
+		}
+		&__title {
+			font-size:calc(1.4rem + (1.6 - 1.4)*((100vw - 780px)/(780 - 400)));
+			margin-bottom: 50px;
+		}
+		&__info {
+			font-size:calc(0.74rem + (1 - 0.74)*((100vw - 780px)/(780 - 400)));
+			span {
+				display: block;
+				padding: 10px 0;
+			}
+			margin-bottom: 30px;
+		}
+		&__button {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.aboutUs {
+		&__company {
+			min-height: 655px;
+		}
+	}
+	.whyWe {
+		&__body {
+			gap: 60px;
+		}
+		&__info {
+			max-width: 570px;
+		}
+		&__title {
+			font-size: 1.3rem;
+			margin-top: 200px;
+		}
+		&__list {
+			margin-top: 30px;
+			row-gap: 30px;
+		}
+		&__item {
+			padding-left: 60px;
+			h4 {
+				font-weight: 700;
+				font-size: 0.9rem;
+				line-height: 1.2;
+			}
+			p {
+				font-size: 0.85rem;
+				margin-top: 15px;
+			}
+			.whyWe__dots {
+				width: 40px; height: 40px;
+				img {
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+	}
+	.company {
+		display: flex;
+		align-items: flex-end;
+		&__body {
+			position: relative;
+			padding-bottom: 0px;
+			z-index: 4;
+		}
+		&__title {
+			font-size:calc(1.4rem + (1.6 - 1.4)*((100vw - 780px)/(780 - 400)));
+			margin-bottom: 50px;
+		}
+		&__info {
+			font-size:calc(0.74rem + (1 - 0.74)*((100vw - 780px)/(780 - 400)));
+			span {
+				display: block;
+				padding: 10px 0;
+			}
+			margin-bottom: 30px;
+		}
+		&__button {
+			min-height: 50px;
+			padding: 5px;
+			width: 100%;
+		}
+	}
+}
+
