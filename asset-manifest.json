@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/Millor/static/css/main.3de1dfa8.css",
-    "main.js": "/Millor/static/js/main.488cb319.js",
+    "main.css": "/Millor/static/css/main.427451a4.css",
+    "main.js": "/Millor/static/js/main.0f78a851.js",
     "static/media/bg.jpg": "/Millor/static/media/bg.205fd1a355ffda1603b3.jpg",
     "static/media/coffe.png": "/Millor/static/media/coffe.e2a349de75b48ce2e955.png",
     "static/media/bgCoffe.png": "/Millor/static/media/bgCoffe.303ca97814222784710a.png",
+    "static/media/adaptive_01.jpg": "/Millor/static/media/adaptive_01.6c3d1f9ad2aafb1e765e.jpg",
     "static/media/bg-coffe.png": "/Millor/static/media/bg-coffe.f4f293ef75f5a06ee228.png",
+    "static/media/01.jpg": "/Millor/static/media/01.fd0f1aaa846f45609be2.jpg",
     "static/media/logoSvg.svg": "/Millor/static/media/logoSvg.ca553547674bcda8da38eae66d01ec10.svg",
     "static/media/Gilroy-Medium.eot": "/Millor/static/media/Gilroy-Medium.b84941b7bdcce7cbba6d.eot",
     "static/media/Gilroy-Medium.ttf": "/Millor/static/media/Gilroy-Medium.f9f832b0ed3f1ab138c9.ttf",
@@ -23,18 +25,18 @@
     "static/media/Gilroy-Bold.woff": "/Millor/static/media/Gilroy-Bold.5fb38b9fa452b5814397.woff",
     "static/media/Gilroy-Black.woff": "/Millor/static/media/Gilroy-Black.1f5dc7482c1aec4cc827.woff",
     "static/media/Gilroy-SemiBold.woff": "/Millor/static/media/Gilroy-SemiBold.e38937dbf8202c144802.woff",
-    "static/media/bg.svg": "/Millor/static/media/bg.ccc234156fc53892a4e7.svg",
+    "static/media/bg.svg": "/Millor/static/media/bg.983ee2e241caeda06cc5.svg",
     "index.html": "/Millor/index.html",
     "static/media/01.svg": "/Millor/static/media/01.1a9575b43362273c272a75400cd09aa9.svg",
     "static/media/bgTop.svg": "/Millor/static/media/bgTop.3a6c1481f4e9a9523942.svg",
     "static/media/bgBottom.svg": "/Millor/static/media/bgBottom.4b72c9ffa51116e5f6f8.svg",
     "static/media/02.svg": "/Millor/static/media/02.ed6531c28048efdcaacde23b16e80650.svg",
     "static/media/text.svg": "/Millor/static/media/text.3598cd9b1ca8f7b4b501.svg",
-    "main.3de1dfa8.css.map": "/Millor/static/css/main.3de1dfa8.css.map",
-    "main.488cb319.js.map": "/Millor/static/js/main.488cb319.js.map"
+    "main.427451a4.css.map": "/Millor/static/css/main.427451a4.css.map",
+    "main.0f78a851.js.map": "/Millor/static/js/main.0f78a851.js.map"
   },
   "entrypoints": [
-    "static/css/main.3de1dfa8.css",
-    "static/js/main.488cb319.js"
+    "static/css/main.427451a4.css",
+    "static/js/main.0f78a851.js"
   ]
 }
