@@ -38,7 +38,7 @@
 		&::before {
 			position: absolute;
 			content: '';
-			bottom: 0; left: 0;
+			bottom: -2px; left: 0;
 			width: 100%;
 			height: 270px;
 	
@@ -333,8 +333,12 @@
 
 @media (max-width: 400px) {
 	.aboutUs {
+		min-height: 100px;
 		&__company {
-			min-height: 655px;
+			min-height: 622px;
+		}
+		&__whyWe {
+			min-height: 0;
 		}
 	}
 	.whyWe {
@@ -346,7 +350,7 @@
 		}
 		&__title {
 			font-size: 1.3rem;
-			margin-top: 200px;
+			margin-top: 60px;
 		}
 		&__list {
 			margin-top: 30px;

@@ -104,6 +104,11 @@ body {
 	line-height: 130%;
 	text-decoration-line: underline;
 	color: #000000;
+	transition: 0.3s ease-in;
+	&:hover {
+		text-decoration-line: underline;
+		color: #474141;
+	}
 }
 
 .link {
