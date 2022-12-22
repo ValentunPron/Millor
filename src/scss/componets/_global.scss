@@ -111,9 +111,18 @@ body {
 	}
 }
 
+.logo {
+	width: 260px;
+	height: 116px;
+}
+
 .link {
 	font-size: 1rem;
 	line-height: 1.2;
+	transition: color 0.25s ease-in;
+	&:hover {
+		color: #E2A300;
+	}
 }
 
 .text {
@@ -270,12 +279,17 @@ body {
 			padding: 10px;
 		}
 	}
+	.logo {
+		width: calc(159px + (179 - 159)*((100vw - 768px)/(1200 - 768)));
+		height: calc(60px + (80 - 60)*((100vw - 768px)/(1400 - 768)));
+	}
 }
 @media (max-width: 770px) {
 	html {
 		font-size: 25px;
 	}
 	.wrapper {
+		margin-top: -60px;
 		&::after {
 			top:  200px;
 			right: -40%;
@@ -303,6 +317,9 @@ body {
 				z-index: 1;
 			}
 		}
+		.logo {
+			width: calc(190px + (225 - 190)*((100vw - 375px)/(1200 - 375)));
+		}
 	}
 	
 	.container {
@@ -328,7 +345,11 @@ body {
 	.header {
 		min-height: 70px;
 	}
+	.logo {
+		width: calc(90px + (110 - 90)*((100vw - 320px)/(380 - 320)));
+	}
 	.wrapper {
+		margin-top: -0px;
 		&::after {
 			top:  70px;
 			right: -40%;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CatalogMain, Discount, Header, MainSlider, NewsMain } from './component'
+import { CatalogMain, Discount, Header, Footer, MainSlider, NewsMain } from './component'
 import image01 from './assets/image/whyWe/bgCoffe.png';
 import listImage01 from './assets/image/whyWe/01.svg';
 import listImage02 from './assets/image/whyWe/02.svg';
@@ -68,6 +68,7 @@ function App() {
 					</div>
 				</div>
 				<NewsMain />
+				<Footer />
 			</main>
 		</div>
 	);

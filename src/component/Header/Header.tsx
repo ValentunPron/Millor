@@ -32,7 +32,7 @@ export const Header = (): JSX.Element => {
 				<div className="container">
 					<div className={styles.headerBody}>
 						<a className={styles.imageLogo} href="#s">
-							<img className={styles.logo} src={logoSvg} alt="logo" />
+							<img className={`${styles.logo} logo`} src={logoSvg} alt="logo" />
 						</a>
 						<nav className={visibleLinks ? styles.navLinksActive : styles.navLinks}>
 							<div className={styles.burgerInfo}>
