@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './Header.module.scss';
-import { LoginWindow } from '../index'
+import { LoginWindow, WorkingWindow } from '../index'
 import { Seacrh } from './Search/Search';
 import logoSvg from '../../assets/image/logoSvg.svg'
 
@@ -24,7 +24,6 @@ export const Header = (): JSX.Element => {
 	window.onscroll = () => {
 		return window.scrollY === 0 ? setScroll(false) : setScroll(true)
 	}
-
 
 	return (
 		<>
