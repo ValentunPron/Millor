@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Millor/static/css/main.aa551038.css",
-    "main.js": "/Millor/static/js/main.e1386e14.js",
+    "main.css": "/Millor/static/css/main.5fb3157b.css",
+    "main.js": "/Millor/static/js/main.81ab38bd.js",
     "static/media/bg.jpg": "/Millor/static/media/bg.205fd1a355ffda1603b3.jpg",
     "static/media/coffe.png": "/Millor/static/media/coffe.e2a349de75b48ce2e955.png",
     "static/media/bgCoffe.png": "/Millor/static/media/bgCoffe.303ca97814222784710a.png",
@@ -32,11 +32,11 @@
     "static/media/bgBottom.svg": "/Millor/static/media/bgBottom.4b72c9ffa51116e5f6f8.svg",
     "static/media/02.svg": "/Millor/static/media/02.ed6531c28048efdcaacde23b16e80650.svg",
     "static/media/text.svg": "/Millor/static/media/text.3598cd9b1ca8f7b4b501.svg",
-    "main.aa551038.css.map": "/Millor/static/css/main.aa551038.css.map",
-    "main.e1386e14.js.map": "/Millor/static/js/main.e1386e14.js.map"
+    "main.5fb3157b.css.map": "/Millor/static/css/main.5fb3157b.css.map",
+    "main.81ab38bd.js.map": "/Millor/static/js/main.81ab38bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa551038.css",
-    "static/js/main.e1386e14.js"
+    "static/css/main.5fb3157b.css",
+    "static/js/main.81ab38bd.js"
   ]
 }
