@@ -19,13 +19,14 @@ const useWidthSize = () => {
 	return width;
 }
 
-export const NewsMain = (): JSX.Element => {
+export const NewsMain = ({ ...props }): JSX.Element => {
 
 	const width = useWidthSize();
 	const swiperRef = React.useRef<any>(null);
 
+
 	return (
-		<div className={styles.news}>
+		<div className={styles.news} ref={props.ref}>
 			<div className="container">
 				<div className={styles.newsBody}>
 					<div className={styles.newsTop}>

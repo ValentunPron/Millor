@@ -1,3 +1,6 @@
 import { Main } from './Main';
+import { Coffe } from './Coffe/Coffe';
 
-export { Main };
+import { NotFound } from './NotFound';
+
+export { Main, Coffe, NotFound };

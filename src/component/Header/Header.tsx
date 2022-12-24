@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
-import { LoginWindow, WorkingWindow } from '../index'
+import { LoginWindow } from '../index'
 import { Seacrh } from './Search/Search';
 import logoSvg from '../../assets/image/logoSvg.svg'
 
-export const Header = (): JSX.Element => {
+export const Header = ({ headerActive = false, scrollTo }: any): JSX.Element => {
 
 	const [scroll, setScroll] = React.useState(false);
 	const [visibleLinks, setVisibleLinks] = React.useState(false);
@@ -27,20 +28,20 @@ export const Header = (): JSX.Element => {
 
 	return (
 		<>
-			<header className={scroll ? 'header scroll' : 'header'}>
+			<header className={`${scroll ? 'header scroll' : 'header'} || ${headerActive ? 'header scroll' : ''}`}>
 				<div className="container">
 					<div className={styles.headerBody}>
-						<a className={styles.imageLogo} href="#s">
+						<Link className={styles.imageLogo} to="/" onClick={() => window.scroll(0, 0)}>
 							<img className={`${styles.logo} logo`} src={logoSvg} alt="logo" />
-						</a>
+						</Link>
 						<nav className={visibleLinks ? styles.navLinksActive : styles.navLinks}>
 							<div className={styles.burgerInfo}>
-								<a className={styles.imageLogo} href="#s">
+								<Link className={styles.imageLogo} to="/" onClick={() => window.scroll(0, 0)}>
 									<img className={styles.logo} src={logoSvg} alt="logo" />
-								</a>
+								</Link>
 							</div>
 							<ul className={styles.linksList}>
-								<li className={styles.linksItem}><a href="#s">Каталог товаров</a></li>
+								<li className={styles.linksItem}><Link to='/' onClick={() => { scrollTo(); onClickBurger(); }}>Каталог товаров</Link></li>
 								<li className={styles.linksItem}><a href="#s">Блог</a></li>
 								<li className={styles.linksItem}><a href="#s">Контакты</a></li>
 							</ul>

@@ -1,0 +1,11 @@
+.notFound {
+	padding: 75px 0;
+	&__body {
+		text-align: center;
+	}
+}
+
+.titleError {
+	font-size: calc(7rem + (10 - 7)*((100vw - 320px)/(1600 - 320)));
+	font-weight: 700;
+}

@@ -1,13 +1,24 @@
-import { CatalogMain, Discount, MainSlider, NewsMain } from '../component'
+import React from 'react';
+
+import { CatalogMain, Discount, MainSlider, NewsMain, Footer, Header } from '../component'
 import image01 from '../assets/image/whyWe/bgCoffe.png';
 import listImage01 from '../assets/image/whyWe/01.svg';
 import listImage02 from '../assets/image/whyWe/02.svg';
 
 export const Main = (): JSX.Element => {
+
+	const refCatalog = React.createRef<any>();
+
+	const scrollCatalog = () => {
+		refCatalog.current.scrollIntoView();
+	};
 	return (
-		<div>
+		<>
+			<Header scrollTo={scrollCatalog} />
 			<MainSlider />
-			<CatalogMain />
+			<div ref={refCatalog}>
+				<CatalogMain />
+			</div>
 			<Discount />
 			<div className='aboutUs'>
 				<div className="aboutUs__whyWe whyWe">
@@ -63,6 +74,7 @@ export const Main = (): JSX.Element => {
 				</div>
 			</div>
 			<NewsMain />
-		</div>
+			<Footer bgInfo='mainPages' scrollTo={scrollCatalog} />
+		</>
 	);
 }

@@ -8,7 +8,7 @@ import 'swiper/css/autoplay';
 
 export const MainSlider = (): JSX.Element => {
 	return (
-		<div className={styles.mainSlider}>
+		<div className={`${styles.mainSlider} mainSlider`}>
 			<div className="container">
 				<div>
 					<div className={styles.bulletsBody}>

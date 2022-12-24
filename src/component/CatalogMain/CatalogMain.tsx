@@ -19,25 +19,30 @@ const CatalogData: SliderItemProps[] = [
 		id: 0,
 		imageUrl: image01,
 		title: 'Свежеобжаренный кофe',
+		path: 'coffe',
 	},
 	{
 		id: 1,
 		imageUrl: image02,
 		title: 'Чай и кофейные напитки',
+		path: 'tea',
 	},
 	{
 		id: 2,
 		imageUrl: image03,
 		title: 'Продукция для вендинга',
+		path: 'product',
 	},
 	{
 		id: 3,
 		imageUrl: image04,
 		title: 'Здоровое питание',
+		path: 'eating',
 	},
 ]
 
 export const CatalogMain = (): JSX.Element => {
+
 	return (
 		<div className={`${styles.catalog} catalogMain`}>
 			<div className={`${styles.container} container`}>

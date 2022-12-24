@@ -4,8 +4,9 @@ import styles from "./Footer.module.scss";
 import imageCoffe from '../../assets/image/coffe.png';
 import logoSvg from '../../assets/image/logoSvg.svg';
 import emailJs from 'emailjs-com';
+import { Link } from "react-router-dom";
 
-export const Footer = (): JSX.Element => {
+export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 
 	const [toSend, setToSend] = React.useState({ from_email: '', });
 
@@ -20,14 +21,12 @@ export const Footer = (): JSX.Element => {
 		e.target.reset();
 	};
 
-
-
 	const handleChange = (e: any) => {
 		setToSend({ ...toSend, [e.target.name]: e.target.value });
 	};
 
 	return (
-		<div className={`${styles.footer}`}>
+		<div className={`${styles.footer} ${bgInfo === 'error' ? styles.error : ''} ${bgInfo === 'mainPages' ? styles.mainPages : ''}`}>
 			<div className={`${styles.footerMailing} ${styles.mailing}`}>
 				<div className="container">
 					<div className={styles.mailingBody}>
@@ -53,18 +52,18 @@ export const Footer = (): JSX.Element => {
 			<div className="footerBottom footer">
 				<div className="container">
 					<div className={styles.footerBody}>
-						<a href="#s">
+						<Link onClick={() => window.scroll(0, 0)} to=''>
 							<img src={logoSvg} alt="" className={`${styles.footerLogo} logo`} />
-						</a>
+						</Link>
 						<ul className={styles.footerList}>
 							<li className="footerItem">
-								<a href="#s" className={`${styles.footerLink} link`}>Каталог товаров</a>
+								<Link to='/' onClick={scrollTo} className={`${styles.footerLink} link`}>Каталог товаров</Link>
 							</li>
 							<li className="footerItem">
-								<a href="#s" className={`${styles.footerLink} link`}>Блог</a>
+								<Link to='' className={`${styles.footerLink} link`}>Блог</Link>
 							</li>
 							<li className="footerItem">
-								<a href="#s" className={`${styles.footerLink} link`}>Контакты</a>
+								<Link to='' className={`${styles.footerLink} link`}>Контакты</Link>
 							</li>
 						</ul>
 					</div>

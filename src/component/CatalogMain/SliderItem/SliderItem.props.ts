@@ -4,4 +4,5 @@ export interface SliderItemProps extends DetailedHTMLProps<HtmlHTMLAttributes<HT
 	id: any,
 	imageUrl: string,
 	title: string,
+	path: string,
 }
