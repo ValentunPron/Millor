@@ -7,7 +7,7 @@ export const NotFound = (): JSX.Element => {
 			<div className="notFound">
 				<div className="container">
 					<div className="notFound__body">
-						<h1 className="title">Сторінку не найдена</h1>
+						<h1 className="title">Сторінку не найдено</h1>
 						<h2 className="titleError">404</h2>
 					</div>
 				</div>

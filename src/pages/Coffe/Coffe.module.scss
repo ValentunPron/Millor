@@ -20,3 +20,14 @@
 .coffeFilter {
 	margin-top: 150px;
 }
+
+@media (max-width: 1400px) {
+	.coffeBody {
+		img {
+			right: -20px;
+			top: 20px;
+			width: 470px;
+			height: 400px;
+		}
+	}
+}

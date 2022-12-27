@@ -40,16 +40,16 @@ export const Seacrh = (): JSX.Element => {
 								<path d="M34 33L26.2667 25.5083M30.4444 15.7778C30.4444 23.387 24.0769 29.5556 16.2222 29.5556C8.36751 29.5556 2 23.387 2 15.7778C2 8.16852 8.36751 2 16.2222 2C24.0769 2 30.4444 8.16852 30.4444 15.7778Z" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
 							</svg>
 						</button>
-						<input type="text" placeholder='Поиск по товарам' onChange={(e) => onChangeSearch(e.target.value)} />
+						<input type="text" placeholder='Пошук по товарах' onChange={(e) => onChangeSearch(e.target.value)} />
 						{
 							visiblySearchInput
 								? <div className={visiblySearch ? styles.searching : styles.hide}>
-									<span className={styles.nothing}>Ничего не найдено</span>
+									<span className={styles.nothing}>Нічого не найдено</span>
 								</div>
 								: ''
 						}
 					</div>
-					<button className={styles.buttonClose} onClick={onClickClose} >Отменить</button>
+					<button className={styles.buttonClose} onClick={onClickClose}>Скасувати</button>
 				</div>
 			</div>
 		</div >

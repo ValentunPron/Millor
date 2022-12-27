@@ -1,4 +1,5 @@
 import React from "react";
+import { RadioButton } from "../RadioButton/RadioButton";
 
 import styles from './Filter.module.scss';
 
@@ -23,27 +24,22 @@ export const Filter = (): JSX.Element => {
 				<div className={`${styles.filterRoasting} ${styles.filterMenu}`}>
 					<div className={styles.RoastingContainer}>
 						<div className={styles.RoastingBody}>
-							<h3 className={styles.RoastingTitle}>Степень обжарки</h3>
+							<h3 className={styles.RoastingTitle}>Ступінь обжарки</h3>
 							<ul className={styles.RoastingList}>
 								<li className={styles.RoastingItem}>
-									<input type='radio' name="roasting" />
-									{Roasting(5)}
+									<RadioButton type={'roasting'} name={Roasting(5)} />
 								</li>
 								<li className={styles.RoastingItem}>
-									<input type='radio' name="roasting" />
-									{Roasting(4)}
+									<RadioButton type={'roasting'} name={Roasting(4)} />
 								</li>
 								<li className={styles.RoastingItem}>
-									<input type='radio' name="roasting" />
-									{Roasting(3)}
+									<RadioButton type={'roasting'} name={Roasting(3)} />
 								</li>
 								<li className={styles.RoastingItem}>
-									<input type='radio' name="roasting" />
-									{Roasting(2)}
+									<RadioButton type={'roasting'} name={Roasting(2)} />
 								</li>
 								<li className={styles.RoastingItem}>
-									<input type='radio' name="roasting" />
-									{Roasting(1)}
+									<RadioButton type={'roasting'} name={Roasting(1)} />
 								</li>
 							</ul>
 						</div>
@@ -53,35 +49,28 @@ export const Filter = (): JSX.Element => {
 					<div className={styles.detaliesContainer}>
 						<ul className={styles.detaliesList}>
 							<li className={styles.detaliesItem}>
-								<h2 className={styles.detaliesTitle}>География</h2>
+								<h2 className={styles.detaliesTitle}>Географія</h2>
 								<ul className={styles.detaliesMenu}>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="country" />
-										<span>Африка</span>
+										<RadioButton type={'country'} name={'Африка'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="country" />
-										<span>Йемен</span>
+										<RadioButton type={'country'} name={'Ємен'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="country" />
-										<span>Уганда</span>
+										<RadioButton type={'country'} name={'Уганда'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="country" />
-										<span>Эфиопия</span>
+										<RadioButton type={'country'} name={'Ефіопия'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="country" />
-										<span>Азия</span>
+										<RadioButton type={'country'} name={'Азія'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="country" />
-										<span>Центр. Америка</span>
+										<RadioButton type={'country'} name={'Центр. Америка'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="country" />
-										<span>Лат. Америка</span>
+										<RadioButton type={'country'} name={'Лат. Америка'} />
 									</li>
 								</ul>
 							</li>
@@ -89,83 +78,68 @@ export const Filter = (): JSX.Element => {
 								<h2 className={styles.detaliesTitle}>Кислинка</h2>
 								<ul className={styles.detaliesMenu}>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="acid" />
-										<span>Низкая</span>
+										<RadioButton type={'acid'} name={'Низька'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="acid" />
-										<span>Средняя</span>
+										<RadioButton type={'acid'} name={'Середня'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="acid" />
-										<span>Высокая</span>
+										<RadioButton type={'acid'} name={'Висока'} />
 									</li>
 								</ul>
 							</li>
 							<li className={styles.detaliesItem}>
-								<h2 className={styles.detaliesTitle}>Способ обработки</h2>
+								<h2 className={styles.detaliesTitle}>Спосіб обробки</h2>
 								<ul className={styles.detaliesMenu}>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="obrabodka" />
-										<span>Сухая</span>
+										<RadioButton type={'processing'} name={'Суха'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="obrabodka" />
-										<span>Мытая</span>
+										<RadioButton type={'processing'} name={'Мита'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="obrabodka" />
-										<span>Прочие</span>
+										<RadioButton type={'processing'} name={'Інша'} />
 									</li>
 								</ul>
 							</li>
 							<li className={styles.detaliesItem}>
-								<h2 className={styles.detaliesTitle}>Особые</h2>
+								<h2 className={styles.detaliesTitle}>Особливі</h2>
 								<ul className={styles.detaliesMenu}>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="osobie" />
-										<span>Популярное</span>
+										<RadioButton type={'special'} name={'Популярне'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="osobie" />
-										<span>Новый урожай</span>
+										<RadioButton type={'special'} name={'Новий урожай'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="osobie" />
-										<span>Ваш выбор</span>
+										<RadioButton type={'special'} name={'Ваш вибір'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="osobie" />
-										<span>Сорт недели</span>
+										<RadioButton type={'special'} name={'Сорт тижня'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="osobie" />
-										<span>Скидки</span>
+										<RadioButton type={'special'} name={'Знижки'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="osobie" />
-										<span>Новинка</span>
+										<RadioButton type={'special'} name={'Новинки'} />
 									</li>
 								</ul>
 							</li>
 							<li className={styles.detaliesItem}>
-								<h2 className={styles.detaliesTitle}>Вид кофе</h2>
+								<h2 className={styles.detaliesTitle}>Вид кави</h2>
 								<ul className={styles.detaliesMenu}>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="type" />
-										<span>Арабика</span>
+										<RadioButton type={'type'} name={'Арабіка'} />
+
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="type" />
-										<span>Робуста</span>
+										<RadioButton type={'type'} name={'Робуста'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="type" />
-										<span>Смесь арабик</span>
+										<RadioButton type={'type'} name={'Суміш арабік'} />
 									</li>
 									<li className={styles.detaliesMenuItem}>
-										<input type='radio' name="type" />
-										<span>Смесь арабика/робуста</span>
+										<RadioButton type={'type'} name={'Купаж'} />
 									</li>
 								</ul>
 							</li>

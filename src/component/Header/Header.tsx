@@ -12,7 +12,7 @@ export const Header = ({ headerActive = false, scrollTo }: any): JSX.Element => 
 	const [visibleLinks, setVisibleLinks] = React.useState(false);
 	const [loginActive, setLoginActive] = React.useState(false);
 
-	visibleLinks ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto';
+	loginActive ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto';
 
 	const onClickBurger = () => {
 		setVisibleLinks(!visibleLinks);
@@ -41,9 +41,9 @@ export const Header = ({ headerActive = false, scrollTo }: any): JSX.Element => 
 								</Link>
 							</div>
 							<ul className={styles.linksList}>
-								<li className={styles.linksItem}><Link to='/' onClick={() => { scrollTo(); onClickBurger(); }}>Каталог товаров</Link></li>
+								<li className={styles.linksItem}><Link to='/' onClick={() => { scrollTo(); setVisibleLinks(false) }}>Каталог товарів</Link></li>
 								<li className={styles.linksItem}><a href="#s">Блог</a></li>
-								<li className={styles.linksItem}><a href="#s">Контакты</a></li>
+								<li className={styles.linksItem}><a href="#s">Контакти</a></li>
 							</ul>
 							<div className={styles.burgerInfo}>
 								<ul className={styles.actionList}>

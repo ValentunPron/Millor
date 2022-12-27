@@ -6,13 +6,12 @@
 	background: #FFFFFF;
 	box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
 	border-radius: 20px;
-	height: 100%;
+	max-height: 529px;
 }
 
 .filterTop {
 	display: flex;
 	gap: 20px;
-	height: 520px;
 	width: 100%;	
 }
 
@@ -45,11 +44,11 @@
 	.RoastingList {
 		display: flex;
 		flex-direction: column;
-		gap: 50px;
+		gap: 45px;
 		margin-top: 45px;
 	}
 
-	.RoastingItem {
+	label {
 		display: flex;
 		align-items: center;
 		gap: 10px;
@@ -100,10 +99,8 @@
 		input {
 			margin-right: 20px;
 		}
-		span {
-			font-size: 0.8rem;
-			line-height: 1.2;
-		}
+		font-size: 0.8rem;
+		line-height: 1.2;
 	}
 	.detaliesTitle {
 		font-weight: 700;
@@ -112,4 +109,61 @@
 		max-width: 150px;
 	}
 	
+}
+
+@media (max-width: 1400px) {
+	.filterMenu {
+		max-height: 383px; 
+	}
+	.filterRoasting {
+		.RoastingContainer {
+			padding: 30px;
+		}
+		.RoastingBody {
+			padding: 0px 20px 0px 40px;
+			&::after {
+				width: 10px; height: 100%;
+			}
+		}
+		.RoastingList {
+			gap: 30px;
+			margin-top: 30px;
+		}
+		label {
+			gap: 8px;
+		}
+	}
+	.filterDetalies {
+		.detaliesContainer {
+			padding: 25px calc(40px + (50 - 40)*((100vw - 1400px)/(1400 - 1000)));
+		}
+		.detaliesList {
+			border: 1px solid;
+			width: 100%;
+			column-gap: 5px;
+			padding-top: 32.5px;
+			&::after {
+				width: 100%; height: 10px;
+			}
+		}
+		.detaliesMenu {
+			margin-top: 20px;
+			row-gap: 15px;
+			column-gap: 20px;
+		}
+		.detaliesTitle {
+			font-weight: 700;
+			font-size: 1rem;
+			line-height: 1.2;
+			max-width: 100px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.filterMenu {
+		box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+		border-radius: 20px;
+		max-height: none;
+	}
 }

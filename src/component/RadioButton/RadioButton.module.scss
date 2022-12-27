@@ -1,0 +1,42 @@
+.input {
+	cursor: pointer;
+}
+.input {
+	position: absolute;
+	opacity: 0;
+	left: -999%; 
+	&:checked {
+		~ .radio {
+		  background-color: #F9B300;
+		  transition: background .3s;
+		  &::after {
+			opacity: 1;
+		  }
+		}
+	}
+}
+.label {
+	position: relative;
+	font-size: calc(0.8rem + (0.8 - 0.725)*((100vw - 1400px)/(1400 - 1000)));
+	padding-left: 42.5px;
+}
+.radio {
+	position: absolute;
+	cursor: pointer;
+	top: 0; bottom: 0;
+	margin: auto;
+	left: 0;
+	height: 25px;;
+	width: 25px;
+	background: #E4E4E4;
+	border-radius: 50%;
+}
+
+@media (max-width: 1400px) {
+	label {
+		padding-left:  calc(27.5px + (35 - 27.5)*((100vw - 1000px)/(1400 - 1000)))
+	}
+	.radio {
+		height: 17px; width: 17px;
+	}
+}

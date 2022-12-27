@@ -37,7 +37,7 @@ export const CoffeItem = () => {
 		<div className={styles.sliderItem}>
 			<div className={styles.sliderTop}>
 				<div className={styles.discountTopinfo}>
-					<span>Скидка</span>
+					<span>Знижка</span>
 				</div>
 				<Poput activeItem={250} items={[250, 500, 1000]} />
 			</div>
@@ -48,7 +48,7 @@ export const CoffeItem = () => {
 						<div>
 							{checkStart(3)}
 						</div>
-						<p>{Number.isInteger(4) ? 4 + '.0' : 4}<span>({32} отзыва)</span></p>
+						<p>{Number.isInteger(4) ? 4 + '.0' : 4}<span>({32} відгука)</span></p>
 					</div>
 					<div className={styles.roasting}>
 						{checkRoasting(6)}
@@ -61,13 +61,13 @@ export const CoffeItem = () => {
 							</div>
 						</div>
 						<div className={styles.gustoItem}>
-							<p>Горчинка</p>
+							<p>Гірчинка</p>
 							<div className={styles.gustoNumber}>
 								{checkGuasto(3)}
 							</div>
 						</div>
 						<div className={styles.gustoItem}>
-							<p>Насыщенность</p>
+							<p>Насиченість</p>
 							<div className={styles.gustoNumber}>
 								{checkGuasto(6)}
 							</div>
@@ -77,11 +77,11 @@ export const CoffeItem = () => {
 			</div>
 			<div className={styles.sliderBottom}>
 				<h3 className={styles.coffeTitle}>Colombia Supremo</h3>
-				<p className={styles.coffeInfo}>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+				<p className={styles.coffeInfo}>Свіжообсмажена кава - опис товару, смак, аромат</p>
 				<div className={styles.coffeAction}>
 					<div className={styles.coffePrice}>
-						<span className={styles.discountPrice}>350 ₽</span>
-						<span className={styles.price}>250 ₽</span>
+						<span className={styles.discountPrice}>250 ₴</span>
+						<span className={styles.price}>200 ₴</span>
 					</div>
 					<button className={`button small`}>В корзину</button>
 				</div>

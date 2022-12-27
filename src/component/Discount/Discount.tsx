@@ -17,8 +17,8 @@ export const Discount = (): JSX.Element => {
 		<div className={styles.discount}>
 			<div className="container">
 				<div className={styles.discountBody}>
-					<h2 className="title">Товары со скидкой</h2>
-					<p className={`${styles.text} text`}>Наша компания предлагает покупать товар со скидкой не только в дни распродаж <br /> или в течение действия ограниченных предложений, но и пользоваться скидками постоянно!</p>
+					<h2 className="title">Товари зі знижкою</h2>
+					<p className={`${styles.text} text`}>Наша компанія пропонує купувати товар зі знижкою не лише у дні розпродажів <br /> або протягом дії обмежених пропозицій, а й користуватися знижками постійно!</p>
 					<div className={styles.slider}>
 						<button className={`${styles.navigationButton} ${styles.buttonPrev}`} onClick={() => swiperRef.current.swiper.slidePrev()}>
 							<svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@ export const Discount = (): JSX.Element => {
 							</svg>
 						</button>
 					</div>
-					<a href="#s" className={styles.viewAll}>Смотреть все</a>
+					<a href="#s" className={styles.viewAll}>Дивитися все</a>
 				</div>
 			</div>
 		</div >

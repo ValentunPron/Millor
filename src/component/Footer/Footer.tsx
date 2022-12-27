@@ -31,8 +31,8 @@ export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 				<div className="container">
 					<div className={styles.mailingBody}>
 						<div className={styles.mailingContent}>
-							<h2 className="title">Подписка на новости и рассылку</h2>
-							<p className="text">Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</p>
+							<h2 className="title">Підписка на новини та розсилку</h2>
+							<p className="text">Підпишіться на нашу розсилку прямо зараз і будьте в курсі нових поставок, знижок та ексклюзивних пропозицій.</p>
 							<form className={styles.mailingForm} onSubmit={onSubmit}>
 								<input
 									type="email"
@@ -41,8 +41,8 @@ export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 									placeholder="Ваш email"
 									onChange={handleChange}
 									className={styles.mailingInput} />
-								<button type="submit" className={styles.mailingButton}>Подписаться</button>
-								<span className={styles.mailingRules}>Нажимая на кнопку “Подписаться”, вы принимаете правила <a href="#s">пользовательского соглашения</a></span>
+								<button type="submit" className={styles.mailingButton}>Підписатися</button>
+								<span className={styles.mailingRules}>Натискаючи на кнопку "Підписатися", ви приймаєте правила <a href="#s">користувальницької угоди</a></span>
 							</form>
 						</div>
 						<img src={imageCoffe} alt="coffe" className={styles.mailingImage} />
@@ -57,13 +57,13 @@ export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 						</Link>
 						<ul className={styles.footerList}>
 							<li className="footerItem">
-								<Link to='/' onClick={scrollTo} className={`${styles.footerLink} link`}>Каталог товаров</Link>
+								<Link to='/' onClick={scrollTo} className={`${styles.footerLink} link`}>Каталог товарів</Link>
 							</li>
 							<li className="footerItem">
 								<Link to='' className={`${styles.footerLink} link`}>Блог</Link>
 							</li>
 							<li className="footerItem">
-								<Link to='' className={`${styles.footerLink} link`}>Контакты</Link>
+								<Link to='' className={`${styles.footerLink} link`}>Контакти</Link>
 							</li>
 						</ul>
 					</div>

@@ -18,25 +18,25 @@ const CatalogData: SliderItemProps[] = [
 	{
 		id: 0,
 		imageUrl: image01,
-		title: 'Свежеобжаренный кофe',
+		title: 'Свіжообсмажена кава',
 		path: 'coffe',
 	},
 	{
 		id: 1,
 		imageUrl: image02,
-		title: 'Чай и кофейные напитки',
+		title: 'Чай та кавові напої',
 		path: 'tea',
 	},
 	{
 		id: 2,
 		imageUrl: image03,
-		title: 'Продукция для вендинга',
+		title: 'Продукція для вендінгу',
 		path: 'product',
 	},
 	{
 		id: 3,
 		imageUrl: image04,
-		title: 'Здоровое питание',
+		title: 'Здорове харчування',
 		path: 'eating',
 	},
 ]

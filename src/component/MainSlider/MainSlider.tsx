@@ -32,30 +32,30 @@ export const MainSlider = (): JSX.Element => {
 							<SwiperSlide>
 								<div className={styles.sliderItem}>
 									<div className={styles.sliderContent}>
-										<h1 className={styles.title}>Свежеобжаренный кофе</h1>
-										<p className={`${styles.text} text`}>Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
-										<p className={`${styles.text} text`}> Мы обжариваем кофе <span>каждые выходные.</span></p>
-										<button className='button big'>Посмотреть каталог</button>
+										<h1 className={styles.title}>Свіжообсмажена кава</h1>
+										<p className={`${styles.text} text`}>Кава Львівської обжарки з різних країн зростання з доставкою додому.</p>
+										<p className={`${styles.text} text`}> Ми обсмажуємо каву <span>кожні вихідні.</span></p>
+										<button className='button big'>Переглянути каталог</button>
 									</div>
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.sliderItem}>
 									<div className={styles.sliderContent}>
-										<h2 className={styles.title}>Свежеобжаренный кофе</h2>
-										<p className={`${styles.text} text`}>Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
-										<p className={`${styles.text} text`}> Мы обжариваем кофе <span>каждые выходные.</span></p>
-										<button className='button big'>Посмотреть каталог</button>
+										<h2 className={styles.title}>Свіжообсмажена кава</h2>
+										<p className={`${styles.text} text`}>Кава Львівської обжарки з різних країн зростання з доставкою додому.</p>
+										<p className={`${styles.text} text`}> Ми обсмажуємо каву <span>кожні вихідні.</span></p>
+										<button className='button big'>Переглянути каталог</button>
 									</div>
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.sliderItem}>
 									<div className={styles.sliderContent}>
-										<h2 className={styles.title}>Свежеобжаренный кофе</h2>
-										<p className={`${styles.text} text`}>Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
-										<p className={`${styles.text} text`}> Мы обжариваем кофе <span>каждые выходные.</span></p>
-										<button className='button big'>Посмотреть каталог</button>
+										<h2 className={styles.title}>Свіжообсмажена кава</h2>
+										<p className={`${styles.text} text`}>Кава Львівської обжарки з різних країн зростання з доставкою додому.</p>
+										<p className={`${styles.text} text`}> Ми обсмажуємо каву <span>кожні вихідні.</span></p>
+										<button className='button big'>Переглянути каталог</button>
 									</div>
 								</div>
 							</SwiperSlide>

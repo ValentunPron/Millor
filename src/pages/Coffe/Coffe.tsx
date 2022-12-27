@@ -18,11 +18,11 @@ export const Coffe = (): JSX.Element => {
 						<div className={styles.coffeBody}>
 							<img src={imageCoffe} alt="coffe" width={660} height={450} />
 							<div className='catalogLinks'>
-								<Link className='catalogLink' to="/">Главная</Link>
-								<Link className='catalogLink' to="/">Каталог товаров</Link>
-								<Link className='catalogLink' to="/coffe">Свежеобжаренный кофе</Link>
+								<Link className='catalogLink' to="/">Головна</Link>
+								<Link className='catalogLink' to="/">Каталог товарів</Link>
+								<Link className='catalogLink' to="/coffe">Свіжообсмажена кава</Link>
 							</div>
-							<h1 className={`${styles.title} title`}>Свежеобжаренный кофе</h1>
+							<h1 className={`${styles.title} title`}>Свіжообсмажена кава</h1>
 							<div className={styles.coffeFilter}>
 								<Filter />
 							</div>

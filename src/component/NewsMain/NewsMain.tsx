@@ -30,8 +30,8 @@ export const NewsMain = ({ ...props }): JSX.Element => {
 			<div className="container">
 				<div className={styles.newsBody}>
 					<div className={styles.newsTop}>
-						<h2 className="title">Новости компании</h2>
-						<a className={`linkNext ${styles.newsLinkNext}`} href='s'>Читать все</a>
+						<h2 className="title">Новини компанії</h2>
+						<a className={`linkNext ${styles.newsLinkNext}`} href='s'>Читати все</a>
 					</div>
 					{
 						width > 780
@@ -40,13 +40,13 @@ export const NewsMain = ({ ...props }): JSX.Element => {
 									<img src={image01} alt="Танзанийский кофе" className={styles.contentImage} width={334} height='100%' />
 									<div className={styles.contentInfo}>
 										<div>
-											<h3 className={styles.contentTitle}>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
+											<h3 className={styles.contentTitle}>Танзанійська кава. Звідки він узявся і чому ми його так любимо?</h3>
 											<p className={styles.contentText}>
-												Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.
-												<span /> Но наш интерес вызван не столько природными красотами, сколько кофе...
+												Танзанія – найкрасивіша африканська країна. Саме тут розташовані легендарні географічні об'єкти – вулкан Кіліманджаро та озеро Вікторія.
+												<span /> Але наш інтерес викликаний не стільки природною красою, скільки кавою...
 											</p>
 											<a href="#s" className={styles.contentLink}>
-												Подробнее
+												Докладніше
 												<svg width="14" height="12" viewBox="0 0 14 12" fill="#F9B300" xmlns="http://www.w3.org/2000/svg">
 													<path d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z" />
 												</svg>
@@ -54,54 +54,52 @@ export const NewsMain = ({ ...props }): JSX.Element => {
 										</div>
 									</div>
 								</div>
-								<div className={`${styles.newsItem} ${styles.small1}`}>
+								<article className={`${styles.newsItem} ${styles.small1}`}>
 									<div className={styles.contentInfo}>
-										<div>
-											<h3 className={styles.contentTitle}>Африканский кофе Кения АА</h3>
-											<p className={styles.contentText}>
-												Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.
-											</p>
-											<a href="#s" className={styles.contentLink}>
-												Подробнее
-												<svg width="14" height="12" viewBox="0 0 14 12" fill="#F9B300" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z" />
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div className={`${styles.newsItem} ${styles.small2}`}>
-									<div className={styles.contentInfo}>
-										<h3 className={styles.contentTitle}>Африканский кофе Кения АА</h3>
+										<h3 className={styles.contentTitle}>Африканська кава Кенія АА</h3>
 										<p className={styles.contentText}>
-											Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.
+											Кенія АА – у цієї кави, з африканської країни, репутація одного з найсмачніших і найяскравіших сортів у світі. Багато обжарювачів високо оцінюють місцеві різновиди високогірної арабіки.
 										</p>
 										<a href="#s" className={styles.contentLink}>
-											Подробнее
+											Докладніше
 											<svg width="14" height="12" viewBox="0 0 14 12" fill="#F9B300" xmlns="http://www.w3.org/2000/svg">
 												<path d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z" />
 											</svg>
 										</a>
 									</div>
-								</div>
-								<div className={`${styles.newsItem} ${styles.big2}`}>
+								</article >
+								<article className={`${styles.newsItem} ${styles.small2}`}>
+									<div className={styles.contentInfo}>
+										<h3 className={styles.contentTitle}>Африканська кава Кенія АА</h3>
+										<p className={styles.contentText}>
+											Кенія АА – у цієї кави, з африканської країни, репутація одного з найсмачніших і найяскравіших сортів у світі. Багато обжарювачів високо оцінюють місцеві різновиди високогірної арабіки.
+										</p>
+										<a href="#s" className={styles.contentLink}>
+											Докладніше
+											<svg width="14" height="12" viewBox="0 0 14 12" fill="#F9B300" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z" />
+											</svg>
+										</a>
+									</div>
+								</article>
+								<article className={`${styles.newsItem} ${styles.big2}`}>
 									<img src={image01} alt="Танзанийский кофе" className={styles.contentImage} width={334} height='100%' />
 									<div className={styles.contentInfo}>
 										<div>
-											<h3 className={styles.contentTitle}>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
+											<h3 className={styles.contentTitle}>Танзанійська кава. Звідки він узявся і чому ми його так любимо?</h3>
 											<p className={styles.contentText}>
-												Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.
-												<span /> Но наш интерес вызван не столько природными красотами, сколько кофе...
+												Танзанія – найкрасивіша африканська країна. Саме тут розташовані легендарні географічні об'єкти – вулкан Кіліманджаро та озеро Вікторія.
+												<span /> Але наш інтерес викликаний не стільки природною красою, скільки кавою...
 											</p>
 											<a href="#s" className={styles.contentLink}>
-												Подробнее
+												Докладніше
 												<svg width="14" height="12" viewBox="0 0 14 12" fill="#F9B300" xmlns="http://www.w3.org/2000/svg">
 													<path d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z" />
 												</svg>
 											</a>
 										</div>
 									</div>
-								</div>
+								</article>
 							</div>
 							:
 							<div>
@@ -127,49 +125,48 @@ export const NewsMain = ({ ...props }): JSX.Element => {
 									ref={swiperRef}
 								>
 									<SwiperSlide>
-										<div className={`${styles.newsItem} ${styles.big1}`}>
+										<article className={`${styles.newsItem} ${styles.big1}`}>
 											<img src={adaptive01} alt="Танзанийский кофе" className={styles.contentImage} width={334} height='100%' />
 											<div className={styles.contentInfo}>
 												<div>
-													<h3 className={styles.contentTitle}>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
+													<h3 className={styles.contentTitle}>Танзанійська кава. Звідки він узявся і чому ми його так любимо?</h3>
 													<p className={styles.contentText}>
-														Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.
-														<span /> Но наш интерес вызван не столько природными красотами, сколько кофе...
+														Танзанія – найкрасивіша африканська країна. Саме тут розташовані легендарні географічні об'єкти – вулкан Кіліманджаро та озеро Вікторія.
+														<span /> Але наш інтерес викликаний не стільки природною красою, скільки кавою...
 													</p>
 													<a href="#s" className={styles.contentLink}>
-														Подробнее
+														Докладніше
 														<svg width="14" height="12" viewBox="0 0 14 12" fill="#F9B300" xmlns="http://www.w3.org/2000/svg">
 															<path d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z" />
 														</svg>
 													</a>
 												</div>
 											</div>
-										</div>
+										</article>
 									</SwiperSlide>
 									<SwiperSlide>
-										<div className={`${styles.newsItem} ${styles.big1}`}>
+										<article className={`${styles.newsItem} ${styles.big1}`}>
 											<img src={adaptive01} alt="Танзанийский кофе" className={styles.contentImage} width={334} height='100%' />
 											<div className={styles.contentInfo}>
 												<div>
-													<h3 className={styles.contentTitle}>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
+													<h3 className={styles.contentTitle}>Танзанійська кава. Звідки він узявся і чому ми його так любимо?</h3>
 													<p className={styles.contentText}>
-														Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.
-														<span /> Но наш интерес вызван не столько природными красотами, сколько кофе...
+														Танзанія – найкрасивіша африканська країна. Саме тут розташовані легендарні географічні об'єкти – вулкан Кіліманджаро та озеро Вікторія.
+														<span /> Але наш інтерес викликаний не стільки природною красою, скільки кавою...
 													</p>
 													<a href="#s" className={styles.contentLink}>
-														Подробнее
+														Докладніше
 														<svg width="14" height="12" viewBox="0 0 14 12" fill="#F9B300" xmlns="http://www.w3.org/2000/svg">
 															<path d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z" />
 														</svg>
 													</a>
 												</div>
 											</div>
-										</div>
+										</article>
 									</SwiperSlide>
 								</Swiper>
-								<a className={`linkNext ${styles.newsLinkNextAdaptive}`} href='s'>Читать все</a>
+								<a className={`linkNext ${styles.newsLinkNextAdaptive}`} href='s'>Читати все</a>
 							</div>
-
 					}
 				</div>
 			</div>
