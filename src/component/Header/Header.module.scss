@@ -4,7 +4,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 0;
-	min-height: 160px;
+	min-height: 140px;
 	img {
 		width: 260px;
 		height: 116px;
@@ -464,11 +464,11 @@
 
 @media (max-width: 380px) {
 	.header {
-		min-height: auto;
+		min-height: 60px;
 	}
 	.headerBody {
 		display: grid;
-		grid-template-columns: 1fr auto;
+		grid-template-columns: auto auto;
 		min-height: 70px;
 		padding: 0;
 		.imageLogo {
