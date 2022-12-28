@@ -22,23 +22,23 @@ export const Filter = (): JSX.Element => {
 		<div className={styles.filter}>
 			<div className={styles.filterTop}>
 				<div className={`${styles.filterRoasting} ${styles.filterMenu}`}>
-					<div className={styles.RoastingContainer}>
-						<div className={styles.RoastingBody}>
-							<h3 className={styles.RoastingTitle}>Ступінь обжарки</h3>
-							<ul className={styles.RoastingList}>
-								<li className={styles.RoastingItem}>
+					<div className={styles.roastingContainer}>
+						<div className={styles.roastingBody}>
+							<h3 className={styles.roastingTitle}>Ступінь обжарки</h3>
+							<ul className={styles.roastingList}>
+								<li className={styles.roastingItem}>
 									<RadioButton type={'roasting'} name={Roasting(5)} />
 								</li>
-								<li className={styles.RoastingItem}>
+								<li className={styles.roastingItem}>
 									<RadioButton type={'roasting'} name={Roasting(4)} />
 								</li>
-								<li className={styles.RoastingItem}>
+								<li className={styles.roastingItem}>
 									<RadioButton type={'roasting'} name={Roasting(3)} />
 								</li>
-								<li className={styles.RoastingItem}>
+								<li className={styles.roastingItem}>
 									<RadioButton type={'roasting'} name={Roasting(2)} />
 								</li>
-								<li className={styles.RoastingItem}>
+								<li className={styles.roastingItem}>
 									<RadioButton type={'roasting'} name={Roasting(1)} />
 								</li>
 							</ul>

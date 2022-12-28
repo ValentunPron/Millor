@@ -1,12 +1,16 @@
 .coffeBody {
 	padding-top: 40px;
 	position: relative;
-	img {
+	.coffeImage {
 		position: absolute;
 		right: 0;
 		top: -30px;
 		z-index: 1;
 	}
+}
+
+.footer {
+	padding-top: 50px;
 }
 
 .title {
@@ -18,16 +22,103 @@
 }
 
 .coffeFilter {
-	margin-top: 150px;
+	margin-top: 140px;
 }
 
 @media (max-width: 1400px) {
-	.coffeBody {
-		img {
-			right: -20px;
-			top: 20px;
-			width: 470px;
-			height: 400px;
+	.coffeFilter {
+		margin-top: 60px;
+	}
+	.coffeImage {
+		position: relative;
+		z-index: 1;
+		&::after {
+			position: absolute;
+			content: '';
+
+			width: 400px;
+			height: 320px;
+			background-image: url('../../assets/image/Catalog/coffeAdaptive.png');
+			background-repeat: no-repeat;
+			top: 0; right: 50px;
 		}
+		&::before {
+			position: absolute;
+			content: '';
+
+			width: 500px;
+			height: 500px;
+			background-image: url('../../assets/image/Catalog/chocolateAdaptive.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			top: 20px; right: -320px;
+		}
+		img {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.coffeImage {
+		position: relative;
+		z-index: 1;
+
+		&::before {
+			width: 450px;
+			height: 450px;
+			background-image: url('../../assets/image/Catalog/chocolateAdaptive.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			top: calc(12.5 + (20 - 12.5)*((100vw - 1000px)/(1400 - 1000))); right: -300px;
+		}
+		img {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	.coffeBody {
+		padding-top: 50px;
+		position: relative;
+		.coffeImage {
+			position: relative;
+			z-index: 1;
+			&::after, &::before {
+				display: none;
+			}
+			img {
+				margin: 0 auto;
+				width: calc(350px + (550 - 400)*((100vw - 400px)/(780 - 400)));
+				height: calc(250px + (375 - 300)*((100vw - 400px)/(780 - 400)));
+				display: block;
+				z-index: 1;
+			}
+		}
+	}
+	.coffeFilter {
+		position: relative;
+		margin-top: -50px;
+		z-index: 4;
+	}
+	.title {
+		margin-top: 70px;
+		margin-bottom: 70px;
+		font-size: calc(1.3rem + (1.5 - 1.3)*((100vw - 400px)/(780 - 400))) !important;
+	}
+}
+
+
+@media (max-width: 400px) {
+	.coffeBody {
+		padding-top: 0px;
+	}
+	.title {
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+	.coffeFilter {
+		margin-top: -50px;
 	}
 }

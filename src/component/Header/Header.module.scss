@@ -21,6 +21,12 @@
 	}
 }
 
+.imageLogo {
+	position: relative;
+	z-index: 2;
+}
+
+
 .linksList {
 	column-gap: 100px;
 	li {
@@ -223,7 +229,7 @@
 
 @media (max-width: 1400px) {
 	.headerBody {
-		min-height: 113px;
+		min-height: 110px;
 		padding: 10 0px;
 		img {
 			width: calc(159px + (179 - 159)*((100vw - 768px)/(1200 - 768)));
@@ -268,16 +274,14 @@
 
 @media (max-width: 770px) {
 	.headerBody {
-		min-height: calc(80px + (140 - 80)*((100vw - 380px)/(770 - 380)));;
-		padding: 15px 0;
+		min-height: none;
+		padding: 10px 0;
 		display: grid;
-		grid-template-columns: 1fr auto;
+		align-items: center;
+		grid-template-columns: 1fr auto auto;
 		.imageLogo {
+			margin-left: 20px;
 			margin: 0 auto;
-		}
-		img {
-			margin-left: 17.5px;
-			width: calc(190px + (225 - 190)*((100vw - 375px)/(1200 - 375)));
 		}
 		.navLinks {
 			position: absolute;
@@ -468,16 +472,9 @@
 	}
 	.headerBody {
 		display: grid;
-		grid-template-columns: auto auto;
+		grid-template: auto auto;
 		min-height: 70px;
 		padding: 0;
-		.imageLogo {
-			margin: 0 auto;
-		}
-		img {
-			margin-left: 17.5px;
-			width: calc(90px + (110 - 90)*((100vw - 320px)/(380 - 320)));
-		}
 		.navLinks {
 			width: 29px;
 			height: 30px;
@@ -494,6 +491,7 @@
 			.burgerInfo {
 				display: flex;
 				.imageLogo {
+
 					margin-bottom: 40px;
 					img {
 						margin-left: 0;

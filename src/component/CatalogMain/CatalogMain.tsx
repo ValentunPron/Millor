@@ -57,6 +57,7 @@ export const CatalogMain = (): JSX.Element => {
 						navigation={false}
 						slidesPerGroup={1}
 						slideActiveClass={styles.sliderActive}
+						preventInteractionOnTransition={true}
 						breakpoints={{
 							0: {
 								slidesPerView: 1,

@@ -5,6 +5,7 @@
 	position: absolute;
 	opacity: 0;
 	left: -999%; 
+	z-index: 5;
 	&:checked {
 		~ .radio {
 		  background-color: #F9B300;
@@ -16,9 +17,12 @@
 	}
 }
 .label {
+	display: flex;
+	align-items: center;
 	position: relative;
-	font-size: calc(0.8rem + (0.8 - 0.725)*((100vw - 1400px)/(1400 - 1000)));
+	font-size: 0.8rem;
 	padding-left: 42.5px;
+	z-index: 5;
 }
 .radio {
 	position: absolute;
@@ -33,10 +37,21 @@
 }
 
 @media (max-width: 1400px) {
-	label {
-		padding-left:  calc(27.5px + (35 - 27.5)*((100vw - 1000px)/(1400 - 1000)))
+	.label {
+		padding-left:  calc(25px + (30 - 25)*((100vw - 1000px)/(1400 - 1000)));
+		font-size: calc(0.7rem + (0.8 - 0.7)*((100vw - 1400px)/(1400 - 1000)));;
 	}
 	.radio {
 		height: 17px; width: 17px;
+	}
+}
+
+@media (max-width: 780px) {
+	.label {
+		padding-left: calc(30px + (50 - 30)*((100vw - 400px)/(780 - 400)));
+		font-size: calc(0.7rem + (0.8 - 0.7)*((100vw - 400px)/(780 - 400)));
+	}
+	.radio {
+		height: calc(20px + (32 - 20)*((100vw - 400px)/(780 - 400)));width: calc(20px + (32 - 20)*((100vw - 400px)/(780 - 400)));
 	}
 }

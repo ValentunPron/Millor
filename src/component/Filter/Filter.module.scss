@@ -1,169 +1,316 @@
-.filter {
-	display: flex;
-}
-
-.filterMenu {
-	background: #FFFFFF;
-	box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
-	border-radius: 20px;
-	max-height: 529px;
-}
-
 .filterTop {
-	display: flex;
+	display: grid;
+	grid-template-columns: 400px auto;
+		grid-template-rows: 520px;
 	gap: 20px;
-	width: 100%;	
+	.filterMenu {
+		background: #FFFFFF;
+		box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+		border-radius: 20px;
+		height: 100%;
+	}
 }
 
 .filterRoasting {
-	flex: 0 1 25%;
-	.RoastingContainer {
-		padding: 43px 30px;
+	.roastingContainer {
 		height: 100%;
+		padding: 40px 30px;
 	}
-	.RoastingBody {
+	.roastingBody {
 		position: relative;
+		padding-left: 55px;
 		height: 100%;
-		padding: 0px 20px 0px 65px;
 		&::after {
 			position: absolute;
 			content: '';
+
+			width: 15px;
+			height: 100%;
 			left: 0; top: 0;
-			width: 15px; height: 100%;
-		
 			background: #F9B300;
 			border-radius: 10px;
 		}
 	}
-	.RoastingTitle {
+	.roastingTitle {
 		font-weight: 700;
 		font-size: 1.2rem;
 		line-height: 1.2;
-	}
 
-	.RoastingList {
+		color: #000000;
+	}
+	.roastingList {
 		display: flex;
 		flex-direction: column;
-		gap: 45px;
 		margin-top: 45px;
 	}
-
-	label {
+	.roastingItem {
 		display: flex;
-		align-items: center;
-		gap: 10px;
-		input {
-			margin-right: 10px;
+		padding: 25px 0;
+		&:first-child {
+			padding-top: 0px;
+		}
+		label {
+			display: flex;
+			column-gap: 10px;
+			svg {
+				height: 24px; width: 24px;
+			}
 		}
 	}
-
 }
 
 .filterDetalies {
-	flex: 0 1 75%;
 	.detaliesContainer {
-		padding: 35px 50px;
+		padding: 30px 60px;
 		height: 100%;
 	}
 	.detaliesList {
+		height: 100%;
 		position: relative;
-		padding-top: 45px;
-		
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		flex-wrap: wrap;
-		justify-content: flex-start;
-
-		height: 100%;
-		row-gap: 20px;
+		padding: 45px 10px 0 10px;
+		gap: 25px;
 		&::after {
 			position: absolute;
 			content: '';
+
 			top: 0; left: 0;
-			width: 100%; height: 15px;
-		
+			width: 100%;
+			height: 15px;
 			background: #F9B300;
 			border-radius: 10px;
 		}
-	}
-	.detaliesMenu {
-		margin-top: 30px;
-
-		display: flex;
-		flex-direction: column;
-		row-gap: 20px;
-	}
-	.detaliesMenuItem {
-		display: flex;
-		align-items: center;
-		input {
-			margin-right: 20px;
-		}
-		font-size: 0.8rem;
-		line-height: 1.2;
 	}
 	.detaliesTitle {
 		font-weight: 700;
 		font-size: 1rem;
-		line-height: 1.2;
-		max-width: 150px;
+		line-height: 1.25;
+		max-width: 160px;
 	}
-	
+	.detaliesMenu {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
 }
 
 @media (max-width: 1400px) {
-	.filterMenu {
-		max-height: 383px; 
+	.filterTop {
+		grid-template-columns: calc(230px + (280 - 230)*((100vw - 780px)/(1400 - 780))) auto;
+		gap: 15px;
+		grid-template-rows: auto;
 	}
+	
 	.filterRoasting {
-		.RoastingContainer {
-			padding: 30px;
+		.roastingContainer {
+			padding: 30px 20px;
 		}
-		.RoastingBody {
-			padding: 0px 20px 0px 40px;
+		.roastingBody {
+			padding-left: 40px;
 			&::after {
-				width: 10px; height: 100%;
+				width: 10px;
 			}
 		}
-		.RoastingList {
-			gap: 30px;
+		.roastingTitle {
+			font-size: 1.2rem;
+		}
+		.roastingList {
 			margin-top: 30px;
 		}
-		label {
-			gap: 8px;
-		}
-	}
-	.filterDetalies {
-		.detaliesContainer {
-			padding: 25px calc(40px + (50 - 40)*((100vw - 1400px)/(1400 - 1000)));
-		}
-		.detaliesList {
-			border: 1px solid;
-			width: 100%;
-			column-gap: 5px;
-			padding-top: 32.5px;
-			&::after {
-				width: 100%; height: 10px;
+		.roastingItem {
+			display: flex;
+			padding: 15px 0;
+			&:first-child {
+				padding-top: 0px;
+			}
+			label {
+				display: flex;
+				column-gap: 7px;
+				svg {
+					height: 18px; width: 18px;
+				}
 			}
 		}
-		.detaliesMenu {
-			margin-top: 20px;
-			row-gap: 15px;
-			column-gap: 20px;
+	}
+	
+	.filterDetalies {
+		max-height: 360px;
+		.detaliesContainer {
+			padding: 25px calc(30px + (60 - 30)*((100vw - 1000px)/(1400 - 1000)));
+			height: 100%;
+		}
+		.detaliesList {
+			padding: 30px 5px 0 5px;
+			gap: 15px;
+			&::after {
+				width: 100%;
+				height: 10px;
+			}
 		}
 		.detaliesTitle {
 			font-weight: 700;
-			font-size: 1rem;
-			line-height: 1.2;
+			font-size: calc(0.9rem + (1 - 0.9)*((100vw - 1000px)/(1400 - 1000)));
+			line-height: 1.25;
 			max-width: 100px;
+		}
+		label {
+			column-gap: 5px;
+		}
+		.detaliesMenu {
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
 		}
 	}
 }
 
-@media (max-width: 1000px) {
-	.filterMenu {
-		box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
-		border-radius: 20px;
+
+@media (max-width: 780px) {
+	.filterTop {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	.filterRoasting {
+		.roastingBody {
+			position: relative;
+			padding-left: 0px;
+			padding-top: 65px;
+			height: 100%;
+			&::after {
+				position: absolute;
+				content: '';
+	
+				width: 100%;
+				height: 20px;
+			}
+		}
+		.roastingTitle {
+			font-size: 1.28rem;
+			margin-left: 10px;
+		}
+		.roastingList {
+			display: flex;
+			flex-direction: column;
+			margin-top: 50px;
+			margin-left: 10px;
+		}
+		.roastingItem {
+			display: flex;
+			padding: 20px 0;
+			&:first-child {
+				padding-top: 0px;
+			}
+			label {
+				display: flex;
+				column-gap: 1px;
+				svg {
+					margin-left: calc(10px + (20 - 10)*((100vw - 400px)/(780 - 400)));
+					height: calc(30px + (40 - 30)*((100vw - 400px)/(780 - 400)));  width: calc(30px + (40 - 30)*((100vw - 400px)/(780 - 400)));
+				}
+			}
+		}
+	}
+
+	.filterDetalies {
 		max-height: none;
+		.detaliesList {
+			display: flex;
+			max-height: 1000px;
+			padding: 60px calc(15px + (20 - 15)*((100vw - 400px)/(780 - 400))) 0 calc(15px + (20 - 15)*((100vw - 400px)/(780 - 400)));
+			row-gap: calc(40px + (70 - 40)*((100vw - 400px)/(780 - 400)));
+			&::after {
+				height: 20px;
+			}
+		}
+		.detaliesContainer {
+			padding: 40px 30px;
+		}
+		.detaliesTitle {
+			font-size: calc(0.91rem + (1.25 - 0.91)*((100vw - 400px)/(780 - 400)));
+			max-width: 150px;
+		}
+		.detaliesMenu {
+			gap: calc(15px + (30 - 15)*((100vw - 400px)/(780 - 400)));
+		}
+		label {
+			font-size: calc(0.6rem + (0.95 - 0.6)*((100vw - 400px)/(780 - 400)));
+		}
+	}
+}
+
+@media (max-width: 400px) {
+
+	.filterRoasting {
+		.roastingBody {
+			padding-top: 25px;
+			height: 100%;
+			&::after {
+				position: absolute;
+				content: '';
+	
+				width: 100%;
+				height: 10px;
+			}
+		}
+		.roastingContainer {
+			padding: 20px 15px
+		}
+		.roastingTitle {
+			font-size: 1rem;
+			margin-left: 5px;
+		}
+		.roastingList {
+			display: flex;
+			flex-direction: column;
+			margin-top: 25px;
+			margin-left: 5px;
+		}
+		.roastingItem {
+			display: flex;
+			padding: 10px 0;
+			&:first-child {
+				padding-top: 0px;
+			}
+			label {
+				display: flex;
+				column-gap: 1px;
+				svg {
+					margin-left: 10px;
+					height: 20px;  width: 20px;
+				}
+			}
+		}
+	}
+
+	.filterDetalies {
+		max-height: none;
+		.detaliesList {
+			display: flex;
+			max-height: 600px;
+			padding: 30px 5px;
+			row-gap: calc(40px + (70 - 40)*((100vw - 400px)/(780 - 400)));
+			&::after {
+				height: 10px;
+			}
+		}
+		.detaliesContainer {
+			padding: 20px 15px
+		}
+		.detaliesTitle {
+			font-size: calc(0.91rem + (1.25 - 0.91)*((100vw - 400px)/(780 - 400)));
+			max-width: 150px;
+		}
+		.detaliesMenu {
+			gap: calc(15px + (30 - 15)*((100vw - 400px)/(780 - 400)));
+		}
+		label {
+			font-size: calc(0.6rem + (0.95 - 0.6)*((100vw - 400px)/(780 - 400)));
+		}
 	}
 }

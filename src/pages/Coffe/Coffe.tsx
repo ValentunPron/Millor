@@ -16,13 +16,15 @@ export const Coffe = (): JSX.Element => {
 				<div className={styles.coffe}>
 					<div className="container">
 						<div className={styles.coffeBody}>
-							<img src={imageCoffe} alt="coffe" width={660} height={450} />
 							<div className='catalogLinks'>
 								<Link className='catalogLink' to="/">Головна</Link>
 								<Link className='catalogLink' to="/">Каталог товарів</Link>
 								<Link className='catalogLink' to="/coffe">Свіжообсмажена кава</Link>
 							</div>
 							<h1 className={`${styles.title} title`}>Свіжообсмажена кава</h1>
+							<div className={styles.coffeImage}>
+								<img src={imageCoffe} alt="coffe" width={660} height={450} />
+							</div>
 							<div className={styles.coffeFilter}>
 								<Filter />
 							</div>
@@ -30,7 +32,9 @@ export const Coffe = (): JSX.Element => {
 					</div>
 				</div>
 			</div>
-			<Footer />
+			<div className={styles.footer}>
+				<Footer />
+			</div>
 		</>
 
 

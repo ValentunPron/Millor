@@ -51,7 +51,7 @@
 
 .whyWe {
 	&__body {
-		padding-top: 110px;
+		padding: 20px;
 		display: flex;
 		align-items: flex-end;
 		gap: 85px;
@@ -272,6 +272,7 @@
 	}
 	.whyWe {
 		&__body {
+			padding-bottom: 30px;
 			gap: 60px;
 		}
 		&__info {
@@ -343,6 +344,7 @@
 	}
 	.whyWe {
 		&__body {
+			padding: 25px 0;
 			gap: 60px;
 		}
 		&__info {

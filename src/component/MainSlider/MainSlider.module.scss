@@ -17,7 +17,7 @@
 	overflow: hidden;
 	z-index: 10;
 	.text {
-		max-width: 660px;
+		max-width: 700px;
 		span {
 			font-weight: 700;
 		}
@@ -67,7 +67,7 @@
 	.sliderContent {
 		padding-top: 20px;
 		.text {
-			max-width: 466px;
+			max-width: 556px;
 		}
 		.text + .text {
 			padding-top: 27.5px;
@@ -83,14 +83,14 @@
 		margin-top: 100px;
 	}
 	.title {
-		max-width: 400px;
+		max-width: 450px;
 		font-size: calc(1.7rem + (2 - 1.5)*((100vw - 400px)/(770 - 400)));
 	}
 	.sliderContent {
 		padding-top: 0;
 		.text {
 			font-size: 0.8rem;
-			max-width: 310px;
+			max-width: 380px;
 		}
 		button {
 			margin-top: 350px;
