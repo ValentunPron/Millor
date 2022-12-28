@@ -1,4 +1,5 @@
 import React from "react";
+import { CategoryButton } from "../CategoryButton/CategoryButton";
 import { RadioButton } from "../RadioButton/RadioButton";
 
 import styles from './Filter.module.scss';
@@ -146,6 +147,16 @@ export const Filter = (): JSX.Element => {
 						</ul>
 					</div>
 				</div>
+			</div>
+			<div className={styles.filterCategory}>
+				<CategoryButton />
+				<CategoryButton />
+				<CategoryButton />
+				<CategoryButton />
+				<CategoryButton />
+				<CategoryButton />
+				<CategoryButton />
+				<CategoryButton />
 			</div>
 		</div>
 	)

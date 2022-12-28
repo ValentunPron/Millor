@@ -7,5 +7,6 @@ import { NewsMain } from "./NewsMain/NewsMain";
 import { Footer } from "./Footer/Footer";
 import { WorkingWindow } from "./WorkingWindow/WorkingWindow";
 import { Filter } from "./Filter/Filter";
+import { CategoryButton } from "./CategoryButton/CategoryButton";
 
-export { LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsMain, Footer, WorkingWindow, Filter }
+export { LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsMain, Footer, WorkingWindow, Filter, CategoryButton }

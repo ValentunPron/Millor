@@ -1,0 +1,33 @@
+.categoryButton {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+	border-radius: 20px;
+
+	display: flex;
+	flex-direction: column;
+	max-width: 180px;
+	max-height: 180px;
+	padding: 32px 20px;
+	align-items: center;
+	justify-content: center;
+	.categoryTitle {
+		font-size: 0.8rem;
+		line-height: 1.2;
+		margin-bottom: 15px;
+		transition: 0.45s ease-in;
+	}
+	svg {
+		margin-left: 20px;
+		transition: 0.45s ease-in;
+	}
+	transition: 0.3s ease-in;
+	&:hover {
+		background-color: #F9B300;
+		.categoryTitle {
+			color: #fff;
+		}
+		svg {
+			fill: #fff;
+		}
+	}
+}
