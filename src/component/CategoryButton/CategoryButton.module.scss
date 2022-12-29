@@ -7,7 +7,7 @@
 	flex-direction: column;
 	max-width: 180px;
 	max-height: 180px;
-	padding: 32px 20px;
+	padding: 32px 5px;
 	align-items: center;
 	justify-content: center;
 	.categoryTitle {
@@ -17,7 +17,7 @@
 		transition: 0.45s ease-in;
 	}
 	svg {
-		margin-left: 20px;
+		fill: #505050;
 		transition: 0.45s ease-in;
 	}
 	transition: 0.3s ease-in;
@@ -28,6 +28,66 @@
 		}
 		svg {
 			fill: #fff;
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.categoryButton {
+		max-width: 135px;
+		max-height: 135px;
+		padding: 20px 5px;
+		.categoryTitle {
+			font-size: 0.8rem;
+			margin-bottom: 15px;
+		}
+		svg {
+			width: 50%; height: 50%;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.categoryButton {
+		min-width: 135px;
+		min-height: 135px;
+		padding: 20px 5px;
+		.categoryTitle {
+			font-size: 0.8rem;
+			margin-bottom: 15px;
+		}
+		svg {
+			width: 50%; height: 50%;
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	.categoryButton {
+
+		min-width: 0; min-height: 0;
+		max-width: 220px;
+		max-height: 220px;
+		padding: 15px 5px;
+		.categoryTitle {
+			font-size: calc(0.6rem + (0.95 - 0.6)*((100vw - 400px)/(780 - 400)));
+			margin-bottom: 20px;
+		}
+		svg {
+			width: calc(45% + (60 - 45)*((100vw - 400px)/(780 - 400))); height: calc(45% + (60 - 45)*((100vw - 400px)/(780 - 400)));
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.categoryButton {
+		padding: 10px 5px;
+		.categoryTitle {
+			font-size: 0.75rem;
+			margin-bottom: 10px;
+		}
+		svg {
+			width: 50%; height: 50%;
 		}
 	}
 }

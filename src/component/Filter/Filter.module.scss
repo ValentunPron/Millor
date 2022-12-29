@@ -104,6 +104,7 @@
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	gap: 20px;
+	width: 100%;
 }
 
 
@@ -125,7 +126,7 @@
 			}
 		}
 		.roastingTitle {
-			font-size: 1.2rem;
+			font-size: 1rem;
 		}
 		.roastingList {
 			margin-top: 30px;
@@ -176,15 +177,31 @@
 			gap: 15px;
 		}
 	}
+	.filterCategory {
+		margin-top: 15px;
+	
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		gap: 15px;
+	}
 }
 
+@media (max-width: 1000px) {
+	.filterCategory {
+		margin-top: 15px;
+	
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
 
 @media (max-width: 780px) {
 	.filterTop {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 	}
-
 	.filterRoasting {
 		.roastingBody {
 			position: relative;
@@ -225,7 +242,6 @@
 			}
 		}
 	}
-
 	.filterDetalies {
 		max-height: none;
 		.detaliesList {
@@ -250,6 +266,14 @@
 		label {
 			font-size: calc(0.6rem + (0.95 - 0.6)*((100vw - 400px)/(780 - 400)));
 		}
+	}
+	.filterCategory {
+		margin-top: 40px;
+	
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: calc(10px + (20 - 10)*((100vw - 400px)/(780 - 400)));
 	}
 }
 
@@ -321,5 +345,11 @@
 		label {
 			font-size: calc(0.6rem + (0.95 - 0.6)*((100vw - 400px)/(780 - 400)));
 		}
+	}
+
+	.filterCategory {
+		margin-top: 20px;
+	
+		gap: 10px;
 	}
 }
