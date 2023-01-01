@@ -32,6 +32,7 @@ export const Discount = (): JSX.Element => {
 							spaceBetween={21}
 							loop={true}
 							loopFillGroupWithBlank={true}
+							allowTouchMove={false}
 							className={styles.sliderBody}
 							ref={swiperRef}
 							breakpoints={{
@@ -40,6 +41,7 @@ export const Discount = (): JSX.Element => {
 								},
 								380: {
 									slidesPerView: 2,
+									allowTouchMove: true,
 								},
 								770: {
 									slidesPerView: 3,

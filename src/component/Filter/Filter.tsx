@@ -1,5 +1,6 @@
 import React from "react";
 import { CategoryButton } from "../CategoryButton/CategoryButton";
+import { Poput } from "../Poput/Poput";
 import { RadioButton } from "../RadioButton/RadioButton";
 
 import styles from './Filter.module.scss';
@@ -215,6 +216,9 @@ export const Filter = (): JSX.Element => {
 						<path d="M40.8073 19.3798H50.2741C51.18 19.3798 51.9147 18.6451 51.9147 17.7392C51.9147 16.8332 51.18 16.0986 50.2741 16.0986H40.8073C39.9014 16.0986 39.1667 16.8332 39.1667 17.7392C39.1667 18.6451 39.9012 19.3798 40.8073 19.3798Z" />
 					</svg>
 				</CategoryButton>
+			</div>
+			<div className={styles.sortBy}>
+				<Poput type='sortBy' activeItem='По убыванию цены' items={['По возрастанию цены', 'По убыванию цены', 'По рейтингу', 'По кислотности']} />
 			</div>
 		</div>
 	)
