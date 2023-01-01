@@ -1,17 +1,30 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
 
 import { CatalogMain, Discount, MainSlider, NewsMain, Footer, Header } from '../component'
 import image01 from '../assets/image/whyWe/bgCoffe.png';
 import listImage01 from '../assets/image/whyWe/01.svg';
 import listImage02 from '../assets/image/whyWe/02.svg';
+import { fetchCoffe } from '../redux/action/coffe';
 
 export const Main = (): JSX.Element => {
-
+	const dispatch: Function = useDispatch();
+	const { items } = useSelector(({ coffe }: any) => {
+		return {
+			items: coffe.items,
+		}
+	});
 	const refCatalog = React.createRef<any>();
+
+	React.useEffect(() => {
+		dispatch(fetchCoffe());
+	}, []);
 
 	const scrollCatalog = () => {
 		refCatalog.current.scrollIntoView();
 	};
+
 	return (
 		<>
 			<Header scrollTo={scrollCatalog} />
@@ -19,7 +32,7 @@ export const Main = (): JSX.Element => {
 			<div ref={refCatalog}>
 				<CatalogMain />
 			</div>
-			<Discount />
+			<Discount coffe={items} />
 			<div className='aboutUs'>
 				<div className="aboutUs__whyWe whyWe">
 					<div className="container">

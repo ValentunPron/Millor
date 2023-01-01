@@ -1,8 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import axios from 'axios';
 
 import { Coffe, Main, NotFound } from './pages';
-import { WorkingWindow, Header } from './component'
+import { WorkingWindow } from './component'
 
 
 function App() {

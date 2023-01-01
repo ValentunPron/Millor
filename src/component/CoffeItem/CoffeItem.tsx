@@ -1,9 +1,9 @@
 import styles from './CoffeItem.module.scss';
+import { CoffeItemProps } from './CoffeItem.props';
 
-import image01 from '../../assets/image/Discount/01.png'
 import { Poput } from '../Poput/Poput';
 
-export const CoffeItem = () => {
+export const CoffeItem = ({ typePropertyTop, poputInfo, image, description, name, text, price }: CoffeItemProps): JSX.Element => {
 
 	const arrStar: any[] = ['', '', '', '', ''],
 		arrGusto: any[] = ['', '', '', '', '', '', '', '', '', ''];
@@ -33,55 +33,61 @@ export const CoffeItem = () => {
 			: <span key={index} ></span>);
 	}
 
+	const typeCoffe: any = {
+		discount: <span className={styles.discountActive}>Знижка</span>,
+		popular: <span>Популярное</span>,
+		new: <span>Новый урожай</span>,
+	}
+
 	return (
 		<div className={styles.sliderItem}>
 			<div className={styles.sliderTop}>
 				<div className={styles.discountTopinfo}>
-					<span>Знижка</span>
+					{typeCoffe[typePropertyTop]}
 				</div>
-				<Poput activeItem={250} items={[250, 500, 1000]} />
+				<Poput activeItem={poputInfo.poputActiveSize} items={poputInfo.poputSizes} />
 			</div>
 			<div className={styles.description}>
-				<img src={image01} alt="Colombia Supremo" />
+				<img src={image} alt={name} width={160} height={300} />
 				<div className={styles.descriptionInfo}>
 					<div className={styles.rating}>
 						<div>
-							{checkStart(3)}
+							{checkStart(description.rating)}
 						</div>
-						<p>{Number.isInteger(4) ? 4 + '.0' : 4}<span>({32} відгука)</span></p>
+						<p>{Number.isInteger(description.rating) ? description.rating + '.0' : description.rating}<span>({description.feedback} відгука)</span></p>
 					</div>
 					<div className={styles.roasting}>
-						{checkRoasting(6)}
+						{checkRoasting(description.roasting)}
 					</div>
 					<div className={styles.gusto}>
 						<div className={styles.gustoItem}>
 							<p>Кислинка</p>
 							<div className={styles.gustoNumber}>
-								{checkGuasto(7)}
+								{checkGuasto(description.acid)}
 							</div>
 						</div>
 						<div className={styles.gustoItem}>
 							<p>Гірчинка</p>
 							<div className={styles.gustoNumber}>
-								{checkGuasto(3)}
+								{checkGuasto(description.bitter)}
 							</div>
 						</div>
 						<div className={styles.gustoItem}>
 							<p>Насиченість</p>
 							<div className={styles.gustoNumber}>
-								{checkGuasto(6)}
+								{checkGuasto(description.saturation)}
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div className={styles.sliderBottom}>
-				<h3 className={styles.coffeTitle}>Colombia Supremo</h3>
-				<p className={styles.coffeInfo}>Свіжообсмажена кава - опис товару, смак, аромат</p>
+				<h3 className={styles.coffeTitle}>{name}</h3>
+				<p className={styles.coffeInfo}>{text}</p>
 				<div className={styles.coffeAction}>
 					<div className={styles.coffePrice}>
 						<span className={styles.discountPrice}>250 ₴</span>
-						<span className={styles.price}>200 ₴</span>
+						<span className={styles.price}>{price} ₴</span>
 					</div>
 					<button className={`button small`}>В корзину</button>
 				</div>

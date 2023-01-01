@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
 
+import { DiscountProps } from "./Discount.props";
 import styles from './Discount.module.scss';
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,10 +10,8 @@ import { CoffeItem } from "../CoffeItem/CoffeItem";
 
 
 
-export const Discount = (): JSX.Element => {
-
+export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
 	const swiperRef = React.useRef<any>(null);
-
 	return (
 		<div className={styles.discount}>
 			<div className="container">
@@ -41,10 +40,10 @@ export const Discount = (): JSX.Element => {
 								},
 								380: {
 									slidesPerView: 2,
-									allowTouchMove: true,
 								},
 								770: {
 									slidesPerView: 3,
+									allowTouchMove: true,
 								},
 								1000: {
 									slidesPerView: 3,
@@ -52,18 +51,13 @@ export const Discount = (): JSX.Element => {
 								}
 							}}
 						>
-							<SwiperSlide>
-								<CoffeItem />
-							</SwiperSlide>
-							<SwiperSlide>
-								<CoffeItem />
-							</SwiperSlide>
-							<SwiperSlide>
-								<CoffeItem />
-							</SwiperSlide>
-							<SwiperSlide>
-								<CoffeItem />
-							</SwiperSlide>
+							{
+								coffe.map((coffe: any) =>
+									<SwiperSlide key={coffe.id}>
+										<CoffeItem {...coffe} />
+									</SwiperSlide>
+								)
+							}
 						</Swiper>
 						<button className={`${styles.navigationButton} ${styles.buttonNext}`} onClick={() => swiperRef.current.swiper.slideNext()}>
 							<svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
