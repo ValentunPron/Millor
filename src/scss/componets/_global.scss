@@ -337,7 +337,9 @@ body {
 			width: calc(190px + (225 - 190)*((100vw - 375px)/(1200 - 375)));
 		}
 	}
-	
+	.linkNext {
+		font-size: 0.8rem;
+	}
 	.container {
 		padding: 0 15px;
 	}

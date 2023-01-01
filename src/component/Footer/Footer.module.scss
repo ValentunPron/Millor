@@ -40,6 +40,7 @@
 .mailingBody {
 	position: relative;
 	padding-bottom: 180px;
+	z-index: 3;
 	.mailingImage {
 		position: absolute;
 		content: '';

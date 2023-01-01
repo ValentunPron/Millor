@@ -118,7 +118,9 @@
 		gap: 15px;
 		grid-template-rows: auto;
 	}
-	
+	.sortBy {
+		margin-top: 30px;
+	}
 	.filterRoasting {
 		.roastingContainer {
 			padding: 30px 20px;
@@ -196,7 +198,7 @@
 	
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: flex-start;
 		flex-wrap: wrap;
 	}
 }
@@ -270,6 +272,9 @@
 		label {
 			font-size: calc(0.6rem + (0.95 - 0.6)*((100vw - 400px)/(780 - 400)));
 		}
+	}
+	.sortBy {
+		margin-top: 60px;
 	}
 	.filterCategory {
 		margin-top: 40px;
@@ -355,5 +360,9 @@
 		margin-top: 20px;
 	
 		gap: 10px;
+	}
+
+	.sortBy {
+		margin-top: 30px;
 	}
 }
