@@ -37,9 +37,11 @@ export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
 							breakpoints={{
 								1: {
 									slidesPerView: 1.5,
+									allowTouchMove: true,
 								},
 								380: {
 									slidesPerView: 2,
+									allowTouchMove: true,
 								},
 								770: {
 									slidesPerView: 3,
@@ -53,7 +55,7 @@ export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
 						>
 							{
 								coffe.map((coffe: any) =>
-									<SwiperSlide key={coffe.id}>
+									<SwiperSlide key={coffe.id} className={styles.sliderItem}>
 										<CoffeItem {...coffe} />
 									</SwiperSlide>
 								)

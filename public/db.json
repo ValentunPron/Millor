@@ -2,7 +2,7 @@
 	"coffe": [
 		{
 			"id": 0,
-			"typePropertyTop": "discount",
+			"typePropertyTop": ["discount"],
 			"poputInfo": {
 				"poputActiveSize": 250,
 				"poputSizes": [250, 500, 1000]
@@ -22,14 +22,14 @@
 		},
 		{
 			"id": 1,
-			"typePropertyTop": "discount",
+			"typePropertyTop": ["discount"],
 			"poputInfo": {
 				"poputActiveSize": 500,
 				"poputSizes": [500, 1000]
 			},
 			"image": "https://i.ibb.co/82WPK2q/item2.png",
 			"description": {
-				"rating": 10,
+				"rating": 4.2,
 				"feedback": 43,
 				"roasting": 3,
 				"acid": 1,
@@ -37,19 +37,19 @@
 				"saturation": 8 
 			},
 			"name": "Colombia Supremo",
-			"text": "Способ обработки: мытый. вкус порадует вас бергамотными и цветочными нотами, лимонной кислотностью и высокой сладости",
+			"text": "Способ обработки: мытый. вкус порадует вас бергамотными и цветочными нотами, лимонной кислотностью и высокой сладости ",
 			"price": 350
 		},
 		{
 			"id": 2,
-			"typePropertyTop": "discount",
+			"typePropertyTop": ["discount"],
 			"poputInfo": {
 				"poputActiveSize": 500,
 				"poputSizes": [250, 500, 1000, 2000]
 			},
 			"image": "https://i.ibb.co/g9Z2NMY/item3.png",
 			"description": {
-				"rating": 7.4,
+				"rating": 3.4,
 				"feedback": 23,
 				"roasting": 4,
 				"acid": 5,
