@@ -51,7 +51,7 @@
 
 .whyWe {
 	&__body {
-		padding: 20px;
+		padding: 0 0 20px;
 		display: flex;
 		align-items: flex-end;
 		gap: 85px;
@@ -165,7 +165,7 @@
 			max-width: 420px;
 		}
 		&__title {
-			margin-top: 100px;
+			margin-top: 60px;
 		}
 		&__list {
 			margin-top: 60px;
@@ -271,6 +271,7 @@
 		}
 	}
 	.whyWe {
+		margin-top: -50px;
 		&__body {
 			padding-bottom: 30px;
 			gap: 60px;
@@ -280,7 +281,7 @@
 		}
 		&__title {
 			font-size: 1.6rem;
-			margin-top: 160px;
+			margin-top: 150px;
 		}
 		&__list {
 			margin-top: 60px;

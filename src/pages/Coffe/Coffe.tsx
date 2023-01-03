@@ -45,7 +45,7 @@ export const Coffe = (): JSX.Element => {
 						<div className="container">
 							<div className={styles.catalogList}>
 								{
-									coffe.map((coffeItem: any) => <CoffeItem {...coffeItem} />)
+									coffe.map((coffeItem: any) => <CoffeItem key={coffeItem.id} {...coffeItem} />)
 								}
 							</div>
 						</div>

@@ -161,15 +161,15 @@
 	.sliderBody {
 		max-width: calc(600px + (710 - 600)*((100vw - 400px)/(770 - 440)));
 		margin-right: -260px;
-		padding: 9px;
+		padding: 20px 10px;
 	}
 }
 
 @media (max-width: 380px) {
 	.sliderBody {
-		margin-top: -20px;
+		margin-top: 20px;
 		max-width: 400px;
 		margin-right: -100px;
-		padding: 10px;
+		padding: 20px 10px;
 	}
 }
