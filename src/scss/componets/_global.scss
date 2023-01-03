@@ -169,6 +169,28 @@ body {
 	}
 }
 
+.viewNext {
+	margin-top: 60px;
+	padding: 20px;
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #E4E4E4;
+	border-radius: 10px;
+
+	font-weight: 500;
+	font-size: 0.8rem;
+	line-height: 1.2;
+	color: #000000;
+	transition: .2s ease-in-out;
+	&:hover, :focus {
+		background: #FFF7E1;
+	}
+	&:active {
+		background: #E2A300;
+		transform: translateY(-5px);
+	}
+}
+
 .title {
 	font-weight: 900;
 	font-size: 2rem;
@@ -292,6 +314,9 @@ body {
 		.middle {
 			padding: 10px;
 		}
+	}
+	.viewNext {
+		padding: 15px;
 	}
 	.logo {
 		width: calc(159px + (179 - 159)*((100vw - 768px)/(1200 - 768)));

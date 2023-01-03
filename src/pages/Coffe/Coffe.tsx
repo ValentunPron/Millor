@@ -10,6 +10,21 @@ import { fetchCoffe } from '../../redux/action/coffe';
 
 export const Coffe = (): JSX.Element => {
 	const dispatch: Function = useDispatch();
+	const [count, setCount] = React.useState(12);
+	React.useLayoutEffect(() => {
+		const updateCount = () => {
+			if (window.innerWidth >= 780) {
+				setCount(12)
+			} else if (window.innerWidth < 780 && window.innerWidth >= 500) {
+				setCount(6)
+			} else {
+				setCount(3)
+			}
+		}
+		window.addEventListener('resize', updateCount);
+		updateCount();
+		return () => window.removeEventListener('resize', updateCount);
+	}, [])
 	const { coffe } = useSelector(({ coffe }: any) => {
 		return {
 			coffe: coffe.items,
@@ -19,7 +34,6 @@ export const Coffe = (): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(fetchCoffe());
 	}, []);
-
 	return (
 		<>
 			<Header headerActive={true} />
@@ -45,9 +59,16 @@ export const Coffe = (): JSX.Element => {
 						<div className="container">
 							<div className={styles.catalogList}>
 								{
-									coffe.map((coffeItem: any) => <CoffeItem key={coffeItem.id} {...coffeItem} />)
+									coffe.map((coffeItem: any, index: number) => {
+										if (index < count) {
+											return <CoffeItem key={coffeItem.id} {...coffeItem} />
+										}
+									})
 								}
 							</div>
+							{
+								coffe.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
+							}
 						</div>
 					</div>
 				</div>
