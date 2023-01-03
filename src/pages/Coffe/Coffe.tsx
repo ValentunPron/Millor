@@ -1,13 +1,24 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { Filter, Footer, Header } from '../../component';
 import imageCoffe from '../../assets/image/coffe.png';
 import styles from './Coffe.module.scss';
+import { CoffeItem } from '../../component/CoffeItem/CoffeItem';
+import { fetchCoffe } from '../../redux/action/coffe';
 
 export const Coffe = (): JSX.Element => {
+	const dispatch: Function = useDispatch();
+	const { coffe } = useSelector(({ coffe }: any) => {
+		return {
+			coffe: coffe.items,
+		}
+	});
 
-
+	React.useEffect(() => {
+		dispatch(fetchCoffe());
+	}, []);
 
 	return (
 		<>
@@ -27,6 +38,15 @@ export const Coffe = (): JSX.Element => {
 							</div>
 							<div className={styles.coffeFilter}>
 								<Filter />
+							</div>
+						</div>
+					</div>
+					<div className={styles.catalogBody}>
+						<div className="container">
+							<div className={styles.catalogList}>
+								{
+									coffe.map((coffeItem: any) => <CoffeItem {...coffeItem} />)
+								}
 							</div>
 						</div>
 					</div>

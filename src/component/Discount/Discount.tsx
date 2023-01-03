@@ -7,6 +7,7 @@ import styles from './Discount.module.scss';
 import "swiper/css";
 import "swiper/css/navigation";
 import { CoffeItem } from "../CoffeItem/CoffeItem";
+import { Link } from "react-router-dom";
 
 
 
@@ -55,9 +56,15 @@ export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
 						>
 							{
 								coffe.map((coffe: any) =>
-									<SwiperSlide key={coffe.id} className={styles.sliderItem}>
-										<CoffeItem {...coffe} />
-									</SwiperSlide>
+									coffe.typePropertyTop.map((type: string) => {
+										if (type === 'discount') {
+											return (
+												<SwiperSlide key={coffe.id} className={styles.sliderItem}>
+													<CoffeItem {...coffe} />
+												</SwiperSlide>
+											)
+										}
+									})
 								)
 							}
 						</Swiper>
@@ -67,7 +74,7 @@ export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
 							</svg>
 						</button>
 					</div>
-					<a href="#s" className={styles.viewAll}>Дивитися все</a>
+					<Link to="/coffe" className={styles.viewAll} onClick={() => window.scroll(0, 0)}>Дивитися все</Link>
 				</div>
 			</div>
 		</div >

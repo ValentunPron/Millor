@@ -135,12 +135,12 @@
 
 @media (max-width: 770px) {
 	.poputStart {
-		min-width: 110px;
+		min-width: calc(80px + (110 - 80)*((100vw - 400px)/(770 - 400)));
 
-		font-size: 0.666rem;
-		padding: 6px 20px 6px 20px;
+		font-size: 0.6rem;
+		padding: 6px 10px 6px 10px;
 		svg {
-			width: 9px;
+			width: 8px;
 		}
 	}
 	.poputMenu {

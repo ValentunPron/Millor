@@ -216,7 +216,7 @@ body {
 		.mainSlider
 		{
 			&::after {
-				top: -400px;
+				top: -525px;
 				right: -55%;
 				background-size: calc(600px + (700 - 600)*((100vw - 1600px)/(1600 - 1400))), 100% 100%;
 				background-position: top 660px left 0, top 0px left 100px;
@@ -254,7 +254,7 @@ body {
 	.wrapper {
 		.mainSlider {
 			&::after {
-				top: -450px;
+				top: -600px;
 				right: -55%;
 				background-size: calc(400px + (625 - 400)*((100vw - 770px)/(1400 - 770))), 100% 100%;
 				background-position: top 660px left 0, top -110px left 100px;

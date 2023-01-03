@@ -28,6 +28,7 @@
 }
 
 .sliderItem {
+	margin-top: 10px;
 	display: flex;
 }
 
@@ -69,7 +70,6 @@
 
 @media (max-width: 1600px) {
 	.sliderBody {
-		margin: 0;
 		max-width: 1180px;
 		padding: 20px 12px;
 	}
@@ -88,7 +88,7 @@
 
 @media (max-width: 1600px) {
 	.sliderBody {
-		margin: 0;
+		margin-top: 30px;
 		max-width: 1100px;
 		padding: 20px 12px;
 	}
