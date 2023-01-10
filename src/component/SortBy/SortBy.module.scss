@@ -1,0 +1,124 @@
+.poput {
+	position: relative;
+	&.active {
+		z-index: 125;
+	}
+}
+
+.poputSortBy {
+	position: absolute;
+	left: 0; top: 0;
+	display: inline-flex;
+	align-items: center;
+	flex-direction: column;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(103, 103, 103, 0.25);
+	border-radius: 5px;
+	min-width: 270px;
+	transition: all .4s ease;
+	&::after {
+		position: fixed;
+		content: '';
+		top: 0; left: 0; 
+		width: 100vw; height: 100vh;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: -1;
+	}
+	button {
+		width: 100%;
+		background-color: transparent;
+		text-align: left;
+		font-size: 0.72rem;
+		line-height: 1.2;
+		padding: 10px 30px;
+	}
+	.sortByActive {
+		padding: 20px 30px;
+		color: #F9B300;
+		border: 1px solid #E9E9E9;
+	}
+	.close {
+		padding: 0px;
+		width: 15px; height: 15px;
+		position: absolute;
+		top: 0; right: 0;
+		margin: 25px 20px;
+		&::after, &::before {
+			position: absolute;
+			content: '';
+			top: 0; bottom: 0; right: 0; left: 0;
+			margin: auto;
+			height: 100%;
+			width: 1px;
+			background-color: #000;
+		}
+		&::after {
+			transform: rotate(45deg);
+		}
+		&::before {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.poputSortBy {
+		min-width: 150px;
+		button {
+			width: 100%;
+			padding: 7.5px 30px;
+			padding-right: 50px;
+		}
+		.sortByActive {
+			padding: 10px 30px;
+			padding-right: 50px;
+		}
+		.close {
+			width: 12.5px; height: 12.5px;
+			margin: 15px;
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.poputSortBy {
+		margin-left: -15px;
+		min-width: 0px;
+		width: 100vw;
+		button {
+			width: 100%;
+			padding: 10px;
+			padding-left: calc(37.5px + (55 - 37.5)*((100vw - 400px)/(780 - 400)));
+		}
+		.sortByActive {
+			padding: 10px;
+			padding-left: calc(37.5px + (55 - 37.5)*((100vw - 400px)/(780 - 400)));
+		}
+		.close {
+			width: 17px; height: 17px;
+			margin: 15px;
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	.sortBy {
+		padding-left: 15px;
+	}
+	.poputSortBy {
+		margin-left: -15px;
+		min-width: 0px;
+		width: 100vw;
+		button {
+			padding: 10px;
+			padding-left: 35px;
+		}
+		.sortByActive {
+			padding: 10px;
+			padding-left: calc(37.5px + (55 - 37.5)*((100vw - 400px)/(780 - 400)));
+		}
+		.close {
+			width: 13px; height: 13px;
+		}
+	}
+}

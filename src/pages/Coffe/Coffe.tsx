@@ -6,11 +6,40 @@ import { Filter, Footer, Header } from '../../component';
 import imageCoffe from '../../assets/image/coffe.png';
 import styles from './Coffe.module.scss';
 import { CoffeItem } from '../../component/CoffeItem/CoffeItem';
-import { fetchCoffe } from '../../redux/action/coffe';
+import { filterCoffe } from '../../redux/action/coffe';
+import { setSortBy } from '../../redux/action/filter';
+
+export interface sortByInterface {
+	name: string,
+	type: string,
+	order: string,
+}
+
+const sortByItems: sortByInterface[] = [
+	{ name: 'По возрастанию цены', type: 'price', order: 'desc' },
+	{ name: 'По убыванию цены', type: 'price', order: 'asc' },
+	{ name: 'По рейтингу', type: 'rating', order: 'asc' },
+	{ name: 'По кислотности', type: 'acid', order: 'asc' }
+]
+
 
 export const Coffe = (): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
+	const { coffe, sortBy } = useSelector(({ coffe, filter, }: any) => {
+		return {
+			coffe: coffe.items,
+			sortBy: filter.sortBy
+
+		}
+	});
+	React.useEffect(() => {
+		dispatch(filterCoffe(sortBy));
+	}, [sortBy]);
+	const selectSort = React.useCallback((type: string) => {
+		dispatch(setSortBy(type));
+	}, []);
+
 	React.useLayoutEffect(() => {
 		const updateCount = () => {
 			if (window.innerWidth >= 780) {
@@ -24,15 +53,6 @@ export const Coffe = (): JSX.Element => {
 		window.addEventListener('resize', updateCount);
 		updateCount();
 		return () => window.removeEventListener('resize', updateCount);
-	}, [])
-	const { coffe } = useSelector(({ coffe }: any) => {
-		return {
-			coffe: coffe.items,
-		}
-	});
-
-	React.useEffect(() => {
-		dispatch(fetchCoffe());
 	}, []);
 	return (
 		<>
@@ -51,7 +71,7 @@ export const Coffe = (): JSX.Element => {
 								<img src={imageCoffe} alt="coffe" width={660} height={450} />
 							</div>
 							<div className={styles.coffeFilter}>
-								<Filter />
+								<Filter sortBy={sortByItems} sortActive={sortBy.name} setSort={selectSort} />
 							</div>
 						</div>
 					</div>

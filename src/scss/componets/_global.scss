@@ -380,6 +380,9 @@ body {
 			font-size: 0.64rem;
 		}
 	}
+	.viewNext {
+		margin-top: 30px;
+	}
 }
 @media (max-width: 380px) {
 	html {
@@ -425,5 +428,9 @@ body {
 	}
 	.main {
 		margin-top: 70px;
+	}
+	.viewNext {
+		margin-top: 30px;
+		padding: 15px;
 	}
 }

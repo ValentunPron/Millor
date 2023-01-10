@@ -1,7 +1,8 @@
 import { combineReducers } from "redux";
 
-import { coffe } from './coffe';;
+import { coffe } from './coffe';
+import { filter } from './filter';
 
 export const rootReducers = combineReducers({
-	coffe,
+	coffe, filter,
 })

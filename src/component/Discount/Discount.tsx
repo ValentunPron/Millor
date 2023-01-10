@@ -60,7 +60,7 @@ export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
 										if (type === 'discount') {
 											return (
 												<SwiperSlide key={coffe.id} className={styles.sliderItem}>
-													<CoffeItem {...coffe} />
+													<CoffeItem key={coffe.id}  {...coffe} />
 												</SwiperSlide>
 											)
 										}

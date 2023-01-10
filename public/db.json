@@ -2,10 +2,16 @@
 	"coffe": [
 		{
 			"id": 0,
-			"typePropertyTop": ["discount"],
+			"typePropertyTop": [
+			"discount"
+			],
 			"poputInfo": {
-				"poputActiveSize": 250,
-				"poputSizes": [250, 500, 1000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250,
+			500,
+			1000
+			]
 			},
 			"image": "https://i.ibb.co/BV2jYvc/item1.png",
 			"description": {
@@ -14,27 +20,34 @@
 				"roasting": 5,
 				"acid": 7,
 				"bitter": 8,
-				"saturation": 6 
+				"saturation": 6
 			},
+			"rating": 4,
+			"acid": 7,
 			"name": "Brazil Santos",
 			"text": "Способ обработки: мытый. Ароматный и сбалансированный кофе, обладает вкусом без лишней кислотности с нотками фундука и какао.",
 			"price": 300
 		},
 		{
 			"id": 1,
-			"typePropertyTop": ["discount"],
+			"typePropertyTop": [
+			"discount"
+			],
 			"poputInfo": {
-				"poputActiveSize": 500,
-				"poputSizes": [500, 1000]
+			"poputActiveSize": 500,
+			"poputSizes": [
+			500,
+			1000
+			]
 			},
 			"image": "https://i.ibb.co/82WPK2q/item2.png",
 			"description": {
-				"rating": 4.2,
-				"feedback": 43,
-				"roasting": 3,
-				"acid": 1,
-				"bitter": 6,
-				"saturation": 8 
+			"rating": 4.2,
+			"feedback": 43,
+			"roasting": 3,
+			"acid": 1,
+			"bitter": 6,
+			"saturation": 8
 			},
 			"name": "Colombia Supremo",
 			"text": "Способ обработки: мытый. вкус порадует вас бергамотными и цветочными нотами, лимонной кислотностью и высокой сладости ",
@@ -42,19 +55,26 @@
 		},
 		{
 			"id": 2,
-			"typePropertyTop": ["discount"],
+			"typePropertyTop": [
+			"discount"
+			],
 			"poputInfo": {
-				"poputActiveSize": 250,
-				"poputSizes": [250, 500, 1000, 2000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250,
+			500,
+			1000,
+			2000
+			]
 			},
 			"image": "https://i.ibb.co/g9Z2NMY/item3.png",
 			"description": {
-				"rating": 3.4,
-				"feedback": 23,
-				"roasting": 4,
-				"acid": 5,
-				"bitter": 6,
-				"saturation": 2 
+			"rating": 3.4,
+			"feedback": 23,
+			"roasting": 4,
+			"acid": 5,
+			"bitter": 6,
+			"saturation": 2
 			},
 			"name": "Blend Espresso",
 			"text": "Эспрессо-смесь (Arabica & Robusta). 70 на 30%. Кофе с ароматом специй и какао. Терпкий вкус с оттенками лесного ореха и шоколада, практически без кислотности.",
@@ -64,136 +84,162 @@
 			"id": 3,
 			"typePropertyTop": ["popular", "new"],
 			"poputInfo": {
-				"poputActiveSize": 250,
-				"poputSizes": [250, 500, 1000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250,
+			500
+			]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"image": "https://i.ibb.co/L0nQZ48/item4.png",
 			"description": {
-				"rating": 4,
-				"feedback": 23,
-				"roasting": 5,
-				"acid": 7,
-				"bitter": 8,
-				"saturation": 6 
+			"rating": 4.2,
+			"feedback": 3,
+			"roasting": 2,
+			"acid": 9,
+			"bitter": 4,
+			"saturation": 3
 			},
-			"name": "Brazil Santos",
-			"text": "Способ обработки: мытый. Ароматный и сбалансированный кофе, обладает вкусом без лишней кислотности с нотками фундука и какао.",
-			"price": 300
+			"name": "Panama Arabica",
+			"text": "Способ обработки: мытый. Сладкое интенсивное послевкусие фруктов, с минимальной кислинкой и плотной текстурой.",
+			"price": 200
 		},
 		{
 			"id": 4,
 			"typePropertyTop": ["popular", "new"],
 			"poputInfo": {
-				"poputActiveSize": 500,
-				"poputSizes": [500, 1000]
+			"poputActiveSize": 500,
+			"poputSizes": [
+			500,
+			1000
+			]
 			},
-			"image": "https://i.ibb.co/82WPK2q/item2.png",
+			"image": "https://i.ibb.co/BgsRR9k/item5.png",
 			"description": {
-				"rating": 4.2,
-				"feedback": 43,
-				"roasting": 3,
-				"acid": 1,
-				"bitter": 6,
-				"saturation": 8 
+			"rating": 3.5,
+			"feedback": 5,
+			"roasting": 4,
+			"acid": 2,
+			"bitter": 5,
+			"saturation": 6
 			},
-			"name": "Colombia Supremo",
-			"text": "Способ обработки: мытый. вкус порадует вас бергамотными и цветочными нотами, лимонной кислотностью и высокой сладости ",
-			"price": 350
+			"name": "Nicaragua SHG",
+			"text": "Способ обработки: мытый. Сложный фруктовый вкус. Преобладает явная фруктовая вязкость с карамель, текстура напитка плотная и сочная.",
+			"price": 184
 		},
 		{
 			"id": 5,
-			"typePropertyTop": ["popular", "new"],
+			"typePropertyTop": ["new"],
 			"poputInfo": {
-				"poputActiveSize": 500,
-				"poputSizes": [250, 500, 1000, 2000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250
+			]
 			},
-			"image": "https://i.ibb.co/g9Z2NMY/item3.png",
+			"image": "https://i.ibb.co/XJzfDPx/item6.png",
 			"description": {
-				"rating": 3.4,
-				"feedback": 23,
-				"roasting": 4,
-				"acid": 5,
-				"bitter": 6,
-				"saturation": 2 
+			"rating": 2.7,
+			"feedback": 9,
+			"roasting": 5,
+			"acid": 5,
+			"bitter": 2,
+			"saturation": 10
 			},
-			"name": "Blend Espresso",
-			"text": "Эспрессо-смесь (Arabica & Robusta). 70 на 30%. Кофе с ароматом специй и какао. Терпкий вкус с оттенками лесного ореха и шоколада, практически без кислотности.",
-			"price": 399
-		}, 		{
+			"name": "Honduras",
+			"text": "Способ обработки: мытая. Плотный и насыщенный сорт кофе. Во вкусе горький шоколад, табак. Легкая винная кислинка на послевкусии.",
+			"price": 129
+		},
+		{
 			"id": 6,
-			"typePropertyTop": ["discount"],
+			"typePropertyTop": ["popular"],
 			"poputInfo": {
-				"poputActiveSize": 250,
-				"poputSizes": [250, 500, 1000]
+			"poputActiveSize": 500,
+			"poputSizes": [
+			500,
+			1000
+			]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"image": "https://i.ibb.co/nD6jBzW/item7.png",
 			"description": {
-				"rating": 4,
-				"feedback": 23,
-				"roasting": 5,
-				"acid": 7,
-				"bitter": 8,
-				"saturation": 6 
+			"rating": 5,
+			"feedback": 1,
+			"roasting": 1,
+			"acid": 1,
+			"bitter": 5,
+			"saturation": 8
 			},
-			"name": "Brazil Santos",
-			"text": "Способ обработки: мытый. Ароматный и сбалансированный кофе, обладает вкусом без лишней кислотности с нотками фундука и какао.",
-			"price": 300
+			"name": "Mexico",
+			"text": "Способ обработки: мытый . Нотки табака и сухофруктов во вкусе, винная терпкость на послевкусии.",
+			"price": 299
 		},
 		{
 			"id": 7,
-			"typePropertyTop": ["discount"],
+			"typePropertyTop": ["popular"],
 			"poputInfo": {
-				"poputActiveSize": 500,
-				"poputSizes": [500, 1000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250,
+			500,
+			1000
+			]
 			},
-			"image": "https://i.ibb.co/82WPK2q/item2.png",
+			"image": "https://i.ibb.co/vcnPG5t/item8.png",
 			"description": {
-				"rating": 4.2,
-				"feedback": 43,
-				"roasting": 3,
-				"acid": 1,
-				"bitter": 6,
-				"saturation": 8 
+			"rating": 4.2,
+			"feedback": 3,
+			"roasting": 5,
+			"acid": 3,
+			"bitter": 7,
+			"saturation": 5
 			},
-			"name": "Colombia Supremo",
-			"text": "Способ обработки: мытый. вкус порадует вас бергамотными и цветочными нотами, лимонной кислотностью и высокой сладости ",
-			"price": 350
+			"name": "Blend Gurme",
+			"text": "Бленд трех ярких сортов арабики. Запоминающийся, чистый, сильный и яркий кофе. В эспрессо вас удивит яркий ягодный вкус и фруктовая сладость.",
+			"price": 200
 		},
 		{
 			"id": 8,
 			"typePropertyTop": ["discount"],
 			"poputInfo": {
-				"poputActiveSize": 250,
-				"poputSizes": [250, 500, 1000, 2000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250,
+			500,
+			1000
+			]
 			},
-			"image": "https://i.ibb.co/g9Z2NMY/item3.png",
+			"image": "https://i.ibb.co/hYynhzZ/item9.png",
 			"description": {
-				"rating": 3.4,
-				"feedback": 23,
-				"roasting": 4,
-				"acid": 5,
-				"bitter": 6,
-				"saturation": 2 
+			"rating": 4.2,
+			"feedback": 3,
+			"roasting": 5,
+			"acid": 3,
+			"bitter": 7,
+			"saturation": 5
 			},
-			"name": "Blend Espresso",
-			"text": "Эспрессо-смесь (Arabica & Robusta). 70 на 30%. Кофе с ароматом специй и какао. Терпкий вкус с оттенками лесного ореха и шоколада, практически без кислотности.",
-			"price": 399
+			"name": "Blend Gurme",
+			"text": "Бленд трех ярких сортов арабики. Запоминающийся, чистый, сильный и яркий кофе. В эспрессо вас удивит яркий ягодный вкус и фруктовая сладость.",
+			"price": 200
 		},
 		{
 			"id": 9,
-			"typePropertyTop": ["popular", "new"],
+			"typePropertyTop": [
+			"discount"
+			],
 			"poputInfo": {
-				"poputActiveSize": 250,
-				"poputSizes": [250, 500, 1000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250,
+			500,
+			1000
+			]
 			},
 			"image": "https://i.ibb.co/BV2jYvc/item1.png",
 			"description": {
-				"rating": 4,
-				"feedback": 23,
-				"roasting": 5,
-				"acid": 7,
-				"bitter": 8,
-				"saturation": 6 
+			"rating": 4,
+			"feedback": 23,
+			"roasting": 5,
+			"acid": 7,
+			"bitter": 8,
+			"saturation": 6
 			},
 			"name": "Brazil Santos",
 			"text": "Способ обработки: мытый. Ароматный и сбалансированный кофе, обладает вкусом без лишней кислотности с нотками фундука и какао.",
@@ -201,19 +247,24 @@
 		},
 		{
 			"id": 10,
-			"typePropertyTop": ["popular", "new"],
+			"typePropertyTop": [
+			"discount"
+			],
 			"poputInfo": {
-				"poputActiveSize": 500,
-				"poputSizes": [500, 1000]
+			"poputActiveSize": 500,
+			"poputSizes": [
+			500,
+			1000
+			]
 			},
 			"image": "https://i.ibb.co/82WPK2q/item2.png",
 			"description": {
-				"rating": 4.2,
-				"feedback": 43,
-				"roasting": 3,
-				"acid": 1,
-				"bitter": 6,
-				"saturation": 8 
+			"rating": 4.2,
+			"feedback": 43,
+			"roasting": 3,
+			"acid": 1,
+			"bitter": 6,
+			"saturation": 8
 			},
 			"name": "Colombia Supremo",
 			"text": "Способ обработки: мытый. вкус порадует вас бергамотными и цветочными нотами, лимонной кислотностью и высокой сладости ",
@@ -221,143 +272,169 @@
 		},
 		{
 			"id": 11,
-			"typePropertyTop": ["popular", "new"],
+			"typePropertyTop": [
+			"discount"
+			],
 			"poputInfo": {
-				"poputActiveSize": 500,
-				"poputSizes": [250, 500, 1000, 2000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250,
+			500,
+			1000,
+			2000
+			]
 			},
 			"image": "https://i.ibb.co/g9Z2NMY/item3.png",
 			"description": {
-				"rating": 3.4,
-				"feedback": 23,
-				"roasting": 4,
-				"acid": 5,
-				"bitter": 6,
-				"saturation": 2 
+			"rating": 3.4,
+			"feedback": 23,
+			"roasting": 4,
+			"acid": 5,
+			"bitter": 6,
+			"saturation": 2
 			},
 			"name": "Blend Espresso",
 			"text": "Эспрессо-смесь (Arabica & Robusta). 70 на 30%. Кофе с ароматом специй и какао. Терпкий вкус с оттенками лесного ореха и шоколада, практически без кислотности.",
 			"price": 399
-		}, 
+		},
 		{
 			"id": 12,
-			"typePropertyTop": ["discount"],
+			"typePropertyTop": ["popular", "new"],
 			"poputInfo": {
-				"poputActiveSize": 250,
-				"poputSizes": [250, 500, 1000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250,
+			500
+			]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"image": "https://i.ibb.co/L0nQZ48/item4.png",
 			"description": {
-				"rating": 4,
-				"feedback": 23,
-				"roasting": 5,
-				"acid": 7,
-				"bitter": 8,
-				"saturation": 6 
+			"rating": 4.2,
+			"feedback": 3,
+			"roasting": 2,
+			"acid": 9,
+			"bitter": 4,
+			"saturation": 3
 			},
-			"name": "Brazil Santos",
-			"text": "Способ обработки: мытый. Ароматный и сбалансированный кофе, обладает вкусом без лишней кислотности с нотками фундука и какао.",
-			"price": 300
+			"name": "Panama Arabica",
+			"text": "Способ обработки: мытый. Сладкое интенсивное послевкусие фруктов, с минимальной кислинкой и плотной текстурой.",
+			"price": 200
 		},
 		{
 			"id": 13,
-			"typePropertyTop": ["discount"],
+			"typePropertyTop": ["popular", "new"],
 			"poputInfo": {
-				"poputActiveSize": 500,
-				"poputSizes": [500, 1000]
+			"poputActiveSize": 500,
+			"poputSizes": [
+			500,
+			1000
+			]
 			},
-			"image": "https://i.ibb.co/82WPK2q/item2.png",
+			"image": "https://i.ibb.co/BgsRR9k/item5.png",
 			"description": {
-				"rating": 4.2,
-				"feedback": 43,
-				"roasting": 3,
-				"acid": 1,
-				"bitter": 6,
-				"saturation": 8 
+			"rating": 3.5,
+			"feedback": 5,
+			"roasting": 4,
+			"acid": 2,
+			"bitter": 5,
+			"saturation": 6
 			},
-			"name": "Colombia Supremo",
-			"text": "Способ обработки: мытый. вкус порадует вас бергамотными и цветочными нотами, лимонной кислотностью и высокой сладости ",
-			"price": 350
+			"name": "Nicaragua SHG",
+			"text": "Способ обработки: мытый. Сложный фруктовый вкус. Преобладает явная фруктовая вязкость с карамель, текстура напитка плотная и сочная.",
+			"price": 184
 		},
 		{
 			"id": 14,
-			"typePropertyTop": ["discount"],
+			"typePropertyTop": ["new"],
 			"poputInfo": {
-				"poputActiveSize": 250,
-				"poputSizes": [250, 500, 1000, 2000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250
+			]
 			},
-			"image": "https://i.ibb.co/g9Z2NMY/item3.png",
+			"image": "https://i.ibb.co/XJzfDPx/item6.png",
 			"description": {
-				"rating": 3.4,
-				"feedback": 23,
-				"roasting": 4,
-				"acid": 5,
-				"bitter": 6,
-				"saturation": 2 
+			"rating": 2.7,
+			"feedback": 9,
+			"roasting": 5,
+			"acid": 5,
+			"bitter": 2,
+			"saturation": 10
 			},
-			"name": "Blend Espresso",
-			"text": "Эспрессо-смесь (Arabica & Robusta). 70 на 30%. Кофе с ароматом специй и какао. Терпкий вкус с оттенками лесного ореха и шоколада, практически без кислотности.",
-			"price": 399
+			"name": "Honduras",
+			"text": "Способ обработки: мытая. Плотный и насыщенный сорт кофе. Во вкусе горький шоколад, табак. Легкая винная кислинка на послевкусии.",
+			"price": 129
 		},
 		{
 			"id": 15,
-			"typePropertyTop": ["popular", "new"],
+			"typePropertyTop": ["popular"],
 			"poputInfo": {
-				"poputActiveSize": 250,
-				"poputSizes": [250, 500, 1000]
+			"poputActiveSize": 500,
+			"poputSizes": [
+			500,
+			1000
+			]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"image": "https://i.ibb.co/nD6jBzW/item7.png",
 			"description": {
-				"rating": 4,
-				"feedback": 23,
-				"roasting": 5,
-				"acid": 7,
-				"bitter": 8,
-				"saturation": 6 
+			"rating": 5,
+			"feedback": 1,
+			"roasting": 1,
+			"acid": 1,
+			"bitter": 5,
+			"saturation": 8
 			},
-			"name": "Brazil Santos",
-			"text": "Способ обработки: мытый. Ароматный и сбалансированный кофе, обладает вкусом без лишней кислотности с нотками фундука и какао.",
-			"price": 300
+			"name": "Mexico",
+			"text": "Способ обработки: мытый . Нотки табака и сухофруктов во вкусе, винная терпкость на послевкусии.",
+			"price": 299
 		},
 		{
 			"id": 16,
-			"typePropertyTop": ["popular", "new"],
+			"typePropertyTop": ["popular"],
 			"poputInfo": {
-				"poputActiveSize": 500,
-				"poputSizes": [500, 1000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250,
+			500,
+			1000
+			]
 			},
-			"image": "https://i.ibb.co/82WPK2q/item2.png",
+			"image": "https://i.ibb.co/vcnPG5t/item8.png",
 			"description": {
-				"rating": 4.2,
-				"feedback": 43,
-				"roasting": 3,
-				"acid": 1,
-				"bitter": 6,
-				"saturation": 8 
+			"rating": 4.2,
+			"feedback": 3,
+			"roasting": 5,
+			"acid": 3,
+			"bitter": 7,
+			"saturation": 5
 			},
-			"name": "Colombia Supremo",
-			"text": "Способ обработки: мытый. вкус порадует вас бергамотными и цветочными нотами, лимонной кислотностью и высокой сладости ",
-			"price": 350
+			"name": "Blend Gurme",
+			"text": "Бленд трех ярких сортов арабики. Запоминающийся, чистый, сильный и яркий кофе. В эспрессо вас удивит яркий ягодный вкус и фруктовая сладость.",
+			"price": 200
 		},
 		{
 			"id": 17,
-			"typePropertyTop": ["popular", "new"],
+			"typePropertyTop": ["discount"],
 			"poputInfo": {
-				"poputActiveSize": 500,
-				"poputSizes": [250, 500, 1000, 2000]
+			"poputActiveSize": 250,
+			"poputSizes": [
+			250,
+			500,
+			1000
+			]
 			},
-			"image": "https://i.ibb.co/g9Z2NMY/item3.png",
+			"image": "https://i.ibb.co/hYynhzZ/item9.png",
 			"description": {
-				"rating": 3.4,
-				"feedback": 23,
-				"roasting": 4,
-				"acid": 5,
-				"bitter": 6,
-				"saturation": 2 
+			"rating": 4.2,
+			"feedback": 3,
+			"roasting": 5,
+			"acid": 3,
+			"bitter": 7,
+			"saturation": 5
 			},
-			"name": "Blend Espresso",
-			"text": "Эспрессо-смесь (Arabica & Robusta). 70 на 30%. Кофе с ароматом специй и какао. Терпкий вкус с оттенками лесного ореха и шоколада, практически без кислотности.",
-			"price": 399
+			"name": "Blend Gurme",
+			"text": "Бленд трех ярких сортов арабики. Запоминающийся, чистый, сильный и яркий кофе. В эспрессо вас удивит яркий ягодный вкус и фруктовая сладость.",
+			"price": 200
 		}
 	]
 }

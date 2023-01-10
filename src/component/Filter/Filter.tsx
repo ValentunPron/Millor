@@ -1,9 +1,10 @@
 import React from "react";
 import { CategoryButton } from "../CategoryButton/CategoryButton";
-import { Poput } from "../Poput/Poput";
 import { RadioButton } from "../RadioButton/RadioButton";
+import { SortBy } from "../SortBy/SortBy";
 
 import styles from './Filter.module.scss';
+import { FilterProps } from "./Filter.props";
 
 const arrStar: any[] = ['', '', '', '', ''];
 
@@ -19,7 +20,7 @@ const Roasting = (roasting: number) => {
 	);
 }
 
-export const Filter = (): JSX.Element => {
+export const Filter = ({ sortBy, sortActive, setSort }: FilterProps): JSX.Element => {
 	return (
 		<div className={styles.filter}>
 			<div className={styles.filterTop}>
@@ -218,7 +219,7 @@ export const Filter = (): JSX.Element => {
 				</CategoryButton>
 			</div>
 			<div className={styles.sortBy}>
-				<Poput type='sortBy' activeItem='По убыванию цены' items={['По возрастанию цены', 'По убыванию цены', 'По рейтингу', 'По кислотности']} />
+				<SortBy activeItem={sortActive} items={sortBy.map((item) => item)} setSort={setSort} />
 			</div>
 		</div>
 	)
