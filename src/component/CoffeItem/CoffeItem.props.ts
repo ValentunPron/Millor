@@ -4,14 +4,12 @@ export interface CoffeItemProps extends DetailedHTMLProps<HtmlHTMLAttributes<HTM
 	typePropertyTop: string[],
 	poputInfo: { poputActiveSize: number, poputSizes: number[] },
 	image: string,
-	description: {
-		rating: number,
-		feedback: number,
-		roasting: number,
-		acid: number,
-		bitter: number,
-		saturation: number
-	},
+	rating: number,
+	feedback: number,
+	roasting: number,
+	acid: number,
+	bitter: number,
+	saturation: number
 	name: string,
 	text: string,
 	price: number

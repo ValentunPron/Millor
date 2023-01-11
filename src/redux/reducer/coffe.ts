@@ -9,7 +9,13 @@ export const coffe = (state = initialState, action: { type: string, payload: any
 			return {
 				...state,
 				items: action.payload,
+				isLoaded: true,
 			};
+		case 'SET_LOADED':
+			return {
+				...state,
+				isLoaded: action.payload
+			}
 		default:
 			return state
 	}

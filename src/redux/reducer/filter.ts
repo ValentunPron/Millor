@@ -1,4 +1,8 @@
-const initialState = {
+interface initialStateInterface {
+	sortBy: { name: string, type: string, order: string },
+}
+
+const initialState: initialStateInterface = {
 	sortBy: {
 		name: 'По убыванию цены',
 		type: 'price',

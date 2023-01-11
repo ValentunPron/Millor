@@ -6,7 +6,7 @@ import { Filter, Footer, Header } from '../../component';
 import imageCoffe from '../../assets/image/coffe.png';
 import styles from './Coffe.module.scss';
 import { CoffeItem } from '../../component/CoffeItem/CoffeItem';
-import { filterCoffe } from '../../redux/action/coffe';
+import { filterCoffe, setLoaded } from '../../redux/action/coffe';
 import { setSortBy } from '../../redux/action/filter';
 
 export interface sortByInterface {
@@ -15,29 +15,50 @@ export interface sortByInterface {
 	order: string,
 }
 
+export interface categoryListInterface {
+	roasting: number[];
+	country: string[];
+	acid: string[];
+	processing: string[];
+	special: string[];
+	typeCoffe: string[];
+}
+
 const sortByItems: sortByInterface[] = [
 	{ name: 'По возрастанию цены', type: 'price', order: 'desc' },
 	{ name: 'По убыванию цены', type: 'price', order: 'asc' },
-	{ name: 'По рейтингу', type: 'rating', order: 'asc' },
-	{ name: 'По кислотности', type: 'acid', order: 'asc' }
+	{ name: 'По рейтингу', type: 'rating', order: 'desc' },
+	{ name: 'По кислотности', type: 'acid', order: 'desc' }
 ]
 
+const categoryList: categoryListInterface = {
+	roasting: [5, 4, 3, 2, 1],
+	country: ['Африка', 'Ємен', 'Уганда', 'Ефіопия', 'Азія', 'Центр. Америка', 'Лат. Америка'],
+	acid: ['Низька', 'Середня', 'Висока'],
+	processing: ['Суха', 'Мита', 'Інша'],
+	special: ['Популярне', 'Новий урожай', 'Ваш вибір', 'Сорт тижня', 'Знижки', 'Новинки'],
+	typeCoffe: ['Арабіка', 'Робуста', 'Суміш арабік', 'Купаж']
+
+}
 
 export const Coffe = (): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
-	const { coffe, sortBy } = useSelector(({ coffe, filter, }: any) => {
+	const { coffe, isLoaded, sortBy, category } = useSelector(({ coffe, filter, }: any) => {
 		return {
 			coffe: coffe.items,
-			sortBy: filter.sortBy
+			isLoaded: coffe.isLoaded,
+			sortBy: filter.sortBy,
+			category: filter.category
 
 		}
 	});
 	React.useEffect(() => {
-		dispatch(filterCoffe(sortBy));
+		dispatch(setLoaded(false))
+		dispatch(filterCoffe(sortBy, category))
 	}, [sortBy]);
-	const selectSort = React.useCallback((type: string) => {
-		dispatch(setSortBy(type));
+	const selectFilter = React.useCallback((sortBy: string) => {
+		dispatch(setSortBy(sortBy));
 	}, []);
 
 	React.useLayoutEffect(() => {
@@ -71,7 +92,7 @@ export const Coffe = (): JSX.Element => {
 								<img src={imageCoffe} alt="coffe" width={660} height={450} />
 							</div>
 							<div className={styles.coffeFilter}>
-								<Filter sortBy={sortByItems} sortActive={sortBy.name} setSort={selectSort} />
+								<Filter sortBy={sortByItems} sortActive={sortBy.name} category={categoryList} setFilter={selectFilter} />
 							</div>
 						</div>
 					</div>
@@ -79,11 +100,14 @@ export const Coffe = (): JSX.Element => {
 						<div className="container">
 							<div className={styles.catalogList}>
 								{
-									coffe.map((coffeItem: any, index: number) => {
-										if (index < count) {
-											return <CoffeItem key={coffeItem.id} {...coffeItem} />
-										}
-									})
+									isLoaded
+										? coffe.map((coffeItem: any, index: number) => {
+											if (index < count) {
+												return <CoffeItem key={coffeItem.id} {...coffeItem} />
+											}
+										})
+										: <h1>sfsf</h1>
+
 								}
 							</div>
 							{

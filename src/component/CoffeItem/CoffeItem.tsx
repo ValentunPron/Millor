@@ -3,7 +3,7 @@ import { CoffeItemProps } from './CoffeItem.props';
 
 import { Poput } from '../Poput/Poput';
 
-export const CoffeItem = ({ typePropertyTop, poputInfo, image, description, name, text, price }: CoffeItemProps): JSX.Element => {
+export const CoffeItem = ({ typePropertyTop, poputInfo, rating, feedback, roasting, acid, bitter, saturation, image, name, text, price }: CoffeItemProps): JSX.Element => {
 
 	const arrStar: any[] = ['', '', '', '', ''],
 		arrGusto: any[] = ['', '', '', '', '', '', '', '', '', ''];
@@ -53,30 +53,30 @@ export const CoffeItem = ({ typePropertyTop, poputInfo, image, description, name
 					<div className={styles.descriptionInfo}>
 						<div className={styles.rating}>
 							<div>
-								{checkStart(description.rating)}
+								{checkStart(rating)}
 							</div>
-							<p>{Number.isInteger(description.rating) ? description.rating + '.0' : description.rating}<span>({description.feedback} відгука)</span></p>
+							<p>{Number.isInteger(rating) ? rating + '.0' : rating}<span>({feedback} відгука)</span></p>
 						</div>
 						<div className={styles.roasting}>
-							{checkRoasting(description.roasting)}
+							{checkRoasting(roasting)}
 						</div>
 						<div className={styles.gusto}>
 							<div className={styles.gustoItem}>
 								<p>Кислинка</p>
 								<div className={styles.gustoNumber}>
-									{checkGuasto(description.acid)}
+									{checkGuasto(acid)}
 								</div>
 							</div>
 							<div className={styles.gustoItem}>
 								<p>Гірчинка</p>
 								<div className={styles.gustoNumber}>
-									{checkGuasto(description.bitter)}
+									{checkGuasto(bitter)}
 								</div>
 							</div>
 							<div className={styles.gustoItem}>
 								<p>Насиченість</p>
 								<div className={styles.gustoNumber}>
-									{checkGuasto(description.saturation)}
+									{checkGuasto(saturation)}
 								</div>
 							</div>
 						</div>
