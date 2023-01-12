@@ -2,8 +2,8 @@
 	"coffe": [
 		{
 			"id": 0,
-			"typePropertyTop": [
-			"discount"
+			"special": [
+			"Знижки"
 			],
 			"poputInfo": {
 				"poputActiveSize": 250,
@@ -20,14 +20,17 @@
 			"acid": 7,
 			"bitter": 8,
 			"saturation": 6,
+			"country": "Центр. Америка",
+			"processing": "Суха",
+			"typeCoffe": "Суміш арабік",
 			"name": "Brazil Santos",
 			"text": "Способ обработки: мытый. Ароматный и сбалансированный кофе, обладает вкусом без лишней кислотности с нотками фундука и какао.",
 			"price": 300
 		},
 		{
 			"id": 1,
-			"typePropertyTop": [
-			"discount"
+			"special": [
+			"Знижки"
 			],
 			"poputInfo": {
 			"poputActiveSize": 500,
@@ -43,14 +46,17 @@
 			"acid": 1,
 			"bitter": 6,
 			"saturation": 8,
+			"country": "Центр. Америка",
+			"processing": "Мита",
+			"typeCoffe": "Купаж",
 			"name": "Colombia Supremo",
 			"text": "Способ обработки: мытый. вкус порадует вас бергамотными и цветочными нотами, лимонной кислотностью и высокой сладости ",
 			"price": 350
 		},
 		{
 			"id": 2,
-			"typePropertyTop": [
-			"discount"
+			"special": [
+			"Знижки"
 			],
 			"poputInfo": {
 			"poputActiveSize": 250,
@@ -68,13 +74,16 @@
 			"acid": 5,
 			"bitter": 6,
 			"saturation": 2,
+			"country": "Азія",
+			"processing": "Мита",
+			"typeCoffe": "Купаж",
 			"name": "Blend Espresso",
 			"text": "Эспрессо-смесь (Arabica & Robusta). 70 на 30%. Кофе с ароматом специй и какао. Терпкий вкус с оттенками лесного ореха и шоколада, практически без кислотности.",
 			"price": 399
 		},
 		{
 			"id": 3,
-			"typePropertyTop": ["popular", "new"],
+			"special": ["Популярне", "Новий урожай"],
 			"poputInfo": {
 			"poputActiveSize": 250,
 			"poputSizes": [
@@ -89,13 +98,16 @@
 			"acid": 9,
 			"bitter": 4,
 			"saturation": 3,
+			"country": "Центр. Америка",
+			"processing": "Інша",
+			"typeCoffe": "Арабіка",
 			"name": "Panama Arabica",
 			"text": "Способ обработки: мытый. Сладкое интенсивное послевкусие фруктов, с минимальной кислинкой и плотной текстурой.",
 			"price": 200
 		},
 		{
 			"id": 4,
-			"typePropertyTop": ["popular", "new"],
+			"special": ["Популярне", "Новий урожай"],
 			"poputInfo": {
 			"poputActiveSize": 500,
 			"poputSizes": [
@@ -110,13 +122,16 @@
 			"acid": 2,
 			"bitter": 5,
 			"saturation": 6,
+			"country": "Лат. Америка",
+			"processing": "Інша",
+			"typeCoffe": "Робуста",
 			"name": "Nicaragua SHG",
 			"text": "Способ обработки: мытый. Сложный фруктовый вкус. Преобладает явная фруктовая вязкость с карамель, текстура напитка плотная и сочная.",
 			"price": 184
 		},
 		{
 			"id": 5,
-			"typePropertyTop": ["new"],
+			"special": ["Новий урожай"],
 			"poputInfo": {
 			"poputActiveSize": 250,
 			"poputSizes": [
@@ -130,13 +145,16 @@
 			"acid": 5,
 			"bitter": 2,
 			"saturation": 10,
+			"country": "Африка",
+			"processing": "Суха",
+			"typeCoffe": "Суміш арабік",
 			"name": "Honduras",
 			"text": "Способ обработки: мытая. Плотный и насыщенный сорт кофе. Во вкусе горький шоколад, табак. Легкая винная кислинка на послевкусии.",
 			"price": 129
 		},
 		{
 			"id": 6,
-			"typePropertyTop": ["popular"],
+			"special": ["Популярне"],
 			"poputInfo": {
 			"poputActiveSize": 500,
 			"poputSizes": [
@@ -151,13 +169,16 @@
 			"acid": 1,
 			"bitter": 5,
 			"saturation": 8,
+			"country": "Центр. Америка",
+			"processing": "Мита",
+			"typeCoffe": "Арабіка",
 			"name": "Mexico",
 			"text": "Способ обработки: мытый . Нотки табака и сухофруктов во вкусе, винная терпкость на послевкусии.",
 			"price": 299
 		},
 		{
 			"id": 7,
-			"typePropertyTop": ["popular"],
+			"special": ["Популярне"],
 			"poputInfo": {
 			"poputActiveSize": 250,
 			"poputSizes": [
@@ -173,13 +194,16 @@
 			"acid": 3,
 			"bitter": 7,
 			"saturation": 5,
+			"country": "Уганда",
+			"processing": "Суха",
+			"typeCoffe": "Робуста",
 			"name": "Blend Gurme",
 			"text": "Бленд трех ярких сортов арабики. Запоминающийся, чистый, сильный и яркий кофе. В эспрессо вас удивит яркий ягодный вкус и фруктовая сладость.",
 			"price": 200
 		},
 		{
 			"id": 8,
-			"typePropertyTop": ["discount"],
+			"special": ["Знижки"],
 			"poputInfo": {
 			"poputActiveSize": 250,
 			"poputSizes": [
@@ -195,6 +219,9 @@
 			"acid": 3,
 			"bitter": 7,
 			"saturation": 5,
+			"country": "Ефіопия",
+			"processing": "Суха",
+			"typeCoffe": "Купаж",
 			"name": "Blend Gurme",
 			"text": "Бленд трех ярких сортов арабики. Запоминающийся, чистый, сильный и яркий кофе. В эспрессо вас удивит яркий ягодный вкус и фруктовая сладость.",
 			"price": 200

@@ -7,7 +7,7 @@ import imageCoffe from '../../assets/image/coffe.png';
 import styles from './Coffe.module.scss';
 import { CoffeItem } from '../../component/CoffeItem/CoffeItem';
 import { filterCoffe, setLoaded } from '../../redux/action/coffe';
-import { setSortBy } from '../../redux/action/filter';
+import { setSortBy, setSortRadio } from '../../redux/action/filter';
 
 export interface sortByInterface {
 	name: string,
@@ -15,7 +15,7 @@ export interface sortByInterface {
 	order: string,
 }
 
-export interface categoryListInterface {
+export interface sortByRadioInterface {
 	roasting: number[];
 	country: string[];
 	acid: string[];
@@ -31,7 +31,7 @@ const sortByItems: sortByInterface[] = [
 	{ name: 'По кислотности', type: 'acid', order: 'desc' }
 ]
 
-const categoryList: categoryListInterface = {
+const sortByRadioItems: sortByRadioInterface = {
 	roasting: [5, 4, 3, 2, 1],
 	country: ['Африка', 'Ємен', 'Уганда', 'Ефіопия', 'Азія', 'Центр. Америка', 'Лат. Америка'],
 	acid: ['Низька', 'Середня', 'Висока'],
@@ -44,21 +44,26 @@ const categoryList: categoryListInterface = {
 export const Coffe = (): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
-	const { coffe, isLoaded, sortBy, category } = useSelector(({ coffe, filter, }: any) => {
+	const { coffe, isLoaded, sortBy, sortRadio } = useSelector(({ coffe, filter, }: any) => {
 		return {
 			coffe: coffe.items,
 			isLoaded: coffe.isLoaded,
 			sortBy: filter.sortBy,
-			category: filter.category
+			sortRadio: filter.sortRadio
 
 		}
 	});
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
-		dispatch(filterCoffe(sortBy, category))
-	}, [sortBy]);
-	const selectFilter = React.useCallback((sortBy: string) => {
+		dispatch(filterCoffe(sortBy, sortRadio));
+		console.log(sortRadio);
+	}, [sortBy, sortRadio]);
+	const selectSortBy = React.useCallback((sortBy: string) => {
 		dispatch(setSortBy(sortBy));
+	}, []);
+
+	const selectSortRadio = React.useCallback((sortRadio: string) => {
+		dispatch(setSortRadio(sortRadio));
 	}, []);
 
 	React.useLayoutEffect(() => {
@@ -92,7 +97,7 @@ export const Coffe = (): JSX.Element => {
 								<img src={imageCoffe} alt="coffe" width={660} height={450} />
 							</div>
 							<div className={styles.coffeFilter}>
-								<Filter sortBy={sortByItems} sortActive={sortBy.name} category={categoryList} setFilter={selectFilter} />
+								<Filter sortBy={sortByItems} sortActive={sortBy.name} sortByRadioItems={sortByRadioItems} setSortBy={selectSortBy} setSortRadio={selectSortRadio} />
 							</div>
 						</div>
 					</div>

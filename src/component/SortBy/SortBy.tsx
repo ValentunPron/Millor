@@ -11,7 +11,6 @@ export const SortBy = ({ activeItem, items, setSort }: PoputProps): JSX.Element 
 
 	React.useEffect(() => {
 		document.body.addEventListener('click', clickOutSearch);
-
 	}, []);
 
 	const clickOutSearch = (e: any) => {

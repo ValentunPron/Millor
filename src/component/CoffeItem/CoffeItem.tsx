@@ -3,7 +3,7 @@ import { CoffeItemProps } from './CoffeItem.props';
 
 import { Poput } from '../Poput/Poput';
 
-export const CoffeItem = ({ typePropertyTop, poputInfo, rating, feedback, roasting, acid, bitter, saturation, image, name, text, price }: CoffeItemProps): JSX.Element => {
+export const CoffeItem = ({ special, poputInfo, rating, feedback, roasting, acid, bitter, saturation, image, name, text, price }: CoffeItemProps): JSX.Element => {
 
 	const arrStar: any[] = ['', '', '', '', ''],
 		arrGusto: any[] = ['', '', '', '', '', '', '', '', '', ''];
@@ -34,9 +34,9 @@ export const CoffeItem = ({ typePropertyTop, poputInfo, rating, feedback, roasti
 	}
 
 	const typeCoffe: any = {
-		discount: <span className={styles.discountActive}>Знижка</span>,
-		popular: <span>Популярное</span>,
-		new: <span>Новый урожай</span>,
+		"Знижки": <span className={styles.discountActive}>Знижка</span>,
+		"Популярне": <span>Популярное</span>,
+		"Новий урожай": <span>Новый урожай</span>,
 	}
 
 	return (
@@ -44,7 +44,7 @@ export const CoffeItem = ({ typePropertyTop, poputInfo, rating, feedback, roasti
 			<div>
 				<div className={styles.coffeTop}>
 					<div className={styles.discountTopinfo}>
-						{typePropertyTop.map(type => typeCoffe[type])}
+						{special.map(type => typeCoffe[type])}
 					</div>
 					<Poput activeItem={poputInfo.poputActiveSize} items={poputInfo.poputSizes} />
 				</div>

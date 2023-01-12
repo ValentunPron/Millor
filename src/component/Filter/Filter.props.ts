@@ -1,10 +1,11 @@
 import { DetailedHTMLProps, HtmlHTMLAttributes } from 'react';
-import { categoryListInterface, sortByInterface } from '../../pages/Coffe/Coffe';
+import { sortByRadioInterface, sortByInterface } from '../../pages/Coffe/Coffe';
 
 export interface FilterProps extends DetailedHTMLProps<HtmlHTMLAttributes<HTMLDivElement>, HTMLDivElement> {
 	sortBy: sortByInterface[];
+	sortByRadioItems: sortByRadioInterface;
 	sortActive: string;
-	category: categoryListInterface,
-	setFilter: Function,
+	setSortBy: Function;
+	setSortRadio: Function;
 
 }

@@ -14,7 +14,7 @@ const Roasting = (roasting: number) => {
 	);
 }
 
-export const Filter = ({ sortBy, sortActive, setFilter, category }: FilterProps): JSX.Element => {
+export const Filter = ({ sortBy, sortActive, setSortBy, sortByRadioItems, setSortRadio }: FilterProps): JSX.Element => {
 	return (
 		<div className={styles.filter}>
 			<div className={styles.filterTop}>
@@ -24,9 +24,9 @@ export const Filter = ({ sortBy, sortActive, setFilter, category }: FilterProps)
 							<h3 className={styles.roastingTitle}>Ступінь обжарки</h3>
 							<ul className={styles.roastingList}>
 								{
-									category.roasting.map((item: number) => (
+									sortByRadioItems.roasting.map((item: number) => (
 										<li key={`roasting_${item}`} className={styles.roastingItem}>
-											<RadioButton type={'roasting'} name={Roasting(item)} setCategory={setFilter} />
+											<RadioButton type={'roasting'} value={Roasting(item)} setSort={setSortRadio} />
 										</li>)
 									)
 								}
@@ -41,9 +41,9 @@ export const Filter = ({ sortBy, sortActive, setFilter, category }: FilterProps)
 								<h2 className={styles.detaliesTitle}>Географія</h2>
 								<ul className={styles.detaliesMenu}>
 									{
-										category.country.map((item) => (
+										sortByRadioItems.country.map((item) => (
 											<li key={`country_${item}`} className={styles.detaliesMenuItem}>
-												<RadioButton type={'country'} name={item} setCategory={setFilter} />
+												<RadioButton type={'country'} value={item} setSort={setSortRadio} />
 											</li>
 										))
 									}
@@ -53,9 +53,9 @@ export const Filter = ({ sortBy, sortActive, setFilter, category }: FilterProps)
 								<h2 className={styles.detaliesTitle}>Кислинка</h2>
 								<ul className={styles.detaliesMenu}>
 									{
-										category.acid.map((item) => (
+										sortByRadioItems.acid.map((item) => (
 											<li key={`acid_${item}`} className={styles.detaliesMenuItem}>
-												<RadioButton type={'acid'} name={item} setCategory={setFilter} />
+												<RadioButton type={'acid'} value={item} setSort={setSortRadio} />
 											</li>
 										))
 									}
@@ -65,9 +65,9 @@ export const Filter = ({ sortBy, sortActive, setFilter, category }: FilterProps)
 								<h2 className={styles.detaliesTitle}>Спосіб обробки</h2>
 								<ul className={styles.detaliesMenu}>
 									{
-										category.processing.map((item) => (
+										sortByRadioItems.processing.map((item) => (
 											<li key={`processing_${item}`} className={styles.detaliesMenuItem}>
-												<RadioButton type={'processing'} name={item} setCategory={setFilter} />
+												<RadioButton type={'processing'} value={item} setSort={setSortRadio} />
 											</li>
 										))
 									}
@@ -77,9 +77,9 @@ export const Filter = ({ sortBy, sortActive, setFilter, category }: FilterProps)
 								<h2 className={styles.detaliesTitle}>Особливі</h2>
 								<ul className={styles.detaliesMenu}>
 									{
-										category.special.map((item) => (
+										sortByRadioItems.special.map((item) => (
 											<li key={`special_${item}`} className={styles.detaliesMenuItem}>
-												<RadioButton type={'special'} name={item} setCategory={setFilter} />
+												<RadioButton type={'special'} value={item} setSort={setSortRadio} />
 											</li>
 										))
 									}
@@ -89,9 +89,9 @@ export const Filter = ({ sortBy, sortActive, setFilter, category }: FilterProps)
 								<h2 className={styles.detaliesTitle}>Вид кави</h2>
 								<ul className={styles.detaliesMenu}>
 									{
-										category.typeCoffe.map((item) => (
-											<li key={`type_${item}`} className={styles.detaliesMenuItem}>
-												<RadioButton type={'type'} name={item} setCategory={setFilter} />
+										sortByRadioItems.typeCoffe.map((item) => (
+											<li key={`typeCoffe_${item}`} className={styles.detaliesMenuItem}>
+												<RadioButton type={'typeCoffe'} value={item} setSort={setSortRadio} />
 											</li>
 										))
 									}
@@ -170,7 +170,7 @@ export const Filter = ({ sortBy, sortActive, setFilter, category }: FilterProps)
 				</CategoryButton>
 			</div>
 			<div className={styles.sortBy}>
-				<SortBy activeItem={sortActive} items={sortBy.map((item) => item)} setSort={setFilter} />
+				<SortBy activeItem={sortActive} items={sortBy.map((item) => item)} setSort={setSortBy} />
 			</div>
 		</div>
 	)
