@@ -7,12 +7,17 @@ export const fetchCoffe = () => (dispatch: Function) => {
 	});
 }
 
-const sortRadioInfo: string[] = [];
 
 export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: { type: string, value: string | number }) => (dispatch: Function) => {
 
+	const sortRadioInfo: string[] = [];
+
 	const sortRoasting = (base: any) => {
-		base.map((item: any) => item.roasting === sortRadio.value ? item : '');
+		if (sortRadioInfo.length <= 0) {
+			base.map((item: any) => item.roasting === sortRadio.value ? item : '');
+		} else {
+			sortRadioInfo.map((item: any) => item.roasting === sortRadio.value ? item : '');
+		}
 	}
 
 	const sortCountry = (base: any) => {
@@ -24,7 +29,11 @@ export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: 
 	}
 
 	const sortAcid = (base: any, acidMin: number, acidMax: number) => {
-		return base.map((item: any) => item.acid >= acidMin && item.acid <= acidMax ? item : '');
+		if (sortRadioInfo.length <= 0) {
+			base.map((item: any) => item.acid >= acidMin && item.acid <= acidMax ? sortRadioInfo.push(item) : item);
+		} else {
+			sortRadioInfo.map((item: any) => item.acid >= acidMin && item.acid <= acidMax ? sortRadioInfo.push(item) : '');
+		}
 	}
 
 	const sortProcessing = (base: any) => {
