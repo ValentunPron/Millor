@@ -14,17 +14,17 @@ export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: 
 
 	const sortRoasting = (base: any) => {
 		if (sortRadioInfo.length <= 0) {
-			base.map((item: any) => item.roasting === sortRadio.value ? item : '');
+			base.map((item: any) => item.roasting === sortRadio.value ? sortRadioInfo.push(item) : item);
 		} else {
-			sortRadioInfo.map((item: any) => item.roasting === sortRadio.value ? item : '');
+			sortRadioInfo.map((item: any) => item.roasting === sortRadio.value ? sortRadioInfo.push(item) : '');
 		}
 	}
 
 	const sortCountry = (base: any) => {
 		if (sortRadioInfo.length <= 0) {
-			base.map((item: any) => item.country === sortRadio.value ? item : '');
+			base.map((item: any) => item.country === sortRadio.value ? sortRadioInfo.push(item) : item);
 		} else {
-			sortRadioInfo.map((item: any) => item.country === sortRadio.value ? item : '');
+			sortRadioInfo.map((item: any) => item.country === sortRadio.value ? sortRadioInfo.push(item) : '');
 		}
 	}
 
@@ -102,7 +102,6 @@ export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: 
 				sortTypeCoffe(data);
 				dispatch(setCoffe(sortRadioInfo));
 			}
-			console.log(sortRadioInfo.length);
 		});
 }
 

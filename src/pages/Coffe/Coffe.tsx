@@ -56,7 +56,6 @@ export const Coffe = (): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		dispatch(filterCoffe(sortBy, sortRadio));
-		console.log(sortRadio);
 	}, [sortBy, sortRadio]);
 	const selectSortBy = React.useCallback((sortBy: string) => {
 		dispatch(setSortBy(sortBy));

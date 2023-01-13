@@ -5,6 +5,7 @@ import styles from './MainSlider.module.scss';
 import 'swiper/css';
 import "swiper/css/pagination";
 import 'swiper/css/autoplay';
+import { Link } from 'react-router-dom';
 
 export const MainSlider = (): JSX.Element => {
 	return (
@@ -35,7 +36,7 @@ export const MainSlider = (): JSX.Element => {
 										<h1 className={styles.title}>Свіжообсмажена кава</h1>
 										<p className={`${styles.text} text`}>Кава Львівської обжарки з різних країн зростання з доставкою додому.</p>
 										<p className={`${styles.text} text`}> Ми обсмажуємо каву <span>кожні вихідні.</span></p>
-										<button className='button big'>Переглянути каталог</button>
+										<Link to={'/coffe'}><button className='button big'>Переглянути каталог</button></Link>
 									</div>
 								</div>
 							</SwiperSlide>
@@ -45,7 +46,7 @@ export const MainSlider = (): JSX.Element => {
 										<h2 className={styles.title}>Свіжообсмажена кава</h2>
 										<p className={`${styles.text} text`}>Кава Львівської обжарки з різних країн зростання з доставкою додому.</p>
 										<p className={`${styles.text} text`}> Ми обсмажуємо каву <span>кожні вихідні.</span></p>
-										<button className='button big'>Переглянути каталог</button>
+										<Link to={'/coffe'}><button className='button big'>Переглянути каталог</button></Link>
 									</div>
 								</div>
 							</SwiperSlide>
@@ -55,7 +56,7 @@ export const MainSlider = (): JSX.Element => {
 										<h2 className={styles.title}>Свіжообсмажена кава</h2>
 										<p className={`${styles.text} text`}>Кава Львівської обжарки з різних країн зростання з доставкою додому.</p>
 										<p className={`${styles.text} text`}> Ми обсмажуємо каву <span>кожні вихідні.</span></p>
-										<button className='button big'>Переглянути каталог</button>
+										<Link to={'/coffe'}><button className='button big'>Переглянути каталог</button></Link>
 									</div>
 								</div>
 							</SwiperSlide>
