@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 
 
 export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
+	console.log(coffe);
 	const swiperRef = React.useRef<any>(null);
 	return (
 		<div className={styles.discount}>
@@ -56,11 +57,11 @@ export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
 						>
 							{
 								coffe.map((coffe: any) =>
-									coffe.typePropertyTop.map((type: string) => {
-										if (type === 'discount') {
+									coffe.special.map((type: string) => {
+										if (type === 'Знижки') {
 											return (
 												<SwiperSlide key={coffe.id} className={styles.sliderItem}>
-													<CoffeItem key={coffe.id}  {...coffe} />
+													<CoffeItem {...coffe} />
 												</SwiperSlide>
 											)
 										}
