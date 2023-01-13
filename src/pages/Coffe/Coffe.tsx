@@ -8,6 +8,7 @@ import styles from './Coffe.module.scss';
 import { CoffeItem } from '../../component/CoffeItem/CoffeItem';
 import { filterCoffe, setLoaded } from '../../redux/action/coffe';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
+import { CoffeLoading } from '../../component/CoffeItem/CoffeLoading';
 
 export interface sortByInterface {
 	name: string,
@@ -110,7 +111,7 @@ export const Coffe = (): JSX.Element => {
 												return <CoffeItem key={coffeItem.id} {...coffeItem} />
 											}
 										})
-										: <h1>sfsf</h1>
+										: Array(12).fill(<CoffeLoading />)
 
 								}
 							</div>
