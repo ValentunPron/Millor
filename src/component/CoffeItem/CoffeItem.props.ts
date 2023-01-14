@@ -12,5 +12,5 @@ export interface CoffeItemProps extends DetailedHTMLProps<HtmlHTMLAttributes<HTM
 	saturation: number
 	name: string,
 	text: string,
-	price: number
+	price: number[],
 }

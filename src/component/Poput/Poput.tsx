@@ -8,16 +8,17 @@ export const Poput = ({ activeItem, items }: PoputProps): JSX.Element => {
 	const [statusPoput, setStatusPoput] = React.useState(false);
 	const [activeItemPoput, setActiveItemPoput] = React.useState(activeItem);
 	const poputRef = React.useRef(null);
-	const poputSortBy = React.useRef(null);
 
 	React.useEffect(() => {
 		document.body.addEventListener('click', clickOutSearch);
-
 	}, []);
 
 	const clickOutSearch = (e: any) => {
-		if (!e.path.includes(poputRef.current) || e.path.includes(poputSortBy.current)) {
-			setStatusPoput(false);
+		var path = e.path || (e.composedPath && e.composedPath());
+		if (path) {
+			if (!path.includes(poputRef.current)) {
+				setStatusPoput(false);
+			}
 		}
 	}
 

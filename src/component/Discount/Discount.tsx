@@ -12,7 +12,6 @@ import { Link } from "react-router-dom";
 
 
 export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
-	console.log(coffe);
 	const swiperRef = React.useRef<any>(null);
 	return (
 		<div className={styles.discount}>

@@ -90,10 +90,17 @@ export const CoffeItem = ({ special, poputInfo, rating, feedback, roasting, acid
 						<p className={styles.coffeInfo}>{text}</p>
 					</div>
 					<div className={styles.coffeAction}>
-						<div className={styles.coffePrice}>
-							<span className={styles.discountPrice}>250 ₴</span>
-							<span className={styles.price}>{price} ₴</span>
-						</div>
+						{
+							special.includes('Знижки')
+								?
+								<div className={styles.coffePrice}>
+									<span className={styles.discountPrice}>{price[1]} ₴</span>
+									<span className={styles.price}>{price[0]} ₴</span>
+								</div>
+								: <div className={styles.coffePrice}>
+									<span className={styles.price}>{price[0]} ₴</span>
+								</div>
+						}
 						<button className={`button small`}>В корзину</button>
 					</div>
 				</div>

@@ -56,13 +56,14 @@ export const CatalogMain = (): JSX.Element => {
 						loopFillGroupWithBlank={true}
 						navigation={false}
 						slidesPerGroup={1}
+						allowTouchMove={false}
 						slideActiveClass={styles.sliderActive}
 						preventInteractionOnTransition={true}
 						breakpoints={{
 							0: {
 								slidesPerView: 1,
 								loop: true,
-								loopFillGroupWithBlank: true,
+								allowTouchMove: true
 							},
 							770: {
 								slidesPerView: 3,

@@ -25,8 +25,11 @@ export const Seacrh = (): JSX.Element => {
 	}, []);
 
 	const clickOutSearch = (e: any) => {
-		if (!e.path.includes(searchRef.current)) {
-			setVisiblySearch(false);
+		var path = e.path || (e.composedPath && e.composedPath());
+		if (path) {
+			if (!path.includes(searchRef.current)) {
+				setVisiblySearch(false);
+			}
 		}
 	}
 

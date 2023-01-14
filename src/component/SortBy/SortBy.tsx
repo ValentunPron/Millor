@@ -14,7 +14,8 @@ export const SortBy = ({ activeItem, items, setSort }: PoputProps): JSX.Element 
 	}, []);
 
 	const clickOutSearch = (e: any) => {
-		if (!e.path.includes(poputRef.current) || e.path.includes(poputSortBy.current)) {
+		var path = e.path || (e.composedPath && e.composedPath());
+		if (path.includes(poputSortBy.current)) {
 			setStatusPoput(false);
 		}
 	}
