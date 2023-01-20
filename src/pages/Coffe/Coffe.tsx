@@ -56,7 +56,9 @@ export const Coffe = (): JSX.Element => {
 	});
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
-		dispatch(filterCoffe(sortBy, sortRadio));
+		setTimeout(() => {
+			dispatch(filterCoffe(sortBy, sortRadio));
+		}, 200);
 	}, [sortBy, sortRadio]);
 	const selectSortBy = React.useCallback((sortBy: string) => {
 		dispatch(setSortBy(sortBy));
@@ -105,14 +107,17 @@ export const Coffe = (): JSX.Element => {
 						<div className="container">
 							<div className={styles.catalogList}>
 								{
-									isLoaded
-										? coffe.map((coffeItem: any, index: number) => {
-											if (index < count) {
-												return <CoffeItem key={coffeItem.id} {...coffeItem} />
-											}
-										})
-										: Array(12).fill(<CoffeLoading />)
-
+									coffe.length > 0 ?
+										isLoaded
+											?
+											coffe.map((coffeItem: any, index: number) => {
+												if (index < count) {
+													return <CoffeItem key={coffeItem.id} {...coffeItem} />
+												}
+											})
+											: Array(12).fill(<CoffeLoading />)
+										:
+										<p className={styles.notFound}>Товар не найдено :с</p>
 								}
 							</div>
 							{

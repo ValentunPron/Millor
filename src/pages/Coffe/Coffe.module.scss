@@ -39,6 +39,13 @@
 	}
 }
 
+.notFound {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 700;
+	grid-column: span 4;
+}
+
 .catalogList {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
