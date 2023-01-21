@@ -15,7 +15,7 @@ export const fetchCoffe = () => (dispatch: Function) => {
 export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: { type: string, value: string | number }) => (dispatch: Function) => {
 
 	// `https://63b42226ea89e3e3db573ace.mockapi.io/coffe?sortBy=${sortBy.type}&order=${sortBy.order}`
-	axios(`./db.json`)
+	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/coffe?sortBy=${sortBy.type}&order=${sortBy.order}`)
 		.then(({ data }) => {
 			if (sortRadio.type !== 'all') {
 				if (mySort.types.length === 0) {
@@ -30,7 +30,7 @@ export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: 
 					}
 				}
 			}
-			const filterData = data.coffe.filter((coffe: any) => mySort.sorting.every((sorting: any) => {
+			const filterData = data.filter((coffe: any) => mySort.sorting.every((sorting: { type: string, value: string | number | string[] }) => {
 				if (sorting.type === 'special') {
 					return coffe[sorting.type].includes(sorting.value);
 				}
@@ -43,7 +43,7 @@ export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: 
 				}
 				return coffe[sorting.type] === sorting.value
 			}));
-			sortRadio.type === 'all' ? dispatch(setCoffe(data.coffe)) : dispatch(setCoffe(filterData));
+			sortRadio.type === 'all' ? dispatch(setCoffe(data)) : dispatch(setCoffe(filterData));
 		})
 }
 

@@ -2,6 +2,7 @@ import styles from './CoffeItem.module.scss';
 import { CoffeItemProps } from './CoffeItem.props';
 
 import { Poput } from '../Poput/Poput';
+import { Link } from 'react-router-dom';
 
 export const CoffeItem = ({ special, poputInfo, rating, feedback, roasting, acid, bitter, saturation, image, name, text, price }: CoffeItemProps): JSX.Element => {
 
@@ -49,7 +50,7 @@ export const CoffeItem = ({ special, poputInfo, rating, feedback, roasting, acid
 					<Poput activeItem={poputInfo.poputActiveSize} items={poputInfo.poputSizes} />
 				</div>
 				<div className={styles.description}>
-					<img src={image} alt={name} width={160} height={300} />
+					<Link to='test'><img className={styles.descriptionImage} src={image} alt={name} width={160} height={300} /></Link>
 					<div className={styles.descriptionInfo}>
 						<div className={styles.rating}>
 							<div>

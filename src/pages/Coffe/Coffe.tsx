@@ -39,10 +39,13 @@ const sortByRadioItems: sortByRadioInterface = {
 	processing: ['Суха', 'Мита', 'Інша'],
 	special: ['Популярне', 'Новий урожай', 'Ваш вибір', 'Сорт тижня', 'Знижки', 'Новинки'],
 	typeCoffe: ['Арабіка', 'Робуста', 'Суміш арабік', 'Купаж']
-
 }
 
-export const Coffe = (): JSX.Element => {
+interface coffeInterface {
+	namePages: string
+}
+
+export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 	const { coffe, isLoaded, sortBy, sortRadio } = useSelector(({ coffe, filter, }: any) => {
@@ -92,9 +95,9 @@ export const Coffe = (): JSX.Element => {
 							<div className='catalogLinks'>
 								<Link className='catalogLink' to="/">Головна</Link>
 								<Link className='catalogLink' to="/">Каталог товарів</Link>
-								<Link className='catalogLink' to="/coffe">Свіжообсмажена кава</Link>
+								<Link className='catalogLink' to="/coffe">{namePages}</Link>
 							</div>
-							<h1 className={`${styles.title} title`}>Свіжообсмажена кава</h1>
+							<h1 className={`titlePages`}>{namePages}</h1>
 							<div className={styles.coffeImage}>
 								<img src={imageCoffe} alt="coffe" width={660} height={450} />
 							</div>
@@ -107,17 +110,28 @@ export const Coffe = (): JSX.Element => {
 						<div className="container">
 							<div className={styles.catalogList}>
 								{
-									coffe.length > 0 ?
-										isLoaded
-											?
+									//coffe.length > 0 ?
+									//	isLoaded
+									//		?
+									//		coffe.map((coffeItem: any, index: number) => {
+									//			if (index < count) {
+									//				return <CoffeItem key={coffeItem.id} {...coffeItem} />
+									//			}
+									//		})
+									//		: Array(12).fill(<CoffeLoading />)
+									//	:
+									//	<p className={styles.notFound}>Товар не найдено :с</p>
+									isLoaded
+										?
+										coffe.length > 0 ?
 											coffe.map((coffeItem: any, index: number) => {
 												if (index < count) {
 													return <CoffeItem key={coffeItem.id} {...coffeItem} />
 												}
 											})
-											: Array(12).fill(<CoffeLoading />)
+											: <p className={styles.notFound}>Товар не найдено :с</p>
 										:
-										<p className={styles.notFound}>Товар не найдено :с</p>
+										Array(12).fill(<CoffeLoading />)
 								}
 							</div>
 							{

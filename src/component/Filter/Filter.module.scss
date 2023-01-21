@@ -334,7 +334,7 @@
 		max-height: none;
 		.detaliesList {
 			display: flex;
-			max-height: 600px;
+			max-height: 700px;
 			padding: 30px 5px;
 			row-gap: calc(40px + (70 - 40)*((100vw - 400px)/(780 - 400)));
 			&::after {
