@@ -1,7 +1,7 @@
 import styles from './CoffeItem.module.scss';
 import { CoffeItemProps } from './CoffeItem.props';
 
-import { Poput } from '../Poput/Poput';
+import { Poput } from '../../Poput/Poput';
 import { Link } from 'react-router-dom';
 
 export const CoffeItem = ({ special, poputInfo, rating, feedback, roasting, acid, bitter, saturation, image, name, text, price }: CoffeItemProps): JSX.Element => {

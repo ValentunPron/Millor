@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Footer, Header } from '../../component';
+import { Footer, Header, TeaItem } from '../../component';
 import imageTea from '../../assets/image/tea.png';
 import filterImage01 from '../../assets/image/tea/darkTea.jpg';
 import filterImage02 from '../../assets/image/tea/greenTea.jpg';
@@ -93,10 +93,10 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 						</div>
 					</div>
 
-					<div className={styles.catalogBody}>
+					<div className='catalogBody'>
 						<div className="container">
 							<div className={styles.catalogList}>
-
+								<TeaItem />
 							</div>
 							{/*{
 								coffe.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''

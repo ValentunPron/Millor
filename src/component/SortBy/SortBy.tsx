@@ -22,6 +22,8 @@ export const SortBy = ({ activeItem, setSort }: PoputProps): JSX.Element => {
 	const poputRef = React.useRef(null);
 	const poputSortBy = React.useRef(null);
 
+	statusPoput ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto'
+
 	React.useEffect(() => {
 		document.body.addEventListener('click', clickOutSearch);
 	}, []);

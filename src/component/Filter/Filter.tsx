@@ -1,7 +1,5 @@
 import React from "react";
-import { CategoryButton } from "../CategoryButton/CategoryButton";
-import { RadioButton } from "../RadioButton/RadioButton";
-import { SortBy } from "../SortBy/SortBy";
+import { CategoryButton, RadioButton, SortBy } from "../index"
 
 import styles from './Filter.module.scss';
 import { FilterProps } from "./Filter.props";

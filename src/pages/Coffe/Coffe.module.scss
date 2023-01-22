@@ -16,20 +16,6 @@
 	margin-top: 140px;
 }
 
-.catalogBody {
-	position: relative;
-	margin-top: 60px;
-	&::after {
-		position: absolute;
-		content: '';
-		top: -250px; right: 0;
-		width: 100%;
-		height: 1000vh;
-		background-color: #F5F5F5;
-		z-index: -5;
-	}
-}
-
 .notFound {
 	text-align: center;
 	font-size: 3rem;
@@ -47,11 +33,6 @@
 @media (max-width: 1400px) {
 	.coffeFilter {
 		margin-top: 60px;
-	}
-	.catalogBody {
-		&::after {
-			top: -175px; right: 0;
-		}
 	}
 	.coffeImage {
 		position: relative;
@@ -100,11 +81,6 @@
 			display: none;
 		}
 	}
-	.catalogBody {
-		&::after {
-			top: -250px; right: 0;
-		}
-	}
 	.catalogList {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
@@ -140,11 +116,6 @@
 			max-width: none;
 		}
 	}
-	.catalogBody {
-		&::after {
-			top: -450px; right: 0;
-		}
-	}
 }
 
 @media (max-width: 500px) {
@@ -161,10 +132,5 @@
 	}
 	.catalogList {
 		row-gap: 25px;
-	}
-	.catalogBody {
-		&::after {
-			top: -250px; right: 0;
-		}
 	}
 }

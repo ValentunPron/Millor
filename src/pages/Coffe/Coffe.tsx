@@ -2,13 +2,12 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { Filter, Footer, Header } from '../../component';
+import { Filter, Footer, Header, CoffeItem } from '../../component';
 import imageCoffe from '../../assets/image/coffe.png';
 import styles from './Coffe.module.scss';
-import { CoffeItem } from '../../component/CoffeItem/CoffeItem';
 import { filterCoffe, setLoaded } from '../../redux/action/coffe';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
-import { CoffeLoading } from '../../component/CoffeItem/CoffeLoading';
+import { CoffeLoading } from '../../component/CatalogItems/Loading';
 
 export interface sortByRadioInterface {
 	roasting: number[];
@@ -93,7 +92,7 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 							</div>
 						</div>
 					</div>
-					<div className={styles.catalogBody}>
+					<div className='catalogBody'>
 						<div className="container">
 							<div className={styles.catalogList}>
 								{

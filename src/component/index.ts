@@ -8,5 +8,9 @@ import { Footer } from "./Footer/Footer";
 import { WorkingWindow } from "./WorkingWindow/WorkingWindow";
 import { Filter } from "./Filter/Filter";
 import { CategoryButton } from "./CategoryButton/CategoryButton";
+import { RadioButton } from "./RadioButton/RadioButton";
+import { SortBy } from "./SortBy/SortBy";
+import { CoffeItem } from "./CatalogItems/CoffeItem/CoffeItem";
+import { TeaItem } from "./CatalogItems/TeaItem/TeaItem";
 
-export { LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsMain, Footer, WorkingWindow, Filter, CategoryButton }
+export { LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsMain, Footer, WorkingWindow, Filter, CategoryButton, RadioButton, SortBy, CoffeItem, TeaItem }

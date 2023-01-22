@@ -6,7 +6,7 @@ import { DiscountProps } from "./Discount.props";
 import styles from './Discount.module.scss';
 import "swiper/css";
 import "swiper/css/navigation";
-import { CoffeItem } from "../CoffeItem/CoffeItem";
+import { CoffeItem } from "../CatalogItems/CoffeItem/CoffeItem";
 import { Link } from "react-router-dom";
 
 
