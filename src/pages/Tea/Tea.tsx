@@ -43,9 +43,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 								<Link className='catalogLink' to="/tea">{namePages}</Link>
 							</div>
 							<h1 className={`titlePages`}>{namePages}</h1>
-							<div className={styles.teaImage}>
-								<img src={imageTea} alt="tea" width={800} height={600} />
-							</div>
+							<img className={styles.teaImage} src={imageTea} alt="tea" width={800} height={600} />
 							<div className={styles.filter}>
 								<button className={styles.filterItem}>
 									<img className={styles.filterImage} src={filterImage01} alt='Черный чай' width={145} height={200} />
@@ -59,7 +57,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 									<img className={styles.filterImage} src={filterImage02} alt='Зеленый чай' width={145} height={200} />
 									<h3 className={styles.filterName}>Зеленый чай</h3>
 								</button>
-								<div></div>
+								<div className={styles.gridUpdate}></div>
 								<button className={styles.filterItem}>
 									<img className={styles.filterImage} src={filterImage02} alt='Матча' width={145} height={200} />
 									<h3 className={styles.filterName}>Матча</h3>
