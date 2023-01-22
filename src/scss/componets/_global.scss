@@ -4,6 +4,16 @@ html, body {
 	height: 100%;
 }
 
+.bgPoput {
+	position: fixed;
+	content: '';
+	top: 0; left: 0; 
+	width: 100vw; height: 100vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 100 !important;
+	overflow: auto;
+}
+
 body {
 	font-family: 'Inter', 'Times', serif;
 	font-weight: 400;

@@ -14,7 +14,7 @@ const Roasting = (roasting: number) => {
 	);
 }
 
-export const Filter = ({ sortBy, sortActive, setSortBy, sortByRadioItems, setSortRadio }: FilterProps): JSX.Element => {
+export const Filter = ({ sortActive, setSortBy, sortByRadioItems, setSortRadio }: FilterProps): JSX.Element => {
 	return (
 		<div className={styles.filter}>
 			<div className={styles.filterTop}>
@@ -170,7 +170,7 @@ export const Filter = ({ sortBy, sortActive, setSortBy, sortByRadioItems, setSor
 				</CategoryButton>
 			</div>
 			<div className={styles.sortBy}>
-				<SortBy activeItem={sortActive} items={sortBy.map((item) => item)} setSort={setSortBy} />
+				<SortBy activeItem={sortActive} setSort={setSortBy} />
 			</div>
 		</div>
 	)

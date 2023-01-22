@@ -8,6 +8,9 @@ import filterImage02 from '../../assets/image/tea/greenTea.jpg';
 import filterImage03 from '../../assets/image/tea/milkTea.jpg';
 import filterImage04 from '../../assets/image/tea/coffe.jpg';
 import styles from './Tea.module.scss';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSortBy } from '../../redux/action/filter';
+import { SortBy } from '../../component/SortBy/SortBy';
 
 interface teaInterface {
 	namePages: string
@@ -29,7 +32,16 @@ const filterData: filterDataInterface[] = [
 ]
 
 export const Tea = ({ namePages }: teaInterface): JSX.Element => {
+	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
+	const { sortBy } = useSelector(({ filter, }: any) => {
+		return {
+			sortBy: filter.sortBy,
+		}
+	});
+	const selectSortBy = React.useCallback((sortBy: string) => {
+		dispatch(setSortBy(sortBy));
+	}, []);
 	return (
 		<>
 			<Header headerActive={true} />
@@ -75,11 +87,16 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 									<h3 className={styles.filterName}>Кофейные напитки</h3>
 								</button>
 							</div>
+							<div className={styles.sortBy}>
+								<SortBy activeItem={sortBy.name} setSort={selectSortBy} />
+							</div>
 						</div>
 					</div>
+
 					<div className={styles.catalogBody}>
 						<div className="container">
 							<div className={styles.catalogList}>
+
 							</div>
 							{/*{
 								coffe.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''

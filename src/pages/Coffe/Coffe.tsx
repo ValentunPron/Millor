@@ -10,12 +10,6 @@ import { filterCoffe, setLoaded } from '../../redux/action/coffe';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { CoffeLoading } from '../../component/CoffeItem/CoffeLoading';
 
-export interface sortByInterface {
-	name: string,
-	type: string,
-	order: string,
-}
-
 export interface sortByRadioInterface {
 	roasting: number[];
 	country: string[];
@@ -24,13 +18,6 @@ export interface sortByRadioInterface {
 	special: string[];
 	typeCoffe: string[];
 }
-
-const sortByItems: sortByInterface[] = [
-	{ name: 'По возрастанию цены', type: 'price', order: 'desc' },
-	{ name: 'По убыванию цены', type: 'price', order: 'asc' },
-	{ name: 'По рейтингу', type: 'rating', order: 'desc' },
-	{ name: 'По кислотности', type: 'acid', order: 'desc' }
-]
 
 const sortByRadioItems: sortByRadioInterface = {
 	roasting: [5, 4, 3, 2, 1],
@@ -102,7 +89,7 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 								<img src={imageCoffe} alt="coffe" width={660} height={450} />
 							</div>
 							<div className={styles.coffeFilter}>
-								<Filter sortBy={sortByItems} sortActive={sortBy.name} sortByRadioItems={sortByRadioItems} setSortBy={selectSortBy} setSortRadio={selectSortRadio} />
+								<Filter sortActive={sortBy.name} sortByRadioItems={sortByRadioItems} setSortBy={selectSortBy} setSortRadio={selectSortRadio} />
 							</div>
 						</div>
 					</div>
@@ -127,6 +114,8 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 											coffe.map((coffeItem: any, index: number) => {
 												if (index < count) {
 													return <CoffeItem key={coffeItem.id} {...coffeItem} />
+												} else {
+													return null;
 												}
 											})
 											: <p className={styles.notFound}>Товар не найдено :с</p>

@@ -3,7 +3,20 @@ import React from "react";
 import styles from "./SortBy.module.scss";
 import { PoputProps } from "./SortBy.props";
 
-export const SortBy = ({ activeItem, items, setSort }: PoputProps): JSX.Element => {
+interface sortByInterface {
+	name: string,
+	type: string,
+	order: string
+}
+
+const sortByItems: sortByInterface[] = [
+	{ name: 'По возрастанию цены', type: 'price', order: 'desc' },
+	{ name: 'По убыванию цены', type: 'price', order: 'asc' },
+	{ name: 'По рейтингу', type: 'rating', order: 'desc' },
+	{ name: 'По кислотности', type: 'acid', order: 'desc' }
+]
+
+export const SortBy = ({ activeItem, setSort }: PoputProps): JSX.Element => {
 
 	const [statusPoput, setStatusPoput] = React.useState(false);
 	const poputRef = React.useRef(null);
@@ -35,7 +48,7 @@ export const SortBy = ({ activeItem, items, setSort }: PoputProps): JSX.Element 
 			{statusPoput ?
 				<div className={styles.poputSortBy} ref={poputSortBy}>
 					<button className={styles.sortByActive}>{activeItem}</button>
-					{items.map((sortBy: any) => <button key={`${sortBy.type}_${sortBy.order}`} onClick={() => activeStyle(sortBy)}>{sortBy.name}</button>)}
+					{sortByItems.map((sortBy: any) => <button key={`${sortBy.type}_${sortBy.order}`} onClick={() => activeStyle(sortBy)}>{sortBy.name}</button>)}
 					<button className={styles.close} onClick={() => setStatusPoput(false)}></button>
 				</div>
 				: ''
