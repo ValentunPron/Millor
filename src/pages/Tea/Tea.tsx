@@ -1,47 +1,68 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Footer, Header, TeaItem } from '../../component';
+import { Footer, Header, SortBy, TeaItem } from '../../component';
 import imageTea from '../../assets/image/tea.png';
 import filterImage01 from '../../assets/image/tea/darkTea.jpg';
 import filterImage02 from '../../assets/image/tea/greenTea.jpg';
 import filterImage03 from '../../assets/image/tea/milkTea.jpg';
 import filterImage04 from '../../assets/image/tea/coffe.jpg';
 import styles from './Tea.module.scss';
+
 import { useDispatch, useSelector } from 'react-redux';
+import { fetchTea, setLoaded } from '../../redux/action/tea';
 import { setSortBy } from '../../redux/action/filter';
-import { SortBy } from '../../component/SortBy/SortBy';
+import { Loading } from '../../component/CatalogItems/Loading';
 
 interface teaInterface {
 	namePages: string
 }
 
 interface filterDataInterface {
+	type: string,
 	name: string,
 	image: string,
 }
 
 const filterData: filterDataInterface[] = [
-	{ name: 'Черный чай', image: filterImage01 },
-	{ name: 'Травяной чай', image: filterImage01 },
-	{ name: 'Зеленый чай', image: filterImage02 },
-	{ name: 'Матча', image: filterImage02 },
-	{ name: 'Молочный улунг', image: filterImage03 },
-	{ name: 'Пуэр', image: filterImage03 },
-	{ name: 'Кофейные напитки', image: filterImage04 },
+	{ type: "type", name: 'Черный чай', image: filterImage01 },
+	{ type: "type", name: 'Травяной чай', image: filterImage01 },
+	{ type: "type", name: 'Зеленый чай', image: filterImage02 },
+	{ type: 'type', name: 'none', image: 'none' },
+	{ type: "type", name: 'Матча', image: filterImage02 },
+	{ type: "type", name: 'Молочный улунг', image: filterImage03 },
+	{ type: "type", name: 'Пуэр', image: filterImage03 },
+	{ type: "type", name: 'Кофейные напитки', image: filterImage04 },
 ]
 
 export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
-	const { sortBy } = useSelector(({ filter, }: any) => {
+
+	const { tea, isLoaded, sortBy, sortRadio } = useSelector(({ filter, tea }: any) => {
 		return {
+			tea: tea.items,
+			isLoaded: tea.isLoaded,
 			sortBy: filter.sortBy,
+			sortRadio: filter.sortBy,
 		}
 	});
+
+	React.useEffect(() => {
+		dispatch(setLoaded(false))
+		setTimeout(() => {
+			dispatch(fetchTea(sortBy, sortRadio));
+		}, 200);
+	}, [sortBy, sortRadio]);
+
 	const selectSortBy = React.useCallback((sortBy: string) => {
 		dispatch(setSortBy(sortBy));
 	}, []);
+
+	const selectSortRadio = React.useCallback((sortRadio: string) => {
+		dispatch(setSortBy(sortRadio));
+	}, []);
+
 	return (
 		<>
 			<Header headerActive={true} />
@@ -57,35 +78,16 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 							<h1 className={`titlePages`}>{namePages}</h1>
 							<img className={styles.teaImage} src={imageTea} alt="tea" width={800} height={600} />
 							<div className={styles.filter}>
-								<button className={styles.filterItem}>
-									<img className={styles.filterImage} src={filterImage01} alt='Черный чай' width={145} height={200} />
-									<h3 className={styles.filterName}>Черный чай</h3>
-								</button>
-								<button className={styles.filterItem}>
-									<img className={styles.filterImage} src={filterImage01} alt='Травяной чай' width={145} height={200} />
-									<h3 className={styles.filterName}>Травяной чай</h3>
-								</button>
-								<button className={styles.filterItem}>
-									<img className={styles.filterImage} src={filterImage02} alt='Зеленый чай' width={145} height={200} />
-									<h3 className={styles.filterName}>Зеленый чай</h3>
-								</button>
-								<div className={styles.gridUpdate}></div>
-								<button className={styles.filterItem}>
-									<img className={styles.filterImage} src={filterImage02} alt='Матча' width={145} height={200} />
-									<h3 className={styles.filterName}>Матча</h3>
-								</button>
-								<button className={styles.filterItem}>
-									<img className={styles.filterImage} src={filterImage03} alt='Молочный улунг' width={145} height={200} />
-									<h3 className={styles.filterName}>Молочный улунг</h3>
-								</button>
-								<button className={styles.filterItem}>
-									<img className={styles.filterImage} src={filterImage03} alt='Пуэр' width={145} height={200} />
-									<h3 className={styles.filterName}>Пуэр</h3>
-								</button>
-								<button className={styles.filterItem}>
-									<img className={styles.filterImage} src={filterImage04} alt='Кофейные напитки' width={120} height={200} />
-									<h3 className={styles.filterName}>Кофейные напитки</h3>
-								</button>
+								{
+									filterData.map((filterTea: any, index) => (
+										index === 3
+											? <div key={`${index}_${filterTea.name}`} className={styles.gridUpdate}></div>
+											: <button key={`${index}_${filterTea.name}`} className={styles.filterItem} onClick={() => selectSortRadio(filterTea)}>
+												<img className={styles.filterImage} src={filterTea.image} alt={filterTea.name} />
+												<h3 className={styles.filterName}>{filterTea.name}</h3>
+											</button>
+									))
+								}
 							</div>
 							<div className={styles.sortBy}>
 								<SortBy activeItem={sortBy.name} setSort={selectSortBy} />
@@ -96,14 +98,21 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 					<div className='catalogBody'>
 						<div className="container">
 							<div className='catalogList'>
-								<TeaItem />
-								<TeaItem />
-								<TeaItem />
-								<TeaItem />
-								<TeaItem />
-								<TeaItem />
-								<TeaItem />
-								<TeaItem />
+								{
+									isLoaded
+										?
+										tea.length > 0 ?
+											tea.map((coffeItem: any, index: number) => {
+												if (index < count) {
+													return <TeaItem key={coffeItem.id} {...coffeItem} />
+												} else {
+													return null;
+												}
+											})
+											: <p className={styles.notFound}>Товар не найдено :с</p>
+										:
+										Array(12).fill(<Loading />)
+								}
 							</div>
 							{/*{
 								coffe.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''

@@ -2,11 +2,9 @@ import styles from './TeaItem.module.scss';
 import { TeaItemProps } from './TeaItem.props';
 
 import { Poput } from '../../Poput/Poput';
-import darkTea from '../../../assets/image/tea/darkTea.jpg';
 import { Link } from 'react-router-dom';
 
-export const TeaItem = (): JSX.Element => {
-
+export const TeaItem = ({ name, type, discount, poputInfo, image, rating, feedback, price }: TeaItemProps): JSX.Element => {
 	const arrStar: any[] = ['', '', '', '', ''];
 
 	const checkStart = (rating: number) => {
@@ -21,25 +19,35 @@ export const TeaItem = (): JSX.Element => {
 
 	return (
 		<div className='catalogItem'>
-			<div className='itemTop'>
+			<div className={`itemTop ${discount ? 'discount' : ''}`}>
 				<div className='itemRating'>
 					<div className='itemStars'>
-						{checkStart(4)}
+						{checkStart(rating)}
 					</div>
-					<p>{Number.isInteger(4) ? 4 + '.0' : 4}<span>({32} відгука)</span></p>
+					<p>{Number.isInteger(rating) ? rating + '.0' : rating}<span>({feedback} відгука)</span></p>
 				</div>
-				<Poput activeItem={250} items={[250, 500, 1000]} />
+				<Poput activeItem={poputInfo.poputActiveSize} items={poputInfo.poputSizes} />
 			</div>
 			<div className='itemImage'>
 				<Link to="test">
-					<img src={darkTea} alt="Dark tea" width={220} height={310} />
+					<img src={image} alt={name} width={220} height={310} />
 				</Link>
 			</div>
 			<div className="teaBottom">
-				<h3 className="itemTitle">Наименование товара</h3>
-				<p className="itemType">Черный чай</p>
+				<h3 className="itemTitle">{name}</h3>
+				<p className="itemType">{type}</p>
 				<div className="itemInfo">
-					<span className="itemPrice">250 ₽</span>
+					{
+						discount
+							?
+							<div className="itemPrice">
+								<span className='discountPrice'>{price[1]} ₴</span>
+								<span className="totalPrice">{price[0]} ₴</span>
+							</div>
+							: <div className="itemPrice">
+								<span className="totalPrice">{price[0]} ₴</span>
+							</div>
+					}
 					<button className='itemButton button small'>В корзину</button>
 				</div>
 			</div>

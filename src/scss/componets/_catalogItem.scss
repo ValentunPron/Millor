@@ -8,6 +8,7 @@
 .itemTop {
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 	.itemRating {
 		display: flex;
 		flex-direction: column;
@@ -33,6 +34,25 @@
 		}
 	}
 }
+
+.discount {
+	&::before {
+		content: '%';
+		position: absolute;
+		width: 70px;
+		height: 70px;
+		top: 100px; right: 20px;
+		border-radius: 100%;
+
+		display: flex;
+		font-weight: 700;
+		font-size: 1.4rem;
+		justify-content: center;
+		align-items: center;
+		background: #F9B300;
+		color: #000000;
+	}
+}
 .itemImage {
 	margin-top: 15px;
 	text-align: center;
@@ -55,12 +75,22 @@
 	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
+
 	.itemPrice {
+		display: flex;
+		flex-direction: column;
 		font-weight: 900;
 		font-size: 1.4rem;
-		line-height: 1.4;
+		line-height: 1.2;
 		color: #222222;
+		.discountPrice {
+			font-weight: 500;
+			font-size: 1rem;
+			line-height: 1.2;
+			text-decoration-line: line-through;
+			color: #C6C6C6;
+		}
 	}
 	.itemButton {
 		font-size: 0.8rem;
@@ -106,6 +136,13 @@
 			}
 		}
 	}
+	.discount {
+		&::before {
+			width: 50px;
+			height: 50px;
+			top: 70px; right: 30px;
+		}
+	}
 	.itemImage {
 		margin-top: 15px;
 		img {
@@ -123,7 +160,7 @@
 	.itemInfo {
 		margin-top: 25px;
 		.itemPrice {
-			font-size: 1.3rem;;
+			font-size: 1.3rem;
 		}
 		.itemButton {
 			min-width: 0;
@@ -153,6 +190,13 @@
 			}
 		}
 	}
+	.discount {
+		&::before {
+			width: calc(60px + (70 - 60)*((100vw - 780px)/(780 - 500)));
+			height: calc(60px + (70 - 60)*((100vw - 780px)/(780 - 500)));
+			top: 80px; right: 20px;
+		}
+	}
 	.itemImage {
 		margin-top: 10px;
 		img {
@@ -167,7 +211,10 @@
 	.itemInfo {
 		margin-top: 25px;
 		.itemPrice {
-			font-size: 1rem;;
+			font-size: 1rem;
+			.discountPrice {
+				font-size: 0.8rem;
+			}
 		}
 		.itemButton {
 			font-size: 0.65rem;
@@ -178,6 +225,13 @@
 }
 
 @media (max-width: 500px) {
+	.discount {
+		&::before {
+			width: 60px;
+			height: 60px;
+			top: 80px; right: 5%;
+		}
+	}
 	.catalogItem {
 		padding: 20px 40px;
 	}
@@ -217,7 +271,10 @@
 	.itemInfo {
 		margin-top: 25px;
 		.itemPrice {
-			font-size: 1.45rem;;
+			font-size: 1.45rem;
+			.discountPrice {
+				font-size: 1rem;
+			}
 		}
 		.itemButton {
 			font-size: 0.95rem;

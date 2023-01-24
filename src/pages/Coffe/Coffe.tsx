@@ -7,7 +7,7 @@ import imageCoffe from '../../assets/image/coffe.png';
 import styles from './Coffe.module.scss';
 import { filterCoffe, setLoaded } from '../../redux/action/coffe';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
-import { CoffeLoading } from '../../component/CatalogItems/Loading';
+import { Loading } from '../../component/CatalogItems/Loading';
 
 export interface sortByRadioInterface {
 	roasting: number[];
@@ -119,7 +119,7 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 											})
 											: <p className={styles.notFound}>Товар не найдено :с</p>
 										:
-										Array(12).fill(<CoffeLoading />)
+										Array(12).fill(<Loading />)
 								}
 							</div>
 							{

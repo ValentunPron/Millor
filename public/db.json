@@ -232,18 +232,15 @@
 			"id": 0,
 			"poputInfo": {
 				"poputActiveSize": 250,
-				"poputSizes": [
-				250,
-				500,
-				1000
-			]
+				"poputSizes": [ 250, 500, 1000]
 			},
 			"image": "https://i.ibb.co/BV2jYvc/item1.png",
 			"rating": 4,
 			"feedback": 23,
 			"name": "Brazil Santos",
 			"type": "Черный чай",
-			"price": [200]
+			"discount": true,
+			"price": [200, 249]
 		},
 		{
 			"id": 1,
@@ -259,6 +256,7 @@
 			"feedback": 4,
 			"name": "Brazil Santos",
 			"type": "Черный чай",
+			"discount": false,
 			"price": [249]
 		},
 		{
@@ -276,7 +274,8 @@
 			"feedback": 23,
 			"name": "Brazil Santos",
 			"type": "Черный чай",
-			"price": [200]
+			"discount": true,
+			"price": [200, 299]
 		},
 		{
 			"id": 3,
@@ -292,6 +291,7 @@
 			"feedback": 4,
 			"name": "Brazil Santos",
 			"type": "Черный чай",
+			"discount": false,
 			"price": [249]
 		},
 		{
@@ -309,7 +309,8 @@
 			"feedback": 23,
 			"name": "Brazil Santos",
 			"type": "Черный чай",
-			"price": [200]
+			"discount": true,
+			"price": [200, 399]
 		},
 		{
 			"id": 5,
@@ -325,6 +326,7 @@
 			"feedback": 4,
 			"name": "Brazil Santos",
 			"type": "Черный чай",
+			"discount": false,
 			"price": [249]
 		}
 	]

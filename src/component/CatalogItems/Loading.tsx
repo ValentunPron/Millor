@@ -1,6 +1,6 @@
 import ContentLoader from "react-content-loader"
 
-export const CoffeLoading = (): JSX.Element => {
+export const Loading = (): JSX.Element => {
 	return (
 		<ContentLoader
 			speed={1}
