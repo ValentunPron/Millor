@@ -11,7 +11,7 @@ import styles from './Tea.module.scss';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchTea, setLoaded } from '../../redux/action/tea';
-import { setSortBy } from '../../redux/action/filter';
+import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
 
 interface teaInterface {
@@ -29,9 +29,9 @@ const filterData: filterDataInterface[] = [
 	{ type: "type", name: 'Травяной чай', image: filterImage01 },
 	{ type: "type", name: 'Зеленый чай', image: filterImage02 },
 	{ type: 'type', name: 'none', image: 'none' },
-	{ type: "type", name: 'Матча', image: filterImage02 },
+	{ type: "type", name: 'Матча', image: 'https://i.ibb.co/chvFbT9/Paket-50-g-11-min-1.png' },
 	{ type: "type", name: 'Молочный улунг', image: filterImage03 },
-	{ type: "type", name: 'Пуэр', image: filterImage03 },
+	{ type: "type", name: 'Пуэр', image: 'https://i.ibb.co/chyy8jM/12346593.jpg' },
 	{ type: "type", name: 'Кофейные напитки', image: filterImage04 },
 ]
 
@@ -44,7 +44,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 			tea: tea.items,
 			isLoaded: tea.isLoaded,
 			sortBy: filter.sortBy,
-			sortRadio: filter.sortBy,
+			sortRadio: filter.sortRadio,
 		}
 	});
 
@@ -60,7 +60,8 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 	}, []);
 
 	const selectSortRadio = React.useCallback((sortRadio: string) => {
-		dispatch(setSortBy(sortRadio));
+		dispatch(setSortRadio(sortRadio));
+
 	}, []);
 
 	return (
