@@ -226,5 +226,106 @@
 			"text": "Бленд трех ярких сортов арабики. Запоминающийся, чистый, сильный и яркий кофе. В эспрессо вас удивит яркий ягодный вкус и фруктовая сладость.",
 			"price": [200, 299]
 		}
+	],
+	"tea": [
+		{
+			"id": 0,
+			"poputInfo": {
+				"poputActiveSize": 250,
+				"poputSizes": [
+				250,
+				500,
+				1000
+			]
+			},
+			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"rating": 4,
+			"feedback": 23,
+			"name": "Brazil Santos",
+			"type": "Черный чай",
+			"price": [200]
+		},
+		{
+			"id": 1,
+			"poputInfo": {
+				"poputActiveSize": 500,
+				"poputSizes": [
+				500,
+				1000
+			]
+			},
+			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"rating": 3.2,
+			"feedback": 4,
+			"name": "Brazil Santos",
+			"type": "Черный чай",
+			"price": [249]
+		},
+		{
+			"id": 2,
+			"poputInfo": {
+				"poputActiveSize": 250,
+				"poputSizes": [
+				250,
+				500,
+				1000
+			]
+			},
+			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"rating": 4,
+			"feedback": 23,
+			"name": "Brazil Santos",
+			"type": "Черный чай",
+			"price": [200]
+		},
+		{
+			"id": 3,
+			"poputInfo": {
+				"poputActiveSize": 500,
+				"poputSizes": [
+				500,
+				1000
+			]
+			},
+			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"rating": 3.2,
+			"feedback": 4,
+			"name": "Brazil Santos",
+			"type": "Черный чай",
+			"price": [249]
+		},
+		{
+			"id": 4,
+			"poputInfo": {
+				"poputActiveSize": 250,
+				"poputSizes": [
+				250,
+				500,
+				1000
+			]
+			},
+			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"rating": 4,
+			"feedback": 23,
+			"name": "Brazil Santos",
+			"type": "Черный чай",
+			"price": [200]
+		},
+		{
+			"id": 5,
+			"poputInfo": {
+				"poputActiveSize": 500,
+				"poputSizes": [
+				500,
+				1000
+			]
+			},
+			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"rating": 3.2,
+			"feedback": 4,
+			"name": "Brazil Santos",
+			"type": "Черный чай",
+			"price": [249]
+		}
 	]
 }

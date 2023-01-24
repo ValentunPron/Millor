@@ -20,23 +20,28 @@ export const TeaItem = (): JSX.Element => {
 	}
 
 	return (
-		<div className={styles.teaItem}>
-			<div className={styles.teaTop}>
-				<div className={styles.rating}>
-					<div className={styles.stars}>
+		<div className='catalogItem'>
+			<div className='itemTop'>
+				<div className='itemRating'>
+					<div className='itemStars'>
 						{checkStart(4)}
 					</div>
 					<p>{Number.isInteger(4) ? 4 + '.0' : 4}<span>({32} відгука)</span></p>
 				</div>
 				<Poput activeItem={250} items={[250, 500, 1000]} />
 			</div>
-			<div className={styles.image}>
+			<div className='itemImage'>
 				<Link to="test">
 					<img src={darkTea} alt="Dark tea" width={220} height={310} />
 				</Link>
 			</div>
 			<div className="teaBottom">
-
+				<h3 className="itemTitle">Наименование товара</h3>
+				<p className="itemType">Черный чай</p>
+				<div className="itemInfo">
+					<span className="itemPrice">250 ₽</span>
+					<button className='itemButton button small'>В корзину</button>
+				</div>
 			</div>
 		</div>
 	);

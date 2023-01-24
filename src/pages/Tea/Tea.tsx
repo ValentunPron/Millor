@@ -95,7 +95,14 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 
 					<div className='catalogBody'>
 						<div className="container">
-							<div className={styles.catalogList}>
+							<div className='catalogList'>
+								<TeaItem />
+								<TeaItem />
+								<TeaItem />
+								<TeaItem />
+								<TeaItem />
+								<TeaItem />
+								<TeaItem />
 								<TeaItem />
 							</div>
 							{/*{

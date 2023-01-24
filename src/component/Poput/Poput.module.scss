@@ -102,12 +102,12 @@
 
 @media (max-width: 1400px) {
 	.poputStart {
-		min-width: 95px;
+		min-width: 85px;
 		margin: 0 auto;
 		text-align: left;
 	
 		font-size: 0.666rem;
-		padding:4px 18px 4px 18px;
+		padding:4px 14px 4px 18px;
 		svg {
 			width: 8px;
 		}
@@ -133,9 +133,9 @@
 	}
 }
 
-@media (max-width: 770px) {
+@media (max-width: 780px) {
 	.poputStart {
-		min-width: calc(80px + (110 - 80)*((100vw - 400px)/(770 - 400)));
+		min-width: calc(85px + (110 - 85)*((100vw - 400px)/(770 - 400)));
 
 		font-size: 0.6rem;
 		padding: 6px 10px 6px 10px;
@@ -166,7 +166,7 @@
 	}
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
 	.poputStart {
 		min-width: 82px;
 
