@@ -232,100 +232,127 @@
 			"id": 0,
 			"poputInfo": {
 				"poputActiveSize": 250,
-				"poputSizes": [
-				250,
-				500,
-				1000
-			]
+				"poputSizes": [ 250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"image": "https://i.ibb.co/sQ0yMD8/chaj-zelenyj.png",
 			"rating": 4,
 			"feedback": 23,
-			"name": "Brazil Santos",
-			"type": "Черный чай",
-			"price": [200]
+			"name": "Green Chunmee",
+			"type": "Зеленый чай",
+			"discount": true,
+			"price": [200, 249]
 		},
 		{
 			"id": 1,
 			"poputInfo": {
 				"poputActiveSize": 500,
-				"poputSizes": [
-				500,
-				1000
-			]
+				"poputSizes": [ 500, 1000 ]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
-			"rating": 3.2,
-			"feedback": 4,
-			"name": "Brazil Santos",
-			"type": "Черный чай",
-			"price": [249]
+			"image": "https://i.ibb.co/ZG3dSwm/shokolad-big-png.png",
+			"rating": 3.1,
+			"feedback": 2,
+			"name": "Горячий шоколад",
+			"type": "Кофейные напитки",
+			"discount": false,
+			"price": [110]
 		},
 		{
 			"id": 2,
 			"poputInfo": {
 				"poputActiveSize": 250,
-				"poputSizes": [
-				250,
-				500,
-				1000
-			]
+				"poputSizes": [ 250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
-			"rating": 4,
-			"feedback": 23,
-			"name": "Brazil Santos",
+			"image": "https://i.ibb.co/0j81dw1/chaj-chernyj2.png",
+			"rating": 2.4,
+			"feedback": 6,
+			"name": "Leaflet species BLACK OP",
 			"type": "Черный чай",
-			"price": [200]
+			"discount": true,
+			"price": [99, 149]
 		},
 		{
 			"id": 3,
 			"poputInfo": {
 				"poputActiveSize": 500,
-				"poputSizes": [
-				500,
-				1000
-			]
+				"poputSizes": [	500, 1000 ]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
-			"rating": 3.2,
-			"feedback": 4,
-			"name": "Brazil Santos",
+			"image": "https://i.ibb.co/0j81dw1/chaj-chernyj2.png",
+			"rating": 4,
+			"feedback": 1,
+			"name": "Leaflet left species BLACK OP",
 			"type": "Черный чай",
-			"price": [249]
+			"discount": false,
+			"price": [99]
 		},
 		{
 			"id": 4,
 			"poputInfo": {
 				"poputActiveSize": 250,
-				"poputSizes": [
-				250,
-				500,
-				1000
-			]
+				"poputSizes": [ 250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
-			"rating": 4,
-			"feedback": 23,
-			"name": "Brazil Santos",
-			"type": "Черный чай",
-			"price": [200]
+			"image": "https://i.ibb.co/TgY1d0j/chaj-zelenyj-czitrus2.png",
+			"rating": 3.7,
+			"feedback": 6,
+			"name": "Senecha",
+			"type": "Зеленый чай",
+			"discount": true,
+			"price": [129, 149]
 		},
 		{
-			"id": 5,
+			"id": 6,
 			"poputInfo": {
 				"poputActiveSize": 500,
-				"poputSizes": [
-				500,
-				1000
-			]
+				"poputSizes": [500, 1000, 2000]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
-			"rating": 3.2,
+			"image": "https://i.ibb.co/h9hnxq3/kapuchino-big-png.png",
+			"rating": 3.7,
+			"feedback": 2,
+			"name": "Капучино",
+			"type": "Кофейные напитки",
+			"discount": false,
+			"price": [99]
+		},
+		{
+			"id": 7,
+			"poputInfo": {
+				"poputActiveSize": 500,
+				"poputSizes": [500, 1000]
+			},
+			"image": "https://i.ibb.co/VCDzJQZ/chaj-zelenyj3.png",
+			"rating": 0,
+			"feedback": 0,
+			"name": "Green of",
+			"type": "Зеленый чай",
+			"discount": false,
+			"price": [129]
+		},
+		{
+			"id": 8,
+			"poputInfo": {
+				"poputActiveSize": 250,
+				"poputSizes": [250, 500, 1000]
+			},
+			"image": "https://i.ibb.co/chvFbT9/Paket-50-g-11-min-1.png",
+			"rating": 5,
+			"feedback": 1,
+			"name": "Матча Церемониал",
+			"type": "Матча",
+			"discount": false,
+			"price": [399]
+		},
+		{
+			"id": 9,
+			"poputInfo": {
+				"poputActiveSize": 250,
+				"poputSizes": [250, 500, 1000]
+			},
+			"image": "https://i.ibb.co/chyy8jM/12346593.jpg",
+			"rating": 2.7,
 			"feedback": 4,
-			"name": "Brazil Santos",
-			"type": "Черный чай",
-			"price": [249]
+			"name": "Basilur",
+			"type": "Пуэр",
+			"discount": true,
+			"price": [119, 149]
 		}
 	]
 }
