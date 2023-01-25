@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Footer, Header, SortBy, TeaItem } from '../../component';
-import imageTea from '../../assets/image/tea.png';
+import imageVending from '../../assets/image/Vending/vendingImage.png';
 import filterImage01 from '../../assets/image/Vending/vendingCoffe.jpg';
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -72,7 +72,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 							<Link className='catalogLink' to="/tea">{namePages}</Link>
 						</div>
 						<h1 className={`titlePages`}>{namePages}</h1>
-						<img className='catalogImage' src={imageTea} alt="tea" width={800} height={600} />
+						<img className='catalogImage vendingCatalogImage' src={imageVending} alt="vending" width={450} height={500} />
 						<div className='catalogFilter vendingCatalog'>
 							{
 								filterData.map((filterTea: any, index) => (
