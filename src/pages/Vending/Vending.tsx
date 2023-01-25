@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Footer, Header, SortBy, TeaItem } from '../../component';
+import { Footer, Header, SortBy, TeaItem, VendingItem } from '../../component';
 import imageVending from '../../assets/image/Vending/vendingImage.png';
 import filterImage01 from '../../assets/image/Vending/vendingCoffe.jpg';
 
@@ -100,7 +100,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 									tea.length > 0 ?
 										tea.map((coffeItem: any, index: number) => {
 											if (index < count) {
-												return <TeaItem key={coffeItem.id} {...coffeItem} />
+												return <VendingItem key={coffeItem.id} {...coffeItem} />
 											} else {
 												return null;
 											}

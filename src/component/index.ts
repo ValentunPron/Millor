@@ -12,5 +12,9 @@ import { RadioButton } from "./RadioButton/RadioButton";
 import { SortBy } from "./SortBy/SortBy";
 import { CoffeItem } from "./CatalogItems/CoffeItem/CoffeItem";
 import { TeaItem } from "./CatalogItems/TeaItem/TeaItem";
+import { VendingItem } from "./CatalogItems/VendingItem/VendingItem";
 
-export { LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsMain, Footer, WorkingWindow, Filter, CategoryButton, RadioButton, SortBy, CoffeItem, TeaItem }
+export {
+	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsMain, Footer, WorkingWindow,
+	Filter, CategoryButton, RadioButton, SortBy, CoffeItem, TeaItem, VendingItem
+}
