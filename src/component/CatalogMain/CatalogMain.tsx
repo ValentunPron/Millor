@@ -31,7 +31,7 @@ const CatalogData: SliderItemProps[] = [
 		id: 2,
 		imageUrl: image03,
 		title: 'Продукція для вендінгу',
-		path: 'product',
+		path: 'vending',
 	},
 	{
 		id: 3,

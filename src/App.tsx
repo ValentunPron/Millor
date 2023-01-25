@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 
-import { Coffe, Main, Tea, NotFound } from './pages';
+import { Coffe, Main, Tea, NotFound, Vending } from './pages';
 import { WorkingWindow } from './component'
 
 
@@ -15,6 +15,7 @@ function App() {
 					<Route path="/" element={<Main />} />
 					<Route path='/coffe' element={<Coffe namePages='Свіжообсмажена кава' />} />
 					<Route path='/tea' element={<Tea namePages='Чай и кофейные напитки' />} />
+					<Route path='/vending' element={<Vending namePages='Продукция для вендинга' />} />
 
 					<Route path="*" element={<NotFound />} />
 				</Routes>

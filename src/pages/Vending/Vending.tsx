@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Footer, Header, SortBy, TeaItem } from '../../component';
 import imageTea from '../../assets/image/tea.png';
-import filterImage01 from '../../assets/image/tea/darkTea.jpg';
-import filterImage02 from '../../assets/image/tea/greenTea.jpg';
-import filterImage03 from '../../assets/image/tea/milkTea.jpg';
-import filterImage04 from '../../assets/image/tea/coffe.jpg';
+import filterImage01 from '../../assets/image/Vending/vendingCoffe.jpg';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchTea, setLoaded } from '../../redux/action/tea';
@@ -24,17 +21,17 @@ interface filterDataInterface {
 }
 
 const filterData: filterDataInterface[] = [
-	{ type: "type", name: 'Черный чай', image: filterImage01 },
-	{ type: "type", name: 'Травяной чай', image: filterImage01 },
-	{ type: "type", name: 'Зеленый чай', image: filterImage02 },
+	{ type: "type", name: 'Гранулированный кофе', image: filterImage01 },
+	{ type: "type", name: 'Гранулированный цикорий', image: filterImage01 },
+	{ type: "type", name: 'Зерновой кофе', image: filterImage01 },
 	{ type: 'type', name: 'none', image: 'none' },
-	{ type: "type", name: 'Матча', image: 'https://i.ibb.co/chvFbT9/Paket-50-g-11-min-1.png' },
-	{ type: "type", name: 'Молочный улунг', image: filterImage03 },
-	{ type: "type", name: 'Пуэр', image: 'https://i.ibb.co/chyy8jM/12346593.jpg' },
-	{ type: "type", name: 'Кофейные напитки', image: filterImage04 },
+	{ type: "type", name: 'Гранулированный какао', image: filterImage01 },
+	{ type: "type", name: 'Гранулированные кофейные напитки', image: filterImage01 },
+	{ type: "type", name: 'Кофе порошкообразный', image: filterImage01 },
+	{ type: "type", name: 'Сухое молоко гранулированное', image: filterImage01 },
 ]
 
-export const Tea = ({ namePages }: teaInterface): JSX.Element => {
+export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 
@@ -76,13 +73,13 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 						</div>
 						<h1 className={`titlePages`}>{namePages}</h1>
 						<img className='catalogImage' src={imageTea} alt="tea" width={800} height={600} />
-						<div className='catalogFilter'>
+						<div className='catalogFilter vendingCatalog'>
 							{
 								filterData.map((filterTea: any, index) => (
 									index === 3
 										? <div key={`${index}_${filterTea.name}`} className='gridUpdate'></div>
-										: <button key={`${index}_${filterTea.name}`} className='filterItem' onClick={() => selectSortRadio(filterTea)}>
-											<img className='filterImage' src={filterTea.image} alt={filterTea.name} />
+										: <button key={`${index}_${filterTea.name}`} className='filterItem vendingItem' onClick={() => selectSortRadio(filterTea)}>
+											<img className='filterImage vendingImage' src={filterTea.image} alt={filterTea.name} />
 											<h3 className='filterName'>{filterTea.name}</h3>
 										</button>
 								))
