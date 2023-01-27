@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Millor/static/css/main.6a05548e.css",
-    "main.js": "/Millor/static/js/main.5e0ed23b.js",
+    "main.css": "/Millor/static/css/main.ff442242.css",
+    "main.js": "/Millor/static/js/main.105a36e4.js",
     "static/media/bg.jpg": "/Millor/static/media/bg.205fd1a355ffda1603b3.jpg",
     "static/media/tea.png": "/Millor/static/media/tea.437efca5adf914e6fa5c.png",
     "static/media/coffe.png": "/Millor/static/media/coffe.e2a349de75b48ce2e955.png",
@@ -21,7 +21,7 @@
     "static/media/Gilroy-Bold.ttf": "/Millor/static/media/Gilroy-Bold.b900325e44ec0c673e88.ttf",
     "static/media/Gilroy-Black.eot": "/Millor/static/media/Gilroy-Black.724ac9b214f34923b443.eot",
     "static/media/Gilroy-Black.ttf": "/Millor/static/media/Gilroy-Black.bf3a5f799e6799d48062.ttf",
-    "static/media/01.png": "/Millor/static/media/01.41ccb834e89e731480b2.png",
+    "static/media/01.png": "/Millor/static/media/01.d77a588d959c5ec83666.png",
     "static/media/vendingCoffe.jpg": "/Millor/static/media/vendingCoffe.845af6602f69047170df.jpg",
     "static/media/04.png": "/Millor/static/media/04.2cf30b1cb4f6b359a860.png",
     "static/media/02.png": "/Millor/static/media/02.ed2947090e163ad593f8.png",
@@ -44,11 +44,11 @@
     "static/media/text.svg": "/Millor/static/media/text.3598cd9b1ca8f7b4b501.svg",
     "static/media/bgMain.svg": "/Millor/static/media/bgMain.0598decc5f1b23018151.svg",
     "static/media/bgError.svg": "/Millor/static/media/bgError.36cc704c943abcd2efef.svg",
-    "main.6a05548e.css.map": "/Millor/static/css/main.6a05548e.css.map",
-    "main.5e0ed23b.js.map": "/Millor/static/js/main.5e0ed23b.js.map"
+    "main.ff442242.css.map": "/Millor/static/css/main.ff442242.css.map",
+    "main.105a36e4.js.map": "/Millor/static/js/main.105a36e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a05548e.css",
-    "static/js/main.5e0ed23b.js"
+    "static/css/main.ff442242.css",
+    "static/js/main.105a36e4.js"
   ]
 }

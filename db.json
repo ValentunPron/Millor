@@ -6,7 +6,6 @@
 			"Знижки"
 			],
 			"poputInfo": {
-				"poputActiveSize": 250,
 				"poputSizes": [
 				250,
 				500,
@@ -33,7 +32,6 @@
 			"Знижки"
 			],
 			"poputInfo": {
-			"poputActiveSize": 500,
 			"poputSizes": [
 			500,
 			1000
@@ -59,7 +57,6 @@
 			"Знижки"
 			],
 			"poputInfo": {
-			"poputActiveSize": 250,
 			"poputSizes": [
 			250,
 			500,
@@ -85,7 +82,6 @@
 			"id": 3,
 			"special": ["Популярне", "Новий урожай"],
 			"poputInfo": {
-			"poputActiveSize": 250,
 			"poputSizes": [
 			250,
 			500
@@ -109,7 +105,6 @@
 			"id": 4,
 			"special": ["Популярне", "Новий урожай"],
 			"poputInfo": {
-			"poputActiveSize": 500,
 			"poputSizes": [
 			500,
 			1000
@@ -133,7 +128,6 @@
 			"id": 5,
 			"special": ["Новий урожай"],
 			"poputInfo": {
-			"poputActiveSize": 250,
 			"poputSizes": [
 			250
 			]
@@ -156,7 +150,6 @@
 			"id": 6,
 			"special": ["Популярне"],
 			"poputInfo": {
-			"poputActiveSize": 500,
 			"poputSizes": [
 			500,
 			1000
@@ -180,7 +173,6 @@
 			"id": 7,
 			"special": ["Популярне"],
 			"poputInfo": {
-			"poputActiveSize": 250,
 			"poputSizes": [
 			250,
 			500,
@@ -205,7 +197,6 @@
 			"id": 8,
 			"special": ["Знижки"],
 			"poputInfo": {
-			"poputActiveSize": 250,
 			"poputSizes": [
 			250,
 			500,
@@ -231,7 +222,6 @@
 		{
 			"id": 0,
 			"poputInfo": {
-				"poputActiveSize": 250,
 				"poputSizes": [ 250, 500, 1000]
 			},
 			"image": "https://i.ibb.co/sQ0yMD8/chaj-zelenyj.png",
@@ -245,7 +235,6 @@
 		{
 			"id": 1,
 			"poputInfo": {
-				"poputActiveSize": 500,
 				"poputSizes": [ 500, 1000 ]
 			},
 			"image": "https://i.ibb.co/ZG3dSwm/shokolad-big-png.png",
@@ -259,7 +248,6 @@
 		{
 			"id": 2,
 			"poputInfo": {
-				"poputActiveSize": 250,
 				"poputSizes": [ 250, 500, 1000]
 			},
 			"image": "https://i.ibb.co/0j81dw1/chaj-chernyj2.png",
@@ -273,7 +261,6 @@
 		{
 			"id": 3,
 			"poputInfo": {
-				"poputActiveSize": 500,
 				"poputSizes": [	500, 1000 ]
 			},
 			"image": "https://i.ibb.co/0j81dw1/chaj-chernyj2.png",
@@ -287,7 +274,6 @@
 		{
 			"id": 4,
 			"poputInfo": {
-				"poputActiveSize": 250,
 				"poputSizes": [ 250, 500, 1000]
 			},
 			"image": "https://i.ibb.co/TgY1d0j/chaj-zelenyj-czitrus2.png",
@@ -301,7 +287,6 @@
 		{
 			"id": 6,
 			"poputInfo": {
-				"poputActiveSize": 500,
 				"poputSizes": [500, 1000, 2000]
 			},
 			"image": "https://i.ibb.co/h9hnxq3/kapuchino-big-png.png",
@@ -315,7 +300,6 @@
 		{
 			"id": 7,
 			"poputInfo": {
-				"poputActiveSize": 500,
 				"poputSizes": [500, 1000]
 			},
 			"image": "https://i.ibb.co/VCDzJQZ/chaj-zelenyj3.png",
@@ -329,7 +313,6 @@
 		{
 			"id": 8,
 			"poputInfo": {
-				"poputActiveSize": 250,
 				"poputSizes": [250, 500, 1000]
 			},
 			"image": "https://i.ibb.co/chvFbT9/Paket-50-g-11-min-1.png",
@@ -343,7 +326,6 @@
 		{
 			"id": 9,
 			"poputInfo": {
-				"poputActiveSize": 250,
 				"poputSizes": [250, 500, 1000]
 			},
 			"image": "https://i.ibb.co/chyy8jM/12346593.jpg",
@@ -353,6 +335,107 @@
 			"type": "Пуэр",
 			"discount": true,
 			"price": [119, 149]
+		}
+	],
+	"vending": [
+		{
+			"id": 0,
+			"poputInfo": {
+				"poputSizes": [ 1, 2, 5]
+			},
+			"image": "https://i.ibb.co/k6RN2B4/vending-Coffe.jpg",
+			"rating": 1,
+			"feedback": 2.4,
+			"name": "Гранулированный кофе",
+			"type": "Гранулированный Кофе"
+		},
+		{
+			"id": 1,
+			"poputInfo": {
+				"poputSizes": [ 5, 10, 50]
+			},
+			"image": "https://i.ibb.co/k4d42hb/Kava-rozchinna-u-granulakh-STRONG.jpg",
+			"rating": 4,
+			"feedback": 2,
+			"name": "Кава гранулирование STRONG",
+			"type": "Гранулированный Кофе"
+		},
+		{
+			"id": 2,
+			"poputInfo": {
+				"poputSizes": [ 5, 10, 50]
+			},
+			"image": "https://i.ibb.co/X8S0y2q/8.jpg",
+			"rating": 0,
+			"feedback": 0,
+			"name": "Frontier Co-Op",
+			"type": "Цикорий"
+		},
+		{
+			"id": 3,
+			"poputInfo": {
+				"poputSizes": [ 0.5, 1, 2]
+			},
+			"image": "https://i.ibb.co/41BCBm9/2580249240-w640-h640-zernovoj-kofe-kupazh.jpg",
+			"rating": 2,
+			"feedback": 1,
+			"name": "Зерновой кофе купаж",
+			"type": "Зерновой кофе"
+		},
+		{
+			"id": 4,
+			"poputInfo": {
+				"poputSizes": [ 0.5, 1, 2]
+			},
+			"image": "https://i.ibb.co/3hqmD7H/000007645.jpg",
+			"rating": 5,
+			"feedback": 3,
+			"name": "Львівська міцна",
+			"type": "Зерновой кофе"
+		},
+		{
+			"id": 5,
+			"poputInfo": {
+				"poputSizes": [ 0.5, 1]
+			},
+			"image": "https://cocoa.com.ua/wp-content/uploads/2017/12/Cocoa-powder.jpg",
+			"rating": 3.7,
+			"feedback": 2,
+			"name": "Какао порошок светлый",
+			"type": "Какао"
+		},
+		{
+			"id": 6,
+			"poputInfo": {
+				"poputSizes": [1,2]
+			},
+			"image": "https://i.ibb.co/qC4rfSm/coffeNap.jpg",
+			"rating": 4.1,
+			"feedback": 2,
+			"name": "Зерна американо",
+			"type": "Кофейные напитки"
+		},
+		{
+			"id": 7,
+			"poputInfo": {
+				"poputSizes": [1,2]
+			},
+			"image": "https://i.ibb.co/VHxrJzV/coffeJer.jpg",
+			"rating": 4.2,
+			"feedback": 5,
+			"name": "Кофе растворимый сублимированный OLAM",
+			"type": "Кофе порошкообразный"
+		},
+		{
+			"id": 8,
+			"poputInfo": {
+				"poputSizes": [0.5, 1, 2]
+			},
+			"image": "https://i.ibb.co/9HnpM9n/milk.jpg",
+			"rating": 3.8,
+			"feedback": 3,
+			"name": "Сухе знежирене молоко Детальніше",
+			"type": "Сухое молоко"
 		}
 	]
 }
