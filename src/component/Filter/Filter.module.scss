@@ -110,6 +110,7 @@
 .sortBy {
 	position: relative;
 	margin-top: 80px;
+	margin-bottom: 60px;
 }
 
 
@@ -120,7 +121,7 @@
 		grid-template-rows: auto;
 	}
 	.sortBy {
-		margin-top: 30px;
+		margin: 30px 0;
 	}
 	.filterRoasting {
 		.roastingContainer {
@@ -276,6 +277,7 @@
 	}
 	.sortBy {
 		margin-top: 60px;
+		margin-bottom: 30px;
 	}
 	.filterCategory {
 		margin-top: 40px;

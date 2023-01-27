@@ -42,8 +42,8 @@ export const Header = ({ headerActive = false, scrollTo }: any): JSX.Element => 
 							</div>
 							<ul className={styles.linksList}>
 								<li className={styles.linksItem}><Link to='/' onClick={() => { scrollTo(); setVisibleLinks(false) }}>Каталог товарів</Link></li>
-								<li className={styles.linksItem}><a href="#s">Блог</a></li>
-								<li className={styles.linksItem}><a href="#s">Контакти</a></li>
+								<li className={styles.linksItem}><Link to="/blog">Блог</Link></li>
+								<li className={styles.linksItem}><Link to="/contact">Контакти</Link></li>
 							</ul>
 							<div className={styles.burgerInfo}>
 								<ul className={styles.actionList}>

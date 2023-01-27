@@ -21,8 +21,8 @@ export const Main = (): JSX.Element => {
 		dispatch(fetchCoffe());
 	}, []);
 
-	const scrollCatalog = () => {
-		refCatalog.current.scrollIntoView();
+	const scrollCatalog = async () => {
+		await refCatalog.current.scrollIntoView(true);
 	};
 
 	return (
@@ -81,7 +81,7 @@ export const Main = (): JSX.Element => {
 								<span />
 								Ми розкриваємо смак кожного сорту кави.
 							</p>
-							<button className='company__button button big'>Перейти в каталог</button>
+							<button className='company__button button big' onClick={scrollCatalog}>Перейти в каталог</button>
 						</div>
 					</div>
 				</div>

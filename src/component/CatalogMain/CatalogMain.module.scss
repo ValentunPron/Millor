@@ -1,6 +1,7 @@
 .catalog {
 	position: relative;
-	margin-top: 200px;
+	margin-top: 50px;
+	padding-top: 150px;
 	.container {
 		overflow: hidden;
 	}
@@ -147,7 +148,8 @@
 
 @media (max-width: 770px) {
 	.catalog {
-		margin-top: 70px;
+		margin-top: 50;
+		padding-top: 20px;
 		padding-bottom: 60px;
 		h2 {
 			font-size: 1.6rem;
@@ -235,7 +237,8 @@
 
 @media (max-width: 375px) {
 	.catalog {
-		margin-top: 70px;
+		margin-top: 50;
+		padding-top: 20px;
 		padding-bottom: 30px;
 		h2 {
 			font-size: 1.1rem;

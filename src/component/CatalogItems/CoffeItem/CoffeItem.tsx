@@ -47,7 +47,7 @@ export const CoffeItem = ({ special, poputInfo, rating, feedback, roasting, acid
 					<div className={styles.discountTopinfo}>
 						{special.map(type => typeCoffe[type])}
 					</div>
-					<Poput activeItem={poputInfo.poputActiveSize} items={poputInfo.poputSizes} />
+					<Poput activeItem={poputInfo.poputSizes[0]} items={poputInfo.poputSizes} />
 				</div>
 				<div className={styles.description}>
 					<Link to='test'><img className={styles.descriptionImage} src={image} alt={name} width={160} height={300} /></Link>

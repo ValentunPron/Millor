@@ -3,9 +3,7 @@ import { VendingItemProps } from './VendingItem.props';
 import { Poput } from '../../Poput/Poput';
 import { Link } from 'react-router-dom';
 
-import filterImage01 from '../../../assets/image/Vending/vendingCoffe.jpg';
-
-export const VendingItem = ({ name, type, discount, poputInfo, image, rating, feedback, price }: VendingItemProps): JSX.Element => {
+export const VendingItem = ({ name, type, poputInfo, image, rating, feedback }: VendingItemProps): JSX.Element => {
 	const arrStar: any[] = ['', '', '', '', ''];
 
 	const checkStart = (rating: number) => {
@@ -20,18 +18,18 @@ export const VendingItem = ({ name, type, discount, poputInfo, image, rating, fe
 
 	return (
 		<div className='catalogItem vendingItem'>
-			<div className={`itemTop ${discount ? 'discount' : ''}`}>
+			<div className={`itemTop`}>
 				<div className='itemRating'>
 					<div className='itemStars'>
 						{checkStart(rating)}
 					</div>
 					<p>{Number.isInteger(rating) ? rating + '.0' : rating}<span>({feedback} відгука)</span></p>
 				</div>
-				<Poput activeItem={poputInfo.poputActiveSize} items={poputInfo.poputSizes} />
+				<Poput activeItem={poputInfo.poputSizes[0]} items={poputInfo.poputSizes} sizes='кг' />
 			</div>
 			<div className='itemImage'>
 				<Link to="test">
-					<img src={filterImage01} alt={name} width={320} height={200} />
+					<img src={image} alt={name} width={320} height={200} />
 				</Link>
 			</div>
 			<div className="teaBottom">

@@ -2,7 +2,7 @@ import { DetailedHTMLProps, HtmlHTMLAttributes } from 'react';
 
 export interface CoffeItemProps extends DetailedHTMLProps<HtmlHTMLAttributes<HTMLDivElement>, HTMLDivElement> {
 	special: string[],
-	poputInfo: { poputActiveSize: number, poputSizes: number[] },
+	poputInfo: { poputSizes: number[] },
 	image: string,
 	rating: number,
 	feedback: number,

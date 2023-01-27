@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Footer, Header, SortBy, TeaItem, VendingItem } from '../../component';
+import { Footer, Header, SortBy, VendingItem } from '../../component';
 import imageVending from '../../assets/image/Vending/vendingImage.png';
 import filterImage01 from '../../assets/image/Vending/vendingCoffe.jpg';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchTea, setLoaded } from '../../redux/action/tea';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
+import { fetchVending, setLoaded } from '../../redux/action/vending';
 
 interface teaInterface {
 	namePages: string
@@ -22,23 +22,23 @@ interface filterDataInterface {
 
 const filterData: filterDataInterface[] = [
 	{ type: "type", name: 'Гранулированный кофе', image: filterImage01 },
-	{ type: "type", name: 'Гранулированный цикорий', image: filterImage01 },
-	{ type: "type", name: 'Зерновой кофе', image: filterImage01 },
+	{ type: "type", name: 'Цикорий', image: 'https://i.ibb.co/X8S0y2q/8.jpg' },
+	{ type: "type", name: 'Зерновой кофе', image: 'https://i.ibb.co/41BCBm9/2580249240-w640-h640-zernovoj-kofe-kupazh.jpg' },
 	{ type: 'type', name: 'none', image: 'none' },
-	{ type: "type", name: 'Гранулированный какао', image: filterImage01 },
-	{ type: "type", name: 'Гранулированные кофейные напитки', image: filterImage01 },
-	{ type: "type", name: 'Кофе порошкообразный', image: filterImage01 },
-	{ type: "type", name: 'Сухое молоко гранулированное', image: filterImage01 },
+	{ type: "type", name: 'Какао', image: 'https://cocoa.com.ua/wp-content/uploads/2017/12/Cocoa-powder.jpg' },
+	{ type: "type", name: 'Кофейные напитки', image: 'https://i.ibb.co/qC4rfSm/coffeNap.jpg' },
+	{ type: "type", name: 'Кофе порошкообразный', image: 'https://i.ibb.co/VHxrJzV/coffeJer.jpg' },
+	{ type: "type", name: 'Сухое молоко', image: 'https://i.ibb.co/9HnpM9n/milk.jpg' },
 ]
 
 export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 
-	const { tea, isLoaded, sortBy, sortRadio } = useSelector(({ filter, tea }: any) => {
+	const { vending, isLoaded, sortBy, sortRadio } = useSelector(({ filter, vending }: any) => {
 		return {
-			tea: tea.items,
-			isLoaded: tea.isLoaded,
+			vending: vending.items,
+			isLoaded: vending.isLoaded,
 			sortBy: filter.sortBy,
 			sortRadio: filter.sortRadio,
 		}
@@ -47,7 +47,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
-			dispatch(fetchTea(sortBy, sortRadio));
+			dispatch(fetchVending(sortBy, sortRadio));
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -75,12 +75,12 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 						<img className='catalogImage vendingCatalogImage' src={imageVending} alt="vending" width={450} height={500} />
 						<div className='catalogFilter vendingCatalog'>
 							{
-								filterData.map((filterTea: any, index) => (
+								filterData.map((filterVending: any, index) => (
 									index === 3
-										? <div key={`${index}_${filterTea.name}`} className='gridUpdate'></div>
-										: <button key={`${index}_${filterTea.name}`} className='filterItem vendingItem' onClick={() => selectSortRadio(filterTea)}>
-											<img className='filterImage vendingImage' src={filterTea.image} alt={filterTea.name} />
-											<h3 className='filterName'>{filterTea.name}</h3>
+										? <div key={`${index}_${filterVending.name}`} className='gridUpdate'></div>
+										: <button key={`${index}_${filterVending.name}`} className='filterItem vendingItem' onClick={() => selectSortRadio(filterVending)}>
+											<img className='filterImage vendingImage' src={filterVending.image} alt={filterVending.name} />
+											<h3 className='filterName'>{filterVending.name}</h3>
 										</button>
 								))
 							}
@@ -97,10 +97,10 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 							{
 								isLoaded
 									?
-									tea.length > 0 ?
-										tea.map((coffeItem: any, index: number) => {
+									vending.length > 0 ?
+										vending.map((coffeItem: any, index: number) => {
 											if (index < count) {
-												return <VendingItem key={coffeItem.id} {...coffeItem} />
+												return <VendingItem key={`${coffeItem.id}_${coffeItem.name}`} {...coffeItem} />
 											} else {
 												return null;
 											}
@@ -111,7 +111,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 							}
 						</div>
 						{
-							tea.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
+							vending.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
 						}
 					</div>
 				</div>

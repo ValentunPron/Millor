@@ -26,7 +26,7 @@ export const TeaItem = ({ name, type, discount, poputInfo, image, rating, feedba
 					</div>
 					<p>{Number.isInteger(rating) ? rating + '.0' : rating}<span>({feedback} відгука)</span></p>
 				</div>
-				<Poput activeItem={poputInfo.poputActiveSize} items={poputInfo.poputSizes} />
+				<Poput activeItem={poputInfo.poputSizes[0]} items={poputInfo.poputSizes} />
 			</div>
 			<div className='itemImage'>
 				<Link to="test">

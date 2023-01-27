@@ -112,8 +112,10 @@
 		max-width: none !important;
 	}
 	.itemImage {
+		margin: 50px 0;
 		width: 100%;
 		img {
+			border-radius: 20px;
 			max-width: none;
 			max-height: 200px;
 			width: 100%;
@@ -200,6 +202,12 @@
 		.itemButton {
 			padding: 10px 0;
 		}
+		.itemImage {
+			height: 100%;
+			align-items: flex-start;
+			max-height: 120px;
+			margin: 10px 0;
+		}
 	}
 }
 
@@ -257,6 +265,17 @@
 			font-size: 0.65rem;
 			min-width: 0;
 			max-width: 50%;
+		}
+	}
+	.vendingItem {
+		.itemImage {
+			display: block;
+			max-height: none;
+			img {
+				height: 100%;
+				width: 100%;
+				max-height: 150px;
+			}
 		}
 	}
 }
@@ -318,6 +337,14 @@
 			font-size: 0.95rem;
 			min-width: 0;
 			max-width: 55%;
+		}
+	}
+	.vendingItem {
+		.itemImage {
+			img {
+				min-height: 120px;
+				max-height: 120px;
+			}
 		}
 	}
 }
