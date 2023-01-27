@@ -437,5 +437,20 @@
 			"name": "Сухе знежирене молоко Детальніше",
 			"type": "Сухое молоко"
 		}
+	],
+	"eating": [
+		{
+			"id": 0,
+			"poputInfo": {
+				"poputSizes": [ 250, 500, 1000]
+			},
+			"image": "https://i.ibb.co/Hht73HD/czikorij-png-big.png",
+			"rating": 4,
+			"feedback": 23,
+			"name": "Цикорий растворимый гранулированный",
+			"type": "Цикорий",
+			"discount": true,
+			"price": [200, 249]
+		}
 	]
 }
