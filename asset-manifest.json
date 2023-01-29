@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/Millor/static/css/main.ff442242.css",
-    "main.js": "/Millor/static/js/main.6c8b1a66.js",
+    "main.css": "/Millor/static/css/main.339ebf60.css",
+    "main.js": "/Millor/static/js/main.ff52ac7d.js",
     "static/media/bg.jpg": "/Millor/static/media/bg.205fd1a355ffda1603b3.jpg",
+    "static/media/01.jpg": "/Millor/static/media/01.fd0f1aaa846f45609be2.jpg",
+    "static/media/02.jpg": "/Millor/static/media/02.3579453b61c0ba72315f.jpg",
     "static/media/tea.png": "/Millor/static/media/tea.437efca5adf914e6fa5c.png",
     "static/media/coffe.png": "/Millor/static/media/coffe.e2a349de75b48ce2e955.png",
+    "static/media/03.jpg": "/Millor/static/media/03.32a2bea3937c9e35486d.jpg",
     "static/media/bgCoffe.png": "/Millor/static/media/bgCoffe.303ca97814222784710a.png",
     "static/media/chocolateAdaptive.png": "/Millor/static/media/chocolateAdaptive.58413d9dfa36430c9069.png",
+    "static/media/05.jpg": "/Millor/static/media/05.16a8b596238b4c0b8291.jpg",
     "static/media/adaptive_01.jpg": "/Millor/static/media/adaptive_01.6c3d1f9ad2aafb1e765e.jpg",
     "static/media/bg-coffe.png": "/Millor/static/media/bg-coffe.f4f293ef75f5a06ee228.png",
-    "static/media/01.jpg": "/Millor/static/media/01.fd0f1aaa846f45609be2.jpg",
     "static/media/coffeAdaptive.png": "/Millor/static/media/coffeAdaptive.fa451e0ef246892cb66d.png",
     "static/media/darkTea.jpg": "/Millor/static/media/darkTea.9f5d8120634dfb4dd411.jpg",
     "static/media/logoSvg.svg": "/Millor/static/media/logoSvg.ca553547674bcda8da38eae66d01ec10.svg",
@@ -22,11 +25,11 @@
     "static/media/Gilroy-Black.eot": "/Millor/static/media/Gilroy-Black.724ac9b214f34923b443.eot",
     "static/media/Gilroy-Black.ttf": "/Millor/static/media/Gilroy-Black.bf3a5f799e6799d48062.ttf",
     "static/media/01.png": "/Millor/static/media/01.d77a588d959c5ec83666.png",
+    "static/media/04.jpg": "/Millor/static/media/04.018ff89af5b9248dc945.jpg",
     "static/media/vendingCoffe.jpg": "/Millor/static/media/vendingCoffe.845af6602f69047170df.jpg",
     "static/media/04.png": "/Millor/static/media/04.2cf30b1cb4f6b359a860.png",
     "static/media/02.png": "/Millor/static/media/02.ed2947090e163ad593f8.png",
     "static/media/vendingImage.png": "/Millor/static/media/vendingImage.e3f31bd3a05e2e8f49ef.png",
-    "static/media/milkTea.jpg": "/Millor/static/media/milkTea.0a6470cb760d14f419d7.jpg",
     "static/media/greenTea.jpg": "/Millor/static/media/greenTea.a552f9479f2ad7b2a36c.jpg",
     "static/media/03.png": "/Millor/static/media/03.ff340050b2f5d64ddbe8.png",
     "static/media/coffe.jpg": "/Millor/static/media/coffe.4156298632cddeabda5f.jpg",
@@ -44,11 +47,11 @@
     "static/media/text.svg": "/Millor/static/media/text.3598cd9b1ca8f7b4b501.svg",
     "static/media/bgMain.svg": "/Millor/static/media/bgMain.0598decc5f1b23018151.svg",
     "static/media/bgError.svg": "/Millor/static/media/bgError.36cc704c943abcd2efef.svg",
-    "main.ff442242.css.map": "/Millor/static/css/main.ff442242.css.map",
-    "main.6c8b1a66.js.map": "/Millor/static/js/main.6c8b1a66.js.map"
+    "main.339ebf60.css.map": "/Millor/static/css/main.339ebf60.css.map",
+    "main.ff52ac7d.js.map": "/Millor/static/js/main.ff52ac7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff442242.css",
-    "static/js/main.6c8b1a66.js"
+    "static/css/main.339ebf60.css",
+    "static/js/main.ff52ac7d.js"
   ]
 }
