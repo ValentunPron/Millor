@@ -42,6 +42,8 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 		}
 	});
 
+	setSortRadio('all');
+
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
@@ -67,7 +69,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 						<div className='catalogLinks'>
 							<Link className='catalogLink' to="/">Головна</Link>
 							<Link className='catalogLink' to="/">Каталог товарів</Link>
-							<Link className='catalogLink' to="/tea">{namePages}</Link>
+							<Link className='catalogLink' to="/eating">{namePages}</Link>
 						</div>
 						<h1 className={`titlePages`}>{namePages}</h1>
 						<img className='catalogImage eatingCatalogImage' src={mainImage} alt="eating" />

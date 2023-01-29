@@ -5,6 +5,7 @@ export const fetchVending = (sortBy: { type: string, order: string }, sortRadio:
 	axios(`https://63d14d40120b32bbe8f59c99.mockapi.io/vending?sortBy=${sortBy.type}&order=${sortBy.order}&${sortRadio.type}=${sortRadio.name}`).then(({ data }) => {
 		dispatch(setVending(data));
 	});
+
 }
 
 export const setLoaded = (payload: boolean) => ({

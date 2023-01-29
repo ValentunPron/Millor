@@ -57,7 +57,7 @@ export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 						</Link>
 						<ul className={styles.footerList}>
 							<li className="footerItem">
-								<Link to='/' onClick={scrollTo} className={`${styles.footerLink} link`}>Каталог товарів</Link>
+								<Link onClick={scrollTo} to='/' className={`${styles.footerLink} link`}>Каталог товарів</Link>
 							</li>
 							<li className="footerItem">
 								<Link to='' className={`${styles.footerLink} link`}>Блог</Link>

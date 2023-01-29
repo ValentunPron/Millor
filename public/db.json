@@ -335,6 +335,19 @@
 			"type": "Пуэр",
 			"discount": true,
 			"price": [119, 149]
+		},
+		{
+			"id": 10,
+			"poputInfo": {
+				"poputSizes": [250, 500, 1000]
+			},
+			"image": "https://i.ibb.co/6rZkvdc/milkTea.jpg",
+			"rating": 3.7,
+			"feedback": 5,
+			"name": "Milk Olong",
+			"type": "Молочный улунг",
+			"discount": true,
+			"price": [159, 199]
 		}
 	],
 	"vending": [

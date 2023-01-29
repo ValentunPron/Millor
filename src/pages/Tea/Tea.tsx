@@ -29,7 +29,7 @@ const filterData: filterDataInterface[] = [
 	{ type: "type", name: 'Зеленый чай', image: filterImage02 },
 	{ type: 'type', name: 'none', image: 'none' },
 	{ type: "type", name: 'Матча', image: 'https://i.ibb.co/chvFbT9/Paket-50-g-11-min-1.png' },
-	{ type: "type", name: 'Молочный улунг', image: filterImage03 },
+	{ type: "type", name: 'Молочный улунг', image: 'https://i.ibb.co/6rZkvdc/milkTea.jpg' },
 	{ type: "type", name: 'Пуэр', image: 'https://i.ibb.co/chyy8jM/12346593.jpg' },
 	{ type: "type", name: 'Кофейные напитки', image: filterImage04 },
 ]

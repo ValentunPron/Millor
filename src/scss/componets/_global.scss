@@ -206,6 +206,9 @@ body {
 	font-size: 2rem;
 	line-height: 1.25;
 	color: #000000;
+	&.titleMiddle {
+		font-size: 1.6rem;
+	}
 }
 
 @media (max-width: 2200px) {
@@ -374,6 +377,11 @@ body {
 	.linkNext {
 		font-size: 0.8rem;
 	}
+	.title {
+		&.titleMiddle {
+			font-size: calc(1rem + (1.5 - 1) * ((100vw - 400px) / (768 - 400)));
+		}
+	}
 	.container {
 		padding: 0 15px;
 	}
@@ -403,8 +411,13 @@ body {
 	.logo {
 		width: calc(90px + (110 - 90)*((100vw - 320px)/(380 - 320)));
 	}
+	.title {
+		&.titleMiddle {
+			font-size: 0.9rem;;
+		}
+	}
 	.wrapper {
-		margin-top: -0px;
+		margin-top: -30px;
 		.mainSlider {
 			&::after {
 				top:  -60px;

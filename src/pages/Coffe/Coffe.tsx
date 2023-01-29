@@ -80,7 +80,7 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 						<div className={styles.coffeBody}>
 							<div className='catalogLinks'>
 								<Link className='catalogLink' to="/">Головна</Link>
-								<Link className='catalogLink' to="/">Каталог товарів</Link>
+								<Link className='catalogLink' to="/" onClick={() => window.scroll(0, 500)}>Каталог товарів</Link>
 								<Link className='catalogLink' to="/coffe">{namePages}</Link>
 							</div>
 							<h1 className={`titlePages`}>{namePages}</h1>
@@ -96,17 +96,6 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 						<div className="container">
 							<div className={styles.catalogList}>
 								{
-									//coffe.length > 0 ?
-									//	isLoaded
-									//		?
-									//		coffe.map((coffeItem: any, index: number) => {
-									//			if (index < count) {
-									//				return <CoffeItem key={coffeItem.id} {...coffeItem} />
-									//			}
-									//		})
-									//		: Array(12).fill(<CoffeLoading />)
-									//	:
-									//	<p className={styles.notFound}>Товар не найдено :с</p>
 									isLoaded
 										?
 										coffe.length > 0 ?

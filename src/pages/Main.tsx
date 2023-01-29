@@ -21,8 +21,9 @@ export const Main = (): JSX.Element => {
 		dispatch(fetchCoffe());
 	}, []);
 
-	const scrollCatalog = async () => {
-		await refCatalog.current.scrollIntoView(true);
+	console.log(refCatalog.current);
+	const scrollCatalog = () => {
+		refCatalog.current.scrollIntoView(true);
 	};
 
 	return (

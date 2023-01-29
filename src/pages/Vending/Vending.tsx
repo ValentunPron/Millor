@@ -69,7 +69,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 						<div className='catalogLinks'>
 							<Link className='catalogLink' to="/">Головна</Link>
 							<Link className='catalogLink' to="/">Каталог товарів</Link>
-							<Link className='catalogLink' to="/tea">{namePages}</Link>
+							<Link className='catalogLink' to='vending'>{namePages}</Link>
 						</div>
 						<h1 className={`titlePages`}>{namePages}</h1>
 						<img className='catalogImage vendingCatalogImage' src={imageVending} alt="vending" width={450} height={500} />

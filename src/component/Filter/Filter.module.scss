@@ -98,6 +98,12 @@
 	}
 }
 
+.sortBy {
+	position: relative;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
 .filterCategory {
 	margin-top: 20px;
 
@@ -106,13 +112,6 @@
 	gap: 20px;
 	width: 100%;
 }
-
-.sortBy {
-	position: relative;
-	margin-top: 80px;
-	margin-bottom: 60px;
-}
-
 
 @media (max-width: 1400px) {
 	.filterTop {
@@ -200,7 +199,7 @@
 	
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-start;
+		justify-content: center;
 		flex-wrap: wrap;
 	}
 }
@@ -279,6 +278,7 @@
 		margin-top: 60px;
 		margin-bottom: 30px;
 	}
+	
 	.filterCategory {
 		margin-top: 40px;
 	
@@ -358,14 +358,12 @@
 			font-size: calc(0.6rem + (0.95 - 0.6)*((100vw - 400px)/(780 - 400)));
 		}
 	}
+	.sortBy {
+		margin-top: 30px;
+	}
 
 	.filterCategory {
 		margin-top: 20px;
-	
 		gap: 10px;
-	}
-
-	.sortBy {
-		margin-top: 30px;
 	}
 }

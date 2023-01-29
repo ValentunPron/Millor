@@ -1,0 +1,223 @@
+.blog {
+	margin-top: 40px;
+	padding-bottom: 200px;
+}
+
+.filterCategory {
+	margin-top: 20px;
+
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 20px;
+	width: 100%;
+}
+
+
+.blogScroll {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 60px;
+	gap: 20px;
+	.scrollButton {
+		padding: 15px 0;
+		background: #F6F6F6;
+		border: 1px solid #C9C9C9;
+		border-radius: 5px;
+
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 1.2;
+		color: #F9B300;
+		transition: 0.2s ease-in;
+		&:hover {
+			background: #FFF7E1;
+			border: 1px solid #F9B300;
+		}
+	}
+}
+
+.blogHowCooking {
+	position: relative;
+	h2 {
+		padding-top: 70px;
+		margin-bottom: 50px;
+	}
+	.howCookingList {
+			margin-top: 110px;
+	}
+	.howCookingText {
+		margin-top: 60px;
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 130%;
+		color: #222222;
+		max-width: 1380px;
+		span {
+			display: block;
+			padding: 20px 0;
+		}
+	}
+	.howCookingImage {
+		width: 100%;
+		border-radius: 20px;
+		margin-top: 70px;
+		max-height: 600px;
+	}
+	&::after, &::before {
+		position: absolute;
+		content: '';
+		width: 100vw;
+		height: 0.5px;
+		background-color: #B3B3B3;;
+		bottom: -100px;
+	}
+	&::before {
+		right: 0;
+	}
+	&::after {
+		left: 0;
+	}
+}
+
+@media (max-width: 1400px) {
+	.blog {
+		margin-top: 30px;
+	}
+	.filterCategory {
+		margin-top: 15px;
+	
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		gap: 15px;
+	}
+	.blogScroll {
+		margin-top: 30px;
+		align-items: center;
+		grid-template-rows: 40px;
+		.scrollButton {
+			padding: 10px 0;
+		}
+	}
+	.blogHowCooking {
+		h2 {
+			padding-top: 60px;
+			margin-bottom: 30px;
+		}
+		.howCookingList {
+			margin-top: 40px;
+		}
+		.howCookingText {
+			margin-top: 0px;
+			max-width: 990px;
+			span {
+				padding: 15px 0;
+			}
+		}
+		.howCookingImage {
+			margin-top: 50px;
+			max-height: 430px;
+		}
+		&::after, &::before {
+			bottom: -80px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.filterCategory {
+		margin-top: 15px;
+	
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 780px) {
+	.filterCategory {
+		margin-top: 40px;
+	
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: calc(10px + (20 - 10)*((100vw - 400px)/(780 - 400)));
+	}
+	.blogScroll {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+		margin-top: 70px;
+		.scrollButton {
+			flex: 1 0 45%;
+			padding: 15px 0;
+			font-size: calc(0.7rem + (1 - 0.7) * ((100vw - 400px) / (768 - 400)));
+			&:first-child {
+				flex: 1 0 100%;
+			}
+		}
+	}
+	.blogHowCooking {
+		h2 {
+			padding-top: 40px;
+			margin-bottom: 30px;
+		}
+		.howCookingList {
+			margin-top: 20px;
+		}
+		.howCookingText {
+			font-size: calc(0.7rem + (0.8 - 0.7) * ((100vw - 400px) / (768 - 400)));
+			span {
+				padding: 10px 0;
+			}
+		}
+		&::after, &::before {
+			display: none;
+		}
+	}
+	.howCookingImage {
+		margin-top: 50px;
+		height: 90%;
+	}
+}
+
+@media (max-width: 400px) {
+	.blog {
+		margin-top: 30px;
+	}
+	.filterCategory {
+		margin-top: 20px;
+		gap: 10px;
+	}
+	.blogScroll {
+		gap: 10px;
+		margin-top: 30px;
+		.scrollButton {
+			padding: 10px 0;
+			font-size: 0.8rem;
+		}
+	}
+	.blogHowCooking {
+		h2 {
+			padding-top: 40px;
+			margin-bottom: 20px;
+			max-width: 220px;
+		}
+		.howCookingList {
+			margin-top: 20px;
+		}
+		.howCookingText {
+			font-size: 0.775rem;
+			span {
+				padding: 7.5px 0;
+			}
+		}
+		.howCookingImage {
+			min-height: 150px;
+			margin-top: 20px;
+		}
+	}
+}
