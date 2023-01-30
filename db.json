@@ -464,6 +464,45 @@
 			"type": "Цикорий",
 			"discount": true,
 			"price": [200, 249]
+		},
+		{
+			"id": 1,
+			"poputInfo": {
+				"poputSizes": [ 250, 500, 1000]
+			},
+			"image": "https://i.ibb.co/SQCKMcY/photo-2020-06-15-17-47-05.jpg",
+			"rating": 0,
+			"feedback": 0,
+			"name": "Ячменный напиток Millor",
+			"type": "Ячменные напитки",
+			"discount": false,
+			"price": [199]
+		},
+		{
+			"id": 2,
+			"poputInfo": {
+				"poputSizes": [ 500, 1000]
+			},
+			"image": "https://i.ibb.co/V9LjrLM/kasha.png",
+			"rating": 5,
+			"feedback": 1,
+			"name": "Каша толокняная ячменная",
+			"type": "Толокняные каши",
+			"discount": false,
+			"price": [39]
+		},
+		{
+			"id": 3,
+			"poputInfo": {
+				"poputSizes": [ 500, 1000, 1500]
+			},
+			"image": "https://i.ibb.co/wLzh9fJ/output-onlinepngtools.jpg",
+			"rating": 4,
+			"feedback": 2,
+			"name": "Протеїн Optimum Nutrition 100%",
+			"type": "Протеиновые смеси",
+			"discount": false,
+			"price": [499]
 		}
 	]
 }
