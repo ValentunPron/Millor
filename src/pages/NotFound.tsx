@@ -12,7 +12,7 @@ export const NotFound = (): JSX.Element => {
 					</div>
 				</div>
 			</div>
-			<Footer bgInfo={'error'} />
+			<Footer bgInfo={'transition'} />
 		</>
 
 	);

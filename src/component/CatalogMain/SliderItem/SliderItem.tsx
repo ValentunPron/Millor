@@ -12,7 +12,7 @@ export const SliderItem = ({ imageUrl, title, path }: SliderItemProps): JSX.Elem
 				<img src={imageUrl} alt={title} />
 			</div>
 			<h3 className={styles.title}>{title}</h3>
-			<Link className={`${styles.button} button midle`} to={path} onClick={() => window.scroll(0, 0)}>Купити</Link>
+			<Link to={path} className={`${styles.button} button midle`} onClick={() => window.scroll(0, 0)}>Купити</Link>
 		</div>
 	)
 }

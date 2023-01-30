@@ -26,7 +26,7 @@ export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 	};
 
 	return (
-		<div className={`${styles.footer} ${bgInfo === 'error' ? styles.error : ''} ${bgInfo === 'mainPages' ? styles.mainPages : ''}`}>
+		<div className={`${styles.footer} ${bgInfo === 'transition' ? styles.error : ''} ${bgInfo === 'mainPages' ? styles.mainPages : ''}`}>
 			<div className={`${styles.footerMailing} ${styles.mailing}`}>
 				<div className="container">
 					<div className={styles.mailingBody}>

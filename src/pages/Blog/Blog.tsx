@@ -1,16 +1,51 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import { Footer, Header, CategoryButton } from "../../component";
+import { Footer, Header, CategoryButton, NewsItem } from "../../component";
 
 import filterImage01 from '../../assets/image/Cooking/01.jpg';
 import filterImage02 from '../../assets/image/Cooking/02.jpg';
 import filterImage03 from '../../assets/image/Cooking/03.jpg';
 import filterImage04 from '../../assets/image/Cooking/04.jpg';
 import filterImage05 from '../../assets/image/Cooking/05.jpg';
+import newsImage from '../../assets/image/News/01.jpg'
 import styles from "./Blog.module.scss";
-export const Blog = () => {
 
+interface newsListInterface {
+	name: string,
+	desc: string,
+	image: string,
+	author: string
+}
+
+const newsList: newsListInterface[] = [
+	{
+		name: 'Танзанийский кофе. Откуда он взялся и почему мы его так любим?',
+		desc: 'Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. <span /> Но наш интерес вызван не столько природными красотами, сколько кофе',
+		image: newsImage,
+		author: 'Иван Иванов',
+	},
+	{
+		name: 'Танзанийский кофе. Откуда он взялся и почему мы его так любим?',
+		desc: 'Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. Но наш интерес вызван не столько природными красотами, сколько кофе',
+		image: newsImage,
+		author: 'Иван Иванов',
+	},
+	{
+		name: 'Танзанийский кофе. Откуда он взялся и почему мы его так любим?',
+		desc: 'Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. Но наш интерес вызван не столько природными красотами, сколько кофе',
+		image: newsImage,
+		author: 'Иван Иванов',
+	},
+	{
+		name: 'Танзанийский кофе. Откуда он взялся и почему мы его так любим?',
+		desc: 'Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. Но наш интерес вызван не столько природными красотами, сколько кофе',
+		image: newsImage,
+		author: 'Иван Иванов',
+	}
+]
+
+export const Blog = () => {
 	const refTurka = React.useRef(null),
 		refFrench = React.useRef(null),
 		refMaka = React.useRef(null),
@@ -19,11 +54,13 @@ export const Blog = () => {
 		refAirPress = React.useRef(null),
 		refCaska = React.useRef(null),
 		refAvtomat = React.useRef(null),
-		refCooking = React.useRef(null);
+		refCooking = React.useRef(null),
+		refNews = React.useRef(null);
 
-	const scrollGuide = (ref: any) => {
+	const scrollGuide = (ref: any, scrollTop: number = 80) => {
+		window.innerWidth > 780 ? scrollTop = scrollTop : scrollTop = 40
 		const elementPosition = ref.current.getBoundingClientRect().top;
-		const offsetPosition = elementPosition + window.pageYOffset - 75;
+		const offsetPosition = elementPosition + window.pageYOffset - scrollTop;
 		window.scrollTo({ top: offsetPosition, });
 	};
 
@@ -38,8 +75,8 @@ export const Blog = () => {
 							<Link className='catalogLink black' to="/blog">Блог</Link>
 						</div>
 						<div className={styles.blogScroll}>
-							<button className={styles.scrollButton} onClick={() => scrollGuide(refCooking)}>Обучение</button>
-							<button className={styles.scrollButton}>Новости</button>
+							<button className={styles.scrollButton} onClick={() => scrollGuide(refCooking, 100)}>Обучение</button>
+							<button className={styles.scrollButton} onClick={() => scrollGuide(refNews, 120)}>Новости</button>
 							<button className={styles.scrollButton}>Частые вопросы</button>
 						</div>
 						<div className={styles.blogHowCooking} ref={refCooking}>
@@ -209,10 +246,26 @@ export const Blog = () => {
 								</li>
 							</ul>
 						</div>
+						<div className={styles.blogNews} ref={refNews}>
+							<div className={styles.newsTop}>
+								<h2 className="title titleMiddle">Новости <span>компании</span>:</h2>
+							</div>
+							<div className={styles.newsMain}>
+								<div className={styles.newsMainList}>
+									{
+										newsList.map((obj: newsListInterface, index: number) => <NewsItem key={`${index}_${obj.name}`} {...obj} />)
+									}
+								</div>
+							</div>
+						</div>
+						<div className="blogQuestion">
+							<h2 className="title titleMiddle">Частые вопросы:</h2>
+
+						</div>
 					</div>
 				</div>
 			</div>
-			<Footer />
+			<Footer bgInfo='mainPages' />
 		</>
 	);
 }

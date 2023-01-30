@@ -3,6 +3,7 @@ import { MainSlider } from "./MainSlider/MainSlider";
 import { CatalogMain } from "./CatalogMain/CatalogMain";
 import { Discount } from "./Discount/Discount";
 import { Header } from "./Header/Header";
+import { NewsItem } from "./NewsItem/NewsItem";
 import { NewsMain } from "./NewsMain/NewsMain";
 import { Footer } from "./Footer/Footer";
 import { WorkingWindow } from "./WorkingWindow/WorkingWindow";
@@ -15,6 +16,6 @@ import { TeaItem } from "./CatalogItems/TeaItem/TeaItem";
 import { VendingItem } from "./CatalogItems/VendingItem/VendingItem";
 
 export {
-	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsMain, Footer, WorkingWindow,
-	Filter, CategoryButton, RadioButton, SortBy, CoffeItem, TeaItem, VendingItem
+	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsItem, NewsMain, Footer,
+	WorkingWindow, Filter, CategoryButton, RadioButton, SortBy, CoffeItem, TeaItem, VendingItem
 }
