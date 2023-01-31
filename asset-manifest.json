@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Millor/static/css/main.a715d79c.css",
-    "main.js": "/Millor/static/js/main.373b2cc2.js",
+    "main.css": "/Millor/static/css/main.9d05efcb.css",
+    "main.js": "/Millor/static/js/main.39f08bac.js",
     "static/media/bg.jpg": "/Millor/static/media/bg.205fd1a355ffda1603b3.jpg",
     "static/media/01.jpg": "/Millor/static/media/01.fd0f1aaa846f45609be2.jpg",
     "static/media/02.jpg": "/Millor/static/media/02.3579453b61c0ba72315f.jpg",
@@ -10,6 +10,7 @@
     "static/media/03.jpg": "/Millor/static/media/03.32a2bea3937c9e35486d.jpg",
     "static/media/bgCoffe.png": "/Millor/static/media/bgCoffe.303ca97814222784710a.png",
     "static/media/chocolateAdaptive.png": "/Millor/static/media/chocolateAdaptive.58413d9dfa36430c9069.png",
+    "static/media/map.jpg": "/Millor/static/media/map.6018c11f6c74cc82bb26.jpg",
     "static/media/05.jpg": "/Millor/static/media/05.16a8b596238b4c0b8291.jpg",
     "static/media/adaptive_01.jpg": "/Millor/static/media/adaptive_01.6c3d1f9ad2aafb1e765e.jpg",
     "static/media/bg-coffe.png": "/Millor/static/media/bg-coffe.f4f293ef75f5a06ee228.png",
@@ -47,11 +48,11 @@
     "static/media/text.svg": "/Millor/static/media/text.3598cd9b1ca8f7b4b501.svg",
     "static/media/bgMain.svg": "/Millor/static/media/bgMain.0598decc5f1b23018151.svg",
     "static/media/bgError.svg": "/Millor/static/media/bgError.36cc704c943abcd2efef.svg",
-    "main.a715d79c.css.map": "/Millor/static/css/main.a715d79c.css.map",
-    "main.373b2cc2.js.map": "/Millor/static/js/main.373b2cc2.js.map"
+    "main.9d05efcb.css.map": "/Millor/static/css/main.9d05efcb.css.map",
+    "main.39f08bac.js.map": "/Millor/static/js/main.39f08bac.js.map"
   },
   "entrypoints": [
-    "static/css/main.a715d79c.css",
-    "static/js/main.373b2cc2.js"
+    "static/css/main.9d05efcb.css",
+    "static/js/main.39f08bac.js"
   ]
 }
