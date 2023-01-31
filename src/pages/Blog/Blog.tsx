@@ -76,9 +76,9 @@ export const Blog = () => {
 							<Link className='catalogLink black' to="/blog">Блог</Link>
 						</div>
 						<div className={styles.blogScroll}>
-							<button className={styles.scrollButton} onClick={() => scrollGuide(refCooking, 100)}>Обучение</button>
-							<button className={styles.scrollButton} onClick={() => scrollGuide(refNews, 120)}>Новости</button>
-							<button className={styles.scrollButton} onClick={() => scrollGuide(refSpoiler, 140)}>Частые вопросы</button>
+							<button className={`${styles.scrollButton} buttonTransition`} onClick={() => scrollGuide(refCooking, 100)}>Обучение</button>
+							<button className={`${styles.scrollButton} buttonTransition`} onClick={() => scrollGuide(refNews, 120)}>Новости</button>
+							<button className={`${styles.scrollButton} buttonTransition`} onClick={() => scrollGuide(refSpoiler, 140)}>Частые вопросы</button>
 						</div>
 						<div className={styles.blogHowCooking} ref={refCooking}>
 							<h2 className="title titleMiddle">Приготовление кофе разными способами</h2>

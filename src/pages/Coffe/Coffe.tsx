@@ -80,7 +80,7 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 						<div className={styles.coffeBody}>
 							<div className='catalogLinks'>
 								<Link className='catalogLink' to="/">Головна</Link>
-								<Link className='catalogLink' to="/" onClick={() => window.scroll(0, 500)}>Каталог товарів</Link>
+								<Link className='catalogLink' onClick={() => window.scroll(0, 500)} to="/">Каталог товарів</Link>
 								<Link className='catalogLink' to="/coffe">{namePages}</Link>
 							</div>
 							<h1 className={`titlePages`}>{namePages}</h1>

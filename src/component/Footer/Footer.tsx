@@ -60,10 +60,10 @@ export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 								<Link onClick={scrollTo} to='/' className={`${styles.footerLink} link`}>Каталог товарів</Link>
 							</li>
 							<li className="footerItem">
-								<Link to='' className={`${styles.footerLink} link`}>Блог</Link>
+								<Link onClick={() => window.scroll(0, 0)} to='/blog' className={`${styles.footerLink} link`}>Блог</Link>
 							</li>
 							<li className="footerItem">
-								<Link to='' className={`${styles.footerLink} link`}>Контакти</Link>
+								<Link onClick={() => window.scroll(0, 0)} to='/contact' className={`${styles.footerLink} link`}>Контакти</Link>
 							</li>
 						</ul>
 					</div>
