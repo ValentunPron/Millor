@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import { Footer, Header, CategoryButton, NewsItem } from "../../component";
+import { Footer, Header, CategoryButton, NewsItem, Spoiler } from "../../component";
 
 import filterImage01 from '../../assets/image/Cooking/01.jpg';
 import filterImage02 from '../../assets/image/Cooking/02.jpg';
@@ -55,7 +55,8 @@ export const Blog = () => {
 		refCaska = React.useRef(null),
 		refAvtomat = React.useRef(null),
 		refCooking = React.useRef(null),
-		refNews = React.useRef(null);
+		refNews = React.useRef(null),
+		refSpoiler = React.useRef(null);
 
 	const scrollGuide = (ref: any, scrollTop: number = 80) => {
 		window.innerWidth > 780 ? scrollTop = scrollTop : scrollTop = 40
@@ -77,7 +78,7 @@ export const Blog = () => {
 						<div className={styles.blogScroll}>
 							<button className={styles.scrollButton} onClick={() => scrollGuide(refCooking, 100)}>Обучение</button>
 							<button className={styles.scrollButton} onClick={() => scrollGuide(refNews, 120)}>Новости</button>
-							<button className={styles.scrollButton}>Частые вопросы</button>
+							<button className={styles.scrollButton} onClick={() => scrollGuide(refSpoiler, 140)}>Частые вопросы</button>
 						</div>
 						<div className={styles.blogHowCooking} ref={refCooking}>
 							<h2 className="title titleMiddle">Приготовление кофе разными способами</h2>
@@ -258,9 +259,18 @@ export const Blog = () => {
 								</div>
 							</div>
 						</div>
-						<div className="blogQuestion">
+					</div>
+				</div>
+				<div className={styles.blogQuestion} ref={refSpoiler}>
+					<div className="container">
+						<div className={styles.question}>
 							<h2 className="title titleMiddle">Частые вопросы:</h2>
-
+							<div className={styles.questionSpoiler}>
+								<Spoiler />
+								<Spoiler />
+								<Spoiler />
+								<Spoiler />
+							</div>
 						</div>
 					</div>
 				</div>

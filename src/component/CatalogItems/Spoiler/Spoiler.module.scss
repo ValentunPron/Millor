@@ -1,0 +1,166 @@
+.spoiler {
+	padding: 40px 50px;
+	background-color: #fff;
+	box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+	border-radius: 20px;
+	max-width: 960px;
+	position: relative;
+	z-index: 10;
+}
+
+.title {
+	position: relative;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 130%;
+	padding-right: 35px;
+	text-align: left;
+	background-color: #fff;
+	width: 100%;
+	transition: 0.4s all;
+	&::after {
+		position: absolute;
+		content: '';
+		top: 0; bottom: 0; right: 0;
+		margin: auto;
+		background-color: #000;
+		border-radius: 5px;
+		width: 21px; height: 3px;
+		transition: 0.4s all;
+	}
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0; bottom: 0; right: 0;
+		margin: auto;
+		background-color: #000;
+		border-radius: 5px;
+		width: 21px; height: 3px;
+		transform: rotate(90deg);
+		transition: 0.4s all;
+	}
+	&.active {
+		&::before {
+			transform: rotate(0deg);
+		}
+	}
+}
+
+.text {
+	padding-top: 0px;
+	font-weight: 500;
+	font-size: 0rem;
+	line-height: 130%;
+	padding-right: 35px;
+	transition: padding 0.4s, font-size 0.2s;
+	&.active {
+		font-size: 0.8rem;
+		padding-top: 40px;
+	}
+}
+
+
+.spoilerDivActive {
+	opacity: 0;
+	transform: translateY(-20px);
+}
+.spoilerActiveDone {
+	padding-top: 40px;
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity 300ms, transform 300ms, padding 300ms;
+}
+.spoilerDivExit {
+	padding: 0px;
+	opacity: 1;
+}
+.spoilerDivExitDone {
+	padding: 0px;
+	opacity: 0;
+	transform: translateY(0px);
+	transition: opacity 300ms, transform 300ms, padding 300ms;
+}
+
+@media (max-width: 1400px) {
+	.spoiler {
+		padding: 30px;
+		width: 100%;
+		max-width: calc(600px + (680 - 600)*((100vw - 780px)/(1400 - 780)));
+	}
+	.title {
+		font-size: calc(0.9rem + (1 - 0.9)*((100vw - 780px)/(1400 - 780)));
+		padding-right: 30px;
+		&::after, &::before {
+			width: 2px; height: 15px;
+		}
+		&.active {
+			&::after {
+				transform: rotate(90deg);
+			}
+			&::before {
+				transform: rotate(90deg);
+			}
+		}
+	}
+	.text {
+
+		&.active {
+			padding-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.spoiler {
+		padding: 30px 60px;
+		width: 100%;
+		max-width: none;
+	}
+	.title {
+		font-size: 1rem;
+		&::before, &::after {
+			width: 3px; height: 30px;
+		}
+	}
+}
+
+
+@media (max-width: 780px) {
+	.spoiler {
+		padding: 30px 7.5%;
+	}
+	.title {
+		font-size: calc(0.7rem + (1 - 0.7)*((100vw - 400px)/(780 - 400)));
+		padding-right: 30px;
+		&::before, &::after {
+			width: 3px; height: 30px;
+		}
+	}
+	.text {
+		padding-right: 50px;
+		&.active {
+			font-size: calc(0.65rem + (0.8 - 0.64)*((100vw - 400px)/(780 - 400)));
+		}
+	}
+}
+
+
+@media (max-width: 400px) {
+	.spoiler {
+		padding: 20px 30px;
+	}
+	.title {
+		font-size: 0.8rem;
+		padding-right: 30px;
+		&::before, &::after {
+			width: 2px; height: 15px;
+		}
+	}
+	.text {
+		padding-right: 00px;
+		&.active {
+			padding-top: 20px;
+			font-size: 0.6rem;
+		}
+	}
+}
