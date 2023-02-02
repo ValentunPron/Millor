@@ -21,12 +21,12 @@ interface filterDataInterface {
 }
 
 const filterData: filterDataInterface[] = [
-	{ type: "type", name: 'Цикорий', image: 'https://i.ibb.co/Hht73HD/czikorij-png-big.png' },
-	{ type: "type", name: 'Ячменные напитки', image: filterImage01 },
+	{ type: "type", name: 'Цикорий', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage01.png' },
+	{ type: "type", name: 'Ячменные напитки', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage02.png' },
 	{ type: 'type', name: 'none', image: 'none' },
-	{ type: "type", name: 'Напитки для здоровья', image: 'https://i.ibb.co/mz8Bwcj/kisspng-green-tea-herbal-tea-drink-tea-png-pic-5a78f07ab42792-6905799815178753227379.png' },
-	{ type: "type", name: 'Протеиновые смеси', image: 'https://i.ibb.co/wLzh9fJ/output-onlinepngtools.jpg' },
-	{ type: "type", name: 'Толокняные каши', image: 'https://i.ibb.co/jHxRFGC/zdorovoe-pitanie-1.png' },
+	{ type: "type", name: 'Напитки для здоровья', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage03.png' },
+	{ type: "type", name: 'Протеиновые смеси', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage04.jpg' },
+	{ type: "type", name: 'Толокняные каши', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage05.png' },
 ]
 
 export const Eating = ({ namePages }: teaInterface): JSX.Element => {

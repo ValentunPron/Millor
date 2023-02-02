@@ -12,7 +12,7 @@
 				1000
 			]
 			},
-			"image": "https://i.ibb.co/BV2jYvc/item1.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item1.png",
 			"rating": 4,
 			"feedback": 23,
 			"roasting": 5,
@@ -37,7 +37,7 @@
 			1000
 			]
 			},
-			"image": "https://i.ibb.co/82WPK2q/item2.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item2.png",
 			"rating": 4.2,
 			"feedback": 43,
 			"roasting": 3,
@@ -64,7 +64,7 @@
 			2000
 			]
 			},
-			"image": "https://i.ibb.co/g9Z2NMY/item3.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item3.png",
 			"rating": 3.4,
 			"feedback": 23,
 			"roasting": 4,
@@ -87,7 +87,7 @@
 			500
 			]
 			},
-			"image": "https://i.ibb.co/L0nQZ48/item4.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item4.png",
 			"rating": 4.2,
 			"feedback": 3,
 			"roasting": 2,
@@ -110,7 +110,7 @@
 			1000
 			]
 			},
-			"image": "https://i.ibb.co/BgsRR9k/item5.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item5.png",
 			"rating": 3.5,
 			"feedback": 5,
 			"roasting": 4,
@@ -132,7 +132,7 @@
 			250
 			]
 			},
-			"image": "https://i.ibb.co/XJzfDPx/item6.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item6.png",
 			"rating": 2.7,
 			"feedback": 9,
 			"roasting": 5,
@@ -155,7 +155,7 @@
 			1000
 			]
 			},
-			"image": "https://i.ibb.co/nD6jBzW/item7.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item7.png",
 			"rating": 5,
 			"feedback": 1,
 			"roasting": 1,
@@ -179,7 +179,7 @@
 			1000
 			]
 			},
-			"image": "https://i.ibb.co/vcnPG5t/item8.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item8.png",
 			"rating": 4.2,
 			"feedback": 3,
 			"roasting": 5,
@@ -203,7 +203,7 @@
 			1000
 			]
 			},
-			"image": "https://i.ibb.co/hYynhzZ/item9.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item9.png",
 			"rating": 4.2,
 			"feedback": 3,
 			"roasting": 5,
@@ -224,7 +224,7 @@
 			"poputInfo": {
 				"poputSizes": [ 250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/sQ0yMD8/chaj-zelenyj.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item03.png",
 			"rating": 4,
 			"feedback": 23,
 			"name": "Green Chunmee",
@@ -237,7 +237,7 @@
 			"poputInfo": {
 				"poputSizes": [ 500, 1000 ]
 			},
-			"image": "https://i.ibb.co/ZG3dSwm/shokolad-big-png.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item01.png",
 			"rating": 3.1,
 			"feedback": 2,
 			"name": "Горячий шоколад",
@@ -250,7 +250,7 @@
 			"poputInfo": {
 				"poputSizes": [ 250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/0j81dw1/chaj-chernyj2.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item08.png",
 			"rating": 2.4,
 			"feedback": 6,
 			"name": "Leaflet species BLACK OP",
@@ -263,7 +263,7 @@
 			"poputInfo": {
 				"poputSizes": [	500, 1000 ]
 			},
-			"image": "https://i.ibb.co/0j81dw1/chaj-chernyj2.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item08.png",
 			"rating": 4,
 			"feedback": 1,
 			"name": "Leaflet left species BLACK OP",
@@ -276,7 +276,7 @@
 			"poputInfo": {
 				"poputSizes": [ 250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/TgY1d0j/chaj-zelenyj-czitrus2.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item04.png",
 			"rating": 3.7,
 			"feedback": 6,
 			"name": "Senecha",
@@ -289,7 +289,7 @@
 			"poputInfo": {
 				"poputSizes": [500, 1000, 2000]
 			},
-			"image": "https://i.ibb.co/h9hnxq3/kapuchino-big-png.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item09.png",
 			"rating": 3.7,
 			"feedback": 2,
 			"name": "Капучино",
@@ -302,7 +302,7 @@
 			"poputInfo": {
 				"poputSizes": [500, 1000]
 			},
-			"image": "https://i.ibb.co/VCDzJQZ/chaj-zelenyj3.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item03.png",
 			"rating": 0,
 			"feedback": 0,
 			"name": "Green of",
@@ -315,7 +315,7 @@
 			"poputInfo": {
 				"poputSizes": [250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/chvFbT9/Paket-50-g-11-min-1.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item07.png",
 			"rating": 5,
 			"feedback": 1,
 			"name": "Матча Церемониал",
@@ -328,7 +328,7 @@
 			"poputInfo": {
 				"poputSizes": [250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/chyy8jM/12346593.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item02.jpg",
 			"rating": 2.7,
 			"feedback": 4,
 			"name": "Basilur",
@@ -341,7 +341,7 @@
 			"poputInfo": {
 				"poputSizes": [250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/6rZkvdc/milkTea.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item05.jpg",
 			"rating": 3.7,
 			"feedback": 5,
 			"name": "Milk Olong",
@@ -356,7 +356,7 @@
 			"poputInfo": {
 				"poputSizes": [ 1, 2, 5]
 			},
-			"image": "https://i.ibb.co/k6RN2B4/vending-Coffe.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item01.jpg",
 			"rating": 1,
 			"feedback": 2.4,
 			"name": "Гранулированный кофе",
@@ -367,7 +367,7 @@
 			"poputInfo": {
 				"poputSizes": [ 5, 10, 50]
 			},
-			"image": "https://i.ibb.co/k4d42hb/Kava-rozchinna-u-granulakh-STRONG.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item02.jpg",
 			"rating": 4,
 			"feedback": 2,
 			"name": "Кава гранулирование STRONG",
@@ -378,7 +378,7 @@
 			"poputInfo": {
 				"poputSizes": [ 5, 10, 50]
 			},
-			"image": "https://i.ibb.co/X8S0y2q/8.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item03.jpg",
 			"rating": 0,
 			"feedback": 0,
 			"name": "Frontier Co-Op",
@@ -389,7 +389,7 @@
 			"poputInfo": {
 				"poputSizes": [ 0.5, 1, 2]
 			},
-			"image": "https://i.ibb.co/41BCBm9/2580249240-w640-h640-zernovoj-kofe-kupazh.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item04.jpg",
 			"rating": 2,
 			"feedback": 1,
 			"name": "Зерновой кофе купаж",
@@ -400,7 +400,7 @@
 			"poputInfo": {
 				"poputSizes": [ 0.5, 1, 2]
 			},
-			"image": "https://i.ibb.co/3hqmD7H/000007645.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item05.jpg",
 			"rating": 5,
 			"feedback": 3,
 			"name": "Львівська міцна",
@@ -411,7 +411,7 @@
 			"poputInfo": {
 				"poputSizes": [ 0.5, 1]
 			},
-			"image": "https://cocoa.com.ua/wp-content/uploads/2017/12/Cocoa-powder.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item06.jpg",
 			"rating": 3.7,
 			"feedback": 2,
 			"name": "Какао порошок светлый",
@@ -422,7 +422,7 @@
 			"poputInfo": {
 				"poputSizes": [1,2]
 			},
-			"image": "https://i.ibb.co/qC4rfSm/coffeNap.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item07.jpg",
 			"rating": 4.1,
 			"feedback": 2,
 			"name": "Зерна американо",
@@ -433,7 +433,7 @@
 			"poputInfo": {
 				"poputSizes": [1,2]
 			},
-			"image": "https://i.ibb.co/VHxrJzV/coffeJer.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item08.jpg",
 			"rating": 4.2,
 			"feedback": 5,
 			"name": "Кофе растворимый сублимированный OLAM",
@@ -444,7 +444,7 @@
 			"poputInfo": {
 				"poputSizes": [0.5, 1, 2]
 			},
-			"image": "https://i.ibb.co/9HnpM9n/milk.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item09.jpg",
 			"rating": 3.8,
 			"feedback": 3,
 			"name": "Сухе знежирене молоко Детальніше",
@@ -457,7 +457,7 @@
 			"poputInfo": {
 				"poputSizes": [ 250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/Hht73HD/czikorij-png-big.png",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/item02.png",
 			"rating": 4,
 			"feedback": 23,
 			"name": "Цикорий растворимый гранулированный",
@@ -470,7 +470,7 @@
 			"poputInfo": {
 				"poputSizes": [ 250, 500, 1000]
 			},
-			"image": "https://i.ibb.co/SQCKMcY/photo-2020-06-15-17-47-05.jpg",
+			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/item01.jpg",
 			"rating": 0,
 			"feedback": 0,
 			"name": "Ячменный напиток Millor",

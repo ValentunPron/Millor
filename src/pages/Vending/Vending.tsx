@@ -21,14 +21,14 @@ interface filterDataInterface {
 }
 
 const filterData: filterDataInterface[] = [
-	{ type: "type", name: 'Гранулированный кофе', image: filterImage01 },
-	{ type: "type", name: 'Цикорий', image: 'https://i.ibb.co/X8S0y2q/8.jpg' },
-	{ type: "type", name: 'Зерновой кофе', image: 'https://i.ibb.co/41BCBm9/2580249240-w640-h640-zernovoj-kofe-kupazh.jpg' },
+	{ type: "type", name: 'Гранулированный кофе', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage01.jpg' },
+	{ type: "type", name: 'Цикорий', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage02.jpg' },
+	{ type: "type", name: 'Зерновой кофе', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage03.jpg' },
 	{ type: 'type', name: 'none', image: 'none' },
-	{ type: "type", name: 'Какао', image: 'https://cocoa.com.ua/wp-content/uploads/2017/12/Cocoa-powder.jpg' },
-	{ type: "type", name: 'Кофейные напитки', image: 'https://i.ibb.co/qC4rfSm/coffeNap.jpg' },
-	{ type: "type", name: 'Кофе порошкообразный', image: 'https://i.ibb.co/VHxrJzV/coffeJer.jpg' },
-	{ type: "type", name: 'Сухое молоко', image: 'https://i.ibb.co/9HnpM9n/milk.jpg' },
+	{ type: "type", name: 'Какао', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage04.jpg' },
+	{ type: "type", name: 'Кофейные напитки', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage05.jpg' },
+	{ type: "type", name: 'Кофе порошкообразный', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage06.jpg' },
+	{ type: "type", name: 'Сухое молоко', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage07.jpg' },
 ]
 
 export const Vending = ({ namePages }: teaInterface): JSX.Element => {

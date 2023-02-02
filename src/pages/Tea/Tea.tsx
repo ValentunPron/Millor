@@ -24,14 +24,14 @@ interface filterDataInterface {
 }
 
 const filterData: filterDataInterface[] = [
-	{ type: "type", name: 'Черный чай', image: filterImage01 },
-	{ type: "type", name: 'Травяной чай', image: filterImage01 },
-	{ type: "type", name: 'Зеленый чай', image: filterImage02 },
+	{ type: "type", name: 'Черный чай', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg01.jpg' },
+	{ type: "type", name: 'Травяной чай', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg02.jpg' },
+	{ type: "type", name: 'Зеленый чай', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg03.jpg' },
 	{ type: 'type', name: 'none', image: 'none' },
-	{ type: "type", name: 'Матча', image: 'https://i.ibb.co/chvFbT9/Paket-50-g-11-min-1.png' },
-	{ type: "type", name: 'Молочный улунг', image: 'https://i.ibb.co/6rZkvdc/milkTea.jpg' },
-	{ type: "type", name: 'Пуэр', image: 'https://i.ibb.co/chyy8jM/12346593.jpg' },
-	{ type: "type", name: 'Кофейные напитки', image: filterImage04 },
+	{ type: "type", name: 'Матча', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg04.png' },
+	{ type: "type", name: 'Молочный улунг', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg05.jpg' },
+	{ type: "type", name: 'Пуэр', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg06.jpg' },
+	{ type: "type", name: 'Кофейные напитки', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg07.jpg' },
 ]
 
 export const Tea = ({ namePages }: teaInterface): JSX.Element => {
