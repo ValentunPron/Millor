@@ -8,15 +8,16 @@ import { NewsMain } from "./NewsMain/NewsMain";
 import { Footer } from "./Footer/Footer";
 import { WorkingWindow } from "./WorkingWindow/WorkingWindow";
 import { Filter } from "./Filter/Filter";
-import { Spoiler } from "./CatalogItems/Spoiler/Spoiler";
+import { Spoiler } from "./Spoiler/Spoiler";
 import { CategoryButton } from "./CategoryButton/CategoryButton";
 import { RadioButton } from "./RadioButton/RadioButton";
 import { SortBy } from "./SortBy/SortBy";
 import { CoffeItem } from "./CatalogItems/CoffeItem/CoffeItem";
-import { TeaItem } from "./CatalogItems/TeaItem/TeaItem";
+import { CoffePages } from "./CatalogPages/CoffePages";
+import { CatalogItem } from "./CatalogItems/CatalogItem/CatalogItem";
 import { VendingItem } from "./CatalogItems/VendingItem/VendingItem";
 
 export {
-	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsItem, NewsMain, Footer,
-	WorkingWindow, Filter, Spoiler, CategoryButton, RadioButton, SortBy, CoffeItem, TeaItem, VendingItem
+	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsItem, NewsMain, Footer, CoffePages,
+	WorkingWindow, Filter, Spoiler, CategoryButton, RadioButton, SortBy, CoffeItem, CatalogItem, VendingItem
 }

@@ -4,7 +4,7 @@ import { CoffeItemProps } from './CoffeItem.props';
 import { Poput } from '../../Poput/Poput';
 import { Link } from 'react-router-dom';
 
-export const CoffeItem = ({ special, poputInfo, rating, feedback, roasting, acid, bitter, saturation, image, name, text, price }: CoffeItemProps): JSX.Element => {
+export const CoffeItem = ({ currentCoffe }: CoffeItemProps): JSX.Element => {
 
 	const arrStar: any[] = ['', '', '', '', ''],
 		arrGusto: any[] = ['', '', '', '', '', '', '', '', '', ''];
@@ -45,39 +45,39 @@ export const CoffeItem = ({ special, poputInfo, rating, feedback, roasting, acid
 			<div>
 				<div className={styles.coffeTop}>
 					<div className={styles.discountTopinfo}>
-						{special.map(type => typeCoffe[type])}
+						{currentCoffe.special.map(type => typeCoffe[type])}
 					</div>
-					<Poput activeItem={poputInfo.poputSizes[0]} items={poputInfo.poputSizes} />
+					<Poput activeItem={currentCoffe.poputInfo.poputSizes[0]} items={currentCoffe.poputInfo.poputSizes} />
 				</div>
 				<div className={styles.description}>
-					<Link to='test'><img className={styles.descriptionImage} src={image} alt={name} width={160} height={300} /></Link>
+					<Link onClick={() => window.scroll(0, 0)} to={`/coffe/${currentCoffe.id}`}> <img className={styles.descriptionImage} src={currentCoffe.image} alt={currentCoffe.name} width={160} height={300} /></Link>
 					<div className={styles.descriptionInfo}>
 						<div className={styles.rating}>
 							<div>
-								{checkStart(rating)}
+								{checkStart(currentCoffe.rating)}
 							</div>
-							<p>{Number.isInteger(rating) ? rating + '.0' : rating}<span>({feedback} відгука)</span></p>
+							<p>{Number.isInteger(currentCoffe.rating) ? currentCoffe.rating + '.0' : currentCoffe.rating}<span>({currentCoffe.feedback} відгука)</span></p>
 						</div>
 						<div className={styles.roasting}>
-							{checkRoasting(roasting)}
+							{checkRoasting(currentCoffe.roasting)}
 						</div>
 						<div className={styles.gusto}>
 							<div className={styles.gustoItem}>
 								<p>Кислинка</p>
 								<div className={styles.gustoNumber}>
-									{checkGuasto(acid)}
+									{checkGuasto(currentCoffe.acid)}
 								</div>
 							</div>
 							<div className={styles.gustoItem}>
 								<p>Гірчинка</p>
 								<div className={styles.gustoNumber}>
-									{checkGuasto(bitter)}
+									{checkGuasto(currentCoffe.bitter)}
 								</div>
 							</div>
 							<div className={styles.gustoItem}>
 								<p>Насиченість</p>
 								<div className={styles.gustoNumber}>
-									{checkGuasto(saturation)}
+									{checkGuasto(currentCoffe.saturation)}
 								</div>
 							</div>
 						</div>
@@ -87,19 +87,19 @@ export const CoffeItem = ({ special, poputInfo, rating, feedback, roasting, acid
 			<div className={styles.coffeBottom}>
 				<div className={styles.coffeBottomBody}>
 					<div>
-						<h3 className={styles.coffeTitle}>{name}</h3>
-						<p className={styles.coffeInfo}>{text}</p>
+						<h3 className={styles.coffeTitle}>{currentCoffe.name}</h3>
+						<p className={styles.coffeInfo}>{currentCoffe.text}</p>
 					</div>
 					<div className={styles.coffeAction}>
 						{
-							special.includes('Знижки')
+							currentCoffe.special.includes('Знижки')
 								?
 								<div className={styles.coffePrice}>
-									<span className={styles.discountPrice}>{price[1]} ₴</span>
-									<span className={styles.price}>{price[0]} ₴</span>
+									<span className={styles.discountPrice}>{currentCoffe.price[1]} ₴</span>
+									<span className={styles.price}>{currentCoffe.price[0]} ₴</span>
 								</div>
 								: <div className={styles.coffePrice}>
-									<span className={styles.price}>{price[0]} ₴</span>
+									<span className={styles.price}>{currentCoffe.price[0]} ₴</span>
 								</div>
 						}
 						<button className={`button small`}>В корзину</button>

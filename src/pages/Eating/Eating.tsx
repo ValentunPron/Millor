@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Footer, Header, SortBy, TeaItem } from '../../component';
+import { CatalogItem, Footer, Header, SortBy, } from '../../component';
 import mainImage from '../../assets/image/MainCatalog/04.png'
-import filterImage01 from '../../assets/image/Eating/01.png';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchEating, setLoaded } from '../../redux/action/eating';
@@ -98,9 +97,9 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 								isLoaded
 									?
 									eating.length > 0 ?
-										eating.map((coffeItem: any, index: number) => {
+										eating.map((eatingItem: any, index: number) => {
 											if (index < count) {
-												return <TeaItem key={coffeItem.id} {...coffeItem} />
+												return <CatalogItem key={`${eatingItem.id}_${eatingItem.name}`} {...eatingItem} />
 											} else {
 												return null;
 											}

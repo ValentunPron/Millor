@@ -1,12 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Footer, Header, SortBy, TeaItem } from '../../component';
+import { Footer, Header, SortBy, CatalogItem } from '../../component';
 import imageTea from '../../assets/image/tea.png';
-import filterImage01 from '../../assets/image/tea/darkTea.jpg';
-import filterImage02 from '../../assets/image/tea/greenTea.jpg';
-import filterImage03 from '../../assets/image/tea/milkTea.jpg';
-import filterImage04 from '../../assets/image/tea/coffe.jpg';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchTea, setLoaded } from '../../redux/action/tea';
@@ -51,6 +47,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
 			dispatch(fetchTea(sortBy, sortRadio));
+			console.log(sortBy);
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -103,7 +100,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 									tea.length > 0 ?
 										tea.map((coffeItem: any, index: number) => {
 											if (index < count) {
-												return <TeaItem key={coffeItem.id} {...coffeItem} />
+												return <CatalogItem key={coffeItem.id} {...coffeItem} />
 											} else {
 												return null;
 											}

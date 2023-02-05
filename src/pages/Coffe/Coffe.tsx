@@ -101,7 +101,7 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 										coffe.length > 0 ?
 											coffe.map((coffeItem: any, index: number) => {
 												if (index < count) {
-													return <CoffeItem key={coffeItem.id} {...coffeItem} />
+													return <CoffeItem key={coffeItem.id} currentCoffe={coffeItem} />
 												} else {
 													return null;
 												}

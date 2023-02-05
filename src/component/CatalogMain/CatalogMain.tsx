@@ -38,7 +38,7 @@ const CatalogData: SliderItemProps[] = [
 		imageUrl: image04,
 		title: 'Здорове харчування',
 		path: 'eating',
-	},
+	}
 ]
 
 export const CatalogMain = (): JSX.Element => {
@@ -56,14 +56,12 @@ export const CatalogMain = (): JSX.Element => {
 						loopFillGroupWithBlank={true}
 						navigation={false}
 						slidesPerGroup={1}
-						allowTouchMove={false}
 						slideActiveClass={styles.sliderActive}
 						preventInteractionOnTransition={true}
 						breakpoints={{
 							0: {
 								slidesPerView: 1,
 								loop: true,
-								allowTouchMove: true
 							},
 							770: {
 								slidesPerView: 3,

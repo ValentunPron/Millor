@@ -1,10 +1,9 @@
-import styles from './TeaItem.module.scss';
-import { TeaItemProps } from './TeaItem.props';
+import { catalogItemProps } from './CatalogItem.props';
 
 import { Poput } from '../../Poput/Poput';
 import { Link } from 'react-router-dom';
 
-export const TeaItem = ({ name, type, discount, poputInfo, image, rating, feedback, price }: TeaItemProps): JSX.Element => {
+export const CatalogItem = ({ name, type, discount, poputInfo, image, rating, feedback, price }: catalogItemProps): JSX.Element => {
 	const arrStar: any[] = ['', '', '', '', ''];
 
 	const checkStart = (rating: number) => {
