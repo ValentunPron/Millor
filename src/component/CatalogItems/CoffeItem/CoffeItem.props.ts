@@ -13,6 +13,7 @@ export interface CoffeItemProps extends DetailedHTMLProps<HtmlHTMLAttributes<HTM
 		bitter: number,
 		saturation: number
 		name: string,
+		type: string,
 		text: string,
 		price: number[],
 	}

@@ -15,9 +15,9 @@ export const CoffePages = (): JSX.Element => {
 			coffe: coffe.items,
 		}
 	});
-	const currentCoffe = coffe.filter((coffe: any) => String(coffe.id) === String(params.id));
+	const currentItem = coffe.filter((coffe: any) => String(coffe.id) === String(params.id));
 
 	return (
-		<CatalogPages currentCoffe={currentCoffe[0]} />
+		<CatalogPages currentItem={currentItem[0]} />
 	);
 }
