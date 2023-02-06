@@ -1,0 +1,122 @@
+.pages {
+	position: relative;
+	padding-top: 40px;
+	min-height: 2000px;
+	&::after {
+		position: absolute;
+		content: '';
+		height: 800px; width: 100%;
+		background-color: #FFF7E1;
+		top: 0; left: 0;
+		z-index: -1;
+	}
+	&::before {
+		position: absolute;
+		content: '';
+		height: 250px; width: 100%;
+		background-image: url('../../assets/image/whyWe/text.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		top: 705px;
+		z-index: -1;
+
+	}
+}
+
+.pagesCards {
+	margin-top: 40px;
+	padding: 60px 100px;
+	min-height: 900px;
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #E4E4E4;
+	box-shadow: 0px 0px 50px rgba(163, 163, 163, 0.25);
+	border-radius: 20px;
+}
+
+.pagesCards {
+	display: flex;
+	flex-direction: row;
+	gap: 150px;
+	.cardsImage {
+		border: 1px solid red;
+	}
+	.cardsInfo {
+		max-width: 705px;
+	}
+}
+
+.cardsInfo {
+	.cardsRoasting {
+		display: flex;
+		margin-top: -20px;
+		gap: 12px;
+		svg {
+			width: 27px; height: 27px;
+		}
+	}
+	.cardsCenter {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+		.info {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		}
+		.cardsName {
+			font-weight: 900;
+			font-size: 1.6rem;
+			line-height: 1.25;
+			color: #222222;
+		}
+		.cardsText {
+			font-weight: 500;
+			font-size: 0.8rem;
+			line-height: 1.2;
+			color: #222222;
+		}
+		.cardsSpecial {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			font-weight: 700;
+			font-size: 0.8rem;
+			line-height: 1.2;
+			color: #F9B300;
+		}
+	}
+	.cardsRaiting {
+		margin-top: 30px;
+		display: flex;
+		align-items: flex-end;
+		gap: 20px;
+		.cardsStars {
+			display: flex;
+			gap: 3px;
+			svg {
+				width: 35px; height: 35px;
+			}
+		}
+		.cardsNumberRaiting {
+			font-weight: 700;
+			font-size: 1.26rem;
+			line-height: 1.2;
+			color: #222222;
+		}
+		.cardsFeedback {
+			font-weight: 500;
+			font-size: 0.64rem;
+			line-height: 1.15;
+			text-decoration-line: underline;
+			color: #5B5B5B;
+		}
+	}
+	.cardsDescription {
+		margin-top: 30px;
+		font-weight: 500;
+		font-size: 0.8rem;
+		line-height: 125%;
+		color: #222222;
+	}
+}

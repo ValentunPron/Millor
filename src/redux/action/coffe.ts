@@ -9,7 +9,7 @@ export const fetchCoffe = () => (dispatch: Function) => {
 	dispatch(setLoaded(false));
 	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/coffe`).then(({ data }) => {
 		dispatch(setCoffe(data));
-	});
+	})
 }
 
 export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: { type: string, value: string | number }) => (dispatch: Function) => {

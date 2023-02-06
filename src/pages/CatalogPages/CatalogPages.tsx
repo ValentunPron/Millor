@@ -1,6 +1,8 @@
+import React from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import { Footer, Header, RadioButton } from '../../component';
+import { Footer, Header } from '../../component';
 import { catalogPagesProps } from './CatalogPages.props';
+import styles from "./CatalogPages.module.scss";
 
 export const CatalogPages = ({ currentItem }: catalogPagesProps): JSX.Element => {
 	const arrStar: any[] = ['', '', '', '', ''],
@@ -32,43 +34,48 @@ export const CatalogPages = ({ currentItem }: catalogPagesProps): JSX.Element =>
 	return (
 		<>
 			<Header headerActive={true} />
-			<div className='pagesItem'>
+			<div className={styles.pages}>
 				<div className="container">
-					<div className="pagesItemBody">
+					<div className={styles.pagesBody}>
 						<div className='catalogLinks'>
 							<Link className='catalogLink black' to="/">Головна</Link>
 							<Link className='catalogLink black' to="/">Каталог товаров</Link>
 							<Link className='catalogLink black' to="/coffe">Свежеобжаренный кофе</Link>
 							<Link className='catalogLink black' to={`/coffe/${currentItem.id}`}>{currentItem.name}</Link>
 						</div>
-						<div className="pagesItemCards cardsItem">
-							<img className='cardsItemImage' src={currentItem.image} alt={currentItem.name} width={360} height={600} />
-							<div className="cardsItemInfo">
-								{currentItem.roasting ? <div className="cardsItemRoasting">{checkRoasting(currentItem.roasting)}</div> : ''}
-								<div className="cardsItemCenter">
-									<div className="info">
-										<h2 className="cardsItemName">{currentItem.name}</h2>
-										<p className='cardsItemText'>
-											{currentItem.type}, {currentItem.processing ? currentItem.processing : ''}
+						<div className={styles.pagesCards}>
+							<img className={styles.cardsImage} src={currentItem.image} alt={currentItem.name} width={360} height={600} />
+							<div className={styles.cardsInfo}>
+								{currentItem.roasting ? <div className={styles.cardsRoasting}>{checkRoasting(currentItem.roasting)}</div> : ''}
+								<div className={styles.cardsCenter}>
+									<div className={styles.info}>
+										<h2 className={styles.cardsName}>{currentItem.name}</h2>
+										<p className={styles.cardsText}>
+											{currentItem.type}, {currentItem.processing ? currentItem.processing.toLocaleLowerCase() : ''}
 										</p>
 									</div>
 									{
 										currentItem.special
 											?
-											<div className='special'>
+											<div className={styles.cardsSpecial}>
 												{currentItem.special.map((specialName: string, index: number) => <span className='specialText'>{specialName}</span>)}
 											</div>
 											: ''
 									}
 								</div>
-								<div className="cardsItemRating">
-									<div className="stars">{checkStart(currentItem.rating)}</div>
-									<span className="ratingNumber">{currentItem.rating}</span>
-									<span className="feedback">{currentItem.feedback}</span>
+								<div className={styles.cardsRaiting}>
+									<div className={styles.cardsStars}>{checkStart(currentItem.rating)}</div>
+									<span className={styles.cardsNumberRaiting}>{currentItem.rating}</span>
+									<span className={styles.cardsFeedback}>({currentItem.feedback} відгука)</span>
 								</div>
-								<p className="cardsItemDesc">
+								<p className={styles.cardsDescription}>
 									{currentItem.text}
 								</p>
+								<div className={styles.cardsGusto}>
+									<div className={styles.gustyoItem}>
+										h3
+									</div>
+								</div>
 								<div className="cardsItemSizes">
 									{currentItem.poputInfo.poputSizes.map((sizes: number) =>
 										<label className='radioButton'>
