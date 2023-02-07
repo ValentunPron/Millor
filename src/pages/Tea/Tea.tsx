@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { Footer, Header, SortBy, CatalogItem } from '../../component';
 import imageTea from '../../assets/image/tea.png';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchTea, setLoaded } from '../../redux/action/tea';
+import { filterTea, setLoaded } from '../../redux/action/tea';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
 
@@ -31,6 +31,7 @@ const filterData: filterDataInterface[] = [
 ]
 
 export const Tea = ({ namePages }: teaInterface): JSX.Element => {
+
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 
@@ -46,8 +47,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
-			dispatch(fetchTea(sortBy, sortRadio));
-			console.log(sortBy);
+			dispatch(filterTea(sortBy, sortRadio));
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -98,11 +98,9 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 								isLoaded
 									?
 									tea.length > 0 ?
-										tea.map((coffeItem: any, index: number) => {
+										tea.map((teaItem: any, index: number) => {
 											if (index < count) {
-												return <CatalogItem key={coffeItem.id} {...coffeItem} />
-											} else {
-												return null;
+												return <CatalogItem key={`tea_${teaItem.id}`} currentItem={teaItem} link={'tea'} />
 											}
 										})
 										: <p className='notFound'>Товар не найдено :с</p>

@@ -3,7 +3,7 @@ import { VendingItemProps } from './VendingItem.props';
 import { Poput } from '../../Poput/Poput';
 import { Link } from 'react-router-dom';
 
-export const VendingItem = ({ name, type, poputInfo, image, rating, feedback }: VendingItemProps): JSX.Element => {
+export const VendingItem = ({ currentItem }: VendingItemProps): JSX.Element => {
 	const arrStar: any[] = ['', '', '', '', ''];
 
 	const checkStart = (rating: number) => {
@@ -21,20 +21,20 @@ export const VendingItem = ({ name, type, poputInfo, image, rating, feedback }: 
 			<div className={`itemTop`}>
 				<div className='itemRating'>
 					<div className='itemStars'>
-						{checkStart(rating)}
+						{checkStart(currentItem.rating)}
 					</div>
-					<p>{Number.isInteger(rating) ? rating + '.0' : rating}<span>({feedback} відгука)</span></p>
+					<p>{Number.isInteger(currentItem.rating) ? currentItem.rating + '.0' : currentItem.rating}<span>({currentItem.feedback} відгука)</span></p>
 				</div>
-				<Poput activeItem={poputInfo.poputSizes[0]} items={poputInfo.poputSizes} sizes='кг' />
+				<Poput activeItem={currentItem.poputInfo.poputSizes[0]} items={currentItem.poputInfo.poputSizes} sizes='кг' />
 			</div>
 			<div className='itemImage'>
-				<Link to="test">
-					<img src={image} alt={name} width={320} height={200} />
+				<Link to={`/vending/${currentItem.id}`}>
+					<img src={currentItem.image} alt={currentItem.name} width={320} height={200} />
 				</Link>
 			</div>
 			<div className="teaBottom">
-				<h3 className="itemTitle">{name}</h3>
-				<p className="itemType">{type}</p>
+				<h3 className="itemTitle">{currentItem.name}</h3>
+				<p className="itemType">{currentItem.type}</p>
 				<div className="itemInfo">
 					<button className='itemButton button small'>Оставить заявку</button>
 				</div>

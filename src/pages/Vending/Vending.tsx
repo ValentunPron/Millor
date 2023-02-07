@@ -8,7 +8,7 @@ import filterImage01 from '../../assets/image/Vending/vendingCoffe.jpg';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
-import { fetchVending, setLoaded } from '../../redux/action/vending';
+import { filterVending, setLoaded } from '../../redux/action/vending';
 
 interface teaInterface {
 	namePages: string
@@ -47,7 +47,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
-			dispatch(fetchVending(sortBy, sortRadio));
+			dispatch(filterVending(sortBy, sortRadio));
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -100,7 +100,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 									vending.length > 0 ?
 										vending.map((coffeItem: any, index: number) => {
 											if (index < count) {
-												return <VendingItem key={`${coffeItem.id}_${coffeItem.name}`} {...coffeItem} />
+												return <VendingItem key={`vending_${coffeItem.id}`} currentItem={coffeItem} />
 											} else {
 												return null;
 											}

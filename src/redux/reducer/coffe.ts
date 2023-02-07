@@ -5,7 +5,6 @@ const initialState = {
 
 
 export const coffe = (state = initialState, action: { type: string, payload: any }) => {
-	console.log(state);
 	switch (action.type) {
 		case 'SET_COFFE':
 			return {

@@ -5,7 +5,7 @@ import { CatalogItem, Footer, Header, SortBy, } from '../../component';
 import mainImage from '../../assets/image/MainCatalog/04.png'
 
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchEating, setLoaded } from '../../redux/action/eating';
+import { filterEating, setLoaded } from '../../redux/action/eating';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
 
@@ -46,7 +46,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
-			dispatch(fetchEating(sortBy, sortRadio));
+			dispatch(filterEating(sortBy, sortRadio));
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -99,7 +99,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 									eating.length > 0 ?
 										eating.map((eatingItem: any, index: number) => {
 											if (index < count) {
-												return <CatalogItem key={`${eatingItem.id}_${eatingItem.name}`} {...eatingItem} />
+												return <CatalogItem key={`eating__${eatingItem.id}`} currentItem={eatingItem} link={'eating'} />
 											} else {
 												return null;
 											}

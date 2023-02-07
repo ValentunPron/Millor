@@ -6,6 +6,7 @@
 			"Знижки"
 			],
 			"poputInfo": {
+				"poputActive": 250,
 				"poputSizes": [
 				250,
 				500,
@@ -32,10 +33,11 @@
 			"Знижки"
 			],
 			"poputInfo": {
-			"poputSizes": [
-			500,
-			1000
-			]
+				"poputActive": 500,
+				"poputSizes": [
+				500,
+				1000
+				]
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item2.png",
 			"rating": 4.2,
@@ -57,12 +59,13 @@
 			"Знижки"
 			],
 			"poputInfo": {
-			"poputSizes": [
-			250,
-			500,
-			1000,
-			2000
-			]
+				"poputActive": 250,
+				"poputSizes": [
+				250,
+				500,
+				1000,
+				2000
+				]
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item3.png",
 			"rating": 3.4,
@@ -82,10 +85,11 @@
 			"id": 3,
 			"special": ["Популярне", "Новий урожай"],
 			"poputInfo": {
-			"poputSizes": [
-			250,
-			500
-			]
+				"poputActive": 250,
+				"poputSizes": [
+				250,
+				500
+				]
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item4.png",
 			"rating": 4.2,
@@ -105,10 +109,11 @@
 			"id": 4,
 			"special": ["Популярне", "Новий урожай"],
 			"poputInfo": {
-			"poputSizes": [
-			500,
-			1000
-			]
+				"poputActive": 500,
+				"poputSizes": [
+				500,
+				1000
+				]
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item5.png",
 			"rating": 3.5,
@@ -128,9 +133,10 @@
 			"id": 5,
 			"special": ["Новий урожай"],
 			"poputInfo": {
-			"poputSizes": [
-			250
-			]
+				"poputActive": 250,
+				"poputSizes": [
+				250
+				]
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item6.png",
 			"rating": 2.7,
@@ -150,10 +156,11 @@
 			"id": 6,
 			"special": ["Популярне"],
 			"poputInfo": {
-			"poputSizes": [
-			500,
-			1000
-			]
+				"poputActive": 500,
+				"poputSizes": [
+				500,
+				1000
+				]
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item7.png",
 			"rating": 5,
@@ -173,11 +180,12 @@
 			"id": 7,
 			"special": ["Популярне"],
 			"poputInfo": {
-			"poputSizes": [
-			250,
-			500,
-			1000
-			]
+				"poputActive": 250,
+				"poputSizes": [
+				250,
+				500,
+				1000
+				]
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item8.png",
 			"rating": 4.2,
@@ -197,11 +205,12 @@
 			"id": 8,
 			"special": ["Знижки"],
 			"poputInfo": {
-			"poputSizes": [
-			250,
-			500,
-			1000
-			]
+				"poputActive": 250,
+				"poputSizes": [
+				250,
+				500,
+				1000
+				]
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item9.png",
 			"rating": 4.2,

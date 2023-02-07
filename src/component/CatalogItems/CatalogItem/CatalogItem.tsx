@@ -3,7 +3,7 @@ import { catalogItemProps } from './CatalogItem.props';
 import { Poput } from '../../Poput/Poput';
 import { Link } from 'react-router-dom';
 
-export const CatalogItem = ({ name, type, discount, poputInfo, image, rating, feedback, price }: catalogItemProps): JSX.Element => {
+export const CatalogItem = ({ currentItem, link }: catalogItemProps): JSX.Element => {
 	const arrStar: any[] = ['', '', '', '', ''];
 
 	const checkStart = (rating: number) => {
@@ -18,33 +18,33 @@ export const CatalogItem = ({ name, type, discount, poputInfo, image, rating, fe
 
 	return (
 		<div className='catalogItem'>
-			<div className={`itemTop ${discount ? 'discount' : ''}`}>
+			<div className={`itemTop ${currentItem.discount ? 'discount' : ''}`}>
 				<div className='itemRating'>
 					<div className='itemStars'>
-						{checkStart(rating)}
+						{checkStart(currentItem.rating)}
 					</div>
-					<p>{Number.isInteger(rating) ? rating + '.0' : rating}<span>({feedback} відгука)</span></p>
+					<p>{Number.isInteger(currentItem.rating) ? currentItem.rating + '.0' : currentItem.rating}<span>({currentItem.feedback} відгука)</span></p>
 				</div>
-				<Poput activeItem={poputInfo.poputSizes[0]} items={poputInfo.poputSizes} />
+				<Poput activeItem={currentItem.poputInfo.poputSizes[0]} items={currentItem.poputInfo.poputSizes} />
 			</div>
 			<div className='itemImage'>
-				<Link to="test">
-					<img src={image} alt={name} width={220} height={310} />
+				<Link to={`/${link}/${currentItem.id}`}>
+					<img src={currentItem.image} alt={currentItem.name} width={220} height={310} />
 				</Link>
 			</div>
 			<div className="teaBottom">
-				<h3 className="itemTitle">{name}</h3>
-				<p className="itemType">{type}</p>
+				<h3 className="itemTitle">{currentItem.name}</h3>
+				<p className="itemType">{currentItem.type}</p>
 				<div className="itemInfo">
 					{
-						discount
+						currentItem.discount
 							?
 							<div className="itemPrice">
-								<span className='discountPrice'>{price[1]} ₴</span>
-								<span className="totalPrice">{price[0]} ₴</span>
+								<span className='discountPrice'>{currentItem.price[1]} ₴</span>
+								<span className="totalPrice">{currentItem.price[0]} ₴</span>
 							</div>
 							: <div className="itemPrice">
-								<span className="totalPrice">{price[0]} ₴</span>
+								<span className="totalPrice">{currentItem.price[0]} ₴</span>
 							</div>
 					}
 					<button className='itemButton button small'>В корзину</button>

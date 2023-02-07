@@ -7,10 +7,10 @@ export const Loading = (): JSX.Element => {
 			width={'100%'}
 			height={600}
 			viewBox="0 0 360 600"
-			backgroundColor="#fff7e9"
+			backgroundColor="#FFF7E1"
 			foregroundColor="#ffffff"
 		>
-			<rect x="0" y="0" rx="20" ry="20" width="300%" height="600" />
+			<rect x="0" y="0" rx="20" ry="20" width="100%" height="600" />
 		</ContentLoader>
 	)
 }
