@@ -7,9 +7,8 @@ const mySort: any = {
 
 export const fetchCoffe = () => (dispatch: Function) => {
 	dispatch(setLoaded(false));
-	//https://63b42226ea89e3e3db573ace.mockapi.io/coffe
-	axios(`/db.json`).then(({ data }) => {
-		dispatch(setCoffe(data.coffe));
+	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/coffe`).then(({ data }) => {
+		dispatch(setCoffe(data));
 	})
 }
 

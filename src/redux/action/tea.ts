@@ -2,8 +2,8 @@ import axios from 'axios';
 
 export const fetchTea = () => (dispatch: Function) => {
 	dispatch(setLoaded(false));
-	axios(`/db.json`).then(({ data }) => {
-		dispatch(setTea(data.tea));
+	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/tea`).then(({ data }) => {
+		dispatch(setTea(data));
 	})
 }
 

@@ -1,7 +1,7 @@
 .pages {
 	position: relative;
 	padding-top: 40px;
-	min-height: 2000px;
+	padding-bottom: 160px;
 	&::after {
 		position: absolute;
 		content: '';
@@ -37,8 +37,18 @@
 	display: flex;
 	flex-direction: row;
 	gap: 150px;
-	.cardsImage {
-		margin-top: -20px;
+	.cardsImageBlock {
+		position: relative;
+		.cardsImage {
+			margin-top: -20px;
+			border-radius: 20px;
+		}
+		.cardsMixture {
+			position: absolute;
+			top: 20px; right: 0; 
+			width: 170px; height: 170px;
+			border-radius: 100px;
+		}
 	}
 	.cardsInfo {
 		max-width: 705px;
@@ -195,6 +205,124 @@
 		.actionButton {
 			height: 100%;
 			padding: 0 5px;
+		}
+	}
+}
+
+@media (min-width: 1600px) {
+	.pages {
+		&::before {
+			position: absolute;
+			content: '';
+			height: 500px; width: 100%;
+			background-size: cover;
+			top: 705px;
+		}
+	}
+}
+@media (max-width: 1600px) {
+	.pages {
+		&::after {
+			height: 700px;
+		}
+		&::before {
+			position: absolute;
+			content: '';
+			height: 250px; width: 100%;
+			background-size: cover;
+			top: 705px;
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.pages {
+		padding-top: 30px;
+	}
+	.pagesCards {
+		margin-top: 30px;
+		align-items: center;
+		padding: 75px;
+		width: 100%;
+		gap: 80px;
+		.cardsImageBlock {
+			.cardsImage {
+				width: 100%;
+				max-width: 450px;
+				height: auto;
+				margin-top: -10px;
+			}
+			.cardsMixture {
+				top: 25px; right: 0; 
+				width: 40%;
+				height: auto;
+			}
+		}
+		.cardsInfo {
+			max-width: 550px;
+			width: 100%;
+		}
+	}
+	.cardsInfo {
+		.cardsRoasting {
+			margin-top: -15px;
+			gap: 8px;
+			svg {
+				width: 20px; height: 20px;
+			}
+		}
+		.cardsCenter {
+			margin-top: 15px;
+		}
+		.cardsRaiting {
+			margin-top: 25px;
+			gap: 15px;
+			.cardsStars {
+				gap: 2.5px;
+				svg {
+					width: 25px; height: 25px;
+				}
+			}
+		}
+		.cardsDescription {
+			margin-top: 25px;
+			max-width: 475px;
+		}
+		.cardsGusto {
+			margin-top: 30px;
+			.gustoItem  {	
+				div {
+					margin-top: 10px;
+					gap: 2.5px;
+					span {
+						width: 9px;
+						height: 9px;
+					}
+				}
+			}
+		}
+		.cardsItemSizes {
+			margin-top: 50px;
+			gap: 40px;
+		}
+		.cardsAction {
+			margin-top: 50px;
+			column-gap: 15px;
+			height: 50px;
+			.actionCount {
+				span {
+					margin: 0 10px;
+				}
+				.actionMinus, .actionPlus {
+					padding: 0px 25px;
+				}
+			}
+			.actionButton {
+				min-width: none;
+				width: 50%;
+				height: 100%;
+				padding: 0 5px;
+			}
 		}
 	}
 }

@@ -25,7 +25,7 @@ export const CatalogItem = ({ currentItem, link }: catalogItemProps): JSX.Elemen
 					</div>
 					<p>{Number.isInteger(currentItem.rating) ? currentItem.rating + '.0' : currentItem.rating}<span>({currentItem.feedback} відгука)</span></p>
 				</div>
-				<Poput activeItem={currentItem.poputInfo.poputSizes[0]} items={currentItem.poputInfo.poputSizes} />
+				<Poput activeItem={currentItem.poputInfo.poputActive} items={currentItem.poputInfo.poputSizes} mass={currentItem.poputInfo.poputMass} />
 			</div>
 			<div className='itemImage'>
 				<Link to={`/${link}/${currentItem.id}`}>

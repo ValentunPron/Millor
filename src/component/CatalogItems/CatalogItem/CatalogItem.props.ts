@@ -5,7 +5,7 @@ export interface catalogItemProps extends DetailedHTMLProps<HtmlHTMLAttributes<H
 		id: number,
 		name: string,
 		type: string,
-		poputInfo: { poputSizes: number[] },
+		poputInfo: { poputActive: number, poputSizes: number[], poputMass: string },
 		discount: boolean,
 		image: string,
 		rating: number,

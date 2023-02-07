@@ -2,8 +2,8 @@ import axios from 'axios';
 
 export const fetchVending = () => (dispatch: Function) => {
 	dispatch(setLoaded(false));
-	axios(`/db.json`).then(({ data }) => {
-		dispatch(setVending(data.vending));
+	axios(`https://63d14d40120b32bbe8f59c99.mockapi.io/vending`).then(({ data }) => {
+		dispatch(setVending(data));
 	})
 }
 

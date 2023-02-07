@@ -6,14 +6,12 @@
 			"Знижки"
 			],
 			"poputInfo": {
-				"poputActive": 250,
-				"poputSizes": [
-				250,
-				500,
-				1000
-			]
+				"poputActive": 250, 
+				"poputSizes": [ 250, 500, 1000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item1.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/mixture01.png",
 			"rating": 4,
 			"feedback": 23,
 			"roasting": 5,
@@ -24,6 +22,7 @@
 			"processing": "Суха",
 			"type": "Суміш арабік",
 			"name": "Brazil Santos",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"text": "Способ обработки: мытый. Ароматный и сбалансированный кофе, обладает вкусом без лишней кислотности с нотками фундука и какао.",
 			"price": [300, 399]
 		},
@@ -34,12 +33,11 @@
 			],
 			"poputInfo": {
 				"poputActive": 500,
-				"poputSizes": [
-				500,
-				1000
-				]
+				"poputSizes": [ 500, 1000 ],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item2.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/mixture01.png",
 			"rating": 4.2,
 			"feedback": 43,
 			"roasting": 3,
@@ -50,6 +48,7 @@
 			"processing": "Мита",
 			"type": "Купаж",
 			"name": "Colombia Supremo",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"text": "Способ обработки: мытый. вкус порадует вас бергамотными и цветочными нотами, лимонной кислотностью и высокой сладости ",
 			"price": [299, 349]
 		},
@@ -60,14 +59,11 @@
 			],
 			"poputInfo": {
 				"poputActive": 250,
-				"poputSizes": [
-				250,
-				500,
-				1000,
-				2000
-				]
+				"poputSizes": [ 250, 500, 1000, 2000 ],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item3.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/mixture01.png",
 			"rating": 3.4,
 			"feedback": 23,
 			"roasting": 4,
@@ -78,6 +74,7 @@
 			"processing": "Мита",
 			"type": "Купаж",
 			"name": "Blend Espresso",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"text": "Эспрессо-смесь (Arabica & Robusta). 70 на 30%. Кофе с ароматом специй и какао. Терпкий вкус с оттенками лесного ореха и шоколада, практически без кислотности.",
 			"price": [399, 449]
 		},
@@ -86,12 +83,11 @@
 			"special": ["Популярне", "Новий урожай"],
 			"poputInfo": {
 				"poputActive": 250,
-				"poputSizes": [
-				250,
-				500
-				]
+				"poputSizes": [ 250, 500 ],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item4.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/mixture01.png",
 			"rating": 4.2,
 			"feedback": 3,
 			"roasting": 2,
@@ -102,6 +98,7 @@
 			"processing": "Інша",
 			"type": "Арабіка",
 			"name": "Panama Arabica",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"text": "Способ обработки: мытый. Сладкое интенсивное послевкусие фруктов, с минимальной кислинкой и плотной текстурой.",
 			"price": [200]
 		},
@@ -110,12 +107,11 @@
 			"special": ["Популярне", "Новий урожай"],
 			"poputInfo": {
 				"poputActive": 500,
-				"poputSizes": [
-				500,
-				1000
-				]
+				"poputSizes": [ 500, 1000 ],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item5.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/mixture01.png",
 			"rating": 3.5,
 			"feedback": 5,
 			"roasting": 4,
@@ -126,6 +122,7 @@
 			"processing": "Інша",
 			"type": "Робуста",
 			"name": "Nicaragua SHG",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"text": "Способ обработки: мытый. Сложный фруктовый вкус. Преобладает явная фруктовая вязкость с карамель, текстура напитка плотная и сочная.",
 			"price": [189]
 		},
@@ -134,11 +131,11 @@
 			"special": ["Новий урожай"],
 			"poputInfo": {
 				"poputActive": 250,
-				"poputSizes": [
-				250
-				]
+				"poputSizes": [ 250 ],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item6.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/mixture01.png",
 			"rating": 2.7,
 			"feedback": 9,
 			"roasting": 5,
@@ -149,6 +146,7 @@
 			"processing": "Суха",
 			"type": "Суміш арабік",
 			"name": "Honduras",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"text": "Способ обработки: мытая. Плотный и насыщенный сорт кофе. Во вкусе горький шоколад, табак. Легкая винная кислинка на послевкусии.",
 			"price": [129]
 		},
@@ -157,12 +155,11 @@
 			"special": ["Популярне"],
 			"poputInfo": {
 				"poputActive": 500,
-				"poputSizes": [
-				500,
-				1000
-				]
+				"poputSizes": [ 500, 1000 ],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item7.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/mixture01.png",
 			"rating": 5,
 			"feedback": 1,
 			"roasting": 1,
@@ -173,6 +170,7 @@
 			"processing": "Мита",
 			"type": "Арабіка",
 			"name": "Mexico",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"text": "Способ обработки: мытый . Нотки табака и сухофруктов во вкусе, винная терпкость на послевкусии.",
 			"price": [299]
 		},
@@ -181,13 +179,11 @@
 			"special": ["Популярне"],
 			"poputInfo": {
 				"poputActive": 250,
-				"poputSizes": [
-				250,
-				500,
-				1000
-				]
+				"poputSizes": [ 250, 500, 1000 ],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item8.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/mixture01.png",
 			"rating": 4.2,
 			"feedback": 3,
 			"roasting": 5,
@@ -198,6 +194,7 @@
 			"processing": "Суха",
 			"type": "Робуста",
 			"name": "Blend Gurme",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"text": "Бленд трех ярких сортов арабики. Запоминающийся, чистый, сильный и яркий кофе. В эспрессо вас удивит яркий ягодный вкус и фруктовая сладость.",
 			"price": [200]
 		},
@@ -206,13 +203,11 @@
 			"special": ["Знижки"],
 			"poputInfo": {
 				"poputActive": 250,
-				"poputSizes": [
-				250,
-				500,
-				1000
-				]
+				"poputSizes": [ 250, 500, 1000 ],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/item9.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/coffeCatalog/mixture01.png",
 			"rating": 4.2,
 			"feedback": 3,
 			"roasting": 5,
@@ -223,6 +218,7 @@
 			"processing": "Суха",
 			"type": "Купаж",
 			"name": "Blend Gurme",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"text": "Бленд трех ярких сортов арабики. Запоминающийся, чистый, сильный и яркий кофе. В эспрессо вас удивит яркий ягодный вкус и фруктовая сладость.",
 			"price": [200, 299]
 		}
@@ -231,130 +227,168 @@
 		{
 			"id": 0,
 			"poputInfo": {
-				"poputSizes": [ 250, 500, 1000]
+				"poputActive": 250,
+				"poputSizes": [ 250, 500, 1000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item03.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 4,
 			"feedback": 23,
 			"name": "Green Chunmee",
 			"type": "Зеленый чай",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": true,
 			"price": [200, 249]
 		},
 		{
 			"id": 1,
 			"poputInfo": {
-				"poputSizes": [ 500, 1000 ]
+				"poputActive": 500,
+				"poputSizes": [ 500, 1000 ],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item01.png",
 			"rating": 3.1,
 			"feedback": 2,
 			"name": "Горячий шоколад",
 			"type": "Кофейные напитки",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": false,
 			"price": [110]
 		},
 		{
 			"id": 2,
 			"poputInfo": {
-				"poputSizes": [	500, 1000 ]
+				"poputActive": 500,
+				"poputSizes": [	500, 1000 ],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item08.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 4,
 			"feedback": 1,
 			"name": "Leaflet left species BLACK OP",
 			"type": "Черный чай",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": false,
 			"price": [114]
 		},
 		{
 			"id": 3,
 			"poputInfo": {
-				"poputSizes": [ 250, 500, 1000]
+				"poputActive": 250,
+				"poputSizes": [ 250, 500, 1000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item04.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 3.7,
 			"feedback": 6,
 			"name": "Senecha",
 			"type": "Зеленый чай",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": true,
 			"price": [129, 149]
 		},
 		{
 			"id": 4,
 			"poputInfo": {
-				"poputSizes": [500, 1000, 2000]
+				"poputActive": 500,
+				"poputSizes": [500, 1000, 2000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item09.png",
 			"rating": 3.7,
 			"feedback": 2,
 			"name": "Капучино",
 			"type": "Кофейные напитки",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": false,
 			"price": [199]
 		},
 		{
 			"id": 5,
 			"poputInfo": {
-				"poputSizes": [500, 1000]
+				"poputActive": 500,
+				"poputSizes": [500, 1000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item03.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 0,
 			"feedback": 0,
 			"name": "Green of",
 			"type": "Зеленый чай",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": false,
 			"price": [129]
 		},
 		{
 			"id": 6,
 			"poputInfo": {
-				"poputSizes": [250, 500, 1000]
+				"poputActive": 250,
+				"poputSizes": [250, 500, 1000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item07.png",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 5,
 			"feedback": 1,
 			"name": "Матча Церемониал",
 			"type": "Матча",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": false,
 			"price": [399]
 		},
 		{
 			"id": 7,
 			"poputInfo": {
-				"poputSizes": [250, 500, 1000]
+				"poputActive": 250,
+				"poputSizes": [250, 500, 1000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item02.jpg",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 2.7,
 			"feedback": 4,
 			"name": "Basilur",
 			"type": "Пуэр",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": true,
 			"price": [119, 149]
 		},
 		{
 			"id": 8,
 			"poputInfo": {
-				"poputSizes": [250, 500, 1000]
+				"poputActive": 250,
+				"poputSizes": [250, 500, 1000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item05.jpg",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 3.7,
 			"feedback": 5,
 			"name": "Milk Olong",
 			"type": "Молочный улунг",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": true,
 			"price": [159, 199]
 		},
 		{
 			"id": 9,
 			"poputInfo": {
-				"poputSizes": [250, 500, 1000]
+				"poputActive": 250,
+				"poputSizes": [250, 500, 1000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item05.jpg",
+			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 3.7,
 			"feedback": 5,
 			"name": "Milk Olong",
 			"type": "Молочный улунг",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": true,
 			"price": [10, 199]
 		}
@@ -363,100 +397,127 @@
 		{
 			"id": 0,
 			"poputInfo": {
-				"poputSizes": [ 1, 2, 5]
+				"poputActive": 1,
+				"poputSizes": [ 1, 2, 5],
+				"poputMass": "кг."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item01.jpg",
 			"rating": 1,
 			"feedback": 2.4,
 			"name": "Гранулированный кофе",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"type": "Гранулированный Кофе"
 		},
 		{
 			"id": 1,
 			"poputInfo": {
-				"poputSizes": [ 5, 10, 50]
+				"poputActive": 5,
+				"poputSizes": [ 5, 10, 50],
+				"poputMass": "кг."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item02.jpg",
 			"rating": 4,
 			"feedback": 2,
 			"name": "Кава гранулирование STRONG",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"type": "Гранулированный Кофе"
 		},
 		{
 			"id": 2,
 			"poputInfo": {
-				"poputSizes": [ 5, 10, 50]
+				"poputActive": 5,
+				"poputSizes": [ 5, 10, 50],
+				"poputMass": "кг."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item03.jpg",
 			"rating": 0,
 			"feedback": 0,
 			"name": "Frontier Co-Op",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"type": "Цикорий"
 		},
 		{
 			"id": 3,
 			"poputInfo": {
-				"poputSizes": [ 0.5, 1, 2]
+				"poputActive": 0.5,
+				"poputSizes": [ 0.5, 1, 2],
+				"poputMass": "кг."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item04.jpg",
 			"rating": 2,
 			"feedback": 1,
 			"name": "Зерновой кофе купаж",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"type": "Зерновой кофе"
 		},
 		{
 			"id": 4,
 			"poputInfo": {
-				"poputSizes": [ 0.5, 1, 2]
+				"poputActive": 0.5,
+				"poputSizes": [ 0.5, 1, 2],
+				"poputMass": "кг."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item05.jpg",
 			"rating": 5,
 			"feedback": 3,
 			"name": "Львівська міцна",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"type": "Зерновой кофе"
 		},
 		{
 			"id": 5,
 			"poputInfo": {
-				"poputSizes": [ 0.5, 1]
+				"poputActive": 0.5,
+				"poputSizes": [ 0.5, 1],
+				"poputMass": "кг."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item06.jpg",
 			"rating": 3.7,
 			"feedback": 2,
 			"name": "Какао порошок светлый",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"type": "Какао"
 		},
 		{
 			"id": 6,
 			"poputInfo": {
-				"poputSizes": [1,2]
+				"poputActive": 1,
+				"poputSizes": [1,2],
+				"poputMass": "кг."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item07.jpg",
 			"rating": 4.1,
 			"feedback": 2,
 			"name": "Зерна американо",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"type": "Кофейные напитки"
 		},
 		{
 			"id": 7,
 			"poputInfo": {
-				"poputSizes": [1,2]
+				"poputActive": 1,
+				"poputSizes": [1,2],
+				"poputMass": "кг."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item08.jpg",
 			"rating": 4.2,
 			"feedback": 5,
 			"name": "Кофе растворимый сублимированный OLAM",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"type": "Кофе порошкообразный"
 		},
 		{
 			"id": 8,
 			"poputInfo": {
-				"poputSizes": [0.5, 1, 2]
+				"poputActive": 0.5,
+				"poputSizes": [0.5, 1, 2],
+				"poputMass": "кг."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item09.jpg",
 			"rating": 3.8,
 			"feedback": 3,
 			"name": "Сухе знежирене молоко Детальніше",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"type": "Сухое молоко"
 		}
 	],
@@ -464,52 +525,64 @@
 		{
 			"id": 0,
 			"poputInfo": {
-				"poputSizes": [ 250, 500, 1000]
+				"poputActive": 250,
+				"poputSizes": [ 250, 500, 1000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/item02.png",
 			"rating": 4,
 			"feedback": 23,
 			"name": "Цикорий растворимый гранулированный",
 			"type": "Цикорий",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": true,
 			"price": [200, 249]
 		},
 		{
 			"id": 1,
 			"poputInfo": {
-				"poputSizes": [250, 500, 1000]
+				"poputActive": 250,
+				"poputSizes": [250, 500, 1000],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/item01.jpg",
 			"rating": 1,
 			"feedback": 0,
 			"name": "Ячменный напиток Millor",
 			"type": "Ячменные напитки",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": false,
 			"price": [199]
 		},
 		{
 			"id": 2,
 			"poputInfo": {
-				"poputSizes": [500, 1000, 1500]
+				"poputActive": 500,
+				"poputSizes": [500, 1000, 1500],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/item04.jpg",
 			"rating": 4,
 			"feedback": 2,
 			"name": "Протеїн Optimum Nutrition 100%",
 			"type": "Протеиновые смеси",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": false,
 			"price": [499]
 		},
 		{
 			"id": 3,
 			"poputInfo": {
-				"poputSizes": [50]
+				"poputActive": 50,
+				"poputSizes": [50],
+				"poputMass": "гр."
 			},
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/item03.png",
 			"rating": 3,
 			"feedback": 2,
 			"name": "Каша толокняная ячменная",
 			"type": "Толокняные каши",
+			"description": "Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.",
 			"discount": false,
 			"price": [29]
 		}

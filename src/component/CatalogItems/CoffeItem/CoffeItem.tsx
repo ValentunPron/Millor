@@ -47,7 +47,7 @@ export const CoffeItem = ({ currentCoffe }: CoffeItemProps): JSX.Element => {
 					<div className={styles.discountTopinfo}>
 						{currentCoffe.special.map(type => typeCoffe[type])}
 					</div>
-					<Poput activeItem={currentCoffe.poputInfo.poputActive} items={currentCoffe.poputInfo.poputSizes} />
+					<Poput activeItem={currentCoffe.poputInfo.poputActive} items={currentCoffe.poputInfo.poputSizes} mass={currentCoffe.poputInfo.poputMass} />
 				</div>
 				<div className={styles.description}>
 					<Link onClick={() => window.scroll(0, 0)} to={`/coffe/${currentCoffe.id}`}> <img className={styles.descriptionImage} src={currentCoffe.image} alt={currentCoffe.name} width={160} height={300} /></Link>

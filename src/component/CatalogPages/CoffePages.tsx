@@ -9,7 +9,6 @@ import { fetchVending } from '../../redux/action/vending';
 
 export const CoffePages = (): JSX.Element => {
 	const params = useParams();
-	console.log(params);
 	const dispatch: Function = useDispatch();
 
 	const test: any = useSelector(({ coffe, tea, eating, vending }: any) => {
@@ -38,10 +37,11 @@ export const CoffePages = (): JSX.Element => {
 	//	case 'vending': return currentItem = coffe.filter((coffe: any) => String(coffe.id) === String(params.id));
 	//	default: break;
 	//}
+	console.log(test.eating);
 
 	const currentItem = test[String(params.name)].filter((coffe: any) => String(coffe.id) === String(params.id));
 
 	return (
-		<CatalogPages currentItem={currentItem[0]} />
+		<CatalogPages currentItem={currentItem[0]} linkTo={params.name} />
 	);
 }

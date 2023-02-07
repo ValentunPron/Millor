@@ -2,8 +2,8 @@ import axios from 'axios';
 
 export const fetchEating = () => (dispatch: Function) => {
 	dispatch(setLoaded(false));
-	axios(`/db.json`).then(({ data }) => {
-		dispatch(setEating(data.eating));
+	axios(`https://63d14d40120b32bbe8f59c99.mockapi.io/eating`).then(({ data }) => {
+		dispatch(setEating(data));
 	})
 }
 

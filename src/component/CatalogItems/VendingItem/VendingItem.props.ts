@@ -5,7 +5,7 @@ export interface VendingItemProps extends DetailedHTMLProps<HtmlHTMLAttributes<H
 		id: number,
 		name: string,
 		type: string,
-		poputInfo: { poputSizes: number[] },
+		poputInfo: { poputActive: number, poputSizes: number[], poputMass: string },
 		image: string,
 		rating: number,
 		feedback: number,

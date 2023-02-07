@@ -32,7 +32,7 @@ const checkGuasto = (gusto: number) => {
 		: <span key={index} ></span>);
 }
 
-export const CatalogPages = ({ currentItem }: any): JSX.Element => {
+export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 
 	const [count, setCount] = React.useState(1);
 
@@ -48,11 +48,16 @@ export const CatalogPages = ({ currentItem }: any): JSX.Element => {
 						<div className='catalogLinks'>
 							<Link className='catalogLink black' to="/">Головна</Link>
 							<Link className='catalogLink black' to="/">Каталог товаров</Link>
-							<Link className='catalogLink black' to="/coffe">Свежеобжаренный кофе</Link>
-							<Link className='catalogLink black' to={`/coffe/${currentItem.id}`}>{currentItem.name}</Link>
+							<Link className='catalogLink black' to={`/${linkTo}`}>Свежеобжаренный кофе</Link>
+							<Link className='catalogLink black' to={`/${linkTo}/${currentItem.id}`}>{currentItem.name}</Link>
 						</div>
 						<div className={styles.pagesCards}>
-							<img className={styles.cardsImage} src={currentItem.image} alt={currentItem.name} width={360} height={600} />
+							<div className={styles.cardsImageBlock}>
+								<img className={styles.cardsImage} src={currentItem.image} alt={currentItem.name} width={360} height={600} />
+								{
+									currentItem.mixtureImage ? <img className={styles.cardsMixture} src={currentItem.mixtureImage} alt="mixture" /> : ''
+								}
+							</div>
 							<div className={styles.cardsInfo}>
 								{currentItem.roasting ? <div className={styles.cardsRoasting}>{checkRoasting(currentItem.roasting)}</div> : ''}
 								<div className={styles.cardsCenter}>
@@ -77,7 +82,7 @@ export const CatalogPages = ({ currentItem }: any): JSX.Element => {
 									<span className={styles.cardsFeedback}>({currentItem.feedback} відгука)</span>
 								</div>
 								<p className={styles.cardsDescription}>
-									{currentItem.text}
+									{currentItem.description}
 								</p>
 								{
 									currentItem.acid && currentItem.bitter && currentItem.saturation
@@ -102,24 +107,31 @@ export const CatalogPages = ({ currentItem }: any): JSX.Element => {
 									{currentItem.poputInfo.poputSizes.map((sizes: number) => (
 										currentItem.poputInfo.poputActive === sizes
 											? <label className='radioButton'>
-												<input type='radio' name='sizes' className='input' checked /> {sizes} г.
+												<input type='radio' name='sizes' className='input' checked /> {sizes} {currentItem.poputInfo.poputMass}
 												<span className='radio'></span>
 											</label>
 											: <label className='radioButton'>
-												<input type='radio' name='sizes' className='input' /> {sizes} г.
+												<input type='radio' name='sizes' className='input' /> {sizes} {currentItem.poputInfo.poputMass}
 												<span className='radio'></span>
 											</label>
 									))
 									}
 								</div>
-								<div className={styles.cardsAction}>
-									<div className={styles.actionCount}>
-										<button className={`${styles.actionMinus} ${count > 1 ? '' : styles.actionClose}`} onClick={() => count > 1 ? setCount(count - 1) : ''}>-</button>
-										<span>{count}</span>
-										<button className={styles.actionPlus} onClick={() => setCount(count + 1)}>+</button>
-									</div>
-									<button className={`${styles.actionButton} button big`}>Купить за {currentItem.price[0] * count} грн </button>
-								</div>
+								{
+									currentItem.price ?
+										<div className={styles.cardsAction}>
+											<div className={styles.actionCount}>
+												<button className={`${styles.actionMinus} ${count > 1 ? '' : styles.actionClose}`} onClick={() => count > 1 ? setCount(count - 1) : ''}>-</button>
+												<span>{count}</span>
+												<button className={styles.actionPlus} onClick={() => setCount(count + 1)}>+</button>
+											</div>
+											<button className={`${styles.actionButton} button big`}>Купить за {currentItem.price[0] * count} грн </button>
+										</div>
+										:
+										<div className={styles.cardsAction}>
+											<button className={`${styles.actionButton} button big`}>Оставить заявку</button>
+										</div>
+								}
 							</div>
 						</div>
 					</div>
