@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Millor/static/css/main.44234b0f.css",
-    "main.js": "/Millor/static/js/main.89856ded.js",
+    "main.css": "/Millor/static/css/main.b96715d1.css",
+    "main.js": "/Millor/static/js/main.61bcf351.js",
     "static/media/bg.jpg": "/Millor/static/media/bg.205fd1a355ffda1603b3.jpg",
     "static/media/01.jpg": "/Millor/static/media/01.fd0f1aaa846f45609be2.jpg",
     "static/media/02.jpg": "/Millor/static/media/02.3579453b61c0ba72315f.jpg",
@@ -43,11 +43,11 @@
     "static/media/text.svg": "/Millor/static/media/text.3598cd9b1ca8f7b4b501.svg",
     "static/media/bgMain.svg": "/Millor/static/media/bgMain.0598decc5f1b23018151.svg",
     "static/media/bgError.svg": "/Millor/static/media/bgError.36cc704c943abcd2efef.svg",
-    "main.44234b0f.css.map": "/Millor/static/css/main.44234b0f.css.map",
-    "main.89856ded.js.map": "/Millor/static/js/main.89856ded.js.map"
+    "main.b96715d1.css.map": "/Millor/static/css/main.b96715d1.css.map",
+    "main.61bcf351.js.map": "/Millor/static/js/main.61bcf351.js.map"
   },
   "entrypoints": [
-    "static/css/main.44234b0f.css",
-    "static/js/main.89856ded.js"
+    "static/css/main.b96715d1.css",
+    "static/js/main.61bcf351.js"
   ]
 }
