@@ -361,8 +361,10 @@
 			.cardsImageBlock {
 				margin-top: 50px;
 				.cardsImage {
-					max-width: none;
+					max-width: 250px;
+					max-height: 600px;
 					width: 100%;
+					height: auto;
 				}
 			}
 			.cardsInfo {
@@ -382,6 +384,9 @@
 				}
 				.cardsCenter {
 					margin-top: 0px;
+					.cardsName {
+						margin-top: 0px;
+					}
 				}
 			}
 		}
@@ -461,6 +466,20 @@
 	.pagesCards {
 		gap: 20px;
 		align-items: center;
+		&.cardsAdaptive {
+			grid-template-areas: 'image' 
+			'infoTop'
+			'infoBottom';
+			.cardsImageBlock {
+				margin-top: 30px;
+				.cardsImage {
+					max-width: 250px;
+					max-height: 400px;
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
 		.cardsImageBlock {
 			margin: 0 auto;
 			.cardsImage {
@@ -556,6 +575,17 @@
 		padding: 20px;
 		grid-template-columns: 1fr auto;
 		gap: 10px;
+		&.cardsAdaptive {
+			.cardsImageBlock {
+				margin-top: 30px;
+				.cardsImage {
+					max-width: 250px;
+					max-height: 300px;
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
 		.cardsImageBlock {
 			grid-area: image;
 			.cardsImage {
@@ -594,6 +624,9 @@
 				svg {
 					width: 20px; height: 20px;
 				}
+			}
+			.cardsRaitingBlock {
+				gap: 7.5px;
 			}
 			.cardsNumberRaiting {
 				margin-top: 10px;
