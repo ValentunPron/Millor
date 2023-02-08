@@ -38,7 +38,7 @@ export const WorkingWindow = (): JSX.Element => {
 					<div className={`${styles.loginMain}`}>
 						<div className={`${styles.loginContent} ${styles.register}`} >
 							<img src={logoSvg} alt="" />
-							<h3 className={styles.loginTitle}>Сайт в розробці</h3>
+							<h3 className={styles.loginTitle}>Сайт в розробці test</h3>
 							<p className={styles.loginText}>Даний сайт був створений для портфоліо. Зараз він знаходиться в розробці.</p>
 						</div>
 					</div>
