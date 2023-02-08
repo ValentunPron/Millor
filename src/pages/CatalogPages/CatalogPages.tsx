@@ -3,6 +3,7 @@ import { Link, Navigate } from 'react-router-dom';
 import { Footer, Header } from '../../component';
 import { catalogPagesProps } from './CatalogPages.props';
 import styles from "./CatalogPages.module.scss";
+import { Poput } from '../../component/Poput/Poput';
 
 const arrStar: any[] = ['', '', '', '', ''],
 	arrGusto: any[] = ['', '', '', '', '', '', '', '', '', ''];
@@ -32,9 +33,23 @@ const checkGuasto = (gusto: number) => {
 		: <span key={index} ></span>);
 }
 
+const useWidthSize = () => {
+	const [width, setWidth] = React.useState(window.innerWidth);
+	React.useLayoutEffect(() => {
+		const updateSize = () => {
+			setWidth(window.innerWidth);
+		}
+		window.addEventListener('resize', updateSize);
+		updateSize();
+		return () => window.removeEventListener('resize', updateSize);
+	}, []);
+	return width;
+}
+
 export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 
 	const [count, setCount] = React.useState(1);
+	const width = useWidthSize();
 
 	if (!currentItem) {
 		return <Navigate to='/notFound' />
@@ -51,36 +66,42 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 							<Link className='catalogLink black' to={`/${linkTo}`}>Свежеобжаренный кофе</Link>
 							<Link className='catalogLink black' to={`/${linkTo}/${currentItem.id}`}>{currentItem.name}</Link>
 						</div>
-						<div className={styles.pagesCards}>
+						<div className={`${styles.pagesCards} ${linkTo === 'coffe' ? '' : styles.cardsAdaptive}`}>
 							<div className={styles.cardsImageBlock}>
 								<img className={styles.cardsImage} src={currentItem.image} alt={currentItem.name} width={360} height={600} />
 								{
 									currentItem.mixtureImage ? <img className={styles.cardsMixture} src={currentItem.mixtureImage} alt="mixture" /> : ''
 								}
 							</div>
-							<div className={styles.cardsInfo}>
-								{currentItem.roasting ? <div className={styles.cardsRoasting}>{checkRoasting(currentItem.roasting)}</div> : ''}
-								<div className={styles.cardsCenter}>
-									<div className={styles.info}>
-										<h2 className={styles.cardsName}>{currentItem.name}</h2>
-										<p className={styles.cardsText}>
-											{currentItem.type}, {currentItem.processing ? currentItem.processing.toLocaleLowerCase() : ''}
-										</p>
+							<div className={`${styles.cardsInfo} ${styles.cardsInfoTop}`}>
+								<div className={styles.cardsAdaptive}>
+									{currentItem.roasting ? <div className={styles.cardsRoasting}>{checkRoasting(currentItem.roasting)}</div> : ''}
+									<div className={styles.cardsCenter}>
+										<div className={styles.info}>
+											<h2 className={styles.cardsName}>{currentItem.name}</h2>
+											<p className={styles.cardsText}>
+												{currentItem.type}, {currentItem.processing ? currentItem.processing.toLocaleLowerCase() : ''}
+											</p>
+										</div>
+										{
+											currentItem.special
+												?
+												<div className={styles.cardsSpecial}>
+													{currentItem.special.map((specialName: string, index: number) => <span key={`${index}_${specialName}`} className='specialText'>{specialName}</span>)}
+												</div>
+												: ''
+										}
 									</div>
-									{
-										currentItem.special
-											?
-											<div className={styles.cardsSpecial}>
-												{currentItem.special.map((specialName: string, index: number) => <span key={`${index}_${specialName}`} className='specialText'>{specialName}</span>)}
-											</div>
-											: ''
-									}
+									<div className={styles.cardsRaiting}>
+										<div className={styles.cardsStars}>{checkStart(currentItem.rating)}</div>
+										<div className={styles.cardsRaitingBlock}>
+											<span className={styles.cardsNumberRaiting}>{currentItem.rating}</span>
+											<span className={styles.cardsFeedback}>({currentItem.feedback} відгука)</span>
+										</div>
+									</div>
 								</div>
-								<div className={styles.cardsRaiting}>
-									<div className={styles.cardsStars}>{checkStart(currentItem.rating)}</div>
-									<span className={styles.cardsNumberRaiting}>{currentItem.rating}</span>
-									<span className={styles.cardsFeedback}>({currentItem.feedback} відгука)</span>
-								</div>
+							</div>
+							<div className={`${styles.cardsInfo} ${styles.cardsInfoBottom}`}>
 								<p className={styles.cardsDescription}>
 									{currentItem.description}
 								</p>
@@ -103,20 +124,24 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 										</div>
 										: ''
 								}
-								<div className={styles.cardsItemSizes}>
-									{currentItem.poputInfo.poputSizes.map((sizes: number) => (
-										currentItem.poputInfo.poputActive === sizes
-											? <label className='radioButton'>
-												<input type='radio' name='sizes' className='input' checked /> {sizes} {currentItem.poputInfo.poputMass}
-												<span className='radio'></span>
-											</label>
-											: <label className='radioButton'>
-												<input type='radio' name='sizes' className='input' /> {sizes} {currentItem.poputInfo.poputMass}
-												<span className='radio'></span>
-											</label>
-									))
-									}
-								</div>
+								{
+									width > 780
+										? <div className={styles.cardsItemSizes}>
+											{currentItem.poputInfo.poputSizes.map((sizes: number) => (
+												currentItem.poputInfo.poputActive === sizes
+													? <label className='radioButton'>
+														<input type='radio' name='sizes' className='input' checked /> {sizes} {currentItem.poputInfo.poputMass}
+														<span className='radio'></span>
+													</label>
+													: <label className='radioButton'>
+														<input type='radio' name='sizes' className='input' /> {sizes} {currentItem.poputInfo.poputMass}
+														<span className='radio'></span>
+													</label>
+											))
+											}
+										</div>
+										: ""
+								}
 								{
 									currentItem.price ?
 										<div className={styles.cardsAction}>
@@ -125,6 +150,13 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 												<span>{count}</span>
 												<button className={styles.actionPlus} onClick={() => setCount(count + 1)}>+</button>
 											</div>
+											{
+												width < 780
+													? <div className={styles.cardsPoput}>
+														<Poput activeItem={currentItem.poputInfo.poputActive} items={currentItem.poputInfo.poputSizes} mass={currentItem.poputInfo.poputMass} />
+													</div>
+													: ''
+											}
 											<button className={`${styles.actionButton} button big`}>Купить за {currentItem.price[0] * count} грн </button>
 										</div>
 										:

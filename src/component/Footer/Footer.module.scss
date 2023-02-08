@@ -23,6 +23,7 @@
 			background: url('../../assets/image/Mailing/bgError.svg'), url('../../assets/image/Mailing/bgBorder.svg') 1px 20px;
 			background-repeat: no-repeat;
 			background-size: cover, cover;
+			z-index: -1;
 		}
 	}
 	&.mainPages {
