@@ -30,15 +30,6 @@ export const CoffePages = (): JSX.Element => {
 		}
 	}, []);
 
-	//switch (params.name) {
-	//	case 'coffe': return currentItem = coffe.filter((coffe: any) => String(coffe.id) === String(params.id));
-	//	case 'tea': return currentItem = coffe.filter((coffe: any) => String(coffe.id) === String(params.id));
-	//	case 'eating': return currentItem = coffe.filter((coffe: any) => String(coffe.id) === String(params.id));
-	//	case 'vending': return currentItem = coffe.filter((coffe: any) => String(coffe.id) === String(params.id));
-	//	default: break;
-	//}
-	console.log(test.eating);
-
 	const currentItem = test[String(params.name)].filter((coffe: any) => String(coffe.id) === String(params.id));
 
 	return (

@@ -17,9 +17,10 @@ import { CoffePages } from "./CatalogPages/CoffePages";
 import { CatalogItem } from "./CatalogItems/CatalogItem/CatalogItem";
 import { VendingItem } from "./CatalogItems/VendingItem/VendingItem";
 import { CardsItem } from "./CardsItem/CardsItem";
+import { HowCooking } from "./HowCooking/HowCooking";
 
 export {
 	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsItem, NewsMain, Footer,
 	WorkingWindow, Filter, Spoiler, CategoryButton, RadioButton, SortBy, CoffePages,
-	CoffeItem, CatalogItem, VendingItem, CardsItem
+	CoffeItem, CatalogItem, VendingItem, CardsItem, HowCooking
 }

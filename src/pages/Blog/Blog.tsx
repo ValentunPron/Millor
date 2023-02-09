@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Footer, Header, CategoryButton, NewsItem, Spoiler } from "../../component";
 
 import filterImage01 from '../../assets/image/Cooking/01.jpg';

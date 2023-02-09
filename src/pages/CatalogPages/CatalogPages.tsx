@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import { CardsItem, Footer, Header } from '../../component';
+import { CardsItem, Footer, Header, HowCooking } from '../../component';
 import { catalogPagesProps } from './CatalogPages.props';
 import styles from "./CatalogPages.module.scss";
 
@@ -21,6 +21,16 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 	const refPagesInfo = React.createRef<any>();
 	const [height, setHeight] = React.useState(0);
 	const scroll = useScroll();
+
+	const isFieldVisible = (field: string): JSX.Element => {
+		const rules = {
+			coffe: <HowCooking />,
+			tea: <p className={styles.howCooking}>Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития ленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития</p>,
+			vending: <p className={styles.howCooking}>Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития ленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития</p>,
+			eating: <p className={styles.howCooking}>Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития ленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития</p>,
+		};
+		return rules[field as keyof typeof rules];
+	}
 
 	React.useEffect(() => {
 		refPagesInfo.current !== null ? setHeight(refPagesInfo.current.getBoundingClientRect().height) : setHeight(0);
@@ -93,6 +103,12 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 							}
 							{
 								linkTo === 'vending' ? <img src={currentItem.image} alt="mixtureImage" width={400} height={400} /> : ''
+							}
+						</div>
+						<div className={styles.pagesCooking}>
+							<h2 className={`${styles.cookingTitle} title`}>Как готовить?</h2>
+							{
+								isFieldVisible(linkTo)
 							}
 						</div>
 					</div>
