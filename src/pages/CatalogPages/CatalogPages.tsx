@@ -23,8 +23,7 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 	const scroll = useScroll();
 
 	React.useEffect(() => {
-		setHeight(refPagesInfo.current.getBoundingClientRect().height);
-		console.log(height);
+		refPagesInfo.current !== null ? setHeight(refPagesInfo.current.getBoundingClientRect().height) : setHeight(0);
 	}, [refPagesInfo])
 
 	if (!currentItem) {
@@ -48,8 +47,8 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 					</div>
 				</div>
 			</div>
-			<div className={styles.pagesInfo}>
-				<div className={`${styles.pagesScroll} ${scroll > (height + 80) ? styles.fixed : ''}`}>
+			<div className={styles.pagesInfoBlock}>
+				<div className={`${styles.pagesScroll} ${scroll > (height + 200) ? styles.fixed : ''}`}>
 					<div className="container">
 						<div className={`${styles.pagesScrollBody} ${linkTo === 'coffe' ? '' : styles.otherScroll}`}>
 							<button className={`${styles.scrollButton} buttonTransition`}>Описание</button>
@@ -59,7 +58,47 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 						</div>
 					</div>
 				</div>
+				<div className={styles.pagesInfo}>
+					<div className="container">
+						{
+							linkTo === 'coffe'
+								? <div className={styles.pagesCharact}>
+									<h3 className={styles.charactTitle}>Характеристики</h3>
+									<ul className={styles.charactBody}>
+										<li className={styles.charactItem}>
+											<h4 className={styles.charactName}>Страна:</h4>
+											<span>{currentItem.country}</span>
+										</li>
+										<li className={styles.charactItem}>
+											<h4 className={styles.charactName}>Способ обработки:</h4>
+											<span>{currentItem.processing}</span>
+										</li>
+										<li className={styles.charactItem}>
+											<h4 className={styles.charactName}>Вид кофе:</h4>
+											<span>{currentItem.type}</span>
+										</li>
+									</ul>
+								</div>
+								: ''
+						}
+						<div className={styles.pagesDesc}>
+							<p>Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.
+								Задача организации, в особенности же рамки и место обучения кадров способствует подготовки
+								и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития.
+								Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.
+								С другой стороны реализация намеченных плановых заданий требуют от нас анализа существенных финансовых и административных условий.
+							</p>
+							{
+								currentItem.mixtureImage ? <img src={currentItem.mixtureImage} alt="mixtureImage" width={400} height={400} /> : ''
+							}
+							{
+								linkTo === 'vending' ? <img src={currentItem.image} alt="mixtureImage" width={400} height={400} /> : ''
+							}
+						</div>
+					</div>
+				</div>
 			</div>
+
 			<Footer bgInfo='transition' />
 		</>
 	);
