@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import { CardsItem, Footer, Header, HowCooking } from '../../component';
+import { CardsItem, Footer, Header, HowCooking, Reviews } from '../../component';
 import { catalogPagesProps } from './CatalogPages.props';
 import styles from "./CatalogPages.module.scss";
 
@@ -22,7 +22,7 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 	const [height, setHeight] = React.useState(0);
 	const scroll = useScroll();
 
-	const isFieldVisible = (field: string): JSX.Element => {
+	const howCookingVisible = (field: string): JSX.Element => {
 		const rules = {
 			coffe: <HowCooking />,
 			tea: <p className={styles.howCooking}>Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития ленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития</p>,
@@ -60,10 +60,9 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 			<div className={styles.pagesInfoBlock}>
 				<div className={`${styles.pagesScroll} ${scroll > (height + 200) ? styles.fixed : ''}`}>
 					<div className="container">
-						<div className={`${styles.pagesScrollBody} ${linkTo === 'coffe' ? '' : styles.otherScroll}`}>
+						<div className={`${styles.pagesScrollBody} ${styles.otherScroll}`}>
 							<button className={`${styles.scrollButton} buttonTransition`}>Описание</button>
 							<button className={`${styles.scrollButton} buttonTransition`}>Как готовить?</button>
-							{linkTo === 'coffe' ? <button className={`${styles.scrollButton} buttonTransition`}>Дополнительно</button> : ''}
 							<button className={`${styles.scrollButton} buttonTransition`}>Отзывы</button>
 						</div>
 					</div>
@@ -108,8 +107,14 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 						<div className={styles.pagesCooking}>
 							<h2 className={`${styles.cookingTitle} title`}>Как готовить?</h2>
 							{
-								isFieldVisible(linkTo)
+								howCookingVisible(linkTo)
 							}
+						</div>
+						<div className={styles.pagesReviews}>
+							<h2 className="titl">Отзывы</h2>
+							<div className={styles.reviewsBody}>
+								<Reviews />
+							</div>
 						</div>
 					</div>
 				</div>

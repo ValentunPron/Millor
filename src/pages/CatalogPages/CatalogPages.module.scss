@@ -104,9 +104,25 @@
 		img {
 			border-radius: 20px;
 		}
+		&::after, &::before {
+			position: absolute;
+			content: '';
+			width: 100vw;
+			height: 0.5px;
+			background-color: #B3B3B3;;
+			bottom: 0px;
+		}
+		&::before {
+			right: 0;
+		}
+		&::after {
+			left: 0;
+		}
 	}
 	.pagesCooking {
+		position: relative;
 		margin-top: 50px;
+		padding-bottom: 100px;
 		.cookingTitle {
 			margin-bottom: 60px;
 		}
@@ -115,6 +131,20 @@
 			line-height: 130%;
 			max-width: 1110px;
 			color: #222222;
+		}
+		&::after, &::before {
+			position: absolute;
+			content: '';
+			width: 100vw;
+			height: 0.5px;
+			background-color: #B3B3B3;;
+			bottom: 0px;
+		}
+		&::before {
+			right: 0;
+		}
+		&::after {
+			left: 0;
 		}
 	}
 }
@@ -186,6 +216,7 @@
 		}
 		.pagesCooking {
 			margin-top: 40px;
+			padding-bottom: 80px;
 			.cookingTitle {
 				margin-bottom: 35px;
 			}
@@ -323,6 +354,7 @@
 		}
 		.pagesCooking {
 			margin-top: 30px;
+			padding-bottom: 30px;
 			.cookingTitle {
 				margin-bottom: 30px;
 			}
