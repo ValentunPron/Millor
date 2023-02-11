@@ -12,7 +12,9 @@ export const CoffePages = (): JSX.Element => {
 	const test: any = useSelector(({ coffe, catalogItem }: any) => {
 		return {
 			coffe: coffe.items,
-			catalogItem: catalogItem.items,
+			tea: catalogItem.items,
+			eating: catalogItem.items,
+			vending: catalogItem.items
 		}
 	});
 
