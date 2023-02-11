@@ -15,7 +15,6 @@ import { SortBy } from "./SortBy/SortBy";
 import { CoffeItem } from "./CatalogItems/CoffeItem/CoffeItem";
 import { CoffePages } from "./CatalogPages/CoffePages";
 import { CatalogItem } from "./CatalogItems/CatalogItem/CatalogItem";
-import { VendingItem } from "./CatalogItems/VendingItem/VendingItem";
 import { CardsItem } from "./CardsItem/CardsItem";
 import { HowCooking } from "./HowCooking/HowCooking";
 import { Reviews } from "./Reviews/Reviews";
@@ -23,5 +22,5 @@ import { Reviews } from "./Reviews/Reviews";
 export {
 	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsItem, NewsMain, Footer,
 	WorkingWindow, Filter, Spoiler, CategoryButton, RadioButton, SortBy, CoffePages,
-	CoffeItem, CatalogItem, VendingItem, CardsItem, HowCooking, Reviews
+	CoffeItem, CatalogItem, CardsItem, HowCooking, Reviews
 }

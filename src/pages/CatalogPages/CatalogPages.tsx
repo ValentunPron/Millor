@@ -3,6 +3,7 @@ import { Link, Navigate } from 'react-router-dom';
 import { CardsItem, Footer, Header, HowCooking, Reviews } from '../../component';
 import { catalogPagesProps } from './CatalogPages.props';
 import styles from "./CatalogPages.module.scss";
+import { ReviewsProps } from '../../component/Reviews/Reviews.props';
 
 const useScroll = () => {
 	const [scroll, setScroll] = React.useState(window.pageYOffset);
@@ -16,6 +17,7 @@ const useScroll = () => {
 	}, []);
 	return scroll;
 }
+
 
 export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 	const refPagesInfo = React.createRef<any>();
@@ -39,6 +41,7 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 	if (!currentItem) {
 		return <Navigate to='/notFound' />
 	}
+
 	return (
 		<>
 			<Header headerActive={true} />
@@ -110,17 +113,21 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 								howCookingVisible(linkTo)
 							}
 						</div>
-						<div className={styles.pagesReviews}>
-							<h2 className="titl">Отзывы</h2>
+					</div>
+					<div className={styles.pagesReviews}>
+						<div className="container">
+							<h2 className="title">Отзывы</h2>
 							<div className={styles.reviewsBody}>
-								<Reviews />
+								{
+									currentItem.ratingList.map((item: ReviewsProps, index: number) => <Reviews key={index} {...item} />)
+								}
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<Footer bgInfo='transition' />
+			<Footer />
 		</>
 	);
 }

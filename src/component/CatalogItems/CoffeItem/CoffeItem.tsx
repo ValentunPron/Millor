@@ -40,6 +40,11 @@ export const CoffeItem = ({ currentCoffe }: CoffeItemProps): JSX.Element => {
 		"Новий урожай": <span>Новый урожай</span>,
 	}
 
+	const ratingCalc = () => {
+		const sum = currentCoffe.ratingList.reduce((acc, item) => acc + item.rating, 0);
+		return (sum / currentCoffe.ratingList.length);
+	};
+
 	return (
 		<div className={styles.coffeItem}>
 			<div>
@@ -52,12 +57,22 @@ export const CoffeItem = ({ currentCoffe }: CoffeItemProps): JSX.Element => {
 				<div className={styles.description}>
 					<Link onClick={() => window.scroll(0, 0)} to={`/coffe/${currentCoffe.id}`}> <img className={styles.descriptionImage} src={currentCoffe.image} alt={currentCoffe.name} width={160} height={300} /></Link>
 					<div className={styles.descriptionInfo}>
-						<div className={styles.rating}>
-							<div>
-								{checkStart(currentCoffe.rating)}
-							</div>
-							<p>{Number.isInteger(currentCoffe.rating) ? currentCoffe.rating + '.0' : currentCoffe.rating}<span>({currentCoffe.feedback} відгука)</span></p>
-						</div>
+						{
+							currentCoffe.ratingList.length > 0
+								? <div className={styles.rating}>
+									<div>
+
+										{checkStart(ratingCalc())}
+									</div>
+									<p>{Number.isInteger(ratingCalc()) ? ratingCalc() + '.0' : ratingCalc().toFixed(1)}<span>({currentCoffe.ratingList.length} відгука)</span></p>
+								</div>
+								: <div className={styles.rating}>
+									<div>
+										{checkStart(0)}
+									</div>
+									<p>{Number.isInteger(0)}<span>({0} відгука)</span></p>
+								</div>
+						}
 						<div className={styles.roasting}>
 							{checkRoasting(currentCoffe.roasting)}
 						</div>

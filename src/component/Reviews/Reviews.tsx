@@ -13,29 +13,29 @@ const checkStart = (rating: number) => {
 		</svg>);
 }
 
-export const Reviews = ({ }: ReviewsProps) => {
+export const Reviews = ({ title, date, rating, description, user }: ReviewsProps) => {
 	return (
 		<div className={styles.reviewsItem}>
 			<div className={styles.reviewsContainer}>
 				<div className={styles.reviewsBody}>
 					<span className={styles.reviewsQuotes}>“”</span>
 					<div className={styles.reviewsTop}>
-						<h3 className={styles.reviewsTitle}>Отличный вкус!</h3>
-						<time className={styles.reviewsData}>21.12.2020</time>
+						<h3 className={styles.reviewsTitle}>{title}!</h3>
+						<time className={styles.reviewsData}>{date}</time>
 					</div>
 					<div className={styles.reviewsStars}>
-						{checkStart(4)}
+						{checkStart(rating)}
 					</div>
-					<p className={styles.reviewsDesc}>Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.</p>
+					<p className={styles.reviewsDesc}>{description}</p>
 				</div>
 			</div>
 			<div className={styles.reviewsBottom}>
 				<div className={styles.reviewsContainer}>
 					<div className={styles.reviewsUser}>
-						<img src={image01} alt="avatar" width={70} height={70} />
+						<img src={user.avatar} alt="avatar" width={70} height={70} />
 						<div className={styles.userContent}>
-							<span className={styles.userName}>Ирина</span>
-							<span className={styles.userCity}>м. Київ</span>
+							<span className={styles.userName}>{user.name}</span>
+							<span className={styles.userCity}>м. {user.city}</span>
 						</div>
 					</div>
 				</div>

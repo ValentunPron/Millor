@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Footer, Header, SortBy, VendingItem } from '../../component';
+import { CatalogItem, Footer, Header, SortBy } from '../../component';
 import imageVending from '../../assets/image/Vending/vendingImage.png';
 import filterImage01 from '../../assets/image/Vending/vendingCoffe.jpg';
 
@@ -100,7 +100,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 									vending.length > 0 ?
 										vending.map((coffeItem: any, index: number) => {
 											if (index < count) {
-												return <VendingItem key={`vending_${coffeItem.id}`} currentItem={coffeItem} />
+												return <CatalogItem key={`vending_${coffeItem.id}`} currentItem={coffeItem} link={'vending'} />
 											} else {
 												return null;
 											}

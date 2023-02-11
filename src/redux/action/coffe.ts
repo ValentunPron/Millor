@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { CoffeItemProps } from '../../component/CatalogItems/CoffeItem/CoffeItem.props';
 
 const mySort: any = {
 	types: [],
@@ -7,16 +8,19 @@ const mySort: any = {
 
 export const fetchCoffe = () => (dispatch: Function) => {
 	dispatch(setLoaded(false));
-	//https://63b42226ea89e3e3db573ace.mockapi.io/coffe
-	axios(`/db.json`).then(({ data }) => {
+	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/coffen`).then(({ data }) => {
 		dispatch(setCoffe(data.coffe));
 	})
 }
 
 export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: { type: string, value: string | number }) => (dispatch: Function) => {
-
-	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/coffe?sortBy=${sortBy.type}&order=${sortBy.order}`)
+	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/coffe`)
 		.then(({ data }) => {
+			console.log(data);
+			if (sortBy.type === 'rating') {
+				const ratingCalc = (coffeItem: any) => coffeItem.ratingList.reduce((acc: number, item: { rating: number }) => acc + item.rating, 0) / (coffeItem.ratingList.length || 1);
+				data.sort((coffe1: CoffeItemProps, coffe2: CoffeItemProps) => ratingCalc(coffe2) - ratingCalc(coffe1));
+			}
 			if (sortRadio.type !== 'all') {
 				if (mySort.types.length === 0) {
 					mySort.types.push(sortRadio.type);

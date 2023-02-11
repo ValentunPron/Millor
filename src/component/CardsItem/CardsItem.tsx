@@ -50,6 +50,11 @@ export const CardsItem = ({ currentItem, linkTo }: any) => {
 	const [count, setCount] = React.useState(1);
 	const width = useWidthSize();
 
+	const ratingCalc = () => {
+		const sum = currentItem.ratingList.reduce((acc: number, item: { rating: number }) => acc + item.rating, 0);
+		return (sum / currentItem.ratingList.length);
+	};
+
 	return (
 		<div className={`${styles.pagesCards} ${linkTo === 'coffe' ? '' : styles.cardsAdaptive}`}>
 			<div className={styles.cardsImageBlock}>
@@ -78,10 +83,10 @@ export const CardsItem = ({ currentItem, linkTo }: any) => {
 						}
 					</div>
 					<div className={styles.cardsRaiting}>
-						<div className={styles.cardsStars}>{checkStart(currentItem.rating)}</div>
+						<div className={styles.cardsStars}>{checkStart(ratingCalc())}</div>
 						<div className={styles.cardsRaitingBlock}>
-							<span className={styles.cardsNumberRaiting}>{currentItem.rating}</span>
-							<span className={styles.cardsFeedback}>({currentItem.feedback} відгука)</span>
+							<span className={styles.cardsNumberRaiting}>{ratingCalc().toFixed(1)}</span>
+							<span className={styles.cardsFeedback}>({currentItem.ratingList.length} відгука)</span>
 						</div>
 					</div>
 				</div>

@@ -16,14 +16,19 @@ export const VendingItem = ({ currentItem }: VendingItemProps): JSX.Element => {
 			</svg>);
 	}
 
+	const ratingCalc = () => {
+		const sum = currentItem.ratingList.reduce((acc, item) => acc + item.rating, 0);
+		return (sum / currentItem.ratingList.length);
+	};
+
 	return (
 		<div className='catalogItem vendingItem'>
 			<div className={`itemTop`}>
 				<div className='itemRating'>
 					<div className='itemStars'>
-						{checkStart(currentItem.rating)}
+						{checkStart(ratingCalc())}
 					</div>
-					<p>{Number.isInteger(currentItem.rating) ? currentItem.rating + '.0' : currentItem.rating}<span>({currentItem.feedback} відгука)</span></p>
+					<p>{Number.isInteger(ratingCalc()) ? ratingCalc() + '.0' : ratingCalc().toFixed(1)}<span>({currentItem.ratingList.length} відгука)</span></p>
 				</div>
 				<Poput activeItem={currentItem.poputInfo.poputActive} items={currentItem.poputInfo.poputSizes} mass={currentItem.poputInfo.poputMass} />
 			</div>
