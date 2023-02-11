@@ -5,7 +5,7 @@ import { CatalogItem, Footer, Header, SortBy, } from '../../component';
 import mainImage from '../../assets/image/MainCatalog/04.png'
 
 import { useDispatch, useSelector } from 'react-redux';
-import { filterEating, setLoaded } from '../../redux/action/eating';
+import { filterCatologItem, setLoaded } from '../../redux/action/catalogItem';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
 
@@ -32,10 +32,10 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 
-	const { eating, isLoaded, sortBy, sortRadio } = useSelector(({ filter, eating }: any) => {
+	const { catalogItem, isLoaded, sortBy, sortRadio } = useSelector(({ filter, catalogItem }: any) => {
 		return {
-			eating: eating.items,
-			isLoaded: eating.isLoaded,
+			catalogItem: catalogItem.items,
+			isLoaded: catalogItem.isLoaded,
 			sortBy: filter.sortBy,
 			sortRadio: filter.sortRadio,
 		}
@@ -46,7 +46,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
-			dispatch(filterEating(sortBy, sortRadio));
+			dispatch(filterCatologItem(sortBy, sortRadio, 'https://63d14d40120b32bbe8f59c99.mockapi.io/eating'));
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -96,8 +96,8 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 							{
 								isLoaded
 									?
-									eating.length > 0 ?
-										eating.map((eatingItem: any, index: number) => {
+									catalogItem.length > 0 ?
+										catalogItem.map((eatingItem: any, index: number) => {
 											if (index < count) {
 												return <CatalogItem key={`eating__${eatingItem.id}`} currentItem={eatingItem} link={'eating'} />
 											} else {
@@ -110,7 +110,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 							}
 						</div>
 						{
-							eating.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
+							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
 						}
 					</div>
 				</div>

@@ -4,9 +4,9 @@ const initialState = {
 }
 
 
-export const vending = (state = initialState, action: { type: string, payload: any }) => {
+export const catalogItem = (state = initialState, action: { type: string, payload: any }) => {
 	switch (action.type) {
-		case 'SET_VENDING':
+		case 'SET_CATALOGITEM':
 			return {
 				...state,
 				items: action.payload,

@@ -8,13 +8,13 @@ const mySort: any = {
 
 export const fetchCoffe = () => (dispatch: Function) => {
 	dispatch(setLoaded(false));
-	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/coffen`).then(({ data }) => {
-		dispatch(setCoffe(data.coffe));
+	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/coffe`).then(({ data }) => {
+		dispatch(setCoffe(data));
 	})
 }
 
 export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: { type: string, value: string | number }) => (dispatch: Function) => {
-	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/coffe`)
+	axios(`https://63b42226ea89e3e3db573ace.mockapi.io/coffe?sortBy=${sortBy.type}&order=${sortBy.order}`)
 		.then(({ data }) => {
 			console.log(data);
 			if (sortBy.type === 'rating') {

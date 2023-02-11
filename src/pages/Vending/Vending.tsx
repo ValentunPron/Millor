@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom';
 
 import { CatalogItem, Footer, Header, SortBy } from '../../component';
 import imageVending from '../../assets/image/Vending/vendingImage.png';
-import filterImage01 from '../../assets/image/Vending/vendingCoffe.jpg';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
-import { filterVending, setLoaded } from '../../redux/action/vending';
+import { filterCatologItem, setLoaded } from '../../redux/action/catalogItem';
 
 interface teaInterface {
 	namePages: string
@@ -35,10 +34,10 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 
-	const { vending, isLoaded, sortBy, sortRadio } = useSelector(({ filter, vending }: any) => {
+	const { catalogItem, isLoaded, sortBy, sortRadio } = useSelector(({ filter, catalogItem }: any) => {
 		return {
-			vending: vending.items,
-			isLoaded: vending.isLoaded,
+			catalogItem: catalogItem.items,
+			isLoaded: catalogItem.isLoaded,
 			sortBy: filter.sortBy,
 			sortRadio: filter.sortRadio,
 		}
@@ -47,7 +46,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
-			dispatch(filterVending(sortBy, sortRadio));
+			dispatch(filterCatologItem(sortBy, sortRadio, 'https://63d14d40120b32bbe8f59c99.mockapi.io/vending'));
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -97,8 +96,8 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 							{
 								isLoaded
 									?
-									vending.length > 0 ?
-										vending.map((coffeItem: any, index: number) => {
+									catalogItem.length > 0 ?
+										catalogItem.map((coffeItem: any, index: number) => {
 											if (index < count) {
 												return <CatalogItem key={`vending_${coffeItem.id}`} currentItem={coffeItem} link={'vending'} />
 											} else {
@@ -111,7 +110,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 							}
 						</div>
 						{
-							vending.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
+							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
 						}
 					</div>
 				</div>

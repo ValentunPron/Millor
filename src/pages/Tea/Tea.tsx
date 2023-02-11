@@ -5,7 +5,7 @@ import { Footer, Header, SortBy, CatalogItem } from '../../component';
 import imageTea from '../../assets/image/tea.png';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { filterTea, setLoaded } from '../../redux/action/tea';
+import { filterCatologItem, setLoaded } from '../../redux/action/catalogItem';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
 
@@ -35,10 +35,10 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 
-	const { tea, isLoaded, sortBy, sortRadio } = useSelector(({ filter, tea }: any) => {
+	const { catalogItem, isLoaded, sortBy, sortRadio } = useSelector(({ filter, catalogItem }: any) => {
 		return {
-			tea: tea.items,
-			isLoaded: tea.isLoaded,
+			catalogItem: catalogItem.items,
+			isLoaded: catalogItem.isLoaded,
 			sortBy: filter.sortBy,
 			sortRadio: filter.sortRadio,
 		}
@@ -47,7 +47,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
-			dispatch(filterTea(sortBy, sortRadio));
+			dispatch(filterCatologItem(sortBy, sortRadio, 'https://63b42226ea89e3e3db573ace.mockapi.io/tea'));
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -97,8 +97,8 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 							{
 								isLoaded
 									?
-									tea.length > 0 ?
-										tea.map((teaItem: any, index: number) => {
+									catalogItem.length > 0 ?
+										catalogItem.map((teaItem: any, index: number) => {
 											if (index < count) {
 												return <CatalogItem key={`tea_${teaItem.id}`} currentItem={teaItem} link={'tea'} />
 											}
@@ -109,7 +109,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 							}
 						</div>
 						{
-							tea.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
+							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
 						}
 					</div>
 				</div>

@@ -1,5 +1,3 @@
-import { catalogItemProps } from './CatalogItem.props';
-
 import { Poput } from '../../Poput/Poput';
 import { Link } from 'react-router-dom';
 
