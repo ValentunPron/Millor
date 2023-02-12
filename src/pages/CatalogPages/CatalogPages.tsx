@@ -119,7 +119,7 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 							<h2 className="title">Отзывы</h2>
 							<div className={styles.reviewsBody}>
 								{
-									currentItem.ratingList > 0
+									currentItem.ratingList.length > 0
 										? currentItem.ratingList.map((item: ReviewsProps, index: number) => <Reviews key={index} {...item} />)
 										:
 										<div className={styles.reviewsZero}>
