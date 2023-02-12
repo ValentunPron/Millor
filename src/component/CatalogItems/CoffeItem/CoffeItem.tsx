@@ -70,7 +70,7 @@ export const CoffeItem = ({ currentCoffe }: CoffeItemProps): JSX.Element => {
 									<div>
 										{checkStart(0)}
 									</div>
-									<p>{Number.isInteger(0)}<span>({0} відгука)</span></p>
+									<p>0<span>({0} відгука)</span></p>
 								</div>
 						}
 						<div className={styles.roasting}>

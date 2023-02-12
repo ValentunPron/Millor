@@ -22,12 +22,21 @@ export const CatalogItem = ({ currentItem, link }: any): JSX.Element => {
 	return (
 		<div className={`catalogItem ${link === 'vending' ? 'vendingItem' : ''}`}>
 			<div className={`itemTop ${currentItem.discount ? 'discount' : ''}`}>
-				<div className='itemRating'>
-					<div className='itemStars'>
-						{checkStart(ratingCalc())}
-					</div>
-					<p>{Number.isInteger(ratingCalc()) ? ratingCalc() + '.0' : ratingCalc().toFixed(1)}<span>({currentItem.ratingList.length} відгука)</span></p>
-				</div>
+				{
+					currentItem.ratingList.length > 0
+						? <div className='itemRating'>
+							<div className='itemStars'>
+								{checkStart(ratingCalc())}
+							</div>
+							<p>{Number.isInteger(ratingCalc()) ? ratingCalc() + '.0' : ratingCalc().toFixed(1)}<span>({currentItem.ratingList.length} відгука)</span></p>
+						</div>
+						: <div className='itemRating'>
+							<div className='itemStars'>
+								{checkStart(0)}
+							</div>
+							<p>0<span>({currentItem.ratingList.length} відгука)</span></p>
+						</div>
+				}
 				<Poput activeItem={currentItem.poputInfo.poputActive} items={currentItem.poputInfo.poputSizes} mass={currentItem.poputInfo.poputMass} />
 			</div>
 			<div className='itemImage'>

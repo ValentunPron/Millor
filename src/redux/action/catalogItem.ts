@@ -11,7 +11,9 @@ export const fetchCatalogItem = (link: string) => (dispatch: Function) => {
 
 export const filterCatologItem = (sortBy: { type: string, order: string }, sortRadio: { type: string, name: string }, link: string) => (dispatch: Function) => {
 	dispatch(setLoaded(false));
-	axios(`${link}?${sortBy.type}&order=${sortBy.order}&${sortRadio.type}=${sortRadio.name}`).then(({ data }) => {
+	console.log(sortRadio.name);
+	axios(`${link}?type=${sortRadio.name ? sortRadio.name : ''}&sortBy=${sortBy.type}&order=${sortBy.order}`).then(({ data }) => {
+		console.log(sortRadio.name);
 		dispatch(setEating(data));
 	});
 }

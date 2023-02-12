@@ -429,33 +429,43 @@
 			},
 			"ratingList": [
 				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
+					"title": "Фанат чаю", 
+					"rating": 5, "date": "25.12.2022",
+					"description": "Чай найкращий витвір бога",
 					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
+						"avatar": "data:image/jpeg;base64,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",
+						"name": "Чайоман",
+						"city": "Луцьк"
 					}
 				 },
 				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
+					"title": "Хороший чай", 
+					"rating": 4, "date": "11.12.2020",
+					"description": "Мені подобається різноманітність смаків цього чаю",
 					"user": {
 						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
+						"name": "Андрій",
+						"city": "Варшава"
 					}
 				 },
 				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
+					"title": "Ну не найкраший чай", 
+					"rating": 2, "date": "11.10.2021",
+					"description": "Скажу відверто, мені не дуже довподоби цей чай",
 					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
+						"avatar": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/Reviews/01.jpg",
+						"name": "Євлампій",
+						"city": "Терноміль"
+					}
+				 },
+				 {
+					"title": "Звичайний чай", 
+					"rating": 3, "date": "11.02.2023",
+					"description": "Нічого немає особливого в цього чаю",
+					"user": {
+						"avatar": "https://media.slovoidilo.ua/media/cache/person_thumb_exx/uploads/persons/origin/Po/Poroshenko-Petr-Alekseevich_origin.png",
+						"name": "Петро",
+						"city": "Черкаси"
 					}
 				 }
 			],
@@ -478,33 +488,13 @@
 			},
 			"ratingList": [
 				{
-					"title": "Фанат кави", 
+					"title": "Гірковатий", 
 					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
+					"description": "Мені не подобається смак чаю, він для мене занадто гіркий",
 					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
+						"avatar": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/Reviews/01.jpg",
+						"name": "Олександра",
+						"city": "Черкаси"
 					}
 				 }
 			],
@@ -525,36 +515,6 @@
 				"poputMass": "гр."
 			},
 			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
 			],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item08.png",
 			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
@@ -573,38 +533,7 @@
 				"poputSizes": [ 250, 500, 1000],
 				"poputMass": "гр."
 			},
-			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
-			],
+			"ratingList": [],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item04.png",
 			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 3.7,
@@ -625,34 +554,14 @@
 			"ratingList": [
 				{
 					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
+					"rating": 1, "date": "21.02.2022",
+					"description": "Не рекомундую цей чай. І взагалі всім рекомендую перейти на каву, тому що він краще підбадьорює",
 					"user": {
 						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
 						"name": "Кавоман",
 						"city": "Київ"
 					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
+				}
 			],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item09.png",
 			"rating": 3.7,
@@ -670,38 +579,7 @@
 				"poputSizes": [500, 1000],
 				"poputMass": "гр."
 			},
-			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
-			],
+			"ratingList": [],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item03.png",
 			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 0,
@@ -721,33 +599,23 @@
 			},
 			"ratingList": [
 				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
+					"title": "Чай сподобався", 
+					"rating": 5, "date": "30.02.2020",
+					"description": "Чай – це неймовірно велика напій, яка здатна задовольнити бажання всіх відвідувачів. З понад 5000 різних сортів і великої кількості можливостей замішування, чай може бути задовольнительним для будь-якого відвідувача. Він може бути замішаний з цукром, молоком, лимоном, йогуртом, або навіть ваніллю, щоб здатися ще більш вражаючим. Також є багато здорових переваг чаю, включаючи захист від ряду хвороб, захист від стресу, підвищення енергії та продуктивності, зменшення ризику ряду захворювань серця та захист від раку. Все це робить чай неймовірно важливим і відомим напоєм в усьому світі",
 					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
+						"avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/BChmielnicki.jpg/274px-BChmielnicki.jpg",
+						"name": "Богдан",
+						"city": "Полтава"
 					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
+				},
+				{
+					"title": "Нічого особливого", 
+					"rating": 3, "date": "21.05.2021",
+					"description": "Чай звичайний, нічого відмінного, як описував Богдан",
 					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
+						"avatar": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/Reviews/01.jpg",
+						"name": "Максим",
 						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
 					}
 				 }
 			],
@@ -769,20 +637,10 @@
 				"poputMass": "гр."
 			},
 			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
 				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
+					"title": "Не дуже сподобалася", 
+					"rating": 3, "date": "21.12.2022",
+					"description": "Гірковий чай, і після нього в роті неприємний смай",
 					"user": {
 						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
 						"name": "Саша",
@@ -790,9 +648,9 @@
 					}
 				 },
 				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
+					"title": "Відгук про чай", 
+					"rating": 4, "date": "11.10.2022",
+					"description": "Часто вранці п’ють цей чай",
 					"user": {
 						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
 						"name": "Уляна",
@@ -817,38 +675,7 @@
 				"poputSizes": [250, 500, 1000],
 				"poputMass": "гр."
 			},
-			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
-			],
+			"ratingList": [],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/item05.jpg",
 			"mixtureImage": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/mixture01.png",
 			"rating": 3.7,
@@ -868,33 +695,13 @@
 			},
 			"ratingList": [
 				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
+					"title": "Рекомендую чай, але є но", 
+					"rating": 4, "date": "19.05.2021",
+					"description": "Чай – це прекрасний напій, який дає мені бажану дозу енергії для весь день. Я завжди знаходжу у себе задоволення, коли переглядаю відчуття тепла у своїх руках та відчуваю аромат свіжовареного чаю. Однак, мені здається, що деякі види чаю дуже гіркі. Це зупиняє мене від повного насолодження цим напоєм, але не зовсім відбуває від моїх позитивних вражень про чай",
 					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
+						"avatar": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/Reviews/01.jpg",
+						"name": "Іванка",
+						"city": "Кривий Ріг"
 					}
 				 }
 			],
@@ -918,34 +725,14 @@
 				"poputMass": "кг."
 			},
 			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
 				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
+					"title": "Нічого особливого", 
+					"rating": 2, "date": "15.12.2022",
+					"description": "Така собі кава",
 					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
+						"avatar": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/Reviews/01.jpg",
+						"name": "Вадим",
+						"city": "Полтава"
 					}
 				 }
 			],
@@ -965,33 +752,13 @@
 			},
 			"ratingList": [
 				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
+					"title": "Ну...", 
+					"rating": 3, "date": "10.12.2022",
+					"description": "Ну трохи за міцна, але так пити можна",
 					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
+						"avatar": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/Reviews/01.jpg",
+						"name": "Андрій",
+						"city": "Львів"
 					}
 				 }
 			],
@@ -1009,38 +776,7 @@
 				"poputSizes": [ 5, 10, 50],
 				"poputMass": "кг."
 			},
-			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
-			],
+			"ratingList": [],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item03.jpg",
 			"rating": 0,
 			"feedback": 0,
@@ -1055,38 +791,7 @@
 				"poputSizes": [ 0.5, 1, 2],
 				"poputMass": "кг."
 			},
-			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
-			],
+			"ratingList": [],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item04.jpg",
 			"rating": 2,
 			"feedback": 1,
@@ -1101,38 +806,7 @@
 				"poputSizes": [ 0.5, 1, 2],
 				"poputMass": "кг."
 			},
-			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
-			],
+			"ratingList": [],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item05.jpg",
 			"rating": 5,
 			"feedback": 3,
@@ -1149,33 +823,13 @@
 			},
 			"ratingList": [
 				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
+					"title": "Дітям сподобалося", 
+					"rating": 5, "date": "20.05.2022",
+					"description": "Купила це какао, бо мої діти дуже люблять його пити, і що можу сказати. Їм сподобалося",
 					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
+						"avatar": "https://upload.wikimedia.org/wikipedia/commons/a/aa/%D0%A1%D0%B5%D0%BC%D1%8C%D1%8F.jpg",
+						"name": "Ніка",
 						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
 					}
 				 }
 			],
@@ -1193,38 +847,7 @@
 				"poputSizes": [1,2],
 				"poputMass": "кг."
 			},
-			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
-			],
+			"ratingList": [],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item07.jpg",
 			"rating": 4.1,
 			"feedback": 2,
@@ -1239,38 +862,7 @@
 				"poputSizes": [1,2],
 				"poputMass": "кг."
 			},
-			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
-			],
+			"ratingList": [],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/item08.jpg",
 			"rating": 4.2,
 			"feedback": 5,
@@ -1287,33 +879,13 @@
 			},
 			"ratingList": [
 				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
+					"title": "Хороша якість", 
+					"rating": 5, "date": "31.03.2022",
+					"description": "Рекомундую!",
 					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
+						"avatar": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/Reviews/01.jpg",
+						"name": "Валентин",
+						"city": "Одеса"
 					}
 				 }
 			],
@@ -1335,33 +907,13 @@
 			},
 			"ratingList": [
 				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
+					"title": "Рекомендую!", 
+					"rating": 5, "date": "21.04.2021",
+					"description": "Мені сподобалося",
 					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
+						"avatar": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/Reviews/01.jpg",
+						"name": "Андріана",
 						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
 					}
 				 }
 			],
@@ -1383,33 +935,13 @@
 			},
 			"ratingList": [
 				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
+					"title": "Відмінна якість", 
+					"rating": 5, "date": "20.06.2022",
+					"description": "Рекомундую цей ячмінь",
 					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
+						"avatar": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/Reviews/01.jpg",
+						"name": "Юра",
+						"city": "Харків"
 					}
 				 }
 			],
@@ -1429,38 +961,7 @@
 				"poputSizes": [500, 1000, 1500],
 				"poputMass": "гр."
 			},
-			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
-			],
+			"ratingList": [],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/item04.jpg",
 			"rating": 4,
 			"feedback": 2,
@@ -1477,38 +978,7 @@
 				"poputSizes": [50],
 				"poputMass": "гр."
 			},
-			"ratingList": [
-				{
-					"title": "Фанат кави", 
-					"rating": 5, "date": "21.02.2022",
-					"description": "Кава — ідеальне підбадьорення втомленого ранку)",
-					"user": {
-						"avatar": "https://m.gemini.ua/wp-content/uploads/2021/11/01.jpg",
-						"name": "Кавоман",
-						"city": "Київ"
-					}
-				 },
-				 {
-					"title": "Люблю каву", 
-					"rating": 5, "date": "21.12.2020",
-					"description": "Кава має такий заспокійливий і привабливий аромат",
-					"user": {
-						"avatar": "https://klike.net/uploads/posts/2020-06/1592202511_1.jpg",
-						"name": "Саша",
-						"city": "Івано-Франківськ"
-					}
-				 },
-				 {
-					"title": "Відгук про каву", 
-					"rating": 4, "date": "11.04.2022",
-					"description": "Часто вранці п’ють каву",
-					"user": {
-						"avatar": "https://st2.depositphotos.com/1000861/7741/i/450/depositphotos_77412900-stock-photo-happy-woman.jpg",
-						"name": "Уляна",
-						"city": "Варшава"
-					}
-				 }
-			],
+			"ratingList": [],
 			"image": "https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/item03.png",
 			"rating": 3,
 			"feedback": 2,

@@ -13,7 +13,7 @@ import { CategoryButton } from "./CategoryButton/CategoryButton";
 import { RadioButton } from "./RadioButton/RadioButton";
 import { SortBy } from "./SortBy/SortBy";
 import { CoffeItem } from "./CatalogItems/CoffeItem/CoffeItem";
-import { CoffePages } from "./CatalogPages/CoffePages";
+import { CatalogPagesItem } from "./CatalogPagesItem/CatalogPagesItem";
 import { CatalogItem } from "./CatalogItems/CatalogItem/CatalogItem";
 import { CardsItem } from "./CardsItem/CardsItem";
 import { HowCooking } from "./HowCooking/HowCooking";
@@ -21,6 +21,6 @@ import { Reviews } from "./Reviews/Reviews";
 
 export {
 	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsItem, NewsMain, Footer,
-	WorkingWindow, Filter, Spoiler, CategoryButton, RadioButton, SortBy, CoffePages,
+	WorkingWindow, Filter, Spoiler, CategoryButton, RadioButton, SortBy, CatalogPagesItem,
 	CoffeItem, CatalogItem, CardsItem, HowCooking, Reviews
 }

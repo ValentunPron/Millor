@@ -5,7 +5,7 @@ import { CatalogPages } from '../../pages';
 import { fetchCoffe } from '../../redux/action/coffe';
 import { fetchCatalogItem } from '../../redux/action/catalogItem';
 
-export const CoffePages = (): JSX.Element => {
+export const CatalogPagesItem = (): JSX.Element => {
 	const params = useParams();
 	const dispatch: Function = useDispatch();
 
