@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import { Filter, Footer, Header, CoffeItem } from '../../component';
 import imageCoffe from '../../assets/image/coffe.png';
@@ -80,7 +81,7 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 						<div className={styles.coffeBody}>
 							<div className='catalogLinks'>
 								<Link className='catalogLink' to="/">Головна</Link>
-								<Link className='catalogLink' onClick={() => window.scroll(0, 500)} to="/">Каталог товарів</Link>
+								<HashLink className='catalogLink' smooth to="/#catalog">Каталог товаров</HashLink>
 								<Link className='catalogLink' to="/coffe">{namePages}</Link>
 							</div>
 							<h1 className={`titlePages`}>{namePages}</h1>

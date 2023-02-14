@@ -7,6 +7,11 @@ import styles from './Contact.module.scss';
 
 export const Contact = (): JSX.Element => {
 	const [pages, setPages] = React.useState(true);
+
+	React.useEffect(() => {
+		window.scroll(0, 0);
+	}, [])
+
 	return (
 		<>
 			<Header headerActive={true} />

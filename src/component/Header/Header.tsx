@@ -5,6 +5,7 @@ import styles from './Header.module.scss';
 import { LoginWindow } from '../index'
 import { Seacrh } from './Search/Search';
 import logoSvg from '../../assets/image/logoSvg.svg'
+import { HashLink } from 'react-router-hash-link';
 
 export const Header = ({ headerActive = false, scrollTo }: any): JSX.Element => {
 
@@ -41,9 +42,9 @@ export const Header = ({ headerActive = false, scrollTo }: any): JSX.Element => 
 								</Link>
 							</div>
 							<ul className={styles.linksList}>
-								<li className='link'><Link onClick={() => { scrollTo(); setVisibleLinks(false) }} to='/'>Каталог товарів</Link></li>
-								<li className='link'><Link onClick={() => window.scroll(0, 0)} to="/blog">Блог</Link></li>
-								<li className='link'><Link to="/contact" onClick={() => window.scroll(0, 0)}>Контакти</Link></li>
+								<li className='link'><HashLink className='catalogLink' smooth to="/#catalog">Каталог товаров</HashLink></li>
+								<li className='link'><Link to="/blog">Блог</Link></li>
+								<li className='link'><Link to="/contact" >Контакти</Link></li>
 							</ul>
 							<div className={styles.burgerInfo}>
 								<ul className={styles.actionList}>

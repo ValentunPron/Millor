@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import { CardsItem, Footer, Header, HowCooking, Reviews } from '../../component';
-import { catalogPagesProps } from './CatalogPages.props';
+import { HashLink } from 'react-router-hash-link';
 import styles from "./CatalogPages.module.scss";
 import { ReviewsProps } from '../../component/Reviews/Reviews.props';
 
@@ -50,7 +50,7 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 					<div className={styles.pagesBody}>
 						<div className='catalogLinks'>
 							<Link className='catalogLink black' to="/">Головна</Link>
-							<Link className='catalogLink black' to="/">Каталог товаров</Link>
+							<HashLink className='catalogLink black' smooth to="/#catalog">Каталог товаров</HashLink>
 							<Link className='catalogLink black' to={`/${linkTo}`}>Свежеобжаренный кофе</Link>
 							<Link className='catalogLink black' to={`/${linkTo}/${currentItem.id}`}>{currentItem.name}</Link>
 						</div>

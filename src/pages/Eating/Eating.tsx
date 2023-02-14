@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { filterCatologItem, setLoaded } from '../../redux/action/catalogItem';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
+import { HashLink } from 'react-router-hash-link';
 
 interface teaInterface {
 	namePages: string
@@ -67,7 +68,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 					<div className='catalogBodyFilter'>
 						<div className='catalogLinks'>
 							<Link className='catalogLink' to="/">Головна</Link>
-							<Link className='catalogLink' to="/">Каталог товарів</Link>
+							<HashLink className='catalogLink' smooth to="/#catalog">Каталог товаров</HashLink>
 							<Link className='catalogLink' to="/eating">{namePages}</Link>
 						</div>
 						<h1 className={`titlePages`}>{namePages}</h1>

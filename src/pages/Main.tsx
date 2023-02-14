@@ -30,7 +30,7 @@ export const Main = (): JSX.Element => {
 		<>
 			<Header scrollTo={scrollCatalog} />
 			<MainSlider />
-			<div ref={refCatalog}>
+			<div ref={refCatalog} id='catalog'>
 				<CatalogMain />
 			</div>
 			<Discount coffe={items} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { Footer, Header, SortBy, CatalogItem } from '../../component';
 import imageTea from '../../assets/image/tea.png';
@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { filterCatologItem, setLoaded } from '../../redux/action/catalogItem';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
+import { HashLink } from 'react-router-hash-link';
 
 interface teaInterface {
 	namePages: string
@@ -68,7 +69,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 					<div className='catalogBodyFilter'>
 						<div className='catalogLinks'>
 							<Link className='catalogLink' to="/">Головна</Link>
-							<Link className='catalogLink' to="/">Каталог товарів</Link>
+							<HashLink className='catalogLink' smooth to="/#catalog">Каталог товаров</HashLink>
 							<Link className='catalogLink' to="/tea">{namePages}</Link>
 						</div>
 						<h1 className={`titlePages`}>{namePages}</h1>
