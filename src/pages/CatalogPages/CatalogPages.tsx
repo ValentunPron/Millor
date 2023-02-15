@@ -21,6 +21,7 @@ const useScroll = () => {
 
 export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 	const refPagesInfo = React.createRef<any>();
+
 	const [height, setHeight] = React.useState(0);
 	const scroll = useScroll();
 
@@ -64,9 +65,9 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 				<div className={`${styles.pagesScroll} ${scroll > (height + 200) ? styles.fixed : ''}`}>
 					<div className="container">
 						<div className={`${styles.pagesScrollBody} ${styles.otherScroll}`}>
-							<button className={`${styles.scrollButton} buttonTransition`}>Описание</button>
-							<button className={`${styles.scrollButton} buttonTransition`}>Как готовить?</button>
-							<button className={`${styles.scrollButton} buttonTransition`}>Отзывы</button>
+							<button onClick={() => window.scroll(0, 1200)} className={`${styles.scrollButton} buttonTransition`}>Описание</button>
+							<button onClick={() => window.scroll(0, 2100)} className={`${styles.scrollButton} buttonTransition`}>Как готовить?</button>
+							<button onClick={() => window.scroll(0, 2700)} className={`${styles.scrollButton} buttonTransition`}>Отзывы</button>
 						</div>
 					</div>
 				</div>

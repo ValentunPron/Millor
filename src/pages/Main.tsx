@@ -7,6 +7,7 @@ import image01 from '../assets/image/whyWe/bgCoffe.png';
 import listImage01 from '../assets/image/whyWe/01.svg';
 import listImage02 from '../assets/image/whyWe/02.svg';
 import { fetchCoffe } from '../redux/action/coffe';
+import { HashLink } from 'react-router-hash-link';
 
 export const Main = (): JSX.Element => {
 	const dispatch: Function = useDispatch();
@@ -21,14 +22,9 @@ export const Main = (): JSX.Element => {
 		dispatch(fetchCoffe());
 	}, []);
 
-	console.log(refCatalog.current);
-	const scrollCatalog = () => {
-		refCatalog.current.scrollIntoView(true);
-	};
-
 	return (
 		<>
-			<Header scrollTo={scrollCatalog} />
+			<Header />
 			<MainSlider />
 			<div ref={refCatalog} id='catalog'>
 				<CatalogMain />
@@ -82,13 +78,13 @@ export const Main = (): JSX.Element => {
 								<span />
 								Ми розкриваємо смак кожного сорту кави.
 							</p>
-							<button className='company__button button big' onClick={scrollCatalog}>Перейти в каталог</button>
+							<HashLink to='#catalog' className='company__button button big'>Перейти в каталог</HashLink>
 						</div>
 					</div>
 				</div>
 			</div>
 			<NewsMain />
-			<Footer bgInfo='mainPages' scrollTo={scrollCatalog} />
+			<Footer bgInfo='mainPages' />
 		</>
 	);
 }

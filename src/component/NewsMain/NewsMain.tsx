@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './NewsMain.module.scss';
 import image01 from '../../assets/image/News/01.jpg';
 import adaptive01 from '../../assets/image/News/adaptive_01.jpg';
+import { HashLink } from 'react-router-hash-link';
 
 const useWidthSize = () => {
 	const [width, setWidth] = React.useState(window.innerWidth);
@@ -31,7 +32,7 @@ export const NewsMain = ({ ...props }): JSX.Element => {
 				<div className={styles.newsBody}>
 					<div className={styles.newsTop}>
 						<h2 className="title">Новини компанії</h2>
-						<a className={`linkNext ${styles.newsLinkNext}`} href='s'>Читати все</a>
+						<HashLink className={`linkNext ${styles.newsLinkNext}`} to='/blog#blogNews'>Читати все</HashLink>
 					</div>
 					{
 						width > 780

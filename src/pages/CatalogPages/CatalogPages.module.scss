@@ -1,4 +1,5 @@
 .pages {
+	display: block;
 	position: relative;
 	padding-top: 40px;
 	&::after {
@@ -25,6 +26,7 @@
 .pagesScroll {
 	margin-top: 80px;
 	.pagesScrollBody {
+		text-align: center;
 		padding: 20px 0;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
