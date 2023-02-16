@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CartInfo, Footer, Header } from "../../component";
+import { CartDelivery, CartInfo, Footer, Header } from "../../component";
 import styles from "./Cart.module.scss";
 
 
@@ -22,6 +22,9 @@ export const Cart = (): JSX.Element => {
 					<div className={styles.cartBody}>
 						<div className={styles.cartTop}>
 							<CartInfo />
+						</div>
+						<div className={styles.cartDelivery}>
+							<CartDelivery />
 						</div>
 					</div>
 				</div>

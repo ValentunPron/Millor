@@ -120,6 +120,17 @@ body {
 	padding: 0 140px;
 }
 
+.inputButton {
+	padding: 23px 23px 23px 40px;
+
+	background: #F6F6F6;
+	border-radius: 5px;
+
+	font-size: 0.8rem;
+	line-height: 1.2;
+	color: #C9C9C9;
+}
+
 .buttonTransition {
 	padding: 15px 0;
 	background: #F6F6F6;
@@ -134,6 +145,17 @@ body {
 	&.active {
 		background: #FFF7E1;
 		border: 1px solid #F9B300;
+	}
+	&.yellow {
+		background: #FFF7E1;
+		border: 1px solid #F9B300;
+		&:hover {
+			background: #F6F6F6;
+			border: 1px solid #C9C9C9;
+		}
+		&:active {
+			transform: translateY(1px);
+		}
 	}
 	&:hover {
 		background: #FFF7E1;
@@ -379,6 +401,10 @@ body {
 			padding: 10px;
 		}
 	}
+	.inputButton {
+		font-size: 0.777rem;
+		padding: 16px 16px 16px 30px;
+	}
 	.buttonTransition {
 		padding: 10px 0px;
 	}
@@ -441,6 +467,10 @@ body {
 			font-size: calc(1rem + (1.5 - 1) * ((100vw - 400px) / (768 - 400)));
 		}
 	}
+	.inputButton {
+		font-size: 0.65rem;
+		padding: 25px 25px 25px 40px
+	}
 	.container {
 		padding: 0 15px;
 	}
@@ -484,6 +514,10 @@ body {
 		&.titleMiddle {
 			font-size: 0.9rem;;
 		}
+	}
+	.inputButton {
+		font-size: 0.8rem;
+		padding: 16px 16px 16px 30px
 	}
 	.buttonTransition {
 		padding: 10px 0;
