@@ -18,9 +18,10 @@ import { CatalogItem } from "./CatalogItems/CatalogItem/CatalogItem";
 import { CardsItem } from "./CardsItem/CardsItem";
 import { HowCooking } from "./HowCooking/HowCooking";
 import { Reviews } from "./Reviews/Reviews";
+import { CartInfo } from "./Cart/CartInfo/CartInfo";
 
 export {
 	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsItem, NewsMain, Footer,
 	WorkingWindow, Filter, Spoiler, CategoryButton, RadioButton, SortBy, CatalogPagesItem,
-	CoffeItem, CatalogItem, CardsItem, HowCooking, Reviews
+	CoffeItem, CatalogItem, CardsItem, CartInfo, HowCooking, Reviews
 }

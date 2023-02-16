@@ -7,5 +7,7 @@ import { Eating } from './Eating/Eating';
 import { Blog } from './Blog/Blog';
 import { CatalogPages } from './CatalogPages/CatalogPages';
 import { Contact } from './Contact/Contact';
+import { Cart } from './Cart/Cart';
 
-export { Main, Coffe, Tea, Vending, Eating, Blog, CatalogPages, Contact, NotFound };
+
+export { Main, Coffe, Tea, Vending, Eating, Blog, CatalogPages, Contact, Cart, NotFound };

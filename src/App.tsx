@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { Coffe, Main, Tea, NotFound, Vending, Eating, Blog, Contact } from './pages';
+import { Coffe, Main, Tea, NotFound, Vending, Eating, Blog, Contact, Cart } from './pages';
 import { CatalogPagesItem, WorkingWindow } from './component'
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
 					<Route path='/eating' element={<Eating namePages='Здоровое питание' />} />
 					<Route path='/blog' element={<Blog />} />
 					<Route path='/contact' element={<Contact />} />
+					<Route path='/basket' element={<Cart />} />
 
 					<Route path="*" element={<NotFound />} />
 				</Routes>

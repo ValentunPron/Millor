@@ -1,0 +1,30 @@
+.cart {
+	min-height: 200px;
+	padding-top: 40px;
+	margin-bottom: 50px;
+}
+
+.cartTop {
+	margin-top: 50px;
+}
+
+@media (max-width: 1400px) {
+	.cart {
+		padding-top: 30px;
+	}
+	.cartTop {
+		margin-top: 35px;
+	}
+}
+
+@media (max-width: 780px) {
+	.cartTop {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	.cartTop {
+		margin-top: 30px;
+	}
+}

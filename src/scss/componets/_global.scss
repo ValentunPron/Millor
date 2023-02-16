@@ -116,6 +116,10 @@ body {
 	padding: 0 15px;
 }
 
+.cart-container {
+	padding: 0 140px;
+}
+
 .buttonTransition {
 	padding: 15px 0;
 	background: #F6F6F6;
@@ -206,6 +210,24 @@ body {
 		min-width: 125px;
 		font-size: 0.7rem;
 		padding: 9px 10px;
+	}
+}
+
+.buttonOrange {
+	font-weight: 600;
+	font-size: 0.8rem;
+	line-height: 1.2;
+
+	padding: 10px 18px;
+	background: #FFF7E1;
+	border: 1px solid #F9B300;
+	border-radius: 5px;
+	transition: all .3s ease-in;
+
+	color: #F9B300;
+	&:hover, &:focus {
+		background: #F6F6F6;
+		border: 1px solid #C9C9C9;
 	}
 }
 
@@ -360,6 +382,9 @@ body {
 	.buttonTransition {
 		padding: 10px 0px;
 	}
+	.cart-container {
+		padding: 0 calc(30px + (100 - 30) * ((100vw - 780px) / (1400 - 780)));
+	}
 	.viewNext {
 		padding: 15px;
 	}
@@ -368,6 +393,7 @@ body {
 		height: calc(60px + (80 - 60)*((100vw - 768px)/(1400 - 768)));
 	}
 }
+
 @media (max-width: 780px) {
 	html {
 		font-size: 25px;
@@ -418,6 +444,9 @@ body {
 	.container {
 		padding: 0 15px;
 	}
+	.cart-container {
+		padding: 0 calc(20px + (35 - 20) * ((100vw - 400px) / (780 - 400)));;
+	}
 	.main {
 		margin-top: 140px;
 	}
@@ -447,6 +476,9 @@ body {
 	}
 	.logo {
 		width: calc(90px + (110 - 90)*((100vw - 320px)/(380 - 320)));
+	}
+	.cart-container {
+		padding: 0 15px;
 	}
 	.title {
 		&.titleMiddle {
