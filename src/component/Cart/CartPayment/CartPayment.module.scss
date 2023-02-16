@@ -1,0 +1,224 @@
+.payment {
+	background: #FFFFFF;
+	border: 1px solid #E4E4E4;
+	box-shadow: 0px 0px 50px rgba(163, 163, 163, 0.25);
+	border-radius: 20px;
+	width: 100%;
+	padding: 50px 80px 15px;
+}
+
+.paymentBody {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.paymentTop {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
+	.totalPrice {
+		font-weight: 900;
+		font-size: 1.2rem;
+		line-height: 1.25;
+		color: #222222;
+	}
+	.paymentCards {
+		display: flex;
+		gap: 6px;
+	}
+}
+
+.paymentContent {
+	margin-top: 20px;
+	.paymentDiscount {
+		font-weight: 500;
+		font-size: 0.8rem;
+		line-height: 1.2;
+		color: #747474;
+	}
+	.paymentRadio {
+		margin-top: 10px;
+		display: flex;
+		column-gap: 10px;
+		span {
+			font-weight: 500;
+			font-size: 0.8rem;
+			line-height: 1.2;
+			color: #222222;
+		}
+	}
+	.radioBlock {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		font-weight: 500;
+		font-size: 0.8rem;
+		line-height: 1.2;
+		color: #222222;
+		span {
+			margin-left: 5px;
+			font-weight: 700;
+			font-size: 0.9rem;
+		}
+	}
+}
+
+.paymentAction {
+	margin-top: 30px;
+	width: 100%;
+	button {
+		width: 100%;
+	}
+	.paymentRulls {
+		margin-top: 15px;
+		font-weight: 500;
+		font-size: 0.575rem;
+		line-height: 1.1;
+		color: #747474;
+	}
+}
+
+@media (max-width: 1400px) {
+	.payment {
+		padding: 50px 40px 15px;
+	}
+	.paymentTop {
+		.paymentCards {
+			display: flex;
+			gap: 6px;
+			img {
+				width: 45%;
+				max-width: 60px;
+				height: auto;
+			}
+		}
+	}
+	.paymentContent {
+		margin-top: 10px;
+		.paymentRadio {
+			margin-top: 10px;
+			display: flex;
+			column-gap: 10px;
+		}
+		.radioBlock {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			.radioPrice {
+				width: auto; height: auto;
+				margin-left: 10px;
+				font-weight: 700;
+				font-size: 0.9rem;
+			}
+			label {
+				span {
+					height: 15px; width: 15px;
+				}
+			}
+		}
+	}
+	.paymentAction {
+		margin-top: 20px;
+		width: 100%;
+		button {
+			width: 100%;
+		}
+		.paymentRulls {
+			margin-top: 15px;
+			font-weight: 500;
+			font-size: 0.575rem;
+			line-height: 1.1;
+			color: #747474;
+		}
+	}
+	
+}
+
+@media (max-width: 780px) {
+	.payment {
+		margin-left: -16px;
+		width: 100vw;
+		padding: 40px 34px 60px;
+		border-left: 0px; border-right: 0px;
+	}
+	.paymentContent {
+		.paymentRadio {
+			column-gap: 12.5px;
+		}
+		.radioBlock {
+			gap: 5px;
+			label {
+				span {
+					height: 16px; width: 16px;
+				}
+			}
+		}
+	}
+	.paymentTop {
+		.paymentCards {
+			display: flex;
+			gap: 7.5px;
+			img {
+				width: 50%;
+				max-width: 70px;
+				height: auto;
+			}
+		}
+	}
+	.paymentAction {
+		margin-top: 20px;
+		.paymentRulls {
+			margin-top: 15px;
+			font-weight: 500;
+			font-size: 0.575rem;
+			line-height: 1.1;
+			color: #747474;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.payment {
+		margin-left: -16px;
+		width: 100vw;
+		padding: 30px 18px 50px;
+		border-left: 0px; border-right: 0px;
+	}
+	.paymentContent {
+		.paymentRadio {
+			column-gap: 12.5px;
+		}
+		.radioBlock {
+			gap: 5px;
+			label {
+				span {
+					height: 16px; width: 16px;
+				}
+			}
+		}
+	}
+	.paymentTop {
+		.paymentCards {
+			display: flex;
+			gap: 7.5px;
+			img {
+				width: 50%;
+				max-width: 70px;
+				height: auto;
+			}
+		}
+	}
+	.paymentAction {
+		margin-top: 20px;
+		.paymentRulls {
+			margin-top: 15px;
+			font-weight: 500;
+			font-size: 0.575rem;
+			line-height: 1.1;
+			color: #747474;
+		}
+	}
+}

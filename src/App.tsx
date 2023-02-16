@@ -18,7 +18,7 @@ function App() {
 					<Route path='/eating' element={<Eating namePages='Здоровое питание' />} />
 					<Route path='/blog' element={<Blog />} />
 					<Route path='/contact' element={<Contact />} />
-					<Route path='/basket' element={<Cart />} />
+					<Route path='/cart' element={<Cart />} />
 
 					<Route path="*" element={<NotFound />} />
 				</Routes>

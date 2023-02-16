@@ -20,9 +20,11 @@ import { HowCooking } from "./HowCooking/HowCooking";
 import { Reviews } from "./Reviews/Reviews";
 import { CartInfo } from "./Cart/CartInfo/CartInfo";
 import { CartDelivery } from "./Cart/CartDelivery/CartDelivery";
+import { CartPromocode } from "./Cart/CartPromocode/CartPromocode";
+import { CartPayment } from "./Cart/CartPayment/CartPayment";
 
 export {
 	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsItem, NewsMain, Footer,
-	WorkingWindow, Filter, Spoiler, CategoryButton, RadioButton, SortBy, CatalogPagesItem,
-	CoffeItem, CatalogItem, CardsItem, CartInfo, HowCooking, Reviews, CartDelivery
+	WorkingWindow, Filter, Spoiler, CategoryButton, RadioButton, SortBy, CatalogPagesItem, CoffeItem,
+	CatalogItem, CardsItem, CartInfo, HowCooking, Reviews, CartDelivery, CartPromocode, CartPayment
 }

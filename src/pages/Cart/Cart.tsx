@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CartDelivery, CartInfo, Footer, Header } from "../../component";
+import { CartDelivery, CartInfo, CartPayment, CartPromocode, Footer, Header } from "../../component";
 import styles from "./Cart.module.scss";
 
 
@@ -17,7 +17,7 @@ export const Cart = (): JSX.Element => {
 				<div className="container">
 					<div className='catalogLinks'>
 						<Link className='catalogLink black' to="/">Головна</Link>
-						<Link className='catalogLink black' to="/blog">Корзина</Link>
+						<Link className='catalogLink black' to="/cart">Корзина</Link>
 					</div>
 					<div className={styles.cartBody}>
 						<div className={styles.cartTop}>
@@ -25,6 +25,10 @@ export const Cart = (): JSX.Element => {
 						</div>
 						<div className={styles.cartDelivery}>
 							<CartDelivery />
+						</div>
+						<div className={styles.cartBottom}>
+							<CartPromocode />
+							<CartPayment />
 						</div>
 					</div>
 				</div>

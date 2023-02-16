@@ -1,5 +1,4 @@
 import { RadioButtonProps } from './RadioButton.props';
-import styles from './RadioButton.module.scss';
 
 export const RadioButton = ({ type, value, setSort }: RadioButtonProps): JSX.Element => {
 	return (
