@@ -1,7 +1,26 @@
 .cart {
+	position: relative;
 	min-height: 200px;
 	padding-top: 40px;
 	margin-bottom: 100px;
+	&::before {
+		position: absolute;
+		content: '';
+		width: 100%; height: 850px;
+		top: 0; left: 0;
+		background: #FFF7E1;
+		z-index: -1;
+	}
+	&::after {
+		position: absolute;
+		content: '';
+		height: 1000px; width: 100%;
+		background-image: url('../../assets/image/whyWe/text.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		top: 845px;
+		z-index: -1;
+	}
 }
 
 .cartTop {
@@ -23,6 +42,24 @@
 	.cart {
 		padding-top: 30px;
 		margin-bottom: 80px;
+		&::before {
+			position: absolute;
+			content: '';
+			width: 100%; height: 650px;
+			top: 0; left: 0;
+			background: #FFF7E1;
+			z-index: -1;
+		}
+		&::after {
+			position: absolute;
+			content: '';
+			height: 300px; width: 100%;
+			background-image: url('../../assets/image/whyWe/text.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			top: 645px;
+			z-index: -1;
+		}
 	}
 	.cartTop {
 		margin-top: 35px;
@@ -35,6 +72,9 @@
 @media (max-width: 780px) {
 	.cart {
 		margin-bottom: 30px;
+		&::after, &::before {
+			display: none;
+		}
 	}
 	.cartTop {
 		margin-top: 20px;
