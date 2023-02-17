@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { CartDelivery, CartInfo, CartPayment, CartPromocode, Footer, Header } from "../../component";
+import { clearCart, minusCartItem, plusCartItem, removeCartItems } from "../../redux/action/cart";
 import styles from "./Cart.module.scss";
 
 
@@ -14,13 +15,25 @@ export const Cart = (): JSX.Element => {
 		return items[key].items[0];
 	})
 
-	addedItem.map((item) => {
-		console.log(item);
-	})
-
 	React.useEffect(() => {
 		window.scroll(0, 0)
-	}, [])
+	}, []);
+
+	const onClearCart = () => {
+		dispatch(clearCart());
+	}
+
+	const onAddItem = (id: number) => {
+		dispatch(plusCartItem(id));
+	}
+
+	const onMinusItem = (id: number) => {
+		dispatch(minusCartItem(id));
+	}
+
+	const onRemoveItem = (id: number) => {
+		dispatch(removeCartItems(id));
+	}
 
 	return (
 		<>
@@ -38,7 +51,7 @@ export const Cart = (): JSX.Element => {
 									<div className={styles.cartContent}>
 										<div className={styles.cartTopInfo}>
 											<h2 className="title titleMiddle">{totalCount} товара в корзине</h2>
-											<button className={`${styles.cartButton} buttonOrange`}>Удалить все</button>
+											<button className={`${styles.cartButton} buttonOrange`} onClick={onClearCart}>Удалить все</button>
 										</div>
 										<div className={`${styles.cartListTitle}`}>
 											<h3 className={`${styles.cartTitle} ${styles.delete}`}>Удалить товар</h3>
@@ -54,6 +67,9 @@ export const Cart = (): JSX.Element => {
 													currentItem={item}
 													totalPrice={items[item.id].totalPrice}
 													totalCount={items[item.id].items.length}
+													onPlusItem={onAddItem}
+													onMinusItem={onMinusItem}
+													onRemoveItem={onRemoveItem}
 													globalCount={totalCount}
 												/>)
 											}
@@ -67,7 +83,7 @@ export const Cart = (): JSX.Element => {
 						</div>
 						<div className={styles.cartBottom}>
 							<CartPromocode />
-							<CartPayment />
+							<CartPayment totalPrice={totalPrice} />
 						</div>
 					</div>
 				</div>

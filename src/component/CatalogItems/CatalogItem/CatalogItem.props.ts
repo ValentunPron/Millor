@@ -12,5 +12,6 @@ export interface catalogItemProps extends DetailedHTMLProps<HtmlHTMLAttributes<H
 		feedback: number,
 		price: number[]
 	},
+	onClickAddItem: any,
 	link: string,
 }

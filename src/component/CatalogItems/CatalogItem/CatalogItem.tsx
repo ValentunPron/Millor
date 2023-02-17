@@ -1,7 +1,7 @@
 import { Poput } from '../../Poput/Poput';
 import { Link } from 'react-router-dom';
 
-export const CatalogItem = ({ currentItem, link }: any): JSX.Element => {
+export const CatalogItem = ({ currentItem, link, onClickAddItem }: any): JSX.Element => {
 	const arrStar: any[] = ['', '', '', '', ''];
 
 	const checkStart = (rating: number) => {
@@ -18,6 +18,10 @@ export const CatalogItem = ({ currentItem, link }: any): JSX.Element => {
 		const sum = currentItem.ratingList.reduce((acc: number, item: { rating: number }) => acc + item.rating, 0);
 		return (sum / currentItem.ratingList.length);
 	};
+
+	const addCartItem = () => {
+		onClickAddItem(currentItem);
+	}
 
 	return (
 		<div className={`catalogItem ${link === 'vending' ? 'vendingItem' : ''}`}>
@@ -62,7 +66,7 @@ export const CatalogItem = ({ currentItem, link }: any): JSX.Element => {
 							:
 							<button className='itemButton button small'>Оставить заявку</button>
 					}
-					{currentItem.price ? <button className='itemButton button small'>В корзину</button> : ''}
+					{currentItem.price ? <button className='itemButton button small' onClick={addCartItem}>В корзину</button> : ''}
 				</div>
 			</div>
 		</div>

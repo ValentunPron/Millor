@@ -9,6 +9,7 @@ import { filterCatologItem, setLoaded } from '../../redux/action/catalogItem';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
 import { HashLink } from 'react-router-hash-link';
+import { addItemCart } from '../../redux/action/cart';
 
 interface teaInterface {
 	namePages: string
@@ -58,7 +59,10 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 
 	const selectSortRadio = React.useCallback((sortRadio: string) => {
 		dispatch(setSortRadio(sortRadio));
+	}, []);
 
+	const onClickAddItem = React.useCallback((obj: any) => {
+		dispatch(addItemCart(obj));
 	}, []);
 
 	return (
@@ -101,7 +105,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 									catalogItem.length > 0 ?
 										catalogItem.map((teaItem: any, index: number) => {
 											if (index < count) {
-												return <CatalogItem key={`tea_${teaItem.id}`} currentItem={teaItem} link={'tea'} />
+												return <CatalogItem key={`tea_${teaItem.id}`} currentItem={teaItem} onClickAddItem={onClickAddItem} link={'tea'} />
 											}
 										})
 										: <p className='notFound'>Товар не найдено :с</p>

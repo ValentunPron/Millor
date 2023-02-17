@@ -57,6 +57,7 @@ export const cart = (state = initialState, action: { type: string, payload: any 
 				totalCount: state.totalCount - currentTotalCount,
 			}
 		case 'PLUS_CART_ITEM': {
+			console.log(action.payload);
 			const newObjItems = [...state.items[action.payload].items, state.items[action.payload].items[0]];
 			const newItems = {
 				...state.items,

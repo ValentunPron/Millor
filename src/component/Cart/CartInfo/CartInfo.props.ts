@@ -4,5 +4,8 @@ export interface CartInfoProps extends DetailedHTMLProps<HtmlHTMLAttributes<HTML
 	currentItem: any,
 	totalPrice: number,
 	totalCount: number,
+	onPlusItem: any,
+	onMinusItem: any,
+	onRemoveItem: any,
 	globalCount: number,
 }

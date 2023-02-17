@@ -111,7 +111,6 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 														key={coffeItem.id}
 														currentCoffe={coffeItem}
 														onClickAddCoffe={onClickAddCoffe}
-														addedCart={(id: number) => itemsCart[id] && itemsCart[id].items.length}
 													/>
 												} else {
 													return null;

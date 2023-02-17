@@ -9,6 +9,7 @@ import { filterCatologItem, setLoaded } from '../../redux/action/catalogItem';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
 import { HashLink } from 'react-router-hash-link';
+import { addItemCart } from '../../redux/action/cart';
 
 interface teaInterface {
 	namePages: string
@@ -33,12 +34,13 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 
-	const { catalogItem, isLoaded, sortBy, sortRadio } = useSelector(({ filter, catalogItem }: any) => {
+	const { catalogItem, isLoaded, sortBy, sortRadio, itemsCart } = useSelector(({ filter, catalogItem, cart }: any) => {
 		return {
 			catalogItem: catalogItem.items,
 			isLoaded: catalogItem.isLoaded,
 			sortBy: filter.sortBy,
 			sortRadio: filter.sortRadio,
+			itemsCart: cart.items
 		}
 	});
 
@@ -57,7 +59,10 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 
 	const selectSortRadio = React.useCallback((sortRadio: string) => {
 		dispatch(setSortRadio(sortRadio));
+	}, []);
 
+	const onClickAddItem = React.useCallback((obj: any) => {
+		dispatch(addItemCart(obj));
 	}, []);
 
 	return (
@@ -100,7 +105,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 									catalogItem.length > 0 ?
 										catalogItem.map((eatingItem: any, index: number) => {
 											if (index < count) {
-												return <CatalogItem key={`eating__${eatingItem.id}`} currentItem={eatingItem} link={'eating'} />
+												return <CatalogItem onClickAddItem={onClickAddItem} key={`eating__${eatingItem.id}`} currentItem={eatingItem} link={'eating'} />
 											} else {
 												return null;
 											}

@@ -3,9 +3,8 @@ import { CoffeItemProps } from './CoffeItem.props';
 
 import { Poput } from '../../Poput/Poput';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 
-export const CoffeItem = ({ currentCoffe, onClickAddCoffe, addedCart }: CoffeItemProps): JSX.Element => {
+export const CoffeItem = ({ currentCoffe, onClickAddCoffe }: CoffeItemProps): JSX.Element => {
 
 
 

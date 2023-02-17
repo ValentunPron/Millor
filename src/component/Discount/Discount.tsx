@@ -60,7 +60,7 @@ export const Discount = ({ coffe, onClickAddCoffe, addedCart }: DiscountProps): 
 										if (type === 'Знижки') {
 											return (
 												<SwiperSlide key={coffe.id} className={styles.sliderItem}>
-													<CoffeItem currentCoffe={coffe} onClickAddCoffe={onClickAddCoffe} addedCart={addedCart} />
+													<CoffeItem currentCoffe={coffe} onClickAddCoffe={onClickAddCoffe} />
 												</SwiperSlide>
 											)
 										}
