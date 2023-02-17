@@ -1,13 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
 
 import { Coffe, Main, Tea, NotFound, Vending, Eating, Blog, Contact, Cart } from './pages';
-import { CatalogPagesItem, WorkingWindow } from './component'
+import { CatalogPagesItem } from './component'
 
 function App() {
 
 	return (
 		<div className="wrapper">
-			<WorkingWindow />
 			<main className="main">
 				<Routes>
 					<Route path="/" element={<Main />} />

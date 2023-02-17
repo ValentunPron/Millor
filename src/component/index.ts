@@ -6,7 +6,6 @@ import { Header } from "./Header/Header";
 import { NewsItem } from "./NewsItem/NewsItem";
 import { NewsMain } from "./NewsMain/NewsMain";
 import { Footer } from "./Footer/Footer";
-import { WorkingWindow } from "./WorkingWindow/WorkingWindow";
 import { Filter } from "./Filter/Filter";
 import { Spoiler } from "./Spoiler/Spoiler";
 import { CategoryButton } from "./CategoryButton/CategoryButton";
@@ -25,6 +24,6 @@ import { CartPayment } from "./Cart/CartPayment/CartPayment";
 
 export {
 	LoginWindow, MainSlider, Header, CatalogMain, Discount, NewsItem, NewsMain, Footer,
-	WorkingWindow, Filter, Spoiler, CategoryButton, RadioButton, SortBy, CatalogPagesItem, CoffeItem,
+	Filter, Spoiler, CategoryButton, RadioButton, SortBy, CatalogPagesItem, CoffeItem,
 	CatalogItem, CardsItem, CartInfo, HowCooking, Reviews, CartDelivery, CartPromocode, CartPayment
 }
