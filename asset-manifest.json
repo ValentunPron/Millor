@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Millor/static/css/main.5ed4f00b.css",
-    "main.js": "/Millor/static/js/main.6dadb2cb.js",
+    "main.css": "/Millor/static/css/main.b8f27f65.css",
+    "main.js": "/Millor/static/js/main.7fe36f83.js",
     "static/media/bg.jpg": "/Millor/static/media/bg.205fd1a355ffda1603b3.jpg",
     "static/media/01.jpg": "/Millor/static/media/01.fd0f1aaa846f45609be2.jpg",
     "static/media/02.jpg": "/Millor/static/media/02.3579453b61c0ba72315f.jpg",
@@ -15,6 +15,7 @@
     "static/media/bg-coffe.png": "/Millor/static/media/bg-coffe.f4f293ef75f5a06ee228.png",
     "static/media/coffeAdaptive.png": "/Millor/static/media/coffeAdaptive.fa451e0ef246892cb66d.png",
     "static/media/logoSvg.svg": "/Millor/static/media/logoSvg.ca553547674bcda8da38eae66d01ec10.svg",
+    "static/media/visa.png": "/Millor/static/media/visa.208327d1576293120a46.png",
     "static/media/Gilroy-Medium.eot": "/Millor/static/media/Gilroy-Medium.b84941b7bdcce7cbba6d.eot",
     "static/media/Gilroy-Medium.ttf": "/Millor/static/media/Gilroy-Medium.f9f832b0ed3f1ab138c9.ttf",
     "static/media/Gilroy-SemiBold.eot": "/Millor/static/media/Gilroy-SemiBold.8134b9ab378c54626928.eot",
@@ -26,6 +27,7 @@
     "static/media/01.png": "/Millor/static/media/01.41ccb834e89e731480b2.png",
     "static/media/04.jpg": "/Millor/static/media/04.018ff89af5b9248dc945.jpg",
     "static/media/04.png": "/Millor/static/media/04.2cf30b1cb4f6b359a860.png",
+    "static/media/masterCard.png": "/Millor/static/media/masterCard.9051eeb1da6178f49bc9.png",
     "static/media/02.png": "/Millor/static/media/02.ed2947090e163ad593f8.png",
     "static/media/vendingImage.png": "/Millor/static/media/vendingImage.e3f31bd3a05e2e8f49ef.png",
     "static/media/03.png": "/Millor/static/media/03.ff340050b2f5d64ddbe8.png",
@@ -43,11 +45,11 @@
     "static/media/text.svg": "/Millor/static/media/text.3598cd9b1ca8f7b4b501.svg",
     "static/media/bgMain.svg": "/Millor/static/media/bgMain.0598decc5f1b23018151.svg",
     "static/media/bgError.svg": "/Millor/static/media/bgError.36cc704c943abcd2efef.svg",
-    "main.5ed4f00b.css.map": "/Millor/static/css/main.5ed4f00b.css.map",
-    "main.6dadb2cb.js.map": "/Millor/static/js/main.6dadb2cb.js.map"
+    "main.b8f27f65.css.map": "/Millor/static/css/main.b8f27f65.css.map",
+    "main.7fe36f83.js.map": "/Millor/static/js/main.7fe36f83.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ed4f00b.css",
-    "static/js/main.6dadb2cb.js"
+    "static/css/main.b8f27f65.css",
+    "static/js/main.7fe36f83.js"
   ]
 }
