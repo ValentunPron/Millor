@@ -3,8 +3,11 @@ import { CoffeItemProps } from './CoffeItem.props';
 
 import { Poput } from '../../Poput/Poput';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
-export const CoffeItem = ({ currentCoffe }: CoffeItemProps): JSX.Element => {
+export const CoffeItem = ({ currentCoffe, onClickAddCoffe, addedCart }: CoffeItemProps): JSX.Element => {
+
+
 
 	const arrStar: any[] = ['', '', '', '', ''],
 		arrGusto: any[] = ['', '', '', '', '', '', '', '', '', ''];
@@ -44,6 +47,10 @@ export const CoffeItem = ({ currentCoffe }: CoffeItemProps): JSX.Element => {
 		const sum = currentCoffe.ratingList.reduce((acc, item) => acc + item.rating, 0);
 		return (sum / currentCoffe.ratingList.length);
 	};
+
+	const addCoffe = () => {
+		onClickAddCoffe(currentCoffe)
+	}
 
 	return (
 		<div className={styles.coffeItem}>
@@ -117,7 +124,7 @@ export const CoffeItem = ({ currentCoffe }: CoffeItemProps): JSX.Element => {
 									<span className={styles.price}>{currentCoffe.price[0]} ₴</span>
 								</div>
 						}
-						<button className={`button small`}>В корзину</button>
+						<button className={`button small`} onClick={addCoffe}>В корзину</button>
 					</div>
 				</div>
 			</div>

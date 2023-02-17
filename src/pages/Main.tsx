@@ -8,14 +8,21 @@ import listImage01 from '../assets/image/whyWe/01.svg';
 import listImage02 from '../assets/image/whyWe/02.svg';
 import { fetchCoffe } from '../redux/action/coffe';
 import { HashLink } from 'react-router-hash-link';
+import { addItemCart } from '../redux/action/cart';
 
 export const Main = (): JSX.Element => {
 	const dispatch: Function = useDispatch();
-	const { items } = useSelector(({ coffe }: any) => {
+	const { items, itemsCart } = useSelector(({ coffe, cart }: any) => {
 		return {
 			items: coffe.items,
+			itemsCart: cart.items,
 		}
 	});
+
+	const onClickAddPizza = React.useCallback((obj: any) => {
+		dispatch(addItemCart(obj));
+	}, []);
+
 	const refCatalog = React.createRef<any>();
 
 	React.useEffect(() => {
@@ -29,7 +36,10 @@ export const Main = (): JSX.Element => {
 			<div ref={refCatalog} id='catalog'>
 				<CatalogMain />
 			</div>
-			<Discount coffe={items} />
+			<Discount coffe={items}
+				onClickAddCoffe={onClickAddPizza}
+				addedCart={(id: number) => itemsCart[id] && itemsCart[id].items.length}
+			/>
 			<div className='aboutUs'>
 				<div className="aboutUs__whyWe whyWe">
 					<div className="container">

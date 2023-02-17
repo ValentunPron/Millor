@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 
 
-export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
+export const Discount = ({ coffe, onClickAddCoffe, addedCart }: DiscountProps): JSX.Element => {
 	const swiperRef = React.useRef<any>(null);
 	return (
 		<div className={styles.discount}>
@@ -60,7 +60,7 @@ export const Discount = ({ coffe }: DiscountProps): JSX.Element => {
 										if (type === 'Знижки') {
 											return (
 												<SwiperSlide key={coffe.id} className={styles.sliderItem}>
-													<CoffeItem currentCoffe={coffe} />
+													<CoffeItem currentCoffe={coffe} onClickAddCoffe={onClickAddCoffe} addedCart={addedCart} />
 												</SwiperSlide>
 											)
 										}

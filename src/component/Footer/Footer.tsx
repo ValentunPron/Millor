@@ -5,6 +5,7 @@ import imageCoffe from '../../assets/image/coffe.png';
 import logoSvg from '../../assets/image/logoSvg.svg';
 import emailJs from 'emailjs-com';
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 
@@ -57,7 +58,7 @@ export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 						</Link>
 						<ul className={styles.footerList}>
 							<li className="footerItem">
-								<Link onClick={scrollTo} to='/' className={`${styles.footerLink} link`}>Каталог товарів</Link>
+								<HashLink to='/#catalog' className={`${styles.footerLink} link`}>Каталог товарів</HashLink>
 							</li>
 							<li className="footerItem">
 								<Link onClick={() => window.scroll(0, 0)} to='/blog' className={`${styles.footerLink} link`}>Блог</Link>

@@ -9,6 +9,7 @@ import styles from './Coffe.module.scss';
 import { filterCoffe, setLoaded } from '../../redux/action/coffe';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
+import { addItemCart } from '../../redux/action/cart';
 
 export interface sortByRadioInterface {
 	roasting: number[];
@@ -35,13 +36,13 @@ interface coffeInterface {
 export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
-	const { coffe, isLoaded, sortBy, sortRadio } = useSelector(({ coffe, filter, }: any) => {
+	const { coffe, isLoaded, sortBy, sortRadio, itemsCart } = useSelector(({ coffe, filter, cart }: any) => {
 		return {
 			coffe: coffe.items,
 			isLoaded: coffe.isLoaded,
 			sortBy: filter.sortBy,
-			sortRadio: filter.sortRadio
-
+			sortRadio: filter.sortRadio,
+			itemsCart: cart.items,
 		}
 	});
 	React.useEffect(() => {
@@ -56,6 +57,10 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 
 	const selectSortRadio = React.useCallback((sortRadio: string) => {
 		dispatch(setSortRadio(sortRadio));
+	}, []);
+
+	const onClickAddCoffe = React.useCallback((obj: any) => {
+		dispatch(addItemCart(obj));
 	}, []);
 
 	React.useLayoutEffect(() => {
@@ -102,7 +107,12 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 										coffe.length > 0 ?
 											coffe.map((coffeItem: any, index: number) => {
 												if (index < count) {
-													return <CoffeItem key={coffeItem.id} currentCoffe={coffeItem} />
+													return <CoffeItem
+														key={coffeItem.id}
+														currentCoffe={coffeItem}
+														onClickAddCoffe={onClickAddCoffe}
+														addedCart={(id: number) => itemsCart[id] && itemsCart[id].items.length}
+													/>
 												} else {
 													return null;
 												}

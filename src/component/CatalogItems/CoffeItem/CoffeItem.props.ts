@@ -18,4 +18,6 @@ export interface CoffeItemProps extends DetailedHTMLProps<HtmlHTMLAttributes<HTM
 		text: string,
 		price: number[],
 	}
+	onClickAddCoffe: any,
+	addedCart: Function,
 }
