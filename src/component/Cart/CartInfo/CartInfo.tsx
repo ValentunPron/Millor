@@ -19,19 +19,18 @@ const useWidthSize = () => {
 
 export const CartInfo = ({ currentItem, totalPrice, totalCount, onMinusItem, onPlusItem, onRemoveItem, globalCount }: CartInfoProps): JSX.Element => {
 
-	const [count, setCount] = React.useState(0);
 	const width = useWidthSize();
 
 	const plusItem = () => {
-		onPlusItem(currentItem.id);
+		onPlusItem(currentItem.name);
 	}
 
 	const removeItem = () => {
-		onRemoveItem(currentItem.id)
+		onRemoveItem(currentItem.name)
 	}
 
 	const minusItem = () => {
-		onMinusItem(currentItem.id);
+		onMinusItem(currentItem.name);
 	}
 
 	return (

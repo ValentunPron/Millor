@@ -4,6 +4,8 @@ import { CardsItem, Footer, Header, HowCooking, Reviews } from '../../component'
 import { HashLink } from 'react-router-hash-link';
 import styles from "./CatalogPages.module.scss";
 import { ReviewsProps } from '../../component/Reviews/Reviews.props';
+import { useDispatch, useSelector } from 'react-redux';
+import { addItemCart, minusCartItem, plusCartItem } from '../../redux/action/cart';
 
 const useScroll = () => {
 	const [scroll, setScroll] = React.useState(window.pageYOffset);
@@ -20,6 +22,22 @@ const useScroll = () => {
 
 
 export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
+
+	const dispatch: Function = useDispatch();
+	const { items }: any = useSelector(({ cart }: any) => cart);
+
+	const onPlusItem = (name: string) => {
+		dispatch(plusCartItem(name));
+	}
+
+	const onMinusItem = (name: string) => {
+		dispatch(minusCartItem(name));
+	}
+
+	const onAddItem = (obj: string) => {
+		dispatch(addItemCart(obj));
+	}
+
 	const refPagesInfo = React.createRef<any>();
 
 	const [height, setHeight] = React.useState(0);
@@ -56,7 +74,13 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 							<Link className='catalogLink black' to={`/${linkTo}/${currentItem.id}`}>{currentItem.name}</Link>
 						</div>
 						<div ref={refPagesInfo}>
-							<CardsItem currentItem={currentItem} linkTo={linkTo} />
+							<CardsItem
+								currentItem={currentItem}
+								onPlusItem={onPlusItem}
+								onMinusItem={onMinusItem}
+								onAddItem={onAddItem}
+								totalCount={items[currentItem.name] ? items[currentItem.name].items.length : 1}
+								linkTo={linkTo} />
 						</div>
 					</div>
 				</div>

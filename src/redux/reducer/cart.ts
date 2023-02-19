@@ -16,11 +16,12 @@ export const cart = (state = initialState, action: { type: string, payload: any 
 	switch (action.type) {
 		case 'ADD_ITEM_CART': {
 
-			const currentItem = !state.items[action.payload.id]
-				? [action.payload] : [...state.items[action.payload.id].items, action.payload]
+			const currentItem = !state.items[action.payload.name]
+				? [action.payload] : [...state.items[action.payload.name].items, action.payload];
+
 			const newItem = {
 				...state.items,
-				[action.payload.id]: {
+				[action.payload.name]: {
 					items: currentItem,
 					totalPrice: getTotalPrice(currentItem)
 				}
@@ -57,7 +58,6 @@ export const cart = (state = initialState, action: { type: string, payload: any 
 				totalCount: state.totalCount - currentTotalCount,
 			}
 		case 'PLUS_CART_ITEM': {
-			console.log(action.payload);
 			const newObjItems = [...state.items[action.payload].items, state.items[action.payload].items[0]];
 			const newItems = {
 				...state.items,

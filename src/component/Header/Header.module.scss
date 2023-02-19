@@ -59,6 +59,27 @@
 	display: none;
 }
 
+.cart {
+	position: relative;
+	.cartCount {
+		display: none;
+		position: absolute;
+		content: '';
+		right: -15px; top: -15px;
+		background-color: #E2A300;
+		width: 25px; height: 25px;
+		border-radius: 100%;
+		font-weight: 700;
+		font-size: 0.6rem;
+		color: #fff;
+		&.active {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
 .searchActive {
 	position: absolute;
 	top: 0; bottom: 0;
@@ -537,6 +558,13 @@
 			}
 		}
 		
+	}.cart {
+		position: relative;
+		.cartCount {
+			right: -7.5px; top: -7.5px;
+			width: 15px; height: 15px;
+			font-size: 0.5rem;
+		}
 	}
 	.actionList {
 		column-gap: 30px;

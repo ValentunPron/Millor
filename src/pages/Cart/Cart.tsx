@@ -23,16 +23,16 @@ export const Cart = (): JSX.Element => {
 		dispatch(clearCart());
 	}
 
-	const onAddItem = (id: number) => {
-		dispatch(plusCartItem(id));
+	const onAddItem = (name: string) => {
+		dispatch(plusCartItem(name));
 	}
 
-	const onMinusItem = (id: number) => {
-		dispatch(minusCartItem(id));
+	const onMinusItem = (name: string) => {
+		dispatch(minusCartItem(name));
 	}
 
-	const onRemoveItem = (id: number) => {
-		dispatch(removeCartItems(id));
+	const onRemoveItem = (name: string) => {
+		dispatch(removeCartItems(name));
 	}
 
 	return (
@@ -65,8 +65,8 @@ export const Cart = (): JSX.Element => {
 											{
 												addedItem.map((item) => <CartInfo
 													currentItem={item}
-													totalPrice={items[item.id].totalPrice}
-													totalCount={items[item.id].items.length}
+													totalPrice={items[item.name].totalPrice}
+													totalCount={items[item.name].items.length}
 													onPlusItem={onAddItem}
 													onMinusItem={onMinusItem}
 													onRemoveItem={onRemoveItem}

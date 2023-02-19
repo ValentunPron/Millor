@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from './CardsItem.module.scss';
 import { Poput } from '../Poput/Poput';
+import { CardsItemProps } from './CardsItem.props';
 
 const arrStar: any[] = ['', '', '', '', ''],
 	arrGusto: any[] = ['', '', '', '', '', '', '', '', '', ''];
@@ -44,11 +45,21 @@ const useWidthSize = () => {
 	return width;
 }
 
-export const CardsItem = ({ currentItem, linkTo }: any) => {
+export const CardsItem = ({ currentItem, onPlusItem, onMinusItem, totalCount, onAddItem, linkTo }: CardsItemProps) => {
 
-
-	const [count, setCount] = React.useState(1);
 	const width = useWidthSize();
+
+	const plusItem = () => {
+		onPlusItem(currentItem.name);
+	}
+
+	const minusItem = () => {
+		onMinusItem(currentItem.name);
+	}
+
+	const addItem = () => {
+		onAddItem(currentItem)
+	}
 
 	const ratingCalc = () => {
 		const sum = currentItem.ratingList.reduce((acc: number, item: { rating: number }) => acc + item.rating, 0);
@@ -108,7 +119,7 @@ export const CardsItem = ({ currentItem, linkTo }: any) => {
 								<div>{checkGuasto(currentItem.bitter)}</div>
 							</div>
 							<div className={styles.gustoItem}>
-								<h3 className={styles.gustoTitle}>Насыщенность</h3>
+								<h3 className={styles.gustoTitle}>Насиченість</h3>
 								<div>{checkGuasto(currentItem.saturation)}</div>
 							</div>
 						</div>
@@ -134,9 +145,9 @@ export const CardsItem = ({ currentItem, linkTo }: any) => {
 				}
 				<div className={styles.cardsAction}>
 					<div className={styles.actionCount}>
-						<button className={`${styles.actionMinus} ${count > 1 ? '' : styles.actionClose}`} onClick={() => count > 1 ? setCount(count - 1) : ''}>-</button>
-						<span>{count}</span>
-						<button className={styles.actionPlus} onClick={() => setCount(count + 1)}>+</button>
+						<button className={`${styles.actionMinus} ${totalCount > 1 ? '' : styles.actionClose}`} onClick={minusItem}>-</button>
+						<span>{totalCount}</span>
+						<button className={styles.actionPlus} onClick={totalCount === 1 ? addItem : plusItem}>+</button>
 					</div>
 					{
 						width < 780
@@ -147,8 +158,8 @@ export const CardsItem = ({ currentItem, linkTo }: any) => {
 					}
 					{
 						currentItem.price
-							? <button className={`${styles.actionButton} button big`}>Купить за {currentItem.price[0] * count} грн </button>
-							: <button className={`${styles.actionButton} button big`}>Оставить заявку</button>
+							? <button className={`${styles.actionButton} button big`} onClick={addItem}>Купити за {currentItem.price[0] * totalCount} грн </button>
+							: <button className={`${styles.actionButton} button big`}>Залишити заявку</button>
 					}
 				</div>
 			</div>

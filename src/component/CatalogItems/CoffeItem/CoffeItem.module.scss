@@ -613,43 +613,6 @@
 	}
 }
 
-@media (max-width: 500px) {
-	.coffeTop {
-		.discountTopinfo {
-			span {
-				font-size: 0.6rem;
-			}
-		}
-	}
-	.description {
-		.descriptionInfo {
-			margin-top: -15px;
-			max-width: 250px
-		}
-	}
-	.coffeBottom {
-		.coffeTitle {
-			font-size: 1rem;
-		}
-
-		.coffeInfo {
-			margin-top: 8px;
-			font-size: 0.6rem;
-		}
-
-		.coffeAction {
-			.coffePrice {
-				.price {
-					font-size: 1rem;
-				}
-			}
-
-			button {
-				max-width: 200px;
-			}
-		}
-	}
-}
 
 @media (max-width: 400px) {
 	.coffeItem {
