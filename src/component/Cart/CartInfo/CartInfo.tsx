@@ -17,7 +17,7 @@ const useWidthSize = () => {
 }
 
 
-export const CartInfo = ({ currentItem, totalPrice, totalCount, onMinusItem, onPlusItem, onRemoveItem, globalCount }: CartInfoProps): JSX.Element => {
+export const CartInfo = ({ currentItem, totalPrice, totalCount, onMinusItem, onPlusItem, onRemoveItem }: CartInfoProps): JSX.Element => {
 
 	const width = useWidthSize();
 

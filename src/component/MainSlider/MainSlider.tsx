@@ -33,16 +33,6 @@ export const MainSlider = (): JSX.Element => {
 							<SwiperSlide>
 								<div className={styles.sliderItem}>
 									<div className={styles.sliderContent}>
-										<h1 className={styles.title}>Свіжообсмажена кава</h1>
-										<p className={`${styles.text} text`}>Кава Львівської обжарки з різних країн зростання з доставкою додому.</p>
-										<p className={`${styles.text} text`}> Ми обсмажуємо каву <span>кожні вихідні.</span></p>
-										<Link to={'/coffe'}><button className='button big'>Переглянути каталог</button></Link>
-									</div>
-								</div>
-							</SwiperSlide>
-							<SwiperSlide>
-								<div className={styles.sliderItem}>
-									<div className={styles.sliderContent}>
 										<h2 className={styles.title}>Свіжообсмажена кава</h2>
 										<p className={`${styles.text} text`}>Кава Львівської обжарки з різних країн зростання з доставкою додому.</p>
 										<p className={`${styles.text} text`}> Ми обсмажуємо каву <span>кожні вихідні.</span></p>
@@ -53,10 +43,18 @@ export const MainSlider = (): JSX.Element => {
 							<SwiperSlide>
 								<div className={styles.sliderItem}>
 									<div className={styles.sliderContent}>
-										<h2 className={styles.title}>Свіжообсмажена кава</h2>
-										<p className={`${styles.text} text`}>Кава Львівської обжарки з різних країн зростання з доставкою додому.</p>
-										<p className={`${styles.text} text`}> Ми обсмажуємо каву <span>кожні вихідні.</span></p>
-										<Link to={'/coffe'}><button className='button big'>Переглянути каталог</button></Link>
+										<h1 className={styles.title}>Неперевершений чай</h1>
+										<p className={`${styles.text} text`}>Львівський чай - це унікальний чай зі специфічним смаком та ароматом, який виготовляється у Львові, місті з багатою історією та культурою.</p>
+										<Link to={'/tea'}><button className='button big'>Переглянути каталог</button></Link>
+									</div>
+								</div>
+							</SwiperSlide>
+							<SwiperSlide>
+								<div className={styles.sliderItem}>
+									<div className={styles.sliderContent}>
+										<h2 className={styles.title}>Здорове харчування</h2>
+										<p className={`${styles.text} text`}>Здорове харчування - ключ до успішного життя. Воно покращує фізичне та психічне здоров'я, забезпечує енергію на цілий день та допомагає запобігти хворобам.</p>
+										<Link to={'/eating'}><button className='button big'>Переглянути каталог</button></Link>
 									</div>
 								</div>
 							</SwiperSlide>

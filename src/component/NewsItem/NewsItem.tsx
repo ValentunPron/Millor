@@ -20,7 +20,7 @@ export const NewsItem = ({ name, desc, image, author }: NewsItemProps): JSX.Elem
 					<h3 className={styles.contentTitle}>{name}</h3>
 					<p className={styles.contentText}>{truncateString(desc)}</p>
 					<div className={styles.contentBottom}>
-						<span className={styles.contentAuthor}>Автор статьи: {author}</span>
+						<span className={styles.contentAuthor}>Автор статі: {author}</span>
 						<a href="#s" className={styles.contentLink}>
 							Докладніше
 							<svg width="14" height="12" viewBox="0 0 14 12" fill="#F9B300" xmlns="http://www.w3.org/2000/svg">

@@ -22,14 +22,14 @@ interface filterDataInterface {
 }
 
 const filterData: filterDataInterface[] = [
-	{ type: "type", name: 'Черный чай', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg01.jpg' },
-	{ type: "type", name: 'Травяной чай', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg02.jpg' },
-	{ type: "type", name: 'Зеленый чай', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg03.jpg' },
+	{ type: "type", name: 'Чорний чай', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg01.jpg' },
+	{ type: "type", name: "Трав'яний чай", image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg02.jpg' },
+	{ type: "type", name: 'Зелений чай', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg03.jpg' },
 	{ type: 'type', name: 'none', image: 'none' },
 	{ type: "type", name: 'Матча', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg04.png' },
-	{ type: "type", name: 'Молочный улунг', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg05.jpg' },
-	{ type: "type", name: 'Пуэр', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg06.jpg' },
-	{ type: "type", name: 'Кофейные напитки', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg07.jpg' },
+	{ type: "type", name: 'Молочний улунг', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg05.jpg' },
+	{ type: "type", name: 'Пуер', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg06.jpg' },
+	{ type: "type", name: 'Кавові напої', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/teaCatalog/filterImg07.jpg' },
 ]
 
 export const Tea = ({ namePages }: teaInterface): JSX.Element => {
@@ -73,7 +73,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 					<div className='catalogBodyFilter'>
 						<div className='catalogLinks'>
 							<Link className='catalogLink' to="/">Головна</Link>
-							<HashLink className='catalogLink' smooth to="/#catalog">Каталог товаров</HashLink>
+							<HashLink className='catalogLink' smooth to="/#catalog">Каталог товарів</HashLink>
 							<Link className='catalogLink' to="/tea">{namePages}</Link>
 						</div>
 						<h1 className={`titlePages`}>{namePages}</h1>
@@ -114,7 +114,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 							}
 						</div>
 						{
-							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
+							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать ще</button> : ''
 						}
 					</div>
 				</div>

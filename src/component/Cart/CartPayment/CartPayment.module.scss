@@ -20,7 +20,7 @@
 	align-items: center;
 	.totalPrice {
 		font-weight: 900;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		line-height: 1.25;
 		color: #222222;
 	}
@@ -163,9 +163,15 @@
 			gap: 7.5px;
 			img {
 				width: 50%;
-				max-width: 70px;
+				max-width: 50px;
 				height: auto;
 			}
+		}
+		.totalPrice {
+			font-weight: 900;
+			font-size: 0.9rem;
+			line-height: 1.25;
+			color: #222222;
 		}
 	}
 	.paymentAction {
@@ -206,7 +212,7 @@
 			gap: 7.5px;
 			img {
 				width: 50%;
-				max-width: 70px;
+				max-width: 50px;
 				height: auto;
 			}
 		}

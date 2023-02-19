@@ -38,6 +38,8 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 		dispatch(addItemCart(obj));
 	}
 
+	React.useEffect(() => window.scroll(0, 0), [])
+
 	const refPagesInfo = React.createRef<any>();
 
 	const [height, setHeight] = React.useState(0);
@@ -69,8 +71,8 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 					<div className={styles.pagesBody}>
 						<div className='catalogLinks'>
 							<Link className='catalogLink black' to="/">Головна</Link>
-							<HashLink className='catalogLink black' smooth to="/#catalog">Каталог товаров</HashLink>
-							<Link className='catalogLink black' to={`/${linkTo}`}>Свежеобжаренный кофе</Link>
+							<HashLink className='catalogLink black' smooth to="/#catalog">Каталог товарів</HashLink>
+							<Link className='catalogLink black' to={`/${linkTo}`}>Свіжообсмажена кава</Link>
 							<Link className='catalogLink black' to={`/${linkTo}/${currentItem.id}`}>{currentItem.name}</Link>
 						</div>
 						<div ref={refPagesInfo}>
@@ -89,9 +91,9 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 				<div className={`${styles.pagesScroll} ${scroll > (height + 200) ? styles.fixed : ''}`}>
 					<div className="container">
 						<div className={`${styles.pagesScrollBody} ${styles.otherScroll}`}>
-							<button onClick={() => window.scroll(0, 1200)} className={`${styles.scrollButton} buttonTransition`}>Описание</button>
-							<button onClick={() => window.scroll(0, 2100)} className={`${styles.scrollButton} buttonTransition`}>Как готовить?</button>
-							<button onClick={() => window.scroll(0, 2700)} className={`${styles.scrollButton} buttonTransition`}>Отзывы</button>
+							<button onClick={() => window.scroll(0, 1200)} className={`${styles.scrollButton} buttonTransition`}>Опис</button>
+							<button onClick={() => window.scroll(0, 2100)} className={`${styles.scrollButton} buttonTransition`}>Яка робити?</button>
+							<button onClick={() => window.scroll(0, 2700)} className={`${styles.scrollButton} buttonTransition`}>Відгуки</button>
 						</div>
 					</div>
 				</div>
@@ -103,15 +105,15 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 									<h3 className={styles.charactTitle}>Характеристики</h3>
 									<ul className={styles.charactBody}>
 										<li className={styles.charactItem}>
-											<h4 className={styles.charactName}>Страна:</h4>
+											<h4 className={styles.charactName}>Країна:</h4>
 											<span>{currentItem.country}</span>
 										</li>
 										<li className={styles.charactItem}>
-											<h4 className={styles.charactName}>Способ обработки:</h4>
+											<h4 className={styles.charactName}>Спосіб обробки:</h4>
 											<span>{currentItem.processing}</span>
 										</li>
 										<li className={styles.charactItem}>
-											<h4 className={styles.charactName}>Вид кофе:</h4>
+											<h4 className={styles.charactName}>Вид кави:</h4>
 											<span>{currentItem.type}</span>
 										</li>
 									</ul>
@@ -119,11 +121,11 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 								: ''
 						}
 						<div className={styles.pagesDesc}>
-							<p>Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.
-								Задача организации, в особенности же рамки и место обучения кадров способствует подготовки
-								и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития.
-								Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.
-								С другой стороны реализация намеченных плановых заданий требуют от нас анализа существенных финансовых и административных условий.
+							<p>Різноманітний та багатий досвід нова модель організаційної діяльності дозволяє оцінити значення позицій, які займають учасники щодо поставлених завдань. Значимість цих проблем настільки очевидна, що розвиток різних форм діяльності значною мірою зумовлює створення моделі розвитку.
+								Завдання організації, особливо ж рамки та місце навчання кадрів сприяє підготовці
+								та реалізації систем масової участі. Таким чином зміцнення та розвиток структури сприяє підготовці та реалізації напрямів прогресивного розвитку.
+								Товариші! Реалізація намічених планових завдань забезпечує широкому колу (фахівцям) участь у формуванні відповідних умов активізації.
+								З іншого боку, реалізація намічених планових завдань вимагають від нас аналізу суттєвих фінансових та адміністративних умов.
 							</p>
 							{
 								currentItem.mixtureImage ? <img src={currentItem.mixtureImage} alt="mixtureImage" width={400} height={400} /> : ''
@@ -133,7 +135,7 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 							}
 						</div>
 						<div className={styles.pagesCooking}>
-							<h2 className={`${styles.cookingTitle} title`}>Как готовить?</h2>
+							<h2 className={`${styles.cookingTitle} title`}>Як готувати?</h2>
 							{
 								howCookingVisible(linkTo)
 							}
@@ -141,14 +143,14 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 					</div>
 					<div className={styles.pagesReviews}>
 						<div className="container">
-							<h2 className="title">Отзывы</h2>
+							<h2 className="title">Відгуки</h2>
 							<div className={styles.reviewsBody}>
 								{
 									currentItem.ratingList.length > 0
 										? currentItem.ratingList.map((item: ReviewsProps, index: number) => <Reviews key={index} {...item} />)
 										:
 										<div className={styles.reviewsZero}>
-											<p>Отзывов пока нет.</p>
+											<p>Відгуків зараз немає</p>
 										</div>
 								}
 							</div>

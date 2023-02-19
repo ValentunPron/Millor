@@ -61,10 +61,10 @@ export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 								<HashLink to='/#catalog' className={`${styles.footerLink} link`}>Каталог товарів</HashLink>
 							</li>
 							<li className="footerItem">
-								<Link onClick={() => window.scroll(0, 0)} to='/blog' className={`${styles.footerLink} link`}>Блог</Link>
+								<Link to='/blog' className={`${styles.footerLink} link`}>Блог</Link>
 							</li>
 							<li className="footerItem">
-								<Link onClick={() => window.scroll(0, 0)} to='/contact' className={`${styles.footerLink} link`}>Контакти</Link>
+								<Link to='/contact' className={`${styles.footerLink} link`}>Контакти</Link>
 							</li>
 						</ul>
 					</div>

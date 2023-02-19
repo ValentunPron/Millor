@@ -64,7 +64,7 @@ export const CatalogItem = ({ currentItem, link, onClickAddItem }: any): JSX.Ele
 									<span className="totalPrice">{currentItem.price[0]} ₴</span>
 								</div>
 							:
-							<button className='itemButton button small'>Оставить заявку</button>
+							<button className='itemButton button small'>Лишити заявку</button>
 					}
 					{currentItem.price ? <button className='itemButton button small' onClick={addCartItem}>В корзину</button> : ''}
 				</div>

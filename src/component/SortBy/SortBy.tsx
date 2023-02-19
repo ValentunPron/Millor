@@ -10,10 +10,10 @@ interface sortByInterface {
 }
 
 const sortByItems: sortByInterface[] = [
-	{ name: 'По возрастанию цены', type: 'price', order: 'desc' },
-	{ name: 'По убыванию цены', type: 'price', order: 'asc' },
+	{ name: 'За зростанням ціни', type: 'price', order: 'desc' },
+	{ name: 'За спаданням ціни', type: 'price', order: 'asc' },
 	{ name: 'По рейтингу', type: 'rating', order: 'desc' },
-	{ name: 'По кислотности', type: 'acid', order: 'desc' }
+	{ name: 'По кислотності', type: 'acid', order: 'desc' }
 ]
 
 export const SortBy = ({ activeItem, setSort }: PoputProps): JSX.Element => {
@@ -46,7 +46,7 @@ export const SortBy = ({ activeItem, setSort }: PoputProps): JSX.Element => {
 
 	return (
 		<div className={`${styles.poput} ${statusPoput ? styles.active : ''} ${styles.sortBy}`} ref={poputRef}>
-			<button className="linkNext" onClick={togglePoput}>Сортировка</button>
+			<button className="linkNext" onClick={togglePoput}>Сортування</button>
 			{statusPoput ?
 				<div className={styles.poputSortBy} ref={poputSortBy}>
 					<button className={styles.sortByActive}>{activeItem}</button>

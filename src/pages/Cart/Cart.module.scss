@@ -23,6 +23,18 @@
 	}
 }
 
+.cartClear {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	h2 {
+		font-weight: 700;
+		font-size: 2rem;
+	}
+}
+
 .cartBodyInfo {
 	background: #FFFFFF;
 	border: 1px solid #E4E4E4;
@@ -148,12 +160,25 @@
 			display: none;
 		}
 	}
+	.cartClear {
+		margin-top: 30px;
+		gap: 15px;
+		h2 {
+			font-size: 1.5rem;
+		}
+		img {
+			width: 100px; height: 100px;
+		}
+	}
 	.cartBodyInfo {
 		width: 100vw;
 		margin-left: -16px;
 		padding: 50px 0;
 		border-radius: 10px;
 		border-left: 0px; border-right: 0px;
+	}
+	.cartListItem {
+		margin-top: 30px;
 	}
 	.cartTopInfo {
 		flex-direction: column;

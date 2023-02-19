@@ -50,28 +50,32 @@ export const Cart = (): JSX.Element => {
 								<div className="cart-container">
 									<div className={styles.cartContent}>
 										<div className={styles.cartTopInfo}>
-											<h2 className="title titleMiddle">{totalCount} товара в корзине</h2>
-											<button className={`${styles.cartButton} buttonOrange`} onClick={onClearCart}>Удалить все</button>
+											<h2 className="title titleMiddle">{totalCount} товара в корзині</h2>
+											<button className={`${styles.cartButton} buttonOrange`} onClick={onClearCart}>Видалити все</button>
 										</div>
 										<div className={`${styles.cartListTitle}`}>
-											<h3 className={`${styles.cartTitle} ${styles.delete}`}>Удалить товар</h3>
-											<h3 className={`${styles.cartTitle} ${styles.desc}`}>Наименование товара</h3>
-											<h3 className={`${styles.cartTitle} ${styles.price}`}>Цена</h3>
-											<h3 className={`${styles.cartTitle} ${styles.count}`}>Количество</h3>
-											<h3 className={`${styles.cartTitle} ${styles.discount}`}>Скидка</h3>
-											<h3 className={`${styles.cartTitle} ${styles.total}`}>Итого</h3>
+											<h3 className={`${styles.cartTitle} ${styles.delete}`}>Видалити товар</h3>
+											<h3 className={`${styles.cartTitle} ${styles.desc}`}>Найменування товару</h3>
+											<h3 className={`${styles.cartTitle} ${styles.price}`}>Ціна</h3>
+											<h3 className={`${styles.cartTitle} ${styles.count}`}>Кількість</h3>
+											<h3 className={`${styles.cartTitle} ${styles.discount}`}>Знижка</h3>
+											<h3 className={`${styles.cartTitle} ${styles.total}`}>Результат</h3>
 										</div>
 										<div className={styles.cartListItem}>
 											{
-												addedItem.map((item) => <CartInfo
-													currentItem={item}
-													totalPrice={items[item.name].totalPrice}
-													totalCount={items[item.name].items.length}
-													onPlusItem={onAddItem}
-													onMinusItem={onMinusItem}
-													onRemoveItem={onRemoveItem}
-													globalCount={totalCount}
-												/>)
+												addedItem.length > 0 ?
+													addedItem.map((item) => <CartInfo
+														currentItem={item}
+														totalPrice={items[item.name].totalPrice}
+														totalCount={items[item.name].items.length}
+														onPlusItem={onAddItem}
+														onMinusItem={onMinusItem}
+														onRemoveItem={onRemoveItem}
+													/>)
+													: <div className={styles.cartClear}>
+														<h2>Корзина порожня</h2>
+														<img src="http://www.clipartbest.com/cliparts/dT7/pAz/dT7pAz6Lc.png" alt="cart clear" width={140} height={140} />
+													</div>
 											}
 										</div>
 									</div>

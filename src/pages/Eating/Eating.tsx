@@ -23,11 +23,11 @@ interface filterDataInterface {
 
 const filterData: filterDataInterface[] = [
 	{ type: "type", name: 'Цикорий', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage01.png' },
-	{ type: "type", name: 'Ячменные напитки', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage02.png' },
+	{ type: "type", name: 'Ячмінні напої', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage02.png' },
 	{ type: 'type', name: 'none', image: 'none' },
-	{ type: "type", name: 'Напитки для здоровья', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage03.png' },
-	{ type: "type", name: 'Протеиновые смеси', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage04.jpg' },
-	{ type: "type", name: 'Толокняные каши', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage05.png' },
+	{ type: "type", name: "Напої для здоров'я", image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage03.png' },
+	{ type: "type", name: 'Протеїнові суміші', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage04.jpg' },
+	{ type: "type", name: 'Толокняні каші', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/eatingCatalog/filterImage05.png' },
 ]
 
 export const Eating = ({ namePages }: teaInterface): JSX.Element => {
@@ -73,7 +73,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 					<div className='catalogBodyFilter'>
 						<div className='catalogLinks'>
 							<Link className='catalogLink' to="/">Головна</Link>
-							<HashLink className='catalogLink' smooth to="/#catalog">Каталог товаров</HashLink>
+							<HashLink className='catalogLink' smooth to="/#catalog">Каталог товарів</HashLink>
 							<Link className='catalogLink' to="/eating">{namePages}</Link>
 						</div>
 						<h1 className={`titlePages`}>{namePages}</h1>
@@ -116,7 +116,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 							}
 						</div>
 						{
-							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
+							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать ще</button> : ''
 						}
 					</div>
 				</div>

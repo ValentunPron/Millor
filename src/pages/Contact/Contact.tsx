@@ -20,11 +20,11 @@ export const Contact = (): JSX.Element => {
 					<div className={styles.contactBody}>
 						<div className='catalogLinks'>
 							<Link className='catalogLink black' to="/">Головна</Link>
-							<Link className='catalogLink black' to="/contact">Контакты</Link>
+							<Link className='catalogLink black' to="/contact">Контакти</Link>
 						</div>
 						<nav className={styles.contactNav}>
-							<button className={`buttonTransition ${pages ? 'active' : ''}`} onClick={() => setPages(true)}>Контакты</button>
-							<button className={`buttonTransition ${pages ? '' : 'active'}`} onClick={() => setPages(false)}>Наши магазины</button>
+							<button className={`buttonTransition ${pages ? 'active' : ''}`} onClick={() => setPages(true)}>Контаки</button>
+							<button className={`buttonTransition ${pages ? '' : 'active'}`} onClick={() => setPages(false)}>Наші магазини</button>
 						</nav>
 						<div className={styles.contactPages}>
 							{
@@ -52,23 +52,20 @@ export const Contact = (): JSX.Element => {
 									</div>
 									: <div className={styles.contactLeft}>
 										<div className={styles.item}>
-											<h3 className={styles.title}>Наши магазины г. Санкт-Петербург:</h3>
+											<h3 className={styles.title}>Наші магазини г. Санкт-Петербург:</h3>
 											<ul className={styles.contactList}>
-												<li className={styles.contactItem}>Гороховая, 53</li>
-												<li className={styles.contactItem}>Московский, 53</li>
+												<li className={styles.contactItem}>Світ Кави, вул. Шота Руставелі, 3</li>
+												<li className={styles.contactItem}>Львівська копальня кави, вул. Січових Стрільців, 22</li>
 											</ul>
 										</div>
 										<div className={styles.item}>
-											<h3 className={styles.title}>Наши магазины Калининградская обл.</h3>
+											<h3 className={styles.title}>Наші магазини в Києві.</h3>
 											<ul className={styles.contactList}>
-												<li className={styles.contactItem}>Советск, Гончарова 2а</li>
-												<li className={styles.contactItem}>Черняховск, Пионерская 1</li>
-												<li className={styles.contactItem}>Ульяны-Громовой 15</li>
-												<li className={styles.contactItem}>Советский проспект 6а</li>
-												<li className={styles.contactItem}>Черняховского 15</li>
-												<li className={styles.contactItem}>Панина 2а</li>
-												<li className={styles.contactItem}>Ленинский 8Б</li>
-												<li className={styles.contactItem}>Аксакова 133</li>
+												<li className={styles.contactItem}>вул. Хрещатика</li>
+												<li className={styles.contactItem}>просп. Перемоги</li>
+												<li className={styles.contactItem}>вул. Володимирська </li>
+												<li className={styles.contactItem}>вул. Крещатика</li>
+												<li className={styles.contactItem}>вул. Золотоворітська5</li>
 											</ul>
 										</div>
 									</div>

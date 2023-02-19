@@ -47,7 +47,7 @@ export const CatalogMain = (): JSX.Element => {
 		<div className={`${styles.catalog} catalogMain`}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.catalogBody}>
-					<h2 className="title">Каталоги нашей продукции</h2>
+					<h2 className="title">Каталоги нашої продукції</h2>
 					<Swiper
 						modules={[Pagination, Navigation]}
 						slidesPerView={4}

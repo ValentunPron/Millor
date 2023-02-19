@@ -32,13 +32,13 @@
 	min-height: 550px;
 	padding: 15px 50px 60px 50px;
 	z-index: 5;
-	transition: all 0.4s ease;
+	transition: all 0.25s ease;
 
 	.image {
 		display: flex;
 		align-items: flex-end;
 		min-height: 275px;
-		transition: 0.4s ease-in;
+		transition: 0.25s ease-in;
 	}
 	.title {
 		margin-top: auto;
@@ -46,7 +46,7 @@
 		font-size: 1rem;
 		line-height: 1.2;
 		color: #000000;
-		transition: 0.4s ease-in;
+		transition: 0.25s ease-in;
 	}
 	.button {
 		margin-top: 50px;

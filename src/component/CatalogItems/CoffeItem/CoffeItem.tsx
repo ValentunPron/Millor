@@ -38,8 +38,8 @@ export const CoffeItem = ({ currentCoffe, onClickAddCoffe }: CoffeItemProps): JS
 
 	const typeCoffe: any = {
 		"Знижки": <span className={styles.discountActive}>Знижка</span>,
-		"Популярне": <span>Популярное</span>,
-		"Новий урожай": <span>Новый урожай</span>,
+		"Популярне": <span>Популярне</span>,
+		"Новий урожай": <span>Новий урожай</span>,
 	}
 
 	const ratingCalc = () => {

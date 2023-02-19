@@ -9,7 +9,7 @@ export const Spoiler = ({ }: SpoilerProps): JSX.Element => {
 	const [show, setShow] = React.useState(false);
 	return (
 		<div className={styles.spoiler}>
-			<button className={`${styles.title} ${show ? styles.active : ''}`} onClick={() => setShow(!show)}>Чем  вы отличаетесь от конкурентов? Почему мне стоит выбрать вас?</button>
+			<button className={`${styles.title} ${show ? styles.active : ''}`} onClick={() => setShow(!show)}>Чим ви відрізняється від конкурентів? Чому мені варто вибрати вас?</button>
 			<CSSTransition in={show} timeout={400} unmountOnExit
 				classNames={{
 					enterActive: styles.spoilerDivActive,
@@ -19,7 +19,7 @@ export const Spoiler = ({ }: SpoilerProps): JSX.Element => {
 				}}
 			>
 				<p className={`${styles.text} ${show ? styles.active : ''}`} >
-					Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития
+					Завдання організації, особливо ж рамки та місце навчання кадрів сприяє підготовці та реалізації систем масової участі. Таким чином зміцнення та розвиток структури сприяє підготовці та реалізації напрямів прогресивного розвитку
 				</p>
 			</CSSTransition>
 		</div>

@@ -21,14 +21,14 @@ interface filterDataInterface {
 }
 
 const filterData: filterDataInterface[] = [
-	{ type: "type", name: 'Гранулированный кофе', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage01.jpg' },
+	{ type: "type", name: 'Гранулирована кава', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage01.jpg' },
 	{ type: "type", name: 'Цикорий', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage02.jpg' },
-	{ type: "type", name: 'Зерновой кофе', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage03.jpg' },
+	{ type: "type", name: 'Зернова кава', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage03.jpg' },
 	{ type: 'type', name: 'none', image: 'none' },
 	{ type: "type", name: 'Какао', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage04.jpg' },
-	{ type: "type", name: 'Кофейные напитки', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage05.jpg' },
-	{ type: "type", name: 'Кофе порошкообразный', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage06.jpg' },
-	{ type: "type", name: 'Сухое молоко', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage07.jpg' },
+	{ type: "type", name: 'Кавові напитки', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage05.jpg' },
+	{ type: "type", name: 'Кава порошкоподібний', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage06.jpg' },
+	{ type: "type", name: 'Сухе молоко', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage07.jpg' },
 ]
 
 export const Vending = ({ namePages }: teaInterface): JSX.Element => {
@@ -68,7 +68,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 					<div className='catalogBodyFilter'>
 						<div className='catalogLinks'>
 							<Link className='catalogLink' to="/">Головна</Link>
-							<HashLink className='catalogLink' smooth to="/#catalog">Каталог товаров</HashLink>
+							<HashLink className='catalogLink' smooth to="/#catalog">Каталог товарів</HashLink>
 							<Link className='catalogLink' to='/vending'>{namePages}</Link>
 						</div>
 						<h1 className={`titlePages`}>{namePages}</h1>
@@ -111,7 +111,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 							}
 						</div>
 						{
-							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
+							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать ще</button> : ''
 						}
 					</div>
 				</div>
