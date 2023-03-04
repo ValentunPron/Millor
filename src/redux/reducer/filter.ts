@@ -9,7 +9,7 @@ const initialState: initialStateInterface = {
 		type: 'price',
 		order: 'asc'
 	},
-	sortRadio: { type: 'all', value: ['all'] }
+	sortRadio: { type: 'all', value: ['all'] },
 }
 
 export const filter = (state = initialState, action: { type: string, payload: string | number }) => {
@@ -23,7 +23,7 @@ export const filter = (state = initialState, action: { type: string, payload: st
 			return {
 				...state,
 				sortRadio: action.payload
-			}
+			};
 		default:
 			return state
 	}

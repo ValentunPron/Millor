@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 import { LoginWindow } from '../index'
-import { Seacrh } from './Search/Search';
 import logoSvg from '../../assets/image/logoSvg.svg'
 import { HashLink } from 'react-router-hash-link';
 import { useSelector } from 'react-redux';
@@ -95,9 +94,6 @@ export const Header = ({ headerActive = false }: any): JSX.Element => {
 						</nav>
 						<nav className={styles.navAction}>
 							<ul className={styles.actionList}>
-								<li className={styles.actionItem}>
-									<Seacrh />
-								</li>
 								<li className={styles.actionItem}>
 									<Link to="/cart">
 										<button className={styles.cart}>
