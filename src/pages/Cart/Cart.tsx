@@ -74,7 +74,7 @@ export const Cart = (): JSX.Element => {
 													/>)
 													: <div className={styles.cartClear}>
 														<h2>Корзина порожня</h2>
-														<img src="http://www.clipartbest.com/cliparts/dT7/pAz/dT7pAz6Lc.png" alt="cart clear" width={140} height={140} />
+														<img src="https://icons.veryicon.com/png/o/commerce-shopping/shopping-series/clear-cart-1.png" alt="cart clear" width={140} height={140} />
 													</div>
 											}
 										</div>

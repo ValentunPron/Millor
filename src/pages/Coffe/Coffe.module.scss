@@ -137,7 +137,8 @@
 
 @media (max-width: 500px) {
 	.catalogList {
-		grid-template-columns: 1fr;
+		justify-content: center;
+		grid-template-columns: minmax(auto, 300px);
 		row-gap: 40px;
 	}
 }

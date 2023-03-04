@@ -446,8 +446,10 @@
 
 @media (max-width: 500px) {
 	.catalogList {
+		margin-top: 50px;
 		display: grid;
-		grid-template-columns: 1fr;
+		justify-content: center;
+		grid-template-columns: minmax(auto, 375px);
 		gap: 20px;
 		margin-bottom: 50px;
 	}
