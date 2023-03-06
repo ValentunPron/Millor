@@ -73,8 +73,8 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 				setCount(3)
 			}
 		}
-		window.addEventListener('resize', updateCount);
 		updateCount();
+		return () => window.removeEventListener('resize', updateCount);
 	}, []);
 	return (
 		<>
