@@ -49,18 +49,24 @@ export const Cart = (): JSX.Element => {
 							<div className={styles.cartBodyInfo}>
 								<div className="cart-container">
 									<div className={styles.cartContent}>
-										<div className={styles.cartTopInfo}>
-											<h2 className="title titleMiddle">{totalCount} товара в корзині</h2>
-											<button className={`${styles.cartButton} buttonOrange`} onClick={onClearCart}>Видалити все</button>
-										</div>
-										<div className={`${styles.cartListTitle}`}>
-											<h3 className={`${styles.cartTitle} ${styles.delete}`}>Видалити товар</h3>
-											<h3 className={`${styles.cartTitle} ${styles.desc}`}>Найменування товару</h3>
-											<h3 className={`${styles.cartTitle} ${styles.price}`}>Ціна</h3>
-											<h3 className={`${styles.cartTitle} ${styles.count}`}>Кількість</h3>
-											<h3 className={`${styles.cartTitle} ${styles.discount}`}>Знижка</h3>
-											<h3 className={`${styles.cartTitle} ${styles.total}`}>Результат</h3>
-										</div>
+										{
+											addedItem.length > 0
+												? <>
+													<div className={styles.cartTopInfo}>
+														<h2 className="title titleMiddle">{totalCount} товара в корзині</h2>
+														<button className={`${styles.cartButton} buttonOrange`} onClick={onClearCart}>Видалити все</button>
+													</div>
+													<div className={`${styles.cartListTitle}`}>
+														<h3 className={`${styles.cartTitle} ${styles.delete}`}>Видалити товар</h3>
+														<h3 className={`${styles.cartTitle} ${styles.desc}`}>Найменування товару</h3>
+														<h3 className={`${styles.cartTitle} ${styles.price}`}>Ціна</h3>
+														<h3 className={`${styles.cartTitle} ${styles.count}`}>Кількість</h3>
+														<h3 className={`${styles.cartTitle} ${styles.discount}`}>Знижка</h3>
+														<h3 className={`${styles.cartTitle} ${styles.total}`}>Результат</h3>
+													</div>
+												</>
+												: ''
+										}
 										<div className={styles.cartListItem}>
 											{
 												addedItem.length > 0 ?

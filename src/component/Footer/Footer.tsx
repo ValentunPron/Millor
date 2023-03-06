@@ -7,22 +7,27 @@ import emailJs from 'emailjs-com';
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
+export const Footer = ({ bgInfo = '' }: any): JSX.Element => {
 
 	const [toSend, setToSend] = React.useState({ from_email: '', });
 
-	const onSubmit = (e: any) => {
+	function onSubmit(e: any) {
 		e.preventDefault();
-		emailJs.sendForm('service_0tbqnna', 'template_qjq46pi', e.target, 'ovMXZVwdfqTP4zKxm')
+
+		let templateParams = {
+			from_email: toSend.from_email,
+		};
+
+		emailJs.send('service_0tbqnna', 'template_qjq46pi', templateParams, 'ovMXZVwdfqTP4zKxm')
 			.then((result: any) => {
 				console.log(result.text);
 			}, (error: any) => {
 				console.log(error)
 			});
-		e.target.reset();
 	};
 
 	const handleChange = (e: any) => {
+		console.log(e.target.value);
 		setToSend({ ...toSend, [e.target.name]: e.target.value });
 	};
 
@@ -34,7 +39,7 @@ export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 						<div className={styles.mailingContent}>
 							<h2 className="title">Підписка на новини та розсилку</h2>
 							<p className="text">Підпишіться на нашу розсилку прямо зараз і будьте в курсі нових поставок, знижок та ексклюзивних пропозицій.</p>
-							<form className={styles.mailingForm} onSubmit={onSubmit}>
+							<form className={styles.mailingForm}>
 								<input
 									type="email"
 									name='from_email'
@@ -42,7 +47,7 @@ export const Footer = ({ bgInfo = '', scrollTo }: any): JSX.Element => {
 									placeholder="Ваш email"
 									onChange={handleChange}
 									className={styles.mailingInput} />
-								<button type="submit" className={styles.mailingButton}>Підписатися</button>
+								<button onClick={onSubmit} className={styles.mailingButton}>Підписатися</button>
 								<span className={styles.mailingRules}>Натискаючи на кнопку "Підписатися", ви приймаєте правила <a href="#s">користувальницької угоди</a></span>
 							</form>
 						</div>

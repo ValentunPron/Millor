@@ -8,8 +8,8 @@ import { SpoilerProps } from './Spoiler.props';
 export const Spoiler = ({ }: SpoilerProps): JSX.Element => {
 	const [show, setShow] = React.useState(false);
 	return (
-		<div className={styles.spoiler}>
-			<button className={`${styles.title} ${show ? styles.active : ''}`} onClick={() => setShow(!show)}>Чим ви відрізняється від конкурентів? Чому мені варто вибрати вас?</button>
+		<button className={styles.spoiler} onClick={() => setShow(!show)}>
+			<button className={`${styles.title} ${show ? styles.active : ''}`}>Чим ви відрізняється від конкурентів? Чому мені варто вибрати вас?</button>
 			<CSSTransition in={show} timeout={400} unmountOnExit
 				classNames={{
 					enterActive: styles.spoilerDivActive,
@@ -22,6 +22,6 @@ export const Spoiler = ({ }: SpoilerProps): JSX.Element => {
 					Завдання організації, особливо ж рамки та місце навчання кадрів сприяє підготовці та реалізації систем масової участі. Таким чином зміцнення та розвиток структури сприяє підготовці та реалізації напрямів прогресивного розвитку
 				</p>
 			</CSSTransition>
-		</div>
+		</button>
 	);
 }

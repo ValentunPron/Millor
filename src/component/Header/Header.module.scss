@@ -235,6 +235,17 @@
 	}
 }
 
+.navLinksActive {
+	position: fixed;
+	top: 0; left: -200%;
+	padding: 35px;
+	width: 100%; height: 100%;
+	background-color: #fff;
+	overflow-y: scroll;
+	z-index: 10;
+	transition: all 0.35s ease-in;
+}
+
 
 @media (max-width: 1600px) {
 	.searchActive {
@@ -250,8 +261,10 @@
 
 @media (max-width: 1400px) {
 	.headerBody {
-		min-height: 110px;
-		padding: 10 0px;
+		display: flex;
+		align-items: center;
+		min-height: 100px;
+		padding: 5px 0;
 		img {
 			width: calc(159px + (179 - 159)*((100vw - 768px)/(1200 - 768)));
 			height: calc(60px + (80 - 60)*((100vw - 768px)/(1400 - 768)));
@@ -324,14 +337,7 @@
 			}
 		}
 		.navLinksActive {
-			position: fixed;
-			top: 0; left: 0;
-			padding: 35px;
-			width: 100%; height: 100%;
-			background-color: #fff;
-			overflow-y: scroll;
-			z-index: 10;
-			transition: width 0.6s ease-in;
+			left: 0px;
 			.linksList {
 				display: inline-flex;
 				flex-direction: column;
@@ -393,7 +399,6 @@
 				right: 60px;
 				width: 40px;
 				height: 40px;
-				transition: all 0.3s ease-in;
 				&::after {
 					top: 0; bottom: 0;
 					margin: auto;
@@ -415,74 +420,6 @@
 		svg {
 			width: calc(26px + (34 - 26)*((100vw - 375px)/(768 - 375)));
 			height: calc(26px + (34 - 26)*((100vw - 375px)/(768 - 375)))
-		}
-	}
-	.searchActive {
-		padding: 0 30px;
-
-		right: 120px;
-		width: calc(726px + (880 - 726)*((100vw - 1024px)/(1400 - 1024)));
-		border-radius: 30px;
-		height: 42px;
-		&:hover, &:focus {
-			border-radius: 30px;
-		}
-		input {
-			font-size: 0.89rem;
-		}
-		.searching {
-			top: 30px;
-			background-color: transparent;
-			box-shadow: 0px 0px 0px;
-			span, a {
-				background-color: transparent;
-				padding: 10px 0px;
-			}
-		}
-	}
-	.searchBody {
-		background-color: transparent;
-		transition: left 0.4s, top 0.4s ease-in;
-	}
-	.searchBodyActive {
-		position: fixed;
-		top: 0; left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #fff;
-		z-index: 10;
-		padding: 0 calc(25px + (30 - 25)*((100vw - 375px)/(770 - 375)));
-		transition: left 0.4s ease-in;
-		div {
-			margin-top: 60px;
-			width: 100%;
-			height: 70px;
-			display: flex;
-			justify-content: right;
-			flex-direction: row;
-			align-items: center;
-		}
-		.searchActive {
-			top: 60px;
-			margin: 0;
-			width: calc(250px + (580 - 250)*((100vw - 375px)/(770 - 375)));
-			height: 70px;
-			left: calc(25px + (30 - 25)*((100vw - 375px)/(770 - 375)));
-			padding: 0 30px;
-			input {
-				line-height: 1.2;
-				font-size: 0.65rem;
-			}
-			svg {
-				width: 24px;
-				height: 24px;
-			}
-		}
-		.buttonClose {
-			display: flex;
-			align-items: center;
-			font-size: calc(0.6rem + (0.8 - 0.6)*((100vw - 375px)/(770 - 375)));;
-			color: #F9B300;
 		}
 	}
 }

@@ -64,7 +64,7 @@ export const Blog = () => {
 						</div>
 						<div className={styles.blogScroll}>
 							<HashLink className={`${styles.scrollButton} buttonTransition`} smooth to='/blog#blogCooking'>Навчання</HashLink>
-							<HashLink className={`${styles.scrollButton} buttonTransition`} smooth to='/blog#blogNews'>Новони</HashLink>
+							<HashLink className={`${styles.scrollButton} buttonTransition`} smooth to='/blog#blogNews'>Новини</HashLink>
 							<HashLink className={`${styles.scrollButton} buttonTransition`} smooth to='/blog#blogSpoiler'>Популярні питання</HashLink>
 						</div>
 						<div className={styles.blogHowCooking} id="blogCooking">
@@ -72,7 +72,7 @@ export const Blog = () => {
 							<HowCooking />
 							<ul className={styles.howCookingList}>
 								<li className={styles.howCookingItem} id="turka">
-									<h2 className="title titleMiddle">Як зварити каву в турке:</h2>
+									<h2 className="title titleMiddle">Як зварити каву в турці:</h2>
 									<p className={styles.howCookingText}>
 										Кава в турці – це віддача від усіх крупинок кави для створення ідеального напою.
 										<span /> Кожне приготування кави в турці поділяється на три етапи: Вибір кави, приготування та своєчасне зняття турки з плити при піднятті пінки (креми).
@@ -107,7 +107,7 @@ export const Blog = () => {
 									<img className={styles.howCookingImage} src={filterImage02} alt="wrapper coffee" />
 								</li>
 								<li className={styles.howCookingItem} id='maka'>
-									<h2 className="title titleMiddle">Як зварити каву в маку:</h2>
+									<h2 className="title titleMiddle">Як зварити каву в маці:</h2>
 									<p className={styles.howCookingText}>
 										Візьміть макей, промийте холодною водою. Залийте у маку воду до бажаного рівня. Викладіть у маку бажану кількість кавових зерен.
 										Поставте макей на вогонь і доведіть воду до кипіння. Знизьте вогонь і доведіть каву до завершення варіння. Видаліть макей з вогню та дайте каві трохи перестати кипіти. Перелийте каву в чашку та насолоджуйтесь готовим напоєм.
@@ -123,7 +123,7 @@ export const Blog = () => {
 									<img className={styles.howCookingImage} src={filterImage04} alt="wrapper coffee" />
 								</li>
 								<li className={styles.howCookingItem} id='voronka'>
-									<h2 className="title titleMiddle">Як зварити каву у вирві:</h2>
+									<h2 className="title titleMiddle">Як зварити каву у воронці:</h2>
 									<p className={styles.howCookingText}>
 										Приготування кави у вирві займає 3-5 хвилин. Вам знадобиться: лійка, фільтр, кавомолка, 27 г кави та вода температурою 92-95°С. Намалюємо необхідну кількість кави. Помел має бути великий, більше цукру. Частинки розміром із морську сіль. Якщо у вас немає терезів – у столовій ложці «з гіркою» приблизно 9 г кави. Для приготування 500 мл кави у вирві знадобляться 3 столові ложки меленої кави «з гіркою». Ставимо вирву на сервер або будь-яку іншу ємність, яка підійде за обсягом та діаметром шийки.
 										<span />Встановлюємо фільтр у вирву. Наливаємо трохи гарячої води, щоб змочити фільтр і прогріти вирву з сервером – так заварювання буде «рівніше», а кава не почне миттєво остигати, доторкнувшись до холодних поверхонь. Зливаємо цю воду. Засипаємо весь обсяг кави у вирву. Поступово розподіляємо всередині. Змочуючи всю поверхню, заливаємо круговими рухами 50 мл води і чекаємо, поки вона пройде через каву. Чекаємо 30 секунд, доливаємо ще 150 мл і знову робимо паузу на півхвилини. Потім доливаємо всю воду, що залишилася - ще 300 мл. Чекаємо, доки останні краплі напою пройдуть через каву. Забираємо фільтр та лійку. Збовтуємо сервер із готовою кавою. Наливаємо у чашку.
@@ -143,7 +143,7 @@ export const Blog = () => {
 									<img className={styles.howCookingImage} src='https://images4.alphacoders.com/100/1001474.jpg' alt="wrapper coffee" />
 								</li>
 								<li className={styles.howCookingItem} id='caska'>
-									<h2 className="title titleMiddle">Як зварити каву в чашку:</h2>
+									<h2 className="title titleMiddle">Як зварити каву в чашці:</h2>
 									<p className={styles.howCookingText}>
 										Заварювати каву в кухлі – це один із найзручніших і найкомфортніших способів заварювання кави. Кухоль завжди під рукою, якщо знайти кавомолку і каву, то можна приготувати напій ідеального смаку і пропорцій.
 										<span /> Найголовніше правило приготування будь-якого напою - слідувати інструкції. Для заварювання кави вона проста: засипали каву, залили, перемішали, дали настоятися, повторно перемішали та насолоджуємося напоєм.
@@ -159,7 +159,7 @@ export const Blog = () => {
 									<img className={styles.howCookingImage} src='https://wallpapersmug.com/download/3840x2160/9f259b/coffee-cup-beans.jpg' alt="wrapper coffee" />
 								</li>
 								<li className={styles.howCookingItem} id='avtomat'>
-									<h2 className="title titleMiddle">Як зварити каву в автомат:</h2>
+									<h2 className="title titleMiddle">Як зварити каву в автоматі:</h2>
 									<p className={styles.howCookingText}>
 										Заповніть водонагрівач водою до потрібної позначки. Помістіть фільтр і засипте в нього каву. Натисніть кнопку варіння кави. Дочекайтеся завершення процесу варіння.
 									</p>

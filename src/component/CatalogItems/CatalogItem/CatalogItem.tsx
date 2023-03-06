@@ -23,6 +23,17 @@ export const CatalogItem = ({ currentItem, link, onClickAddItem }: any): JSX.Ele
 		onClickAddItem(currentItem);
 	}
 
+
+	const chechReviews = (number: number): JSX.Element => {
+		if (number > 4) {
+			return <span>({number} відгуків)</span>
+		} else if (number === 1) {
+			return <span>({number} відгук)</span>
+		} else {
+			return <span>({number} відгуки)</span>
+		}
+	}
+
 	return (
 		<div className={`catalogItem ${link === 'vending' ? 'vendingItem' : ''}`}>
 			<div className={`itemTop ${currentItem.discount ? 'discount' : ''}`}>
@@ -32,7 +43,7 @@ export const CatalogItem = ({ currentItem, link, onClickAddItem }: any): JSX.Ele
 							<div className='itemStars'>
 								{checkStart(ratingCalc())}
 							</div>
-							<p>{Number.isInteger(ratingCalc()) ? ratingCalc() + '.0' : ratingCalc().toFixed(1)}<span>({currentItem.ratingList.length} відгука)</span></p>
+							<p>{Number.isInteger(ratingCalc()) ? ratingCalc() + '.0' : ratingCalc().toFixed(1)}<span>{chechReviews(currentItem.ratingList.length)}</span></p>
 						</div>
 						: <div className='itemRating'>
 							<div className='itemStars'>

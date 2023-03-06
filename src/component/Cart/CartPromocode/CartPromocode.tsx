@@ -7,7 +7,7 @@ export const CartPromocode = (): JSX.Element => {
 			<div className="cart-container">
 				<div className={styles.promocodeBody}>
 					<h3 className="title titleMiddle">Промокод</h3>
-					<p className={styles.promocodeText}>Введите подарочный промокод в поле ниже и получите скидку на заказ до 20%. Скидка не распространяется на доставку</p>
+					<p className={styles.promocodeText}>Введіть подарунковий промокод у поле нижче та отримайте знижку на замовлення до 20%. Знижка не поширюється на доставку</p>
 					<form action="#" method="get" className={styles.promocodeForm}>
 						<input className="inputButton" type="text" placeholder="Введіть промокод" required />
 						<button className={`${styles.deliveryButton} buttonTransition yellow`} type="submit">Розрахувати доставку</button>

@@ -65,13 +65,15 @@ export const CatalogMain = (): JSX.Element => {
 							},
 							770: {
 								slidesPerView: 3,
+								watchOverflow: false,
 							},
 							1050: {
 								slidesPerView: 4,
+								watchOverflow: true
 							},
 						}}
 						pagination={{
-							clickable: true,
+							clickable: false,
 							bulletClass: styles.bullets,
 							bulletActiveClass: styles.bulletsActive,
 							horizontalClass: styles.bulletsBody,

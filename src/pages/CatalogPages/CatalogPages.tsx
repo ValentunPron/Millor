@@ -38,7 +38,7 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 		dispatch(addItemCart(obj));
 	}
 
-	React.useEffect(() => window.scroll(0, 0), [])
+	React.useEffect(() => { window.scroll(0, 0) }, [])
 
 	const refPagesInfo = React.createRef<any>();
 
@@ -88,15 +88,6 @@ export const CatalogPages = ({ currentItem, linkTo }: any): JSX.Element => {
 				</div>
 			</div>
 			<div className={styles.pagesInfoBlock}>
-				<div className={`${styles.pagesScroll} ${scroll > (height + 200) ? styles.fixed : ''}`}>
-					<div className="container">
-						<div className={`${styles.pagesScrollBody} ${styles.otherScroll}`}>
-							<button onClick={() => window.scroll(0, 1200)} className={`${styles.scrollButton} buttonTransition`}>Опис</button>
-							<button onClick={() => window.scroll(0, 2100)} className={`${styles.scrollButton} buttonTransition`}>Яка робити?</button>
-							<button onClick={() => window.scroll(0, 2700)} className={`${styles.scrollButton} buttonTransition`}>Відгуки</button>
-						</div>
-					</div>
-				</div>
 				<div className={styles.pagesInfo}>
 					<div className="container">
 						{

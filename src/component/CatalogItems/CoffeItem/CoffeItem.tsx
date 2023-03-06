@@ -36,6 +36,15 @@ export const CoffeItem = ({ currentCoffe, onClickAddCoffe }: CoffeItemProps): JS
 			: <span key={index} ></span>);
 	}
 
+	const chechReviews = (number: number): JSX.Element => {
+		if (number > 4) {
+			return <span>({number} відгуків)</span>
+		} else if (number === 1) {
+			return <span>({number} відгук)</span>
+		} else {
+			return <span>({number} відгуки)</span>
+		}
+	}
 	const typeCoffe: any = {
 		"Знижки": <span className={styles.discountActive}>Знижка</span>,
 		"Популярне": <span>Популярне</span>,
@@ -70,7 +79,10 @@ export const CoffeItem = ({ currentCoffe, onClickAddCoffe }: CoffeItemProps): JS
 
 										{checkStart(ratingCalc())}
 									</div>
-									<p>{Number.isInteger(ratingCalc()) ? ratingCalc() + '.0' : ratingCalc().toFixed(1)}<span>({currentCoffe.ratingList.length} відгука)</span></p>
+									<p>
+										{Number.isInteger(ratingCalc()) ? ratingCalc() + '.0' : ratingCalc().toFixed(1)}
+										{chechReviews(currentCoffe.ratingList.length)}
+									</p>
 								</div>
 								: <div className={styles.rating}>
 									<div>
@@ -109,7 +121,7 @@ export const CoffeItem = ({ currentCoffe, onClickAddCoffe }: CoffeItemProps): JS
 				<div className={styles.coffeBottomBody}>
 					<div>
 						<h3 className={styles.coffeTitle}>{currentCoffe.name}</h3>
-						<p className={styles.coffeInfo}>{currentCoffe.text}</p>
+						<p className={styles.coffeInfo}>{currentCoffe.text.length > 150 ? currentCoffe.text.substring(0, 149) + '...' : currentCoffe.text}</p>
 					</div>
 					<div className={styles.coffeAction}>
 						{

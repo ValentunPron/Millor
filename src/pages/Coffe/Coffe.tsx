@@ -36,7 +36,7 @@ interface coffeInterface {
 export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
-	const { coffe, isLoaded, sortBy, sortRadio, itemsCart } = useSelector(({ coffe, filter, cart }: any) => {
+	const { coffe, isLoaded, sortBy, sortRadio } = useSelector(({ coffe, filter, cart }: any) => {
 		return {
 			coffe: coffe.items,
 			isLoaded: coffe.isLoaded,
@@ -74,7 +74,6 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 			}
 		}
 		window.addEventListener('resize', updateCount);
-		updateCount();
 		return () => window.removeEventListener('resize', updateCount);
 	}, []);
 	return (

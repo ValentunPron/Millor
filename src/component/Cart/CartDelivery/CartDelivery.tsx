@@ -17,9 +17,9 @@ export const CartDelivery = (): JSX.Element => {
 						<input className="inputButton" type="tel" placeholder='Телефон' required />
 						<input className="inputButton" type="text" placeholder='Вулиця, будинок' required />
 						<input className="inputButton" type="email" placeholder='Email' required />
-						<input className="inputButton" type="text" placeholder='Почтовый индекс' required />
-						<input className="inputButton" type="text" placeholder='Название компании (необязательно)' />
-						<input className="inputButton" type="text" placeholder='Комментарий к заказу (необязательно)' />
+						<input className="inputButton" type="text" placeholder='Почтовий індекс' required />
+						<input className="inputButton" type="text" placeholder="Назва компанії (необов'язково)" />
+						<input className="inputButton" type="text" placeholder="Коментар до замовлення (необов'язково)" />
 					</div>
 					<button className={`${styles.deliveryButton} buttonTransition yellow`} type="submit">Розрахувати доставку</button>
 				</form>

@@ -63,7 +63,7 @@ export const CardsItem = ({ currentItem, onPlusItem, onMinusItem, totalCount, on
 
 	const ratingCalc = () => {
 		const sum = currentItem.ratingList.reduce((acc: number, item: { rating: number }) => acc + item.rating, 0);
-		return (sum / currentItem.ratingList.length);
+		return (sum <= 0 ? 0 : (sum / currentItem.ratingList.length));
 	};
 
 	return (
