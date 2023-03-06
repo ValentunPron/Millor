@@ -75,8 +75,6 @@
 
 			font-size: 1rem;
 			line-height: 130%;
-			color: #C9C9C9;
-			
 		}
 		.mailingButton {
 			position: absolute;
@@ -90,7 +88,15 @@
 			font-size: 1rem;
 			line-height: 1.2;
 			color: #FFFFFF;
+			width: auto;
 			transition: 0.3s ease-in;
+			&.active {
+				width: 100%;
+				cursor: auto;
+				&:hover {
+					background-color: #F9B300;
+				}
+			}
 			&:hover {
 				background-color: #E2A300;
 			}
