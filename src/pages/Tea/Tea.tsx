@@ -5,11 +5,11 @@ import { Footer, Header, SortBy, CatalogItem } from '../../component';
 import imageTea from '../../assets/image/tea.png';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { filterCatologItem, setLoaded } from '../../redux/action/catalogItem';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
 import { HashLink } from 'react-router-hash-link';
 import { addItemCart } from '../../redux/action/cart';
+import { fetchTea, filterTea, setLoaded } from '../../redux/action/tea';
 
 interface teaInterface {
 	namePages: string
@@ -37,10 +37,10 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 
-	const { catalogItem, isLoaded, sortBy, sortRadio } = useSelector(({ filter, catalogItem }: any) => {
+	const { tea, isLoaded, sortBy, sortRadio } = useSelector(({ filter, tea }: any) => {
 		return {
-			catalogItem: catalogItem.items,
-			isLoaded: catalogItem.isLoaded,
+			tea: tea.items,
+			isLoaded: tea.isLoaded,
 			sortBy: filter.sortBy,
 			sortRadio: filter.sortRadio,
 		}
@@ -49,7 +49,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
-			dispatch(filterCatologItem(sortBy, sortRadio, 'https://63b42226ea89e3e3db573ace.mockapi.io/tea'));
+			dispatch(filterTea(sortBy, sortRadio));
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -102,10 +102,10 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 							{
 								isLoaded
 									?
-									catalogItem.length > 0 ?
-										catalogItem.map((teaItem: any, index: number) => {
+									tea.length > 0 ?
+										tea.map((teaItem: any, index: number) => {
 											if (index < count) {
-												return <CatalogItem key={`tea_${teaItem.id}`} currentItem={teaItem} onClickAddItem={onClickAddItem} link={'tea'} />
+												return <CatalogItem key={`tea_${teaItem._id}`} currentItem={teaItem} onClickAddItem={onClickAddItem} link={'tea'} />
 											}
 										})
 										: <p className='notFound'>Товар не найдено :с</p>
@@ -114,7 +114,7 @@ export const Tea = ({ namePages }: teaInterface): JSX.Element => {
 							}
 						</div>
 						{
-							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать ще</button> : ''
+							tea.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать ще</button> : ''
 						}
 					</div>
 				</div>

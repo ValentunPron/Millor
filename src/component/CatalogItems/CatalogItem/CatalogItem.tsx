@@ -55,7 +55,7 @@ export const CatalogItem = ({ currentItem, link, onClickAddItem }: any): JSX.Ele
 				<Poput activeItem={currentItem.poputInfo.poputActive} items={currentItem.poputInfo.poputSizes} mass={currentItem.poputInfo.poputMass} />
 			</div>
 			<div className='itemImage'>
-				<Link to={`/${link}/${currentItem.id}`}>
+				<Link to={`/${link}/${currentItem._id}`}>
 					<img src={currentItem.image} alt={currentItem.name} width={220} height={310} />
 				</Link>
 			</div>

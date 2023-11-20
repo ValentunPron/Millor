@@ -7,8 +7,8 @@ import imageVending from '../../assets/image/Vending/vendingImage.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
-import { filterCatologItem, setLoaded } from '../../redux/action/catalogItem';
 import { HashLink } from 'react-router-hash-link';
+import { filterVending, setLoaded } from '../../redux/action/vending';
 
 interface teaInterface {
 	namePages: string
@@ -26,7 +26,7 @@ const filterData: filterDataInterface[] = [
 	{ type: "type", name: 'Зернова кава', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage03.jpg' },
 	{ type: 'type', name: 'none', image: 'none' },
 	{ type: "type", name: 'Какао', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage04.jpg' },
-	{ type: "type", name: 'Кавові напитки', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage05.jpg' },
+	{ type: "type", name: 'Кавові напої', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage05.jpg' },
 	{ type: "type", name: 'Кава порошкоподібний', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage06.jpg' },
 	{ type: "type", name: 'Сухе молоко', image: 'https://raw.githubusercontent.com/ValentunPron/Millor/main/src/assets/image/db/vendingCatalog/filterImage07.jpg' },
 ]
@@ -35,10 +35,10 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 
-	const { catalogItem, isLoaded, sortBy, sortRadio } = useSelector(({ filter, catalogItem }: any) => {
+	const { vendingItem, isLoaded, sortBy, sortRadio } = useSelector(({ filter, vending }: any) => {
 		return {
-			catalogItem: catalogItem.items,
-			isLoaded: catalogItem.isLoaded,
+			vendingItem: vending.items,
+			isLoaded: vending.isLoaded,
 			sortBy: filter.sortBy,
 			sortRadio: filter.sortRadio,
 		}
@@ -47,7 +47,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
-			dispatch(filterCatologItem(sortBy, sortRadio, 'https://63d14d40120b32bbe8f59c99.mockapi.io/vending'));
+			dispatch(filterVending(sortBy, sortRadio,));
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -57,7 +57,6 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 
 	const selectSortRadio = React.useCallback((sortRadio: string) => {
 		dispatch(setSortRadio(sortRadio));
-
 	}, []);
 
 	return (
@@ -97,10 +96,10 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 							{
 								isLoaded
 									?
-									catalogItem.length > 0 ?
-										catalogItem.map((coffeItem: any, index: number) => {
+									vendingItem.length > 0 ?
+										vendingItem.map((vendingItem: any, index: number) => {
 											if (index < count) {
-												return <CatalogItem key={`vending_${coffeItem.id}`} currentItem={coffeItem} link={'vending'} />
+												return <CatalogItem key={`vending_${vendingItem._id}`} currentItem={vendingItem} link={'vending'} />
 											} else {
 												return null;
 											}
@@ -111,7 +110,7 @@ export const Vending = ({ namePages }: teaInterface): JSX.Element => {
 							}
 						</div>
 						{
-							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать ще</button> : ''
+							vendingItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать ще</button> : ''
 						}
 					</div>
 				</div>

@@ -9,15 +9,14 @@ const mySort: any = {
 
 export const fetchCoffe = () => (dispatch: Function) => {
 	dispatch(setLoaded(false));
-	axios(`http://localhost:4444/api/product/coffe`).then(({ data }) => {
+	axios(`/api/product/coffe`).then(({ data }) => {
 		dispatch(setCoffe(data.coffe));
 	})
 }
 
 export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: { type: string, value: string | number }) => (dispatch: Function) => {
-	axios(`http://localhost:4444/api/product/coffe`)
+	axios(`/api/product/coffe`)
 		.then(({ data }) => {
-
 			if (sortRadio.type !== 'all') {
 				if (mySort.types.length === 0) {
 					mySort.types.push(sortRadio.type);

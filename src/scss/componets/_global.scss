@@ -62,11 +62,12 @@ body {
 			top: -600px;
 			right: -57%;
 			background-repeat: no-repeat;
-	
+			
 			background: url('./../../assets/image/coffe.png') no-repeat center left , url('./../../assets/image/MainSlider/bg.svg') no-repeat 210px -120px;
 			background-size: 700px, auto;
 			overflow: hidden;
-			z-index: -1;
+			z-index: 3;
+			pointer-events: none;
 		}
 	}
 	.catalogMain {

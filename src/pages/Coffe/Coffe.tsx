@@ -120,7 +120,7 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 								}
 							</div>
 							{
-								coffe.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать еще</button> : ''
+								coffe.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать ще</button> : ''
 							}
 						</div>
 					</div>

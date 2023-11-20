@@ -31,22 +31,22 @@ export const Contact = (): JSX.Element => {
 								pages
 									? <div className={styles.contactLeft}>
 										<div className={styles.item}>
-											<h3 className={styles.title}>Связаться с нами:</h3>
+											<h3 className={styles.title}>Контакти:</h3>
 											<ul className={styles.contactList}>
 												<li className={styles.contactItem}><a href='tel:+380987853212'>+7 (401) 237 53 43</a></li>
 												<li className={styles.contactItem}><a href='mailto:Import@kldrefine.com'>Import@kldrefine.com</a></li>
 											</ul>
 										</div>
 										<div className={styles.item}>
-											<h3 className={styles.title}>Юридический адрес:</h3>
+											<h3 className={styles.title}>Юридичний адрес:</h3>
 											<ul className={styles.contactList}>
 												<li className={styles.contactItem}>вулиця Олени Степанівни, 45, Львів, Львівська область, Україна, 79000</li>
 											</ul>
 										</div>
 										<div className={styles.item}>
-											<h3 className={styles.title}>Адрес склада:</h3>
+											<h3 className={styles.title}>Адреса складу:</h3>
 											<ul className={styles.contactList}>
-												<li className={styles.contactItem}>Московская область, Балашиха, Западная промзона, Шоссе энтузиастов 1</li>
+												<li className={styles.contactItem}>вулиця Олени Степанівни, 45, Львів, Львівська область, Україна, 79000</li>
 											</ul>
 										</div>
 									</div>

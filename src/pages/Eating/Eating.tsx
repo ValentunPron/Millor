@@ -5,11 +5,11 @@ import { CatalogItem, Footer, Header, SortBy, } from '../../component';
 import mainImage from '../../assets/image/MainCatalog/04.png'
 
 import { useDispatch, useSelector } from 'react-redux';
-import { filterCatologItem, setLoaded } from '../../redux/action/catalogItem';
 import { setSortBy, setSortRadio } from '../../redux/action/filter';
 import { Loading } from '../../component/CatalogItems/Loading';
 import { HashLink } from 'react-router-hash-link';
 import { addItemCart } from '../../redux/action/cart';
+import { filterEating, setLoaded } from '../../redux/action/eating';
 
 interface teaInterface {
 	namePages: string
@@ -34,10 +34,10 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 	const dispatch: Function = useDispatch();
 	const [count, setCount] = React.useState(12);
 
-	const { catalogItem, isLoaded, sortBy, sortRadio, itemsCart } = useSelector(({ filter, catalogItem, cart }: any) => {
+	const { eatingItem, isLoaded, sortBy, sortRadio } = useSelector(({ filter, eating, cart }: any) => {
 		return {
-			catalogItem: catalogItem.items,
-			isLoaded: catalogItem.isLoaded,
+			eatingItem: eating.items,
+			isLoaded: eating.isLoaded,
 			sortBy: filter.sortBy,
 			sortRadio: filter.sortRadio,
 			itemsCart: cart.items
@@ -49,7 +49,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 	React.useEffect(() => {
 		dispatch(setLoaded(false))
 		setTimeout(() => {
-			dispatch(filterCatologItem(sortBy, sortRadio, 'https://63d14d40120b32bbe8f59c99.mockapi.io/eating'));
+			dispatch(filterEating(sortBy, sortRadio));
 		}, 200);
 	}, [sortBy, sortRadio]);
 
@@ -102,10 +102,10 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 							{
 								isLoaded
 									?
-									catalogItem.length > 0 ?
-										catalogItem.map((eatingItem: any, index: number) => {
+									eatingItem.length > 0 ?
+										eatingItem.map((eatingItem: any, index: number) => {
 											if (index < count) {
-												return <CatalogItem onClickAddItem={onClickAddItem} key={`eating__${eatingItem.id}`} currentItem={eatingItem} link={'eating'} />
+												return <CatalogItem onClickAddItem={onClickAddItem} key={`eating__${eatingItem._id}`} currentItem={eatingItem} link={'eating'} />
 											} else {
 												return null;
 											}
@@ -116,7 +116,7 @@ export const Eating = ({ namePages }: teaInterface): JSX.Element => {
 							}
 						</div>
 						{
-							catalogItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать ще</button> : ''
+							eatingItem.length > count ? <button className='viewNext' onClick={() => setCount(count + 4)}>Показать ще</button> : ''
 						}
 					</div>
 				</div>
