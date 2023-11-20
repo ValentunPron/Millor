@@ -70,7 +70,7 @@ export const CoffeItem = ({ currentCoffe, onClickAddCoffe }: CoffeItemProps): JS
 					<Poput activeItem={currentCoffe.poputInfo.poputActive} items={currentCoffe.poputInfo.poputSizes} mass={currentCoffe.poputInfo.poputMass} />
 				</div>
 				<div className={styles.description}>
-					<Link onClick={() => window.scroll(0, 0)} to={`/coffe/${currentCoffe.id}`}> <img className={styles.descriptionImage} src={currentCoffe.image} alt={currentCoffe.name} width={160} height={300} /></Link>
+					<Link onClick={() => window.scroll(0, 0)} to={`/coffe/${currentCoffe._id}`}> <img className={styles.descriptionImage} src={currentCoffe.image} alt={currentCoffe.name} width={160} height={300} /></Link>
 					<div className={styles.descriptionInfo}>
 						{
 							currentCoffe.ratingList.length > 0

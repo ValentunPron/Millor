@@ -6,14 +6,13 @@ import { PoputProps } from "./SortBy.props";
 interface sortByInterface {
 	name: string,
 	type: string,
-	order: string
 }
 
 const sortByItems: sortByInterface[] = [
-	{ name: 'За зростанням ціни', type: 'price', order: 'desc' },
-	{ name: 'За спаданням ціни', type: 'price', order: 'asc' },
-	{ name: 'По рейтингу', type: 'rating', order: 'desc' },
-	{ name: 'По кислотності', type: 'acid', order: 'desc' }
+	{ name: 'За зростанням ціни', type: 'priceUp', },
+	{ name: 'За спаданням ціни', type: 'priceDown', },
+	{ name: 'По рейтингу', type: 'rating', },
+	{ name: 'По кислотності', type: 'acid', }
 ]
 
 export const SortBy = ({ activeItem, setSort }: PoputProps): JSX.Element => {

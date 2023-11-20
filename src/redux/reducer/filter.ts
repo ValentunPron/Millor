@@ -1,13 +1,12 @@
 interface initialStateInterface {
-	sortBy: { name: string, type: string, order: string },
+	sortBy: { name: string, type: string },
 	sortRadio: { type: string, value: string[] | number[] },
 }
 
 const initialState: initialStateInterface = {
 	sortBy: {
-		name: 'По убыванию цены',
-		type: 'price',
-		order: 'asc'
+		name: 'По спаданням ціни',
+		type: 'priceUp',
 	},
 	sortRadio: { type: 'all', value: ['all'] },
 }

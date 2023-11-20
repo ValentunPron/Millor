@@ -62,16 +62,19 @@ export const Coffe = ({ namePages }: coffeInterface): JSX.Element => {
 	const onClickAddCoffe = React.useCallback((obj: any) => {
 		dispatch(addItemCart(obj));
 	}, []);
-	const updateCount = () => {
-		if (window.innerWidth >= 780) {
-			setCount(12)
-		} else if (window.innerWidth < 780 && window.innerWidth >= 500) {
-			setCount(6)
-		} else {
-			setCount(3)
+
+	React.useEffect(() => {
+		const updateCount = () => {
+			if (window.innerWidth >= 780) {
+				setCount(12)
+			} else if (window.innerWidth < 780 && window.innerWidth >= 500) {
+				setCount(6)
+			} else {
+				setCount(3)
+			}
 		}
-	}
-	updateCount();
+		updateCount();
+	}, [])
 	return (
 		<>
 			<Header headerActive={true} />

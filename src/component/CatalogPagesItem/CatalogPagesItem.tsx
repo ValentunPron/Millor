@@ -28,7 +28,7 @@ export const CatalogPagesItem = (): JSX.Element => {
 		}
 	}, []);
 
-	const currentItem = test[String(params.name)].filter((coffe: any) => String(coffe.id) === String(params.id));
+	const currentItem = test[String(params.name)].filter((coffe: any) => String(coffe._id) === String(params.id));
 
 	return (
 		<CatalogPages currentItem={currentItem[0]} linkTo={params.name} />
