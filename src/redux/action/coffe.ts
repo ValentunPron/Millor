@@ -45,8 +45,6 @@ export const filterCoffe = (sortBy: { type: string, order: string }, sortRadio: 
 				return coffe[sorting.type] === sorting.value
 			}));
 
-			console.log(sortBy.type);
-
 			if (sortBy.type === 'priceUp') {
 				data.coffe.sort((item1: CoffeInterface, item2: CoffeInterface) => item1.price[0] - item2.price[0]);
 			} else if (sortBy.type === 'priceDown') {
