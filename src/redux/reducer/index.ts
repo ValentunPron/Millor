@@ -8,7 +8,8 @@ import { eating } from "./eating";
 import { catalogItem } from "./catalogItem";
 import { filter } from './filter';
 import { cart } from './cart';
+import { auth } from "./auth";
 
 export const rootReducers = combineReducers({
-	coffe, tea, vending, eating, catalogItem, filter, cart
+	coffe, tea, vending, eating, catalogItem, filter, cart, auth
 })

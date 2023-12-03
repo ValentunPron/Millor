@@ -87,6 +87,7 @@ body {
 			background-size: contain;
 			overflow: hidden;
 			z-index: -1;
+			pointer-events: none;
 		}
 		&::after {
 			display: none;
@@ -102,6 +103,7 @@ body {
 			pointer-events:none;
 			filter: blur(2px);
 			z-index: 1;
+			pointer-events: none;
 		}
 	}
 }
