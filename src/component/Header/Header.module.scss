@@ -41,6 +41,7 @@
 	}
 }
 .actionList {
+	align-items: center;
 	column-gap: 50px;
 	button {
 		background-color: transparent;	
@@ -275,7 +276,8 @@
 		column-gap: calc(50px + (69 - 50)*((100vw - 768px)/(1200 - 768)));
 	}
 	.actionList {
-		column-gap: calc(40px + (50 - 40)*((100vw - 768px)/(1200 - 768)));
+		display: flex;
+		column-gap: calc(30px + (40 - 30)*((100vw - 768px)/(1200 - 768)));
 		svg {
 			width: 22px;
 			height: 22px;
